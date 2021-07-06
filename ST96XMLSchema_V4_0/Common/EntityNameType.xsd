@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="languageCode.xsd"/>
+<xsd:include schemaLocation="entityNameCategory.xsd"/>
+<xsd:include schemaLocation="TransliterationName.xsd"/>
+<xsd:include schemaLocation="PhraseType.xsd"/>
+	<xsd:complexType name="EntityNameType" mixed="true">
+		<xsd:complexContent>
+			<xsd:extension base="com:PhraseType">
+				<xsd:sequence>
+					<xsd:element ref="com:TransliterationName" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+				<xsd:attribute ref="com:languageCode"/>
+				<xsd:attribute ref="com:entityNameCategory"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

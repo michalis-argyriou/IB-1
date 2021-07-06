@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPOfficeCode.xsd"/>
+<xsd:include schemaLocation="NationalSubclassExtension.xsd"/>
+<xsd:include schemaLocation="NationalExtensionProductIndicationText.xsd"/>
+<xsd:complexType name="NationalSubclassExtensionBagType">
+		<xsd:annotation>
+			<xsd:documentation>National Subclass Extension</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+<xsd:element ref="com:IPOfficeCode"/>
+<xsd:element ref="com:NationalSubclassExtension"/>
+<xsd:element ref="com:NationalExtensionProductIndicationText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

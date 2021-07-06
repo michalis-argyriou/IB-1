@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:attribute name="libraryIdentifier" type="xsd:token">
+		<xsd:annotation>
+			<xsd:documentation>The library-identifier attribute is intended as an identifying code for the library containing priority documents - to be used where offices support the access of the documents from many such libraries. The recommended format of library-identifier should be composed of a WIPO Standard ST.3 code of the operating Office of service or digital library, together with service (or digital library) name (optional) separated by a hyphen to allow for the fact that some Office may operate more than one library. For example, "IB-DAS" for Digital Access Service for Priority Documents run by WIPO.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:attribute>
+</xsd:schema>

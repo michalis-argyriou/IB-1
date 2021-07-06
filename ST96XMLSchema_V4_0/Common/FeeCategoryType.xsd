@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="FeeCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Registration fee">
+				<xsd:annotation>
+					<xsd:documentation>Registration fee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Maintenance fee">
+				<xsd:annotation>
+					<xsd:documentation>Maintenance fee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal fee">
+				<xsd:annotation>
+					<xsd:documentation>Renewal fee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Designation fee">
+				<xsd:annotation>
+					<xsd:documentation>Designation fee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:element name="MergedRegistrationNumber" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The number of the international registration resulting from a merger, where the partial change in ownership has been recorded (either in respect of some designs only and/or some designated contracting parties only), where applicable</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

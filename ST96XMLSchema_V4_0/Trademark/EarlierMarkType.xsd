@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="EarlierMarkCountryCode.xsd"/>
+<xsd:include schemaLocation="EarlierMarkCategory.xsd"/>
+<xsd:include schemaLocation="BaseGoodsServicesBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationDate.xsd"/>
+<xsd:include schemaLocation="MarkFeatureCategory.xsd"/>
+<xsd:include schemaLocation="MarkImageBag.xsd"/>
+<xsd:include schemaLocation="WordMarkSpecification.xsd"/>
+<xsd:complexType name="EarlierMarkType">
+		<xsd:sequence>
+<xsd:element ref="tmk:EarlierMarkCountryCode" minOccurs="0"/>
+<xsd:element ref="tmk:EarlierMarkCategory" minOccurs="0"/>
+			<xsd:choice maxOccurs="7">
+<xsd:element ref="tmk:BaseGoodsServicesBag"/>
+<xsd:element ref="com:ApplicationNumber"/>
+<xsd:element ref="com:RegistrationNumber"/>
+<xsd:element ref="com:ApplicationDate"/>
+<xsd:element ref="com:RegistrationDate"/>
+<xsd:element ref="tmk:MarkFeatureCategory"/>
+<xsd:element ref="tmk:MarkImageBag"/>
+<xsd:element ref="tmk:WordMarkSpecification"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PatentCitation.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NPLCitation.xsd"/>
+<xsd:include schemaLocation="CitedPassageBag.xsd"/>
+<xsd:include schemaLocation="DocumentRelevanceBag.xsd"/>
+<xsd:include schemaLocation="CitedPassageBag.xsd"/>
+<xsd:include schemaLocation="PatentClassificationBag.xsd"/>
+<xsd:include schemaLocation="citedPhaseCategory.xsd"/>
+<xsd:include schemaLocation="citingPartyCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+	<xsd:complexType name="ReferenceCitationType">
+		<xsd:sequence>
+			<xsd:choice>
+				<xsd:element ref="com:PatentCitation"/>
+				<xsd:element ref="com:NPLCitation"/>
+			</xsd:choice>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="pat:CitedPassageBag"/>
+				<xsd:sequence>
+					<xsd:element ref="pat:DocumentRelevanceBag"/>
+					<xsd:element ref="pat:CitedPassageBag" minOccurs="0"/>
+					<xsd:element ref="pat:PatentClassificationBag" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+		<xsd:attribute ref="pat:citedPhaseCategory"/>
+		<xsd:attribute ref="pat:citingPartyCategory"/>
+	</xsd:complexType>
+</xsd:schema>

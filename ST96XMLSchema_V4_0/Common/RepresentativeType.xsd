@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LegalEntityName.xsd"/>
+<xsd:include schemaLocation="PartyIdentifier.xsd"/>
+<xsd:include schemaLocation="Contact.xsd"/>
+<xsd:include schemaLocation="NationalLegalEntityCode.xsd"/>
+<xsd:include schemaLocation="NationalityCode.xsd"/>
+<xsd:include schemaLocation="IncorporationCountryCode.xsd"/>
+<xsd:include schemaLocation="IncorporationState.xsd"/>
+<xsd:include schemaLocation="RepresentativeCategory.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:include schemaLocation="Version.xsd"/>
+<xsd:include schemaLocation="operationCategory.xsd"/>
+<xsd:include schemaLocation="sequenceNumber.xsd"/>
+<xsd:complexType name="RepresentativeType">	
+				<xsd:sequence>
+					<xsd:choice maxOccurs="unbounded">
+						<xsd:element ref="com:LegalEntityName"/>					
+						<xsd:element ref="com:PartyIdentifier"/>
+						<xsd:element ref="com:Contact"/>
+					</xsd:choice>
+		<xsd:element ref="com:NationalLegalEntityCode" minOccurs="0"/>
+		<xsd:element ref="com:NationalityCode" minOccurs="0"/>
+		<xsd:element ref="com:IncorporationCountryCode" minOccurs="0"/>
+		<xsd:element ref="com:IncorporationState" minOccurs="0"/>
+		<xsd:element ref="com:RepresentativeCategory" minOccurs="0"/>
+		<xsd:element ref="com:CommentText" minOccurs="0"/>
+		<xsd:element ref="com:Version" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:attribute ref="com:operationCategory"/>
+				<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

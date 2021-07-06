@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DocumentModificationEventDataType.xsd"/>
+<xsd:element name="DocumentModificationEventData" type="pat:DocumentModificationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category P (Document modification). This category is a group of events related to modifications of an application, IP right document or other document, which occur outside the context of a pre-grant review or IP right review. It includes, for example, amendments and corrections of errors in applications and IP right documents. Documents may relate to any type of application in Category A or any type of IP right in Category F. The events in this category may occur during any stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

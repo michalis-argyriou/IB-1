@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MarkFeatureCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Word">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of letters, words, numerals and/or other punctuation or diacritical characters commonly found in standard style</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stylized characters">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of letters, words and/or numerals comprised of special characteristics such as style(s) of lettering, or unusual form(s) of punctuation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Figurative">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of two-dimensional figures such as pictures, images and drawings without letters or words and/or numerals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Combined">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of more than one mark feature, e.g. “word”, “figurative element” and/or “colour” as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Three dimensional">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of a three-dimensional object as claimed in a statement contained in the application. Under applicable legislation or under some IP office practices, it could be registered as a packaging, trade dress or shape mark.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Colour">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting exclusively of a colour or a combination of colours without any figurative element as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Sound">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of audio rather than visual means to distinguish a product or service, and claimed as such in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Hologram">
+				<xsd:annotation>
+					<xsd:documentation>A mark that consists of or contains a hologram as part of its distinctive features as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Olfactory">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of a distinctive smell, scent or odour of a product or used in relation to services and as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Motion">
+				<xsd:annotation>
+					<xsd:documentation>A mark depicting motion or movement as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Multimedia">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of the combination of movement and sound claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Position">
+				<xsd:annotation>
+					<xsd:documentation>A mark which consists of the manner in which the sign is placed or laid out on the product as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Touch">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of the distinctive texture of a product as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Taste">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of the distinctive taste of a product as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Tracer">
+				<xsd:annotation>
+					<xsd:documentation>A mark consisting of a certain symbol or combination, mixture or pattern of colours that runs lengthwise through the product which is usually sold by cutting off a portion from a roll/bale etc. as claimed in a statement contained in the application. For example, coloured thread running through cables and patterns running the length of ropes.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Any other type of mark as claimed in a statement contained in the application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

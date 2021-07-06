@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="SearchOriginCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Original">
+				<xsd:annotation>
+					<xsd:documentation>The original search conducted for this application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Foreign">
+				<xsd:annotation>
+					<xsd:documentation>A search conducted by another IP office for this application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supplementary">
+				<xsd:annotation>
+					<xsd:documentation>A supplementary search conducted despite search results being identified, as original search was not considered sufficient</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Additional">
+				<xsd:annotation>
+					<xsd:documentation>An additional search conducted due to the change in scope of the invention</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

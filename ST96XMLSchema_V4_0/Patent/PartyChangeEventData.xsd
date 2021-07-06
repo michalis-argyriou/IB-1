@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PartyChangeEventDataType.xsd"/>
+<xsd:element name="PartyChangeEventData" type="pat:PartyChangeEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category R (Party data change). This category is a group of events related to the IPO recording changes in party data. It includes, for example, when the IPO records changes to a party concerned with the application or IP right, e.g. the applicant(s), owner(s), inventor(s) or representative(s). It also includes events related to the recording of changes in party contact information. The data change may relate to any type of application in Category A or any type of IP right in Category F. The events in this category may occur during any stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationSubsection.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationPage.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WebAddressURI.xsd"/>
+<xsd:include schemaLocation="PublicationStartPage.xsd"/>
+<xsd:include schemaLocation="PublicationEndPage.xsd"/>
+<xsd:include schemaLocation="PublicationAmendmentReasonText.xsd"/>
+
+	<xsd:complexType name="GIPublicationType">
+		<xsd:sequence>
+			<xsd:element ref="com:PublicationIdentifier"/>
+			<xsd:element ref="com:PublicationDate" minOccurs="0"/>
+			<xsd:element ref="com:PublicationSubsection" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="com:PublicationPage" maxOccurs="unbounded"/>
+				<xsd:sequence>
+					<xsd:element ref="gin:PublicationStartPage"/>
+					<xsd:element ref="gin:PublicationEndPage" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+			<xsd:element ref="gin:PublicationAmendmentReasonText" minOccurs="0"/>
+			<xsd:element ref="com:WebAddressURI" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>URL text and link of the entry in the Official Journal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

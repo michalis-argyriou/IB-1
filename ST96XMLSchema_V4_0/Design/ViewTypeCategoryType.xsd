@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ViewTypeCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Perspective">
+			<xsd:annotation>
+			<xsd:documentation>This is the view of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person in a direction that is not aligned with any of the axes of a chosen 3-dimension Cartesian coordinate system. The image should have been obtained by perspective projection or orthographic projection.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Front">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person in front of the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the positive direction of the x-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Back">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person behind the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the negative direction of the x-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Top">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person above the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the positive direction of the z-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Bottom">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person below the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the negative direction of the z-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Left">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person on the left side of the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the negative direction of the y-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Right">
+			<xsd:annotation>
+			<xsd:documentation>This is one of the principal views of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person on the right side of the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is the positive direction of the y-axis of a chosen 3-dimension Cartesian coordinate system.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Isometric">
+			<xsd:annotation>
+			<xsd:documentation>This is an orthographic view of a 3-dimensional object, representing the 2-dimensional image that could be sensed by a person in a special direction. The projection direction is such that the three axes of the chosen 3-dimension Cartesian coordinate system would be projected into three vectors with the same origin and 120-degree from each other on the projection plane.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Reference">
+			<xsd:annotation>
+			<xsd:documentation>This is a view used for understanding, which generally includes matter for which protection is not sought.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Unfolded">
+			<xsd:annotation>
+			<xsd:documentation>This is a 2-dimensional view of the 3-dimensional object as if it had been unfolded into a 2-dimensional object.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Exploded"> 
+			<xsd:annotation>
+			<xsd:documentation>This is a view that displays the components of a 3-dimensional object separated by an equal distance, as if a controlled explosion had separated them from their initial position.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cross sectional">
+			<xsd:annotation>
+			<xsd:documentation>This is a view of a 3-dimensional object from the position of a plane through the object, commonly used to show internal features of a design</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Enlarged"> 
+			<xsd:annotation>
+			<xsd:documentation>This is a view representing a detail of the design displayed in a different scale from that of main views.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Front Surface">
+			<xsd:annotation>
+			<xsd:documentation>This is the view of a 2-dimensional object, representing the 2-dimensional image that could be sensed by a person in front of the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is perpendicular to the object plane.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Back Surface">
+			<xsd:annotation>
+			<xsd:documentation>This is the view of a 2-dimensional object, representing the 2-dimensional image that could be sensed by a person behind the object. The image should have been obtained by either orthographic projection or perspective projection, where the projection direction is perpendicular to the object plane.</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative typeface">
+			<xsd:annotation>
+			<xsd:documentation>Representative characters, numbers and/or symbols that best represent the characteristics of the typeface</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Example typeface">
+			<xsd:annotation>
+			<xsd:documentation>Example words, expressions, sentences and/or drawings composed of characters, numbers and/or symbols in the typeface</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Typeface set">
+			<xsd:annotation>
+			<xsd:documentation>The set of designated characters, numbers and/or symbols in the corresponding typeface that forms the typeface design</xsd:documentation>
+			</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

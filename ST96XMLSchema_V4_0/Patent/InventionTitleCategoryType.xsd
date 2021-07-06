@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="InventionTitleCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="In application filed">
+				<xsd:annotation>
+					<xsd:documentation>The invention title as entered on the application form, which may equate to the application title</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="In application published">
+				<xsd:annotation>
+					<xsd:documentation>The invention title edited by the examiner from the title provided by the applicant, which may equate to the abstract title</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="In grant publication">
+				<xsd:annotation>
+					<xsd:documentation>The invention title displayed on the front page of the grant publication, which equate the IPO’s grant title</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

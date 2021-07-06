@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GILegalBasisLegislativeProvisionType.xsd"/>
+
+	<xsd:element name="GILegalBasisLegislativeProvision" type="gin:GILegalBasisLegislativeProvisionType">
+	<xsd:annotation>
+		<xsd:documentation>Legislative or regulatory provisions which form the legal basis for the grant of protection in the country of origin. The titles and dates must be provided.</xsd:documentation>
+	</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ProductCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Beer">
+				<xsd:annotation>
+					<xsd:documentation>Beer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chocolate and derived products">
+				<xsd:annotation>
+					<xsd:documentation>Chocolate and derived products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Bread_Pastry_Cakes_Confectionery_biscuits_Other bakers wares">
+				<xsd:annotation>
+					<xsd:documentation>Bread, pastry, cakes, confectionery, biscuits and other baker’s wares</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Beverages made from plant extracts">
+				<xsd:annotation>
+					<xsd:documentation>Beverages made from plant extracts</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Pasta">
+				<xsd:annotation>
+					<xsd:documentation>Pasta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mustard paste">
+				<xsd:annotation>
+					<xsd:documentation>Mustard paste</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Natural gums and resins">
+				<xsd:annotation>
+					<xsd:documentation>Natural gums and resins</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Essential oils">
+				<xsd:annotation>
+					<xsd:documentation>Essential oils</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Hay">
+				<xsd:annotation>
+					<xsd:documentation>Hay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cork">
+				<xsd:annotation>
+					<xsd:documentation>Cork</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cochineal">
+				<xsd:annotation>
+					<xsd:documentation>Cochineal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Flowers and ornamental plants">
+				<xsd:annotation>
+					<xsd:documentation>Flowers and ornamental plants</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cotton">
+				<xsd:annotation>
+					<xsd:documentation>Cotton</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Wool">
+				<xsd:annotation>
+					<xsd:documentation>Wool</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Wicker">
+				<xsd:annotation>
+					<xsd:documentation>Wicker</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Scutched flax">
+				<xsd:annotation>
+					<xsd:documentation>Scutched flax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Leather">
+				<xsd:annotation>
+					<xsd:documentation>Leather</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Fur">
+				<xsd:annotation>
+					<xsd:documentation>Fur</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Feather">
+				<xsd:annotation>
+					<xsd:documentation>Feather</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Prepared meals">
+				<xsd:annotation>
+					<xsd:documentation>Prepared meals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Wine">
+				<xsd:annotation>
+					<xsd:documentation>Wines and wine products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Spirits">
+				<xsd:annotation>
+					<xsd:documentation>Spirits</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Agricultural Product or Food">
+				<xsd:annotation>
+					<xsd:documentation>Agricultural Product or Food - Aliment ou produit agricole</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Diary">
+				<xsd:annotation>
+					<xsd:documentation>Dairy and dairy produce</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Fish">
+				<xsd:annotation>
+					<xsd:documentation>Fresh fish, molluscs, and crustaceans and products derived therefrom</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Fruit">
+				<xsd:annotation>
+					<xsd:documentation>Fruits and fruit products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Game">
+				<xsd:annotation>
+					<xsd:documentation>Games, playthings and sporting articles</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Glass">
+				<xsd:annotation>
+					<xsd:documentation>Glass and crystal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Meat">
+				<xsd:annotation>
+					<xsd:documentation>Fresh meat (and offal), dry-cured meats, meat products (cooked, salted, smoked, etc.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Music">
+				<xsd:annotation>
+					<xsd:documentation>Musical instruments</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonAlcohol">
+				<xsd:annotation>
+					<xsd:documentation>Non-alcoholic beverages</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other alcohol">
+				<xsd:annotation>
+					<xsd:documentation>Other alcoholic beverages</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Religious">
+				<xsd:annotation>
+					<xsd:documentation>Religious, ornamental and handicraft objects</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Salt">
+				<xsd:annotation>
+					<xsd:documentation>Salts and minerals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stone">
+				<xsd:annotation>
+					<xsd:documentation>Stones and ceramic objects</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Textile">
+				<xsd:annotation>
+					<xsd:documentation>Textile products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Vegetable">
+				<xsd:annotation>
+					<xsd:documentation>Vegetables and vegetable products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mineral water">
+				<xsd:annotation>
+					<xsd:documentation>Mineral water</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Crafts">
+				<xsd:annotation>
+					<xsd:documentation>Traditional crafts</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cheese">
+				<xsd:annotation>
+					<xsd:documentation>Cheeses</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Butter">
+				<xsd:annotation>
+					<xsd:documentation>Butter</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Spices">
+				<xsd:annotation>
+					<xsd:documentation>Spices</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cereals">
+				<xsd:annotation>
+					<xsd:documentation>Cereals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Products of the milling industry">
+				<xsd:annotation>
+					<xsd:documentation>Products of the milling industry</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Oilseeds">
+				<xsd:annotation>
+					<xsd:documentation>Oilseeds</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Oils and fats">
+				<xsd:annotation>
+					<xsd:documentation>Oils and fats (butter, margarine, oil, etc.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Confectionery and baked products">
+				<xsd:annotation>
+					<xsd:documentation>Confectionery and baked products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Sugars and syrups">
+				<xsd:annotation>
+					<xsd:documentation>Sugars and syrups</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Table and processed olives">
+				<xsd:annotation>
+					<xsd:documentation>Table and processed olives</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Vinegar">
+				<xsd:annotation>
+					<xsd:documentation>Vinegar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Honey">
+				<xsd:annotation>
+					<xsd:documentation>Honey</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Gingerbread">
+				<xsd:annotation>
+					<xsd:documentation>Honey</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Tea">
+				<xsd:annotation>
+					<xsd:documentation>Tea</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Coffee">
+				<xsd:annotation>
+					<xsd:documentation>Coffee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Clothing">
+				<xsd:annotation>
+					<xsd:documentation>Clothing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Endemic species">
+				<xsd:annotation>
+					<xsd:documentation>Endemic species</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Forest product">
+				<xsd:annotation>
+					<xsd:documentation>Forest product</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Hops">
+				<xsd:annotation>
+					<xsd:documentation>Hops</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ginseng">
+				<xsd:annotation>
+					<xsd:documentation>Ginseng</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Manufactured products">
+				<xsd:annotation>
+					<xsd:documentation>Manufactured products</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Natural goods">
+				<xsd:annotation>
+					<xsd:documentation>Natural goods</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Other</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

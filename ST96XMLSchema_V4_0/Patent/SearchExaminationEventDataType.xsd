@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveCountryBag.xsd"/>
+<xsd:include schemaLocation="GazetteNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="SearchOriginCategory.xsd"/>
+<xsd:include schemaLocation="SearchRequesterCategory.xsd"/>
+<xsd:include schemaLocation="ExaminationRequesterCategory.xsd"/>
+<xsd:include schemaLocation="RelatedDocumentBag.xsd"/>
+<xsd:include schemaLocation="PriorityApplicationIdentificationBag.xsd"/>
+<xsd:include schemaLocation="InternationalFilingData.xsd"/>
+<xsd:include schemaLocation="RegionalFilingData.xsd"/>
+<xsd:include schemaLocation="PartyBag.xsd"/>
+<xsd:include schemaLocation="PatentPublicationIdentification.xsd"/>
+<xsd:include schemaLocation="GrantTerm.xsd"/>
+<xsd:include schemaLocation="InternationalPublishingData.xsd"/>
+<xsd:include schemaLocation="RegionalPublishingData.xsd"/>
+<xsd:include schemaLocation="EarliestPriorityApplication.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExaminationRequestDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExaminationDate.xsd"/>
+<xsd:complexType name="SearchExaminationEventDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:EffectiveCountryBag"/>
+<xsd:element ref="pat:GazetteNumber"/>
+<xsd:element ref="com:CommentText"/>
+<xsd:element ref="pat:SearchOriginCategory"/>
+<xsd:element ref="pat:SearchRequesterCategory"/>
+<xsd:element ref="pat:ExaminationRequesterCategory"/>
+<xsd:element ref="pat:RelatedDocumentBag"/>
+<xsd:element ref="pat:PriorityApplicationIdentificationBag"/>
+<xsd:element ref="pat:InternationalFilingData"/>
+<xsd:element ref="pat:RegionalFilingData"/>
+<xsd:element ref="pat:PartyBag"/>
+<xsd:element ref="pat:PatentPublicationIdentification"/>
+<xsd:element ref="pat:GrantTerm"/>
+<xsd:element ref="pat:InternationalPublishingData"/>
+<xsd:element ref="pat:RegionalPublishingData"/>
+<xsd:element ref="pat:EarliestPriorityApplication"/>
+<xsd:element ref="com:ExaminationRequestDate"/>
+<xsd:element ref="com:ExaminationDate"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

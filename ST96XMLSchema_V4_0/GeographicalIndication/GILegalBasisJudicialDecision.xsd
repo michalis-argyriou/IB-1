@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GILegalBasisJudicialDecisionType.xsd"/>
+
+	<xsd:element name="GILegalBasisJudicialDecision" type="gin:GILegalBasisJudicialDecisionType">
+	<xsd:annotation>
+		<xsd:documentation>Used to capture the legal basis under which the grant of protection is sought. Optionally includes a copy of the provisions, decision or registration referred to.</xsd:documentation>
+	</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

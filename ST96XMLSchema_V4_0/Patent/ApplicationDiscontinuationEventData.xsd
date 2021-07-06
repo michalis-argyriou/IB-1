@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicationDiscontinuationEventDataType.xsd"/>
+<xsd:element name="ApplicationDiscontinuationEventData" type="pat:ApplicationDiscontinuationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category B (Application discontinuation). This category is a group of events related to the discontinuation of an application of any type covered by Category A. It includes, for example, when an application has been voluntarily withdrawn by the applicant, was deemed to be withdrawn, abandoned or lapsed or was refused by the IPO. The events in this category may move an application from the filing stage, examination stage or pre-grant challenge stage into the termination likely/termination stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

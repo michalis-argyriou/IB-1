@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridInternationalRegistrationCreation.xsd"/>
+<xsd:include schemaLocation="MadridProtectionRestriction.xsd"/>
+		<xsd:complexType name="MadridInternationalRegistrationDivisionType">
+			<xsd:sequence>
+			<xsd:element ref="tmk:MadridInternationalRegistrationCreation"/>
+			<xsd:element ref="tmk:MadridProtectionRestriction"/>
+		</xsd:sequence>
+		</xsd:complexType>	
+</xsd:schema>

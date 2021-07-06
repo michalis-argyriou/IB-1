@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEventDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:include schemaLocation="GIPublicationBag.xsd"/>
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:include schemaLocation="GIData.xsd"/>
+<xsd:include schemaLocation="GIUserCertificate.xsd"/>
+<xsd:include schemaLocation="GIReference.xsd"/>
+<xsd:include schemaLocation="GIUserCertificateReference.xsd"/>
+<xsd:include schemaLocation="AuthorizedUser.xsd"/>
+	<xsd:complexType name="GIUserCertificateApplicationType">
+		<xsd:sequence>
+			<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+			<xsd:element ref="com:ApplicationDate" minOccurs="0"/>
+			<xsd:element ref="gin:ApplicantBag"/>
+			<xsd:element ref="gin:AuthorizedUser" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+			<xsd:element ref="com:PaymentBag"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="com:SignatureBag"/>
+			<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+			<xsd:element ref="gin:GIPublicationBag" minOccurs="0"/>
+			<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:RecordEventDate" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+				<xsd:choice>
+					<xsd:element ref="gin:GIReference"/>
+					<xsd:element ref="gin:GIData"/>
+				</xsd:choice>
+				<xsd:choice>
+					<xsd:element ref="gin:GIUserCertificateReference" maxOccurs="unbounded"/>
+					<xsd:element ref="gin:GIUserCertificate" maxOccurs="unbounded"/>
+				</xsd:choice>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

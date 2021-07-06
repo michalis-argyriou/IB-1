@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ClassificationTermSourceCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Nice">
+				<xsd:annotation>
+					<xsd:documentation>Nice</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Office">
+				<xsd:annotation>
+					<xsd:documentation>Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EM_JP_US">
+				<xsd:annotation>
+					<xsd:documentation>EM_JP_US</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EM_US">
+				<xsd:annotation>
+					<xsd:documentation>EM_US</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

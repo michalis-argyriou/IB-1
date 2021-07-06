@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Contact.xsd"/>
+<xsd:include schemaLocation="SignatoryCapacityCategory.xsd"/>
+<xsd:include schemaLocation="ElectronicSignature.xsd"/>
+<xsd:complexType name="SignatureType">
+		<xsd:sequence>
+<xsd:element ref="com:Contact"/>
+<xsd:element ref="com:SignatoryCapacityCategory" minOccurs="0"/>
+<xsd:element ref="com:ElectronicSignature"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

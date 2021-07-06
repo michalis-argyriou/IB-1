@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEffectiveDate.xsd"/>
+<xsd:include schemaLocation="RecordOppositionPeriodCategory.xsd"/>
+<xsd:include schemaLocation="TrademarkIdentification.xsd"/>
+<xsd:include schemaLocation="RecordPublicationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordInterestedOfficeCode.xsd"/>
+<xsd:include schemaLocation="RecordOppositionPeriodStartDate.xsd"/>
+<xsd:include schemaLocation="RecordOppositionPeriodEndDate.xsd"/>
+<xsd:complexType name="RecordOppositionPeriodType">
+		<xsd:sequence>
+<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+<xsd:element ref="com:RecordFilingDate" minOccurs="0"/>
+<xsd:element ref="com:RecordNotificationDate" minOccurs="0"/>
+<xsd:element ref="com:RecordEffectiveDate" minOccurs="0"/>
+<xsd:element ref="tmk:RecordOppositionPeriodCategory"/>
+<xsd:element ref="tmk:TrademarkIdentification" minOccurs="0"/>
+<xsd:element ref="tmk:RecordPublicationBag" minOccurs="0"/>
+<xsd:element ref="com:RecordInterestedOfficeCode" minOccurs="0"/>
+<xsd:element ref="tmk:RecordOppositionPeriodStartDate" minOccurs="0"/>
+<xsd:element ref="tmk:RecordOppositionPeriodEndDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

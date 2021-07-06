@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ViennaClassificationBag.xsd"/>
+<xsd:include schemaLocation="NationalFigurativeElementClassificationBag.xsd"/>
+<xsd:complexType name="FigurativeElementClassificationBagType">
+		<xsd:annotation>
+			<xsd:documentation>Figurative element classification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:ViennaClassificationBag"/>
+<xsd:element ref="com:NationalFigurativeElementClassificationBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

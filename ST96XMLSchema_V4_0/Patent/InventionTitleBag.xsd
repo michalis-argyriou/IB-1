@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="InventionTitleBagType.xsd"/>
+<xsd:element name="InventionTitleBag" type="pat:InventionTitleBagType">
+		<xsd:annotation>
+			<xsd:documentation>The collection of invention titles</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

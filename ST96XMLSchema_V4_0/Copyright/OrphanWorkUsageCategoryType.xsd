@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="OrphanWorkUsageCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Radio_Audio_Sound_Music production or distribution">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of radio, audio, sound and music production or distribution</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Corporate external communication">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of a corporate external communication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Corporate internal communication">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of a corporate internal communication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Editorial">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of an editorial article for a newspaper, magazine, journal or website</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Exhibition">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of an exhibition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Promotional and advertising">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used for promotional and advertising purposes</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Public performance production">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of a public performance production</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Publications">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used as part of a publication, book, anthology or educational materials</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Retailing and merchandising">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used for retailing and merchandising purposes</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TV_Film_Gaming production or distribution">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work will be used for TV, film or gaming production or distribution</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueRegistration.xsd"/>
+<xsd:include schemaLocation="HagueRenewal.xsd"/>
+<xsd:include schemaLocation="HagueExpiration.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChange.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeRefusal.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeRefusalWithdrawal.xsd"/>
+<xsd:include schemaLocation="HagueMerger.xsd"/>
+<xsd:include schemaLocation="HagueHolderNameAddressChange.xsd"/>
+<xsd:include schemaLocation="HagueCreatorNameAddressChange.xsd"/>
+<xsd:include schemaLocation="HagueRenunciation.xsd"/>
+<xsd:include schemaLocation="HagueLimitation.xsd"/>
+<xsd:include schemaLocation="HagueRefusal.xsd"/>
+<xsd:include schemaLocation="HagueRefusalWithdrawal.xsd"/>
+<xsd:include schemaLocation="HagueGrantProtection.xsd"/>
+<xsd:include schemaLocation="HagueInvalidation.xsd"/>
+<xsd:include schemaLocation="HagueCancellationNonPayment.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionRefusal.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionRefusalWithdrawal.xsd"/>
+<xsd:complexType name="HagueCorrectContentType">
+			<xsd:choice>
+<xsd:element ref="dgn:HagueRegistration"/>
+<xsd:element ref="dgn:HagueRenewal"/>
+<xsd:element ref="dgn:HagueExpiration"/>
+<xsd:element ref="dgn:HagueOwnershipChange"/>
+<xsd:element ref="dgn:HagueOwnershipChangeRefusal"/>
+<xsd:element ref="dgn:HagueOwnershipChangeRefusalWithdrawal"/>
+<xsd:element ref="dgn:HagueMerger"/>
+<xsd:element ref="dgn:HagueHolderNameAddressChange"/>
+<xsd:element ref="dgn:HagueCreatorNameAddressChange"/>
+<xsd:element ref="dgn:HagueRenunciation"/>
+<xsd:element ref="dgn:HagueLimitation"/>
+<xsd:element ref="dgn:HagueRefusal"/>
+<xsd:element ref="dgn:HagueRefusalWithdrawal"/>
+<xsd:element ref="dgn:HagueGrantProtection"/>
+<xsd:element ref="dgn:HagueInvalidation"/>
+<xsd:element ref="dgn:HagueCancellationNonPayment"/>
+<xsd:element ref="dgn:HagueCorrectionRefusal"/>
+<xsd:element ref="dgn:HagueCorrectionRefusalWithdrawal"/>
+			</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

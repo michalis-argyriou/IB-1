@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../PatentPublicationIdentification.xsd"/>
+<xsd:include schemaLocation="../ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="../PatentGrantIdentification.xsd"/>
+<xsd:include schemaLocation="../PriorityClaimBag.xsd"/>
+<xsd:include schemaLocation="../GrantTerm.xsd"/>
+<xsd:include schemaLocation="../PreClassificationText.xsd"/>
+<xsd:include schemaLocation="../PatentClassificationBag.xsd"/>
+<xsd:include schemaLocation="../InventionTitleBag.xsd"/>
+<xsd:include schemaLocation="../PlantName.xsd"/>
+<xsd:include schemaLocation="../ReferenceCitationBag.xsd"/>
+<xsd:include schemaLocation="../ClaimTotalQuantity.xsd"/>
+<xsd:include schemaLocation="../SearchField.xsd"/>
+<xsd:include schemaLocation="../FigureBag.xsd"/>
+<xsd:include schemaLocation="../RelatedDocumentBag.xsd"/>
+<xsd:include schemaLocation="../ProvisionalGrantPublicationDate.xsd"/>
+<xsd:include schemaLocation="../GrantPublicationDate.xsd"/>
+<xsd:include schemaLocation="../ExemplaryClaimBag.xsd"/>
+<xsd:include schemaLocation="../PartyBag.xsd"/>
+<xsd:include schemaLocation="../InternationalFilingData.xsd"/>
+<xsd:include schemaLocation="../RegionalFilingData.xsd"/>
+<xsd:include schemaLocation="../InternationalPublishingData.xsd"/>
+<xsd:include schemaLocation="../RegionalPublishingData.xsd"/>
+<xsd:include schemaLocation="../PatentFamily.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/BioDeposit.xsd"/>
+<xsd:include schemaLocation="../PlainLanguageDesignationText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/FilingLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PublicationLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/HagueAgreementData.xsd"/>
+<xsd:include schemaLocation="../StateDesignation.xsd"/>
+<xsd:include schemaLocation="../LicenceBag.xsd"/>
+<xsd:include schemaLocation="../ApplicantIntent.xsd"/>
+<xsd:include schemaLocation="../EarliestPriorityApplication.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReceivingOfficeDate.xsd"/>
+<xsd:include schemaLocation="../CompleteSpecificationFilingDate.xsd"/>
+<xsd:include schemaLocation="../PublicAvailabilityDataBag.xsd"/>
+<xsd:include schemaLocation="../RightsEffectiveDateBag.xsd"/>
+<xsd:include schemaLocation="../PatentDocumentRepublication.xsd"/>
+<xsd:include schemaLocation="../ExhibitionFilingDate.xsd"/>
+<xsd:include schemaLocation="../RightsReestablishedDate.xsd"/>
+<xsd:include schemaLocation="../ApplicationWithdrawnDate.xsd"/>
+<xsd:include schemaLocation="../ApplicationDeemedWithdrawnDate.xsd"/>
+<xsd:include schemaLocation="../PatentRevocationDate.xsd"/>
+<xsd:include schemaLocation="../PCTNationalPhaseEntryDate.xsd"/>
+<xsd:include schemaLocation="../ApplicationPartiallyWithdrawnDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/TranslationReceiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SecurityReleaseDate.xsd"/>
+<xsd:include schemaLocation="../LORData.xsd"/>
+<xsd:include schemaLocation="../OppositionData.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="BibliographicDataType">
+		<xsd:sequence>
+			<xsd:element ref="pat:PatentPublicationIdentification" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationIdentification"/>
+			<xsd:element ref="pat:PatentGrantIdentification" minOccurs="0"/>
+			<xsd:element ref="pat:PriorityClaimBag" minOccurs="0"/>
+			<xsd:element ref="pat:GrantTerm" minOccurs="0"/>
+			<xsd:element ref="pat:PreClassificationText" minOccurs="0"/>
+			<xsd:element ref="pat:PatentClassificationBag" minOccurs="0"/>
+			<xsd:element ref="pat:InventionTitleBag"/>
+			<xsd:element ref="pat:PlantName" minOccurs="0"/>
+			<xsd:element ref="pat:ReferenceCitationBag" minOccurs="0"/>
+			<xsd:element ref="pat:ClaimTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="pat:SearchField" minOccurs="0"/>
+			<xsd:element ref="pat:FigureBag" minOccurs="0"/>
+			<xsd:element ref="pat:RelatedDocumentBag" minOccurs="0"/>
+			<xsd:element ref="pat:ProvisionalGrantPublicationDate" minOccurs="0"/>
+			<xsd:element ref="pat:GrantPublicationDate" minOccurs="0"/>
+			<xsd:element ref="pat:ExemplaryClaimBag" minOccurs="0"/>
+			<xsd:element ref="com:HagueAgreementData" minOccurs="0"/>
+			<xsd:element ref="pat:PartyBag"/>
+			<xsd:element ref="pat:InternationalFilingData" minOccurs="0"/>
+			<xsd:element ref="pat:RegionalFilingData" minOccurs="0"/>
+			<xsd:element ref="pat:InternationalPublishingData" minOccurs="0"/>
+			<xsd:element ref="pat:RegionalPublishingData" minOccurs="0"/>
+			<xsd:element ref="pat:PatentFamily" minOccurs="0"/>
+			<xsd:element ref="com:BioDeposit" minOccurs="0"/>
+			<xsd:element ref="pat:PlainLanguageDesignationText" minOccurs="0"/>
+			<xsd:element ref="com:FilingLanguageCode" minOccurs="0"/>
+			<xsd:element ref="com:PublicationLanguageCode" minOccurs="0"/>
+			<xsd:element ref="pat:StateDesignation" minOccurs="0"/>
+			<xsd:element ref="pat:LicenceBag" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicantIntent" minOccurs="0"/>
+			<xsd:element ref="pat:EarliestPriorityApplication" minOccurs="0"/>
+			<xsd:element ref="com:ReceivingOfficeDate" minOccurs="0"/>
+			<xsd:element ref="pat:CompleteSpecificationFilingDate" minOccurs="0"/>
+			<xsd:element ref="pat:PublicAvailabilityDataBag" minOccurs="0"/>
+			<xsd:element ref="pat:RightsEffectiveDateBag" minOccurs="0"/>
+			<xsd:element ref="pat:PatentDocumentRepublication" minOccurs="0"/>
+			<xsd:element ref="pat:ExhibitionFilingDate" minOccurs="0"/>
+			<xsd:element ref="pat:RightsReestablishedDate" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationWithdrawnDate" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationDeemedWithdrawnDate" minOccurs="0"/>
+			<xsd:element ref="pat:PatentRevocationDate" minOccurs="0"/>
+			<xsd:element ref="pat:PCTNationalPhaseEntryDate" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationPartiallyWithdrawnDate" minOccurs="0"/>
+			<xsd:element ref="com:TranslationReceiveDate" minOccurs="0"/>
+			<xsd:element ref="com:SecurityReleaseDate" minOccurs="0"/>
+			<xsd:element ref="pat:LORData" minOccurs="0"/>
+			<xsd:element ref="pat:OppositionData" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

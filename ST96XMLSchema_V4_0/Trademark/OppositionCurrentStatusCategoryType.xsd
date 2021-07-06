@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="OppositionCurrentStatusCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Opposition filed">
+				<xsd:annotation>
+					<xsd:documentation>Opposition is filed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Admissibility of opposition filing checked">
+				<xsd:annotation>
+					<xsd:documentation>Admissibility of opposition filing is checked</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cooling off period taken">
+				<xsd:annotation>
+					<xsd:documentation>Cooling off period is taken</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Proceedings of opposition commenced">
+				<xsd:annotation>
+					<xsd:documentation>Proceedings of opposition is commenced</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Agreement between parties reached">
+				<xsd:annotation>
+					<xsd:documentation>Agreement between parties is reached</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application or trademark finally withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Application or trademark is finally withdrawn respectively by applicant or holder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application or trademark finally limited">
+				<xsd:annotation>
+					<xsd:documentation>Application or trademark is finally limited</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition finally withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Opposition is finally withdrawn by opponent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application or trademark finally rejected in full">
+				<xsd:annotation>
+					<xsd:documentation>Application or trademark is finally rejected in full</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application or trademark finally rejected in part">
+				<xsd:annotation>
+					<xsd:documentation>Application or trademark is finally rejected in part</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition finally rejected">
+				<xsd:annotation>
+					<xsd:documentation>Opposition is finally rejected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition deemed to be withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Opposition is terminated due to a failure to prosecute, for example, non-payment of fees</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition closed">
+				<xsd:annotation>
+					<xsd:documentation>Opposition is closed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

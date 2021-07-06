@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="BasisForeignApplicationIndicator.xsd"/>
+<xsd:include schemaLocation="BasisForeignRegistrationIndicator.xsd"/>
+<xsd:include schemaLocation="BasisUseIndicator.xsd"/>
+<xsd:include schemaLocation="BasisIntentToUseIndicator.xsd"/>
+<xsd:complexType name="AmendedBasisType">
+		<xsd:sequence>
+<xsd:element ref="tmk:BasisForeignApplicationIndicator"/>
+<xsd:element ref="tmk:BasisForeignRegistrationIndicator"/>
+<xsd:element ref="tmk:BasisUseIndicator"/>
+<xsd:element ref="tmk:BasisIntentToUseIndicator"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

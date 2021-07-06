@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClassDescriptionType.xsd"/>
+<xsd:element name="ClassDescription" type="dgn:ClassDescriptionType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the class to which a product, in relation to which the design is used, belongs</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

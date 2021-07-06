@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LimitationCountryCodeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentTextBag.xsd"/>
+<xsd:include schemaLocation="GoodsServicesLimitationCategory.xsd"/>
+<xsd:include schemaLocation="LimitationClassDescriptionBag.xsd"/>
+	<xsd:complexType name="GoodsServicesLimitationType">
+		<xsd:sequence>
+			<xsd:element ref="com:LimitationCountryCodeBag" minOccurs="0"/>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="com:CommentTextBag"/>
+				<xsd:sequence>
+					<xsd:element ref="tmk:GoodsServicesLimitationCategory"/>
+					<xsd:element ref="tmk:LimitationClassDescriptionBag"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

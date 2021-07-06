@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DesignIdentifier.xsd"/>
+<xsd:include schemaLocation="ViewTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LocarnoClassificationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ProductDescriptionTextBag.xsd"/>
+<xsd:include schemaLocation="DesignDescriptionTextBag.xsd"/>
+<xsd:include schemaLocation="DesignerBag.xsd"/>
+<xsd:include schemaLocation="PriorityBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExhibitionPriorityBag.xsd"/>
+<xsd:include schemaLocation="ExceptionLackNoveltyDeclarationBag.xsd"/>
+<xsd:include schemaLocation="PrincipalDesignRelationBag.xsd"/>
+<xsd:include schemaLocation="ViewBag.xsd"/>
+	<xsd:complexType name="HagueDesignType">
+		<xsd:sequence>
+			<xsd:element ref="dgn:DesignIdentifier"/>
+			<xsd:element ref="dgn:ViewTotalQuantity" minOccurs="0"/>
+<xsd:element ref="com:LocarnoClassificationBag"/>
+<xsd:element ref="com:ProductDescriptionTextBag"/>
+			<xsd:element ref="dgn:DesignDescriptionTextBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignerBag" minOccurs="0"/>
+<xsd:element ref="dgn:PriorityBag" minOccurs="0"/>
+			<xsd:element ref="com:ExhibitionPriorityBag" minOccurs="0"/>
+			<xsd:element ref="dgn:ExceptionLackNoveltyDeclarationBag" minOccurs="0"/>
+			<xsd:element ref="dgn:PrincipalDesignRelationBag" minOccurs="0"/>
+			<xsd:element ref="dgn:ViewBag"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

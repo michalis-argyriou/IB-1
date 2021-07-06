@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0"><xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NotificationLanguage.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEffectiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:include schemaLocation="LicenseeChangeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Representative.xsd"/>
+		<xsd:complexType name="MadridLicenseeRecordChangeType">
+			<xsd:sequence>
+<xsd:element ref="com:NotificationLanguage"/>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:LicenceIdentifier"/>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordFilingDate"/>
+<xsd:element ref="com:RecordNotificationDate"/>
+<xsd:element ref="com:RecordEffectiveDate"/>
+<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+<xsd:element ref="tmk:HolderBag"/>
+<xsd:element ref="tmk:LicenseeChangeBag"/>
+<xsd:element ref="com:Representative" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

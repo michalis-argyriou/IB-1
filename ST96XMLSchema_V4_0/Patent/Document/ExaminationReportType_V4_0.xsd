@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="../EarliestPriorityDate.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:include schemaLocation="../SearchReportRevisionIndicator.xsd"/>
+<xsd:include schemaLocation="../PatentClassificationBag.xsd"/>
+<xsd:include schemaLocation="../AuthorityContact.xsd"/>
+<xsd:include schemaLocation="../LackingInventionUnity.xsd"/>
+<xsd:include schemaLocation="../EarlierOpinionConsideredIndicator.xsd"/>
+<xsd:include schemaLocation="../FinalReportEstablishmentDate.xsd"/>
+<xsd:include schemaLocation="../ExaminationStartDate.xsd"/>
+<xsd:include schemaLocation="../ExaminationCompletedDate.xsd"/>
+<xsd:include schemaLocation="../ExaminationReportBasis.xsd"/>
+<xsd:include schemaLocation="../ReplyDuePeriod.xsd"/>
+<xsd:include schemaLocation="../ReportNotEstablishedStatement.xsd"/>
+<xsd:include schemaLocation="../InventionComplianceStatement.xsd"/>
+<xsd:include schemaLocation="../CertainCitedDocumentBag.xsd"/>
+<xsd:include schemaLocation="../CitedNonWrittenDisclosureBag.xsd"/>
+<xsd:include schemaLocation="../ApplicationFormalityDefects.xsd"/>
+<xsd:include schemaLocation="../ApplicationClarityObservation.xsd"/>
+<xsd:include schemaLocation="../PageImage.xsd"/>
+<xsd:include schemaLocation="../DocumentURI.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/CorrespondenceAddressBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ExaminationRequestDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/MailDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/Signature.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>		
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/formVersion.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentFileName.xsd"/>
+<xsd:include schemaLocation="../reportCategory.xsd"/>
+<xsd:include schemaLocation="../examinationReportNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="ExaminationReportType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pat:PageImage" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:DocumentURI" maxOccurs="unbounded"/>
+			<xsd:sequence>
+				<xsd:element ref="com:CorrespondenceAddressBag" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicationIdentification"/>
+				<xsd:element ref="pat:EarliestPriorityDate" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicantBag"/>
+				<xsd:element ref="pat:EarlierOpinionConsideredIndicator"/>
+				<xsd:element ref="com:ExaminationRequestDate" minOccurs="0"/>
+				<xsd:element ref="pat:FinalReportEstablishmentDate" minOccurs="0"/>
+				<xsd:element ref="pat:PatentClassificationBag"/>
+				<xsd:element ref="com:Signature"/>
+				<xsd:element ref="pat:AuthorityContact" minOccurs="0"/>
+				<xsd:element ref="pat:ExaminationStartDate" minOccurs="0"/>
+				<xsd:element ref="pat:ExaminationCompletedDate"/>
+				<xsd:element ref="com:MailDate"/>
+				<xsd:element ref="pat:ExaminationReportBasis"/>
+				<xsd:element ref="pat:ReplyDuePeriod" minOccurs="0"/>
+				<xsd:element ref="pat:ReportNotEstablishedStatement" minOccurs="0"/>
+				<xsd:element ref="pat:LackingInventionUnity" minOccurs="0"/>
+				<xsd:element ref="pat:InventionComplianceStatement" minOccurs="0"/>
+				<xsd:element ref="pat:CertainCitedDocumentBag" minOccurs="0"/>
+				<xsd:element ref="pat:CitedNonWrittenDisclosureBag" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicationFormalityDefects" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicationClarityObservation" minOccurs="0"/>
+				<xsd:element ref="pat:SearchReportRevisionIndicator"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:formVersion"/>
+		<xsd:attribute ref="com:documentFileName"/>
+		<xsd:attribute ref="pat:reportCategory"/>
+		<xsd:attribute ref="pat:examinationReportNumber"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

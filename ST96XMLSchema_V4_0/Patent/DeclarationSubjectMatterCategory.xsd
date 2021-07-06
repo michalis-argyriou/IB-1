@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DeclarationSubjectMatterCategoryType.xsd"/>
+<xsd:element name="DeclarationSubjectMatterCategory" type="pat:DeclarationSubjectMatterCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>When it has been established that the subject matter of the international application falls into one of the exceptions set out in Rule 39, point 1. of Form PCT/ISA/203 (April 2005) is completed by selecting the exception.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

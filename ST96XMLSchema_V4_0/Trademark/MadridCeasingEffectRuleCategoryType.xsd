@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MadridCeasingEffectRuleCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Madrid Rule 22_1_A">
+				<xsd:annotation>
+					<xsd:documentation>Rule 22(1)(a) of Madrid Agreement</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Madrid Rule 22_1_C">
+				<xsd:annotation>
+					<xsd:documentation>Rule 22(1)(c) of Madrid Agreement</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>

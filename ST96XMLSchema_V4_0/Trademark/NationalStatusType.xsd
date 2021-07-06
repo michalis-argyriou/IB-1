@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClassNumberStatusCategory.xsd"/>
+<xsd:include schemaLocation="NationalStatusCategory.xsd"/>
+<xsd:include schemaLocation="NationalStatusCode.xsd"/>
+<xsd:include schemaLocation="NationalStatusDate.xsd"/>
+<xsd:include schemaLocation="NationalStatusInternalDescriptionText.xsd"/>
+<xsd:include schemaLocation="NationalStatusExternalDescriptionText.xsd"/>
+<xsd:complexType name="NationalStatusType">
+		<xsd:sequence>
+<xsd:element ref="tmk:ClassNumberStatusCategory" minOccurs="0"/>
+<xsd:element ref="tmk:NationalStatusCategory"/>
+<xsd:element ref="tmk:NationalStatusCode" minOccurs="0"/>
+<xsd:element ref="tmk:NationalStatusDate" minOccurs="0"/>
+<xsd:element ref="tmk:NationalStatusInternalDescriptionText" minOccurs="0"/>
+<xsd:element ref="tmk:NationalStatusExternalDescriptionText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ModificationPartIdentificationType.xsd"/>
+	<xsd:element name="ModificationPartIdentification" type="pat:ModificationPartIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Information of the modified INID code, page number or other text in order to identify what component of the patent document was modified</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

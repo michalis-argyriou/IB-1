@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ContactCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Collective Society">
+				<xsd:annotation>
+					<xsd:documentation>For example SOCAN, CMRRA, Access Copyright etc</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Publisher">
+				<xsd:annotation>
+					<xsd:documentation>A publisher of books etc</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Website">
+				<xsd:annotation>
+					<xsd:documentation>An online publication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Individual">
+				<xsd:annotation>
+					<xsd:documentation>A natural person</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Organization">
+				<xsd:annotation>
+					<xsd:documentation>A company or group</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Company">
+				<xsd:annotation>
+					<xsd:documentation>A company</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other Source">
+				<xsd:annotation>
+					<xsd:documentation>An alternative source consulted as part of the diligence search </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Producer">
+				<xsd:annotation>
+					<xsd:documentation>A producer of films etc</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

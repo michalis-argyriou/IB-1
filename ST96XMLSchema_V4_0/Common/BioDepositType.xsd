@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="BioDepositDepositary.xsd"/>
+<xsd:include schemaLocation="BiologicalAccessionNumber.xsd"/>
+<xsd:include schemaLocation="BioDepositDate.xsd"/>
+<xsd:include schemaLocation="BioDepositTermText.xsd"/>
+<xsd:include schemaLocation="BioDepositText.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="sequenceNumber.xsd"/>
+<xsd:include schemaLocation="sourceURI.xsd"/>
+<xsd:complexType name="BioDepositType">
+		<xsd:sequence>
+<xsd:element ref="com:BioDepositDepositary"/>
+<xsd:element ref="com:BiologicalAccessionNumber"/>
+<xsd:element ref="com:BioDepositDate" minOccurs="0"/>
+<xsd:element ref="com:BioDepositTermText" minOccurs="0"/>
+<xsd:element ref="com:BioDepositText" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+		<xsd:attribute ref="com:sourceURI"/>
+	</xsd:complexType>
+</xsd:schema>

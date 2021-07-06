@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" schemaLocation="../Trademark/GoodsServices.xsd"/>
+<xsd:include schemaLocation="ProductCategory.xsd"/>
+	<xsd:complexType name="ProductIndicationBagType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:GoodsServices" maxOccurs="unbounded"/>
+			<xsd:element ref="gin:ProductCategory" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

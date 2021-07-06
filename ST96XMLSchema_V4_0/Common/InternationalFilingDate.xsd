@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DateType.xsd"/>
+	<xsd:element name="InternationalFilingDate" type="com:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date assigned by the International Bureau that identifies when an international application meets certain criteria under the appropriate legislation for a filing date; for example, Hague Agreement (industrial designs), Patent Cooperation Treaty (patents) or Madrid Protocol (trademarks)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

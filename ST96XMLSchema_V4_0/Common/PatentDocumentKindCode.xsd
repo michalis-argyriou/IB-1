@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="PatentDocumentKindCode" type="xsd:token">
+		<xsd:annotation>
+			<xsd:documentation>Kind code of patent document defined in WIPO Standard ST.16. Refers to ST.9 INID Code 13.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

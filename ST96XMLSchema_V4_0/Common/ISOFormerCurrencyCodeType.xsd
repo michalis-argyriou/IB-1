@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ISOFormerCurrencyCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="CSD">
+				<xsd:annotation>
+					<xsd:documentation>Serbian Dinar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CYP">
+				<xsd:annotation>
+					<xsd:documentation>Cyprus Pound</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EEK">
+				<xsd:annotation>
+					<xsd:documentation>Kroon</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GHC">
+				<xsd:annotation>
+					<xsd:documentation>Cedi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LTL">
+				<xsd:annotation>
+					<xsd:documentation>Lithuanian Litas</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LVL">
+				<xsd:annotation>
+					<xsd:documentation>Latvian Lats</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MTL">
+				<xsd:annotation>
+					<xsd:documentation>Maltese Lira</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ROL">
+				<xsd:annotation>
+					<xsd:documentation>Leu</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SDD">
+				<xsd:annotation>
+					<xsd:documentation>Sudanese Dinar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SIT">
+				<xsd:annotation>
+					<xsd:documentation>Tolar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SKK">
+				<xsd:annotation>
+					<xsd:documentation>Slovak Koruna</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="USS">
+				<xsd:annotation>
+					<xsd:documentation>US Dollar (Same day)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VEF">
+				<xsd:annotation>
+					<xsd:documentation>Bolivar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

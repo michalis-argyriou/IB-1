@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:element name="ChangeDescriptionText" type="xsd:string">
+		<xsd:annotation>
+			<xsd:appinfo>PII</xsd:appinfo>
+			<xsd:documentation>Description of the nature of the change to a data element within the registration that is being republished</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

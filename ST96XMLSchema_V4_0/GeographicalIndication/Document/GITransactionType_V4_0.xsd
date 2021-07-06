@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/TransactionHeader.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>
+<xsd:include schemaLocation="GITransactionBody_V4_0.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="GITransactionType">
+		<xsd:sequence>
+			<xsd:element ref="com:TransactionHeader" minOccurs="0"/>
+			<xsd:element ref="gin:GITransactionBody" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PageImage.xsd"/>
+<xsd:include schemaLocation="DocumentURI.xsd"/>
+<xsd:include schemaLocation="InventionTitle.xsd"/>
+<xsd:include schemaLocation="TechnicalField.xsd"/>
+<xsd:include schemaLocation="BackgroundArt.xsd"/>
+<xsd:include schemaLocation="Disclosure.xsd"/>
+<xsd:include schemaLocation="InventionSummary.xsd"/>
+<xsd:include schemaLocation="DrawingDescription.xsd"/>
+<xsd:include schemaLocation="EmbodimentDescription.xsd"/>
+<xsd:include schemaLocation="BestMode.xsd"/>
+<xsd:include schemaLocation="InventionMode.xsd"/>
+<xsd:include schemaLocation="IndustrialApplicability.xsd"/>
+<xsd:include schemaLocation="ReferenceSignBag.xsd"/>
+<xsd:include schemaLocation="DepositedBiologicalMaterialReference.xsd"/>
+<xsd:include schemaLocation="SequenceListText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CitationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Heading.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/P.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/languageCode.xsd"/>
+	<xsd:complexType name="DescriptionType">
+		<xsd:choice>
+			<xsd:element ref="pat:PageImage" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:DocumentURI" maxOccurs="unbounded"/>
+			<xsd:sequence>
+				<xsd:element ref="pat:InventionTitle" minOccurs="0"/>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="pat:TechnicalField"/>
+					<xsd:element ref="pat:BackgroundArt"/>
+					<xsd:element ref="pat:Disclosure"/>
+					<xsd:element ref="pat:InventionSummary"/>
+					<xsd:element ref="pat:DrawingDescription"/>
+					<xsd:element ref="pat:EmbodimentDescription"/>
+					<xsd:element ref="pat:BestMode"/>
+					<xsd:element ref="pat:InventionMode"/>
+					<xsd:element ref="pat:IndustrialApplicability"/>
+					<xsd:element ref="pat:ReferenceSignBag"/>
+					<xsd:element ref="pat:DepositedBiologicalMaterialReference"/>
+					<xsd:element ref="pat:SequenceListText"/>
+					<xsd:element ref="com:CitationBag"/>
+					<xsd:element ref="com:Heading"/>
+					<xsd:element ref="com:P"/>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

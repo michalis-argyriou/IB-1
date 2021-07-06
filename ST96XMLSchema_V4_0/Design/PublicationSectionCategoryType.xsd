@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="PublicationSectionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Applications">
+				<xsd:annotation>
+					<xsd:documentation>Applications</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Amendments to applications">
+				<xsd:annotation>
+					<xsd:documentation>Amendments to applications</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction of errors on applications">
+				<xsd:annotation>
+					<xsd:documentation>Correction of errors on applications</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdrawals">
+				<xsd:annotation>
+					<xsd:documentation>Withdrawals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitations">
+				<xsd:annotation>
+					<xsd:documentation>Limitations</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total refusals">
+				<xsd:annotation>
+					<xsd:documentation>Total refusals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial refusals">
+				<xsd:annotation>
+					<xsd:documentation>Partial refusals</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registrations with no amendments">
+				<xsd:annotation>
+					<xsd:documentation>Registrations with no amendments</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registrations with amendments">
+				<xsd:annotation>
+					<xsd:documentation>Registrations with amendments</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction of errors on registrations">
+				<xsd:annotation>
+					<xsd:documentation>Registrations publishing to correct errors</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total transfers">
+				<xsd:annotation>
+					<xsd:documentation>Total transfers</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial transfers">
+				<xsd:annotation>
+					<xsd:documentation>Partial transfers</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change of name and address of proprietor">
+				<xsd:annotation>
+					<xsd:documentation>Change of name and address of proprietor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change of name and professional address of representative">
+				<xsd:annotation>
+					<xsd:documentation>Change of name and professional address of representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Replacement of representative">
+				<xsd:annotation>
+					<xsd:documentation>Replacement of representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appointment of a new representative">
+				<xsd:annotation>
+					<xsd:documentation>Appointment of a new representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Deletion of the representative">
+				<xsd:annotation>
+					<xsd:documentation>Deletion of the representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total surrender of designs">
+				<xsd:annotation>
+					<xsd:documentation>Total surrender of designs</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial surrender of designs">
+				<xsd:annotation>
+					<xsd:documentation>Partial surrender of designs</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		 <xsd:enumeration value="Registrations with restrictions">
+					<xsd:annotation>
+							<xsd:documentation>Registrations that are publishing again with restrictions</xsd:documentation>
+					</xsd:annotation>
+				</xsd:enumeration>
+		 <xsd:enumeration value="Registrations no longer in effect">
+					<xsd:annotation>
+				<xsd:documentation>Trademark registrations publishing that are being cancelled and are no longer in effect</xsd:documentation>
+					</xsd:annotation>
+				</xsd:enumeration>
+		 <xsd:enumeration value="Registrations renewed">
+					<xsd:annotation>
+							<xsd:documentation>Trademark registrations that are being renewed</xsd:documentation>
+					</xsd:annotation>
+				</xsd:enumeration>
+		 <xsd:enumeration value="Applications publishing for opposition">
+					<xsd:annotation>
+							<xsd:documentation>Trademark applications that are publishing for opposition</xsd:documentation>
+					</xsd:annotation>
+				</xsd:enumeration>
+		 <xsd:enumeration value="Registrations publishing">
+					<xsd:annotation>
+			<xsd:documentation>Trademark registrations that are publishing for the first time</xsd:documentation>
+							</xsd:annotation>
+		</xsd:enumeration>
+		<xsd:enumeration value="Registration republished">
+					<xsd:annotation>
+			<xsd:documentation>Trademark registrations that are republishing for reasons other than correction or amendment</xsd:documentation>
+					 </xsd:annotation>
+	</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

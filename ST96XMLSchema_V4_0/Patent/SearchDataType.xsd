@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentClassificationBag.xsd"/>
+<xsd:include schemaLocation="SearchFieldBag.xsd"/>
+<xsd:include schemaLocation="ReferenceCitationBag.xsd"/>
+<xsd:include schemaLocation="CitedPatentFamilyBag.xsd"/>
+<xsd:include schemaLocation="SupplementarySearchScope.xsd"/>
+<xsd:include schemaLocation="NoSearchReportDeclaration.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="SearchDataType">
+		<xsd:choice>
+			<xsd:sequence>
+<xsd:element ref="pat:PatentClassificationBag"/>
+<xsd:element ref="pat:SearchFieldBag"/>
+<xsd:element ref="pat:ReferenceCitationBag" minOccurs="0"/>
+<xsd:element ref="pat:CitedPatentFamilyBag" maxOccurs="unbounded" minOccurs="0"/>
+<xsd:element ref="pat:SupplementarySearchScope" minOccurs="0"/>
+			</xsd:sequence>
+<xsd:element ref="pat:NoSearchReportDeclaration"/>
+		</xsd:choice>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

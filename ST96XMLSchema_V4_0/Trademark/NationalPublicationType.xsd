@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PublicationStatusCategory.xsd"/>
+<xsd:include schemaLocation="PublicationCategoryText.xsd"/>
+<xsd:include schemaLocation="PublicationActionDate.xsd"/>
+<xsd:include schemaLocation="ProposedRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="PublicationNoticeDate.xsd"/>
+<xsd:include schemaLocation="RegistrationChangeBag.xsd"/>
+	<xsd:complexType name="NationalPublicationType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:PublicationStatusCategory"/>
+			<xsd:element ref="tmk:PublicationCategoryText" minOccurs="0"/>
+			<xsd:element ref="tmk:PublicationActionDate" minOccurs="0"/>
+			<xsd:element ref="tmk:ProposedRegistrationNumber" minOccurs="0"/>
+			<xsd:element ref="tmk:PublicationNoticeDate" minOccurs="0"/>
+			<xsd:element ref="tmk:RegistrationChangeBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

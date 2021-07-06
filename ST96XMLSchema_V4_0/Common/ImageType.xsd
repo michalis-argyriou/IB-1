@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ImageFormatCategory.xsd"/>
+<xsd:include schemaLocation="FileName.xsd"/>
+<xsd:include schemaLocation="HeightMeasure.xsd"/>
+<xsd:include schemaLocation="WidthMeasure.xsd"/>
+<xsd:include schemaLocation="Alt.xsd"/>
+<xsd:include schemaLocation="HorizontalResolutionQuantity.xsd"/>
+<xsd:include schemaLocation="VerticalResolutionQuantity.xsd"/>
+<xsd:include schemaLocation="ImageResolutionQuantity.xsd"/>
+<xsd:include schemaLocation="BitDepthQuantity.xsd"/>
+<xsd:include schemaLocation="ColourIndicator.xsd"/>
+<xsd:include schemaLocation="ColourModeCategory.xsd"/>
+<xsd:include schemaLocation="orientationCategory.xsd"/>
+<xsd:include schemaLocation="Caption.xsd"/>
+<xsd:include schemaLocation="ImageStatusCategory.xsd"/>
+<xsd:include schemaLocation="ImageRenditionCategory.xsd"/>
+<xsd:include schemaLocation="imageContentCategory.xsd"/>
+<xsd:include schemaLocation="imageWrappingStyleCategory.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="fileLocationURI.xsd"/>
+	<xsd:complexType name="ImageType">
+		<xsd:sequence>
+			<xsd:element ref="com:ImageFormatCategory"/>
+			<xsd:element ref="com:FileName"/>
+			<xsd:element ref="com:HeightMeasure" minOccurs="0"/>
+			<xsd:element ref="com:WidthMeasure" minOccurs="0"/>
+			<xsd:element ref="com:Alt" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+				<xsd:sequence>
+				<xsd:element ref="com:HorizontalResolutionQuantity"/>
+				<xsd:element ref="com:VerticalResolutionQuantity"/>
+					</xsd:sequence>
+				<xsd:element ref="com:ImageResolutionQuantity"/>
+			</xsd:choice>
+			<xsd:element ref="com:BitDepthQuantity" minOccurs="0"/>
+			<xsd:element ref="com:ColourIndicator" minOccurs="0"/>
+			<xsd:element ref="com:ColourModeCategory" minOccurs="0"/>
+			<xsd:element ref="com:Caption" minOccurs="0"/>
+			<xsd:element ref="com:ImageStatusCategory" minOccurs="0"/>
+			<xsd:element ref="com:ImageRenditionCategory" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/> 
+		<xsd:attribute ref="com:fileLocationURI"/>
+		<xsd:attribute ref="com:imageContentCategory"/>
+		<xsd:attribute ref="com:orientationCategory"/>
+		<xsd:attribute ref="com:imageWrappingStyleCategory"/>
+
+	</xsd:complexType>
+</xsd:schema>

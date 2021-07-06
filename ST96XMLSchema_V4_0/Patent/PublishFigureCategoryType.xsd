@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="PublishFigureCategoryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="As suggested by applicant">
+				<xsd:annotation>
+					<xsd:documentation>The figure of the drawings to be published with the abstract as suggested by the applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="As suggested by Authority due to no suggestion by applicant">
+				<xsd:annotation>
+					<xsd:documentation>The figure of the drawings to be published as selected by this Authority, because the applicant failed to suggest a figure</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="As suggested by Authority for better characterization of the invention">
+				<xsd:annotation>
+<xsd:documentation>The figure of the drawings to be published with the abstract as selected by this Authority, because this figure better characterizes the invention.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema> 
+ 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LORDataType.xsd"/>
+<xsd:element name="LORData" type="pat:LORDataType">
+		<xsd:annotation>
+			<xsd:documentation>Data concerns the decision by the proprietor(s) of a patent to make their patent available to be licensed to anyone requesting a licence.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MadridIBTransactionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Abandonment">
+				<xsd:annotation>
+					<xsd:documentation>Abandonment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Acknowledgement">
+				<xsd:annotation>
+					<xsd:documentation>Acknowledgement of receipt of data from the office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Designation">
+				<xsd:annotation>
+					<xsd:documentation>Designation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction">
+				<xsd:annotation>
+					<xsd:documentation>Correction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration creation">
+				<xsd:annotation>
+					<xsd:documentation>International registration creation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Designation termination">
+				<xsd:annotation>
+					<xsd:documentation>Designation termination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Irregularity notification">
+				<xsd:annotation>
+					<xsd:documentation>Irregularity notification</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Basic registration application change">
+				<xsd:annotation>
+					<xsd:documentation>Basic registration application change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Holder representative change">
+				<xsd:annotation>
+					<xsd:documentation>Holder representative change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial ownership change">
+				<xsd:annotation>
+					<xsd:documentation>Partial change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+						<xsd:enumeration value="Division">
+				<xsd:annotation>
+					<xsd:documentation>Division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Merger">
+				<xsd:annotation>
+					<xsd:documentation>Merger</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protection restriction">
+				<xsd:annotation>
+					<xsd:documentation>Protection restriction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Completed processing">
+				<xsd:annotation>
+					<xsd:documentation>Completed processing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>International registration renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Record licence">
+				<xsd:annotation>
+					<xsd:documentation>Record licence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licensee record change">
+				<xsd:annotation>
+					<xsd:documentation>Licensee record change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part payment">
+				<xsd:annotation>
+					<xsd:documentation>Second part payment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

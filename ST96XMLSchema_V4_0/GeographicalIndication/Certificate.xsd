@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CertificateType.xsd"/>
+
+	<xsd:element name="Certificate" type="gin:CertificateType">
+		<xsd:annotation>
+			<xsd:documentation>Document issued by an authority, which confirms the characteristic qualities of the geographical environment, including natural or human factors or both.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

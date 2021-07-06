@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClaimText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/B.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/I.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/O.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/U.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/S.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Sup.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Sub.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Image.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SmallCapital.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Br.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/UL.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OL.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Pre.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DL.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Math.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ChemicalFormulae.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Table.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PatentCitation.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NPLCitation.xsd"/>
+<xsd:include schemaLocation="ClaimReference.xsd"/>
+<xsd:include schemaLocation="ApplicantProvidedClaimStatusText.xsd"/>
+<xsd:include schemaLocation="ApplicantProvidedClaimNumberText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FigureReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CrossReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/BioDeposit.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Ins.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Del.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OCRConfidenceData.xsd"/>
+	<xsd:complexType name="ClaimTextType" mixed="true">	
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<xsd:element ref="pat:ClaimText"/>
+			<xsd:element ref="com:B"/>
+			<xsd:element ref="com:I"/>
+			<xsd:element ref="com:O"/>
+			<xsd:element ref="com:U"/>
+			<xsd:element ref="com:S"/>
+			<xsd:element ref="com:Sup"/>
+			<xsd:element ref="com:Sub"/>
+			<xsd:element ref="com:Image"/>
+			<xsd:element ref="com:SmallCapital"/>
+			<xsd:element ref="com:Br"/>
+			<xsd:element ref="com:UL"/>
+			<xsd:element ref="com:OL"/>
+			<xsd:element ref="com:Pre"/>
+			<xsd:element ref="com:DL"/>
+			<xsd:element ref="com:Math"/>
+			<xsd:element ref="com:ChemicalFormulae"/>
+			<xsd:element ref="com:Table"/>
+			<xsd:element ref="com:PatentCitation"/>
+			<xsd:element ref="com:NPLCitation"/>
+			<xsd:element ref="pat:ClaimReference"/>
+			<xsd:element ref="com:FigureReference"/>
+			<xsd:element ref="com:CrossReference"/>
+			<xsd:element ref="com:BioDeposit"/>
+			<xsd:element ref="pat:ApplicantProvidedClaimNumberText"/>
+			<xsd:element ref="pat:ApplicantProvidedClaimStatusText"/>
+			<xsd:element ref="com:Ins"/>
+			<xsd:element ref="com:Del"/>
+			<xsd:element ref="com:OCRConfidenceData"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

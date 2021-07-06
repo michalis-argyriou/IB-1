@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="PrincipalDesignCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Current application">
+				<xsd:annotation>
+					<xsd:documentation>Current application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International application">
+				<xsd:annotation>
+					<xsd:documentation>International application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration">
+				<xsd:annotation>
+					<xsd:documentation>International registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National or regional application">
+				<xsd:annotation>
+					<xsd:documentation>National or regional application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National or regional registration">
+				<xsd:annotation>
+					<xsd:documentation>National or regional registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

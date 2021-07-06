@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ConversionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Utility model to patent">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a utility model application to a patent application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design to patent">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a design application to a patent application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patent to utility model">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a patent application to a utility model application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design to utility model">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a design application to a utility model application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patent to design">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a patent application to a design application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Utility model to design">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a utility model application to a design application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PCT to national patent">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a PCT application to a national patent application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Regional patent to national patent">
+				<xsd:annotation>
+					<xsd:documentation>Conversion from a regional patent application to a national patent application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

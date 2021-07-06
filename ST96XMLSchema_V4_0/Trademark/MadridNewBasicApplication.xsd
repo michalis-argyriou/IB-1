@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridNewBasicApplicationType.xsd"/>
+<xsd:element name="MadridNewBasicApplication" type="tmk:MadridNewBasicApplicationType">
+			<xsd:annotation>
+			<xsd:documentation>Division or merger of a basic application or registration within 5 years. Office of Origin.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

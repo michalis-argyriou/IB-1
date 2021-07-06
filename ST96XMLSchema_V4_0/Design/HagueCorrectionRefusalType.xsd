@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRecordingDate.xsd"/>
+<xsd:include schemaLocation="CorrectedRecordIdentifier.xsd"/>
+<xsd:include schemaLocation="HagueBulletinReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotifyingOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:include schemaLocation="AffectedDesign.xsd"/>
+<xsd:complexType name="HagueCorrectionRefusalType">
+		<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:InternationalRecordingDate"/>
+<xsd:element ref="dgn:CorrectedRecordIdentifier"/>
+<xsd:element ref="dgn:HagueBulletinReference"/>
+<xsd:element ref="com:RecordNotifyingOfficeCode"/>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="dgn:AffectedDesign"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

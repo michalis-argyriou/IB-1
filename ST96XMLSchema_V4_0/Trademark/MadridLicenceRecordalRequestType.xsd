@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NotificationLanguage.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumberBag.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Representative.xsd"/>
+<xsd:include schemaLocation="AllContractingPartiesIndicator.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryBag.xsd"/>
+<xsd:include schemaLocation="AllGoodsServicesIndicator.xsd"/>
+<xsd:include schemaLocation="GoodsServicesBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationStartDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationEndDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+		<xsd:complexType name="MadridLicenceRecordalRequestType">
+			<xsd:sequence>
+				<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+				<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+				<xsd:element ref="com:NotificationLanguage" minOccurs="0"/>
+				<xsd:element ref="com:InternationalRegistrationNumberBag"/>
+				<xsd:element ref="tmk:HolderBag"/>
+				<xsd:element ref="com:Representative" minOccurs="0"/>
+				<xsd:choice>
+					<xsd:element ref="tmk:AllContractingPartiesIndicator"/>
+					<xsd:element ref="tmk:DesignatedCountryBag"/>
+				</xsd:choice>
+				<xsd:choice>
+					<xsd:element ref="tmk:AllGoodsServicesIndicator"/>
+					<xsd:element ref="tmk:GoodsServicesBag"/>
+				</xsd:choice>
+				<xsd:element ref="com:LicenceCategory" minOccurs="0"/>
+				<xsd:element ref="com:PeriodLimitationText" minOccurs="0"/>
+				<xsd:element ref="com:PeriodLimitationStartDate" minOccurs="0"/>
+				<xsd:element ref="com:PeriodLimitationEndDate" minOccurs="0"/>
+				<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+				<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+				<xsd:element ref="com:RecordNotificationDate" minOccurs="0"/>
+				<xsd:element ref="com:PaymentBag"/>
+				<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+				<xsd:element ref="com:CommentText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>	
+</xsd:schema>

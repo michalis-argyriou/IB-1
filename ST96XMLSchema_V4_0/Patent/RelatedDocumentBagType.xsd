@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Addition.xsd"/>
+<xsd:include schemaLocation="Division.xsd"/>
+<xsd:include schemaLocation="Continuation.xsd"/>
+<xsd:include schemaLocation="Conversion.xsd"/>
+<xsd:include schemaLocation="EntitlementApplication.xsd"/>
+<xsd:include schemaLocation="PartialContinuation.xsd"/>
+<xsd:include schemaLocation="ContinuingReissue.xsd"/>
+<xsd:include schemaLocation="Reissue.xsd"/>
+<xsd:include schemaLocation="DivisionalReissue.xsd"/>
+<xsd:include schemaLocation="Reexamination.xsd"/>
+<xsd:include schemaLocation="ReexaminationReissueMerger.xsd"/>
+<xsd:include schemaLocation="Substitution.xsd"/>
+<xsd:include schemaLocation="ProvisionalApplication.xsd"/>
+<xsd:include schemaLocation="UtilityModelBasis.xsd"/>
+<xsd:include schemaLocation="Correction.xsd"/>
+<xsd:include schemaLocation="RelatedPublication.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="RelatedDocumentBagType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="pat:Addition"/>
+<xsd:element ref="pat:Division"/>
+<xsd:element ref="pat:Continuation"/>
+<xsd:element ref="pat:Conversion"/>
+<xsd:element ref="pat:EntitlementApplication"/>
+<xsd:element ref="pat:PartialContinuation"/>
+<xsd:element ref="pat:ContinuingReissue"/>
+<xsd:element ref="pat:Reissue"/>
+<xsd:element ref="pat:DivisionalReissue"/>
+<xsd:element ref="pat:Reexamination"/>
+<xsd:element ref="pat:ReexaminationReissueMerger"/>
+<xsd:element ref="pat:Substitution"/>
+<xsd:element ref="pat:ProvisionalApplication"/>
+<xsd:element ref="pat:UtilityModelBasis"/>
+<xsd:element ref="pat:Correction"/>
+<xsd:element ref="pat:RelatedPublication"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

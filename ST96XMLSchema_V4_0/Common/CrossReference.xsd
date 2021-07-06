@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CrossReferenceType.xsd"/>
+	<xsd:element name="CrossReference" type="com:CrossReferenceType">
+		<xsd:annotation>
+			<xsd:documentation>Cross Reference is used to refer to another part of the current document or refer to something else that is outside of the current document. For referring to ‘figure’ which is in the same document, com:FigureReference should be used. For referring to ‘claim’ within ‘claim text’, ClaimReference should be used.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

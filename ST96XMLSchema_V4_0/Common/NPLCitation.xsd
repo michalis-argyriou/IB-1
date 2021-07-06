@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NPLCitationType.xsd"/>
+<xsd:element name="NPLCitation" type="com:NPLCitationType">
+		<xsd:annotation>
+			<xsd:documentation>Citation of Non-Patent Literature (NPL)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

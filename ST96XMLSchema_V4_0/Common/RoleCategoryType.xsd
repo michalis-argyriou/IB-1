@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="RoleCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Agent">
+				<xsd:annotation>
+					<xsd:documentation>Agent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal examiner">
+				<xsd:annotation>
+					<xsd:documentation>Appeal examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Applicant">
+				<xsd:annotation>
+					<xsd:documentation>Applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Assignee">
+				<xsd:annotation>
+					<xsd:documentation>Assignee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Assistant examiner">
+				<xsd:annotation>
+					<xsd:documentation>Assignee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Attorney">
+				<xsd:annotation>
+					<xsd:documentation>Attorney</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Author">
+				<xsd:annotation>
+					<xsd:documentation>Author</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Authorized officer">
+				<xsd:annotation>
+					<xsd:documentation>Authorized officer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correspondent">
+				<xsd:annotation>
+					<xsd:documentation>Correspondent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Creator">
+				<xsd:annotation>
+					<xsd:documentation>Creator</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Designer">
+				<xsd:annotation>
+					<xsd:documentation>Designer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Employee">
+				<xsd:annotation>
+					<xsd:documentation>Employee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Examiner">
+				<xsd:annotation>
+					<xsd:documentation>Examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Formality examiner">
+				<xsd:annotation>
+					<xsd:documentation>Formality examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Holder">
+				<xsd:annotation>
+					<xsd:documentation>Holder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IP office">
+				<xsd:annotation>
+					<xsd:documentation>IP office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Judge">
+				<xsd:annotation>
+					<xsd:documentation>Judge</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Lawyer">
+				<xsd:annotation>
+					<xsd:documentation>Lawyer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Legal practitioner">
+				<xsd:annotation>
+					<xsd:documentation>Legal practitioner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licensee">
+				<xsd:annotation>
+					<xsd:documentation>Licensee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mortgagee">
+				<xsd:annotation>
+					<xsd:documentation>Mortgagee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opponent">
+				<xsd:annotation>
+					<xsd:documentation>Opponent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Owner">
+				<xsd:annotation>
+					<xsd:documentation>Owner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Primary examiner">
+				<xsd:annotation>
+					<xsd:documentation>Primary examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registrant">
+				<xsd:annotation>
+					<xsd:documentation>Registrant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative">
+				<xsd:annotation>
+					<xsd:documentation>Representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Substantive examiner">
+				<xsd:annotation>
+					<xsd:documentation>Substantive examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Third party requestor">
+				<xsd:annotation>
+					<xsd:documentation>Third party requestor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transferee">
+				<xsd:annotation>
+					<xsd:documentation>Transferee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transferor">
+				<xsd:annotation>
+					<xsd:documentation>Transferor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Translator">
+				<xsd:annotation>
+					<xsd:documentation>Translator</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trustee">
+				<xsd:annotation>
+					<xsd:documentation>Trustee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Breeder">
+				<xsd:annotation>
+					<xsd:documentation>Breeder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

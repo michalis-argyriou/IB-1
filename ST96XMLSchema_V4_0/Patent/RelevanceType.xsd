@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CitationCategoryCode.xsd"/>
+<xsd:include schemaLocation="RelatedClaimBag.xsd"/>
+<xsd:complexType name="RelevanceType">
+		<xsd:sequence>
+<xsd:element ref="pat:CitationCategoryCode" maxOccurs="unbounded"/>
+<xsd:element ref="pat:RelatedClaimBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../SPCNumber.xsd"/>
+<xsd:include schemaLocation="../RelatedSPCNumber.xsd"/>
+<xsd:include schemaLocation="../SPCFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ProductDescriptionText.xsd"/>
+<xsd:include schemaLocation="../ProductSearchTerm.xsd"/>
+<xsd:include schemaLocation="../PatentNumber.xsd"/>
+<xsd:include schemaLocation="../InventionTitle.xsd"/>
+<xsd:include schemaLocation="../Claims.xsd"/>
+<xsd:include schemaLocation="../GrantDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ExaminationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/FeeNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/FeeNotificationIssuedIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PaymentDueDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PaymentReminderDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PaymentDate.xsd"/>
+<xsd:include schemaLocation="../EnteredIntoForceDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReasonNotInForceCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/NotInForceDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ExpiryDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/LatestExpiryDate.xsd"/>
+<xsd:include schemaLocation="../SPCTermExtensionBag.xsd"/>
+<xsd:include schemaLocation="../SPCAuthorizationBag.xsd"/>
+<xsd:include schemaLocation="../SPCCategory.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/Representative.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="SPCBibliographicDataType">
+		<xsd:sequence>
+			<xsd:element ref="pat:SPCNumber"/>
+			<xsd:element ref="pat:RelatedSPCNumber" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:SPCFilingDate"/>
+			<xsd:element ref="com:ProductDescriptionText" minOccurs="0"/>
+			<xsd:element ref="pat:ProductSearchTerm" minOccurs="0"/>
+			<xsd:element ref="pat:PatentNumber"/>
+			<xsd:element ref="pat:InventionTitle" minOccurs="0"/>
+			<xsd:element ref="pat:Claims" minOccurs="0"/>
+			<xsd:element ref="pat:GrantDate" minOccurs="0"/>
+			<xsd:element ref="com:ExaminationDate" minOccurs="0"/>
+			<xsd:element ref="com:FeeNotificationDate" minOccurs="0"/>
+			<xsd:element ref="com:FeeNotificationIssuedIndicator" minOccurs="0"/>
+			<xsd:element ref="com:PaymentDueDate" minOccurs="0"/>
+			<xsd:element ref="com:PaymentReminderDate" minOccurs="0"/>
+			<xsd:element ref="com:PaymentDate" minOccurs="0"/>
+			<xsd:element ref="pat:EnteredIntoForceDate" minOccurs="0"/>
+			<xsd:element ref="com:ReasonNotInForceCategory" minOccurs="0"/>
+			<xsd:element ref="com:NotInForceDate" minOccurs="0"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="com:LatestExpiryDate" minOccurs="0"/>
+			<xsd:element ref="pat:SPCTermExtensionBag" minOccurs="0"/>
+			<xsd:element ref="pat:SPCAuthorizationBag" minOccurs="0"/>
+			<xsd:element ref="pat:SPCCategory" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicantBag" minOccurs="0"/>
+			<xsd:element ref="com:Representative" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

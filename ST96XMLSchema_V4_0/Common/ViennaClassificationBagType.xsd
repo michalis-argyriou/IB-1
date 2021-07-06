@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ViennaClassificationEdition.xsd"/>
+<xsd:include schemaLocation="ViennaClassificationDate.xsd"/>
+<xsd:include schemaLocation="ViennaClassification.xsd"/>
+<xsd:include schemaLocation="ViennaClassificationText.xsd"/>
+<xsd:complexType name="ViennaClassificationBagType">
+		<xsd:annotation>
+			<xsd:documentation>Figurative element classification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+<xsd:element ref="com:ViennaClassificationEdition" minOccurs="0"/>
+<xsd:element ref="com:ViennaClassificationDate" minOccurs="0"/>
+<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:ViennaClassification"/>
+<xsd:element ref="com:ViennaClassificationText"/>
+</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

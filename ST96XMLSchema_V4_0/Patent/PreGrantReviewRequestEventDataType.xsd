@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveCountryBag.xsd"/>
+<xsd:include schemaLocation="GazetteNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AppellateDecision.xsd"/>
+<xsd:include schemaLocation="PartyBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionGroundsText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionExtentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDocumentBag.xsd"/>
+<xsd:complexType name="PreGrantReviewRequestEventDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:EffectiveCountryBag"/>
+<xsd:element ref="pat:GazetteNumber"/>
+<xsd:element ref="com:CommentText"/>
+<xsd:element ref="com:AppellateDecision"/>
+<xsd:element ref="pat:PartyBag"/>
+<xsd:element ref="com:RepresentativeBag"/>
+<xsd:element ref="com:OppositionDate"/>
+<xsd:element ref="com:OppositionReference"/>
+<xsd:element ref="com:OppositionLanguageCode"/>
+<xsd:element ref="com:OppositionGroundsText"/>
+<xsd:element ref="com:OppositionExtentText"/>
+<xsd:element ref="com:OppositionDocumentBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

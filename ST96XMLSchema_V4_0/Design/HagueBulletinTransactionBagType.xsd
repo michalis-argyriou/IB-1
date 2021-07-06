@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueRegistrationBag.xsd"/>
+<xsd:include schemaLocation="HagueRenewalBag.xsd"/>
+<xsd:include schemaLocation="HagueExpirationBag.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeRefusalBag.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeRefusalWithdrawalBag.xsd"/>
+<xsd:include schemaLocation="HagueMergerBag.xsd"/>
+<xsd:include schemaLocation="HagueHolderNameAddressChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueCreatorNameAddressChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueRenunciationBag.xsd"/>
+<xsd:include schemaLocation="HagueLimitationBag.xsd"/>
+<xsd:include schemaLocation="HagueRefusalBag.xsd"/>
+<xsd:include schemaLocation="HagueRefusalWithdrawalBag.xsd"/>
+<xsd:include schemaLocation="HagueGrantProtectionBag.xsd"/>
+<xsd:include schemaLocation="HagueInvalidationBag.xsd"/>
+<xsd:include schemaLocation="HagueCancellationNonPaymentBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionRefusalBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionRefusalWithdrawalBag.xsd"/>
+<xsd:complexType name="HagueBulletinTransactionBagType">
+		<xsd:choice maxOccurs="19">
+<xsd:element ref="dgn:HagueRegistrationBag"/>
+<xsd:element ref="dgn:HagueRenewalBag"/>
+<xsd:element ref="dgn:HagueExpirationBag"/>
+<xsd:element ref="dgn:HagueOwnershipChangeBag"/>
+<xsd:element ref="dgn:HagueOwnershipChangeRefusalBag"/>
+<xsd:element ref="dgn:HagueOwnershipChangeRefusalWithdrawalBag"/>
+<xsd:element ref="dgn:HagueMergerBag"/>
+<xsd:element ref="dgn:HagueHolderNameAddressChangeBag"/>
+<xsd:element ref="dgn:HagueCreatorNameAddressChangeBag"/>
+<xsd:element ref="dgn:HagueRenunciationBag"/>
+<xsd:element ref="dgn:HagueLimitationBag"/>
+<xsd:element ref="dgn:HagueRefusalBag"/>
+<xsd:element ref="dgn:HagueRefusalWithdrawalBag"/>
+<xsd:element ref="dgn:HagueGrantProtectionBag"/>
+<xsd:element ref="dgn:HagueInvalidationBag"/>
+<xsd:element ref="dgn:HagueCancellationNonPaymentBag"/>
+<xsd:element ref="dgn:HagueCorrectionBag"/>
+<xsd:element ref="dgn:HagueCorrectionRefusalBag"/>
+<xsd:element ref="dgn:HagueCorrectionRefusalWithdrawalBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

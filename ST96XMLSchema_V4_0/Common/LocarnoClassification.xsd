@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LocarnoClassificationType.xsd"/>
+	<xsd:element name="LocarnoClassification" type="com:LocarnoClassificationType">
+		<xsd:annotation>
+			<xsd:documentation>The Locarno Classification is the international classification used for industrial designs. It is used for design patents only. Formerly it was included in IPC main classification. The Locarno Classification (LOC) is formatted as fixed-length records as described here: Positions 1-2; (2 numeric, right justified, leading zeros); positions 3-4, (2 numeric, right justified, leading zeros).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

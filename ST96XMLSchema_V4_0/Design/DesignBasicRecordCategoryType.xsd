@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="DesignBasicRecordCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Registration">
+				<xsd:annotation>
+					<xsd:documentation>Registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protection granted">
+				<xsd:annotation>
+					<xsd:documentation>Protection granted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Judicial action">
+				<xsd:annotation>
+					<xsd:documentation>Judicial action</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renunciation">
+				<xsd:annotation>
+					<xsd:documentation>Renunciation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transfer refusal">
+				<xsd:annotation>
+					<xsd:documentation>Transfer refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative appointment">
+				<xsd:annotation>
+					<xsd:documentation>Representative appointment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Appeal withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Total invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Partial invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Total cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Partial cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total refusal">
+				<xsd:annotation>
+					<xsd:documentation>Total refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial refusal">
+				<xsd:annotation>
+					<xsd:documentation>Partial refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final total refusal">
+				<xsd:annotation>
+					<xsd:documentation>Final total refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final confirmation refusal">
+				<xsd:annotation>
+					<xsd:documentation>Final confirmation refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final other decision">
+				<xsd:annotation>
+					<xsd:documentation>Final other decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Complementary renewal">
+				<xsd:annotation>
+					<xsd:documentation>Complementary renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal certain parties">
+				<xsd:annotation>
+					<xsd:documentation>Renewal certain parties</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Non renewal">
+				<xsd:annotation>
+					<xsd:documentation>Non renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction">
+				<xsd:annotation>
+					<xsd:documentation>Correction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

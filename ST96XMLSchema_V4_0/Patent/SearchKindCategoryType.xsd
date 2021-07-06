@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="SearchKindCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="International search">
+				<xsd:annotation>
+					<xsd:documentation>International search report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supplementary international search">
+				<xsd:annotation>
+					<xsd:documentation>Supplementary international search report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International type search">
+				<xsd:annotation>
+					<xsd:documentation>International type search report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National search">
+				<xsd:annotation>
+					<xsd:documentation>National search report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National supplementary search">
+				<xsd:annotation>
+					<xsd:documentation>Supplementary national search report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

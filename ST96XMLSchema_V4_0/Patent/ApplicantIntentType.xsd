@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="AssignmentIntentIndicator.xsd"/>
+<xsd:include schemaLocation="LicencingIntentIndicator.xsd"/>
+<xsd:include schemaLocation="TechnologyGuidanceIndicator.xsd"/>
+<xsd:complexType name="ApplicantIntentType">
+		<xsd:choice>
+<xsd:element ref="pat:AssignmentIntentIndicator"/>
+<xsd:element ref="pat:LicencingIntentIndicator"/>
+<xsd:element ref="pat:TechnologyGuidanceIndicator"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

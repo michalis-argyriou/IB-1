@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PaymentIdentifier.xsd"/>
+<xsd:include schemaLocation="PaymentReference.xsd"/>
+<xsd:include schemaLocation="PaymentModeCategory.xsd"/>
+<xsd:include schemaLocation="PayerName.xsd"/>
+<xsd:include schemaLocation="PaymentStatusCategory.xsd"/>
+<xsd:include schemaLocation="PaymentDate.xsd"/>
+<xsd:include schemaLocation="PaymentFeeBag.xsd"/>
+<xsd:include schemaLocation="FeePayableTotalAmount.xsd"/>
+<xsd:include schemaLocation="PaymentMethod.xsd"/>
+<xsd:include schemaLocation="FeePaidTotalAmount.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:complexType name="PaymentType">
+		<xsd:sequence>
+			<xsd:element ref="com:PaymentIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:PaymentReference" minOccurs="0"/>
+			<xsd:element ref="com:PaymentModeCategory" minOccurs="0"/>
+			<xsd:element ref="com:PaymentMethod" minOccurs="0"/>
+			<xsd:element ref="com:PayerName" minOccurs="0"/>
+			<xsd:element ref="com:PaymentStatusCategory" minOccurs="0"/>
+			<xsd:element ref="com:PaymentDate" minOccurs="0"/>
+			<xsd:element ref="com:PaymentFeeBag" minOccurs="0"/>
+			<xsd:element ref="com:FeePayableTotalAmount"/>
+			<xsd:element ref="com:FeePaidTotalAmount" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

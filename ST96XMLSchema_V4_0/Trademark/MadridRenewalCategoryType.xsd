@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0"><xsd:simpleType name="MadridRenewalCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		<xsd:enumeration value="Complementary renewal">
+				<xsd:annotation>
+					<xsd:documentation>Complementary renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

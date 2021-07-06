@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:mathml="http://www.w3.org/1998/Math/MathML3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Image.xsd"/>
+<xsd:include schemaLocation="InlineFormula.xsd"/>
+<xsd:include schemaLocation="ExternalDocumentBag.xsd"/>
+<xsd:import namespace="http://www.w3.org/1998/Math/MathML3" schemaLocation="../ExternalStandards/FlattenedMathML3.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="mathNumber.xsd"/>
+	<xsd:complexType name="MathType">
+		<xsd:choice>
+			<xsd:element ref="com:Image"/>
+			<xsd:element ref="com:InlineFormula"/>
+			<xsd:sequence>
+				<xsd:element ref="mathml:math"/>
+				<xsd:element ref="com:Image" minOccurs="0"/>
+				<xsd:element ref="com:ExternalDocumentBag" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:mathNumber"/>
+	</xsd:complexType>
+</xsd:schema>

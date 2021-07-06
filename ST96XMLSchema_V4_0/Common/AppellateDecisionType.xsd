@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DecisionIdentifier.xsd"/>
+<xsd:include schemaLocation="AppellateBodyName.xsd"/>
+<xsd:include schemaLocation="AppellateBodyCategory.xsd"/>
+<xsd:include schemaLocation="AppealRequestDate.xsd"/>
+<xsd:include schemaLocation="DecisionDate.xsd"/>
+<xsd:include schemaLocation="DecisionText.xsd"/>
+<xsd:include schemaLocation="DecisionCitationText.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:complexType name="AppellateDecisionType">
+		<xsd:sequence>
+<xsd:element ref="com:DecisionIdentifier" minOccurs="0"/>
+<xsd:element ref="com:AppellateBodyName"/>
+<xsd:element ref="com:AppellateBodyCategory"/>
+<xsd:element ref="com:AppealRequestDate"/>
+<xsd:element ref="com:DecisionDate"/>
+<xsd:element ref="com:DecisionText"/>
+<xsd:element ref="com:DecisionCitationText" minOccurs="0"/>
+		</xsd:sequence>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

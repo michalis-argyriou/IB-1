@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PreviousDesignerBag.xsd"/>
+<xsd:include schemaLocation="DesignerBag.xsd"/>
+<xsd:include schemaLocation="AffectedDesign.xsd"/>
+<xsd:complexType name="DesignerChangeBagType">
+		<xsd:sequence>
+<xsd:element ref="dgn:PreviousDesignerBag">
+				<xsd:annotation>
+					<xsd:documentation>A collection of the previous designer/creator of the design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+<xsd:element ref="dgn:DesignerBag"/>
+<xsd:element ref="dgn:AffectedDesign"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

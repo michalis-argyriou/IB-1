@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OrphanWorkUsage.xsd"/>
+	<xsd:complexType name="OrphanWorkUsageBagType">
+		<xsd:sequence>
+			<xsd:element ref="cpy:OrphanWorkUsage" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

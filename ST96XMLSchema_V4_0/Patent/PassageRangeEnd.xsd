@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PassageLocationBagType.xsd"/>
+<xsd:element name="PassageRangeEnd" type="pat:PassageLocationBagType">
+		<xsd:annotation>
+			<xsd:documentation>Location of the end of a passage</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="FilingBasis.xsd"/>
+<xsd:include schemaLocation="CurrentBasis.xsd"/>
+<xsd:include schemaLocation="AmendedBasis.xsd"/>
+<xsd:include schemaLocation="FirstUsedDate.xsd"/>
+<xsd:include schemaLocation="FirstUsedCommerceDate.xsd"/>
+<xsd:include schemaLocation="AnotherFormFirstUsedCommerceText.xsd"/>
+<xsd:include schemaLocation="AnotherFormFirstUsedAnywhereText.xsd"/>
+<xsd:complexType name="NationalFilingBasisType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="tmk:FilingBasis"/>
+<xsd:element ref="tmk:CurrentBasis"/>
+<xsd:element ref="tmk:AmendedBasis"/>
+<xsd:element ref="tmk:FirstUsedDate"/>
+<xsd:element ref="tmk:FirstUsedCommerceDate"/>
+<xsd:element ref="tmk:AnotherFormFirstUsedCommerceText"/>
+<xsd:element ref="tmk:AnotherFormFirstUsedAnywhereText"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

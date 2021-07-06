@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LoginInformationType.xsd"/>
+<xsd:element name="LoginInformation" type="com:LoginInformationType">
+		<xsd:annotation>
+			<xsd:documentation>Login data of the producer of the request or transaction on the computing system of the receiving office</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

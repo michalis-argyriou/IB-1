@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MediumCategory.xsd"/>
+<xsd:include schemaLocation="RetrievalDate.xsd"/>
+<xsd:include schemaLocation="DOI.xsd"/>
+<xsd:include schemaLocation="DocumentFormatCategory.xsd"/>
+<xsd:include schemaLocation="OnlineLocationURI.xsd"/>
+<xsd:include schemaLocation="OnlineDatabase.xsd"/>
+<xsd:complexType name="ElectronicAccessType">
+		<xsd:sequence>
+<xsd:element ref="com:MediumCategory" minOccurs="0"/>
+<xsd:element ref="com:RetrievalDate" minOccurs="0"/>
+<xsd:element ref="com:DOI" minOccurs="0"/>
+<xsd:element ref="com:DocumentFormatCategory" minOccurs="0"/>
+			<xsd:choice>
+<xsd:element ref="com:OnlineLocationURI"/>
+<xsd:element ref="com:OnlineDatabase"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

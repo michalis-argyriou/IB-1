@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="GICorrectContentCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Transaction category corrected">
+				<xsd:annotation>
+					<xsd:documentation>The type of transaction has been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correspondence address corrected">
+				<xsd:annotation>
+					<xsd:documentation>The correspondence address details of the authorized user have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the representative of the applicant have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Applicant corrected">
+				<xsd:annotation>
+					<xsd:documentation>The applicants details recorded for the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Authorized users corrected">
+				<xsd:annotation>
+					<xsd:documentation>The authorized users of the geographical indication has been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GI data corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details regarding the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the renewal record, including expiration date, have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the change recorded against either the geographical indication itself or else the user certificate have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="User certificate application corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the user certificate application have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registration record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the geographical indication registration record have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transfer record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the transfer record, from the current authorized user to the new authorized user, have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the cancellation of the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the invalidation of the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the refusal of the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the opposition against the geographical indication have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transaction cancelled">
+				<xsd:annotation>
+					<xsd:documentation>The transaction has been cancelled</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

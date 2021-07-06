@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Contact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NationalityCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ResidenceCountryCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ConfidentialIndicator.xsd"/>
+<xsd:include schemaLocation="UserCategory.xsd"/>
+	<xsd:complexType name="ApplicantType">
+		<xsd:sequence>
+			<xsd:element ref="com:PartyIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:Contact"/>
+			<xsd:element ref="com:NationalityCode" minOccurs="0"/>
+			<xsd:element ref="com:ResidenceCountryCode" minOccurs="0"/>
+			<xsd:element ref="cpy:UserCategory" minOccurs="0"/>
+			<xsd:element ref="com:ConfidentialIndicator"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:sequenceNumber"/>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

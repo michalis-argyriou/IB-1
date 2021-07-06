@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LegalProceedingIdentifier.xsd"/>
+<xsd:include schemaLocation="LegalProceedingFilingDate.xsd"/>
+<xsd:include schemaLocation="ProceedingStatus.xsd"/>
+<xsd:include schemaLocation="ProceedingApplicant.xsd"/>
+<xsd:include schemaLocation="Registrant.xsd"/>
+<xsd:include schemaLocation="ProceedingEvent.xsd"/>
+<xsd:include schemaLocation="ProceedingDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ProceedingLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StaffBag.xsd"/>
+<xsd:include schemaLocation="AssociatedProceedingBag.xsd"/>
+<xsd:complexType name="ConcurrentUseProceedingsType">
+		<xsd:annotation>
+			<xsd:documentation>A container to hold the details of concurrent use proceedings</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+<xsd:element ref="tmk:LegalProceedingIdentifier" minOccurs="0"/>
+<xsd:element ref="tmk:LegalProceedingFilingDate" minOccurs="0"/>
+<xsd:element ref="tmk:ProceedingStatus"/>
+<xsd:element ref="tmk:ProceedingApplicant" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:Registrant" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:ProceedingEvent"/>
+<xsd:element ref="tmk:ProceedingDocumentBag" minOccurs="0"/>
+<xsd:element ref="com:ProceedingLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:StaffBag"/>
+<xsd:element ref="tmk:AssociatedProceedingBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

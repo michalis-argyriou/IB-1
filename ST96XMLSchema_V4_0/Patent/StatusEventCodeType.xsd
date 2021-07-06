@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StateCode.xsd"/>
+<xsd:include schemaLocation="PreviousStageCode.xsd"/>
+<xsd:include schemaLocation="CurrentStageCode.xsd"/>
+<xsd:include schemaLocation="KeyEventCode.xsd"/>
+<xsd:include schemaLocation="DetailedEventCode.xsd"/>
+<xsd:include schemaLocation="NationalEventCode.xsd"/>
+<xsd:complexType name="StatusEventCodeType">
+		<xsd:sequence>
+<xsd:element ref="pat:StateCode"/>
+<xsd:element ref="pat:PreviousStageCode"/>
+<xsd:element ref="pat:CurrentStageCode"/>
+<xsd:element ref="pat:KeyEventCode"/>
+<xsd:element ref="pat:DetailedEventCode"/>
+<xsd:element ref="pat:NationalEventCode" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

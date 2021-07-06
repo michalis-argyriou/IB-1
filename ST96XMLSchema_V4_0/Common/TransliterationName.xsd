@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TransliterationNameType.xsd"/>
+	<xsd:element name="TransliterationName" type="com:TransliterationNameType">
+		<xsd:annotation>
+			<xsd:appinfo>PII</xsd:appinfo>
+			<xsd:documentation>Name of person, organization or entity transliterated in another language</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

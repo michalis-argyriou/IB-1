@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueApplication.xsd"/>
+<xsd:include schemaLocation="HagueGrantProtectionRequest.xsd"/>
+<xsd:include schemaLocation="HagueRefusalRequest.xsd"/>
+<xsd:include schemaLocation="HagueRefusalWithdrawalRequest.xsd"/>
+<xsd:include schemaLocation="HagueInvalidationRequest.xsd"/>
+<xsd:include schemaLocation="HagueDivision.xsd"/>
+<xsd:include schemaLocation="HagueSecondPartFeePayable.xsd"/>
+<xsd:include schemaLocation="HagueSecondPartFeePaid.xsd"/>
+<xsd:include schemaLocation="HagueCancellationNonPaymentRequest.xsd"/>
+<xsd:include schemaLocation="HagueGenericOfficeCommunication.xsd"/>
+	<xsd:complexType name="HagueOfficeToIBBagType">
+			<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="dgn:HagueApplication"/>
+			<xsd:element ref="dgn:HagueGrantProtectionRequest"/>
+			<xsd:element ref="dgn:HagueRefusalRequest"/>
+			<xsd:element ref="dgn:HagueRefusalWithdrawalRequest"/>
+			<xsd:element ref="dgn:HagueInvalidationRequest"/>
+			<xsd:element ref="dgn:HagueDivision"/>
+			<xsd:element ref="dgn:HagueSecondPartFeePayable"/>
+			<xsd:element ref="dgn:HagueSecondPartFeePaid"/>
+			<xsd:element ref="dgn:HagueCancellationNonPaymentRequest"/>
+			<xsd:element ref="dgn:HagueGenericOfficeCommunication"/>
+			</xsd:choice>
+		</xsd:complexType>
+</xsd:schema>

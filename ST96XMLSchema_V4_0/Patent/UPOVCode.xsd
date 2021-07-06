@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="UPOVCodeType.xsd"/>
+<xsd:element name="UPOVCode" type="pat:UPOVCodeType">
+		<xsd:annotation>
+			<xsd:documentation>UPOV Code is to enhance the usefulness of the UPOV Plant Variety Database by overcoming the problem of synonyms for plant taxa; synonyms for the same plant taxa are attributed the same UPOV code.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

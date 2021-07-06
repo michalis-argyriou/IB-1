@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="DocumentFormatCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="MS Word">
+				<xsd:annotation>
+					<xsd:documentation>MS Word</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MS Excel">
+				<xsd:annotation>
+					<xsd:documentation>MS Excel</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="XML">
+				<xsd:annotation>
+					<xsd:documentation>XML</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Text">
+				<xsd:annotation>
+					<xsd:documentation>Text</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EPS">
+				<xsd:annotation>
+					<xsd:documentation>EPS</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PDF">
+				<xsd:annotation>
+					<xsd:documentation>PDF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JPEG">
+				<xsd:annotation>
+					<xsd:documentation>JPEG</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PNG">
+				<xsd:annotation>
+					<xsd:documentation>PNG</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TIFF">
+				<xsd:annotation>
+					<xsd:documentation>TIFF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SVG">
+				<xsd:annotation>
+					<xsd:documentation>Scalable vector graphics image</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HTML">
+				<xsd:annotation>
+					<xsd:documentation>HTML</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CDX">
+				<xsd:annotation>
+					<xsd:documentation>CambridgeSoft proprietary ChemDraw file format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MOL">
+				<xsd:annotation>
+					<xsd:documentation>File format for holding information about the atoms, bonds, connectivity and coordinates of a molecule</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NB">
+				<xsd:annotation>
+					<xsd:documentation>File format for mathematica notebooks</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

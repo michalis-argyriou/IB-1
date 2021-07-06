@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="BasicRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="BasicRegistrationDate.xsd"/>
+<xsd:complexType name="BasicRegistrationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:BasicRegistrationNumber"/>
+<xsd:element ref="tmk:BasicRegistrationDate"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

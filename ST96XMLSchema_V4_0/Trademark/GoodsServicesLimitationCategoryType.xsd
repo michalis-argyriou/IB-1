@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="GoodsServicesLimitationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="List limited to">
+				<xsd:annotation>
+					<xsd:documentation>This is the preferred option. When a class is unchanged it should be included in its entirety. Any class not included is considered to be deleted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Remove from list">
+				<xsd:annotation>
+					<xsd:documentation>This is not preferred as it complicates automation processing. It should contain the goods and services which have been deleted from the original list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

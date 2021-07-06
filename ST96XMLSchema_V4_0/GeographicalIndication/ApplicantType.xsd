@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Contact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationContact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NationalityCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ResidenceCountryCode.xsd"/>
+<xsd:include schemaLocation="InterestedPartyJustificationText.xsd"/>
+<xsd:include schemaLocation="GroupIdentifier.xsd"/>
+<xsd:include schemaLocation="ProducerIdentifier.xsd"/>
+<xsd:include schemaLocation="ProcessorIdentifier.xsd"/>
+<xsd:include schemaLocation="AccreditationCategory.xsd"/>
+<xsd:include schemaLocation="AccreditationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+	<xsd:complexType name="ApplicantType">
+		<xsd:sequence>
+			<xsd:element ref="com:PartyIdentifier" minOccurs="0"/>
+			<xsd:choice maxOccurs="2">
+				<xsd:element ref="com:Contact"/>
+				<xsd:element ref="com:PublicationContact"/>
+			</xsd:choice>
+			<xsd:element ref="com:NationalityCode" minOccurs="0"/>
+			<xsd:element ref="com:ResidenceCountryCode" minOccurs="0"/>
+			<xsd:element ref="gin:InterestedPartyJustificationText" minOccurs="0"/>
+			<xsd:sequence>
+				<xsd:element ref="gin:ProducerIdentifier" minOccurs="0"/>
+				<xsd:element ref="gin:ProcessorIdentifier" minOccurs="0"/>
+				<xsd:element ref="gin:GroupIdentifier" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:sequence minOccurs="0">
+				<xsd:element ref="gin:AccreditationCategory"/>
+				<xsd:element ref="gin:AccreditationDate"/>
+			</xsd:sequence>
+		</xsd:sequence>
+		<xsd:attribute ref="com:sequenceNumber"/>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

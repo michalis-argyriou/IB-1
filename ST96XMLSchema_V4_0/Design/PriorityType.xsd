@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityCountryCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityApplicationFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DASAccessCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityHolderName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityStatusCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityStatusDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PriorityDocument.xsd"/>
+<xsd:complexType name="PriorityType">
+		<xsd:sequence>
+<xsd:element ref="com:PriorityCountryCode"/>
+<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+<xsd:element ref="com:PriorityApplicationFilingDate"/>
+			<xsd:element ref="com:DASAccessCode" minOccurs="0"/>
+<xsd:element ref="com:PriorityHolderName" minOccurs="0"/>
+<xsd:element ref="com:PriorityStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:PriorityStatusDate" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+<xsd:element ref="com:PriorityDocument" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

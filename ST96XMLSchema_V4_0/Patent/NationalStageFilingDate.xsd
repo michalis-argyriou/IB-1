@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DateType.xsd"/>
+<xsd:element name="NationalStageFilingDate" type="com:DateType">
+		<xsd:annotation>
+			<xsd:documentation>National filing of international application. Refers to ST.9 INID Code 85.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

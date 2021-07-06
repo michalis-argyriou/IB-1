@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GazetteReference.xsd"/>
+<xsd:include schemaLocation="UnexaminedNoGrantNotPrintedPatentDocument.xsd"/>
+<xsd:include schemaLocation="ExaminedNoGrantNotPrintedPatentDocument.xsd"/>
+<xsd:include schemaLocation="UnexaminedNoGrantPrintedPatentDocument.xsd"/>
+<xsd:include schemaLocation="ExaminedNoGrantPrintedPatentDocument.xsd"/>
+<xsd:include schemaLocation="OnlyAvailableClaims.xsd"/>
+<xsd:include schemaLocation="NotPrintedPatentGrant.xsd"/>
+<xsd:include schemaLocation="PatentInvalidation.xsd"/>
+<xsd:include schemaLocation="PrintedAsAmendedDocument.xsd"/>
+	<xsd:complexType name="PublicAvailabilityDataBagType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pat:GazetteReference"/>
+			<xsd:element ref="pat:UnexaminedNoGrantNotPrintedPatentDocument"/>
+			<xsd:element ref="pat:ExaminedNoGrantNotPrintedPatentDocument"/>
+			<xsd:element ref="pat:UnexaminedNoGrantPrintedPatentDocument"/>
+			<xsd:element ref="pat:ExaminedNoGrantPrintedPatentDocument"/>
+			<xsd:element ref="pat:OnlyAvailableClaims"/>
+			<xsd:element ref="pat:NotPrintedPatentGrant"/>
+			<xsd:element ref="pat:PatentInvalidation"/>
+			<xsd:element ref="pat:PrintedAsAmendedDocument"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

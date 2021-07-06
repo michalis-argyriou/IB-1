@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TermTranslationRelationType.xsd"/>
+<xsd:element name="TermTranslationRelation" type="tmk:TermTranslationRelationType">
+		<xsd:annotation>
+			<xsd:documentation>Element to relate classification terms that are the same but in different translations</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

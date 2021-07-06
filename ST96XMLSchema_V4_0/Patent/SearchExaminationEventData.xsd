@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SearchExaminationEventDataType.xsd"/>
+<xsd:element name="SearchExaminationEventData" type="pat:SearchExaminationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category D (Search and examination). This category is a group of events related to the examination proceeding and prior art searches for any application covered by Category A. It includes, for example, a formality examination or a substantive examination. It also includes a request for a prior art search and an announcement of the intention of the IPO to grant an IP right. The events in this category may move an application from the filing stage or the pre-grant challenge stage into the examination stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

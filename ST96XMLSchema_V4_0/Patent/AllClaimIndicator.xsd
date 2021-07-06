@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="AllClaimIndicator" type="xsd:boolean">
+					<xsd:annotation>
+					<xsd:documentation>Indicate whether this report covers all(searchable) claims in the application</xsd:documentation>
+				</xsd:annotation>
+				</xsd:element>
+</xsd:schema>

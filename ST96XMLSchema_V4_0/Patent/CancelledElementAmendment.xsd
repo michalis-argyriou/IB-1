@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/CancelledElementAmendmentType.xsd"/>
+	<xsd:element name="CancelledElementAmendment" type="pat:CancelledElementAmendmentType">
+		<xsd:annotation>
+			<xsd:documentation>Identifies the description and drawings pages, claim numbers and sequence listings that have been cancelled due to amendment</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

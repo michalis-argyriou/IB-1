@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PersonName.xsd"/>
+<xsd:include schemaLocation="OrganizationName.xsd"/>
+<xsd:include schemaLocation="EntityName.xsd"/>
+	<xsd:complexType name="NameType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="com:PersonName"/>
+			<xsd:element ref="com:OrganizationName"/>
+			<xsd:element ref="com:EntityName"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

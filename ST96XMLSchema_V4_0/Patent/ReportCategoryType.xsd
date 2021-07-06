@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ReportCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Written Opinion of the ISA">
+				<xsd:annotation>
+					<xsd:documentation>A Written Opinion as established by an International Searching Authority (ISA)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Written Opinion of the IPEA">
+				<xsd:annotation>
+					<xsd:documentation>A Written Opinion established by an International Preliminary Examination Authority (IPEA)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International Preliminary Report on Patentability">
+				<xsd:annotation>
+					<xsd:documentation>A final examination report established after at least one Written Opinion established by an International Preliminary Examination Authority (IPEA)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National or Regional Examination">
+				<xsd:annotation>
+					<xsd:documentation>A report established during national or regional phase examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

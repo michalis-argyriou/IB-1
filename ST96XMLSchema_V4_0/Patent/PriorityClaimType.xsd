@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IPOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:include schemaLocation="FilingDate.xsd"/>
+<xsd:include schemaLocation="IndicatedIPOfficeCode.xsd"/>
+<xsd:include schemaLocation="ApplicationFilingCategory.xsd"/>
+<xsd:include schemaLocation="RequestedPriorityDocumentIndicator.xsd"/>
+<xsd:include schemaLocation="AttachedPriorityDocumentIndicator.xsd"/>
+<xsd:include schemaLocation="OnlineAvailablePriorityDocumentIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DASAccessCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+<xsd:complexType name="PriorityClaimType">
+		<xsd:sequence>
+<xsd:element ref="com:IPOfficeCode"/>
+<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+<xsd:element ref="pat:FilingDate"/>
+<xsd:element ref="pat:IndicatedIPOfficeCode" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="pat:ApplicationFilingCategory" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+<xsd:element ref="pat:RequestedPriorityDocumentIndicator"/>
+<xsd:element ref="pat:AttachedPriorityDocumentIndicator"/>
+<xsd:element ref="pat:OnlineAvailablePriorityDocumentIndicator"/>
+<xsd:element ref="com:DASAccessCode"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

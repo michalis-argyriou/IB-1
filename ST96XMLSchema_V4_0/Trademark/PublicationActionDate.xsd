@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="PublicationActionDate" type="xsd:date">
+		<xsd:annotation>
+			<xsd:documentation>This date is a record of when something has happened or a trigger for when something is going to happen in the national office's publication cycle.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

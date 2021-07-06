@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRecordingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IncorrectRecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordInterestedOfficeCodeBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectedTransactionCategory.xsd"/>
+<xsd:include schemaLocation="HagueBulletinReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrectionDescriptionTextBag.xsd"/>
+<xsd:include schemaLocation="HagueIncorrectContent.xsd"/>
+<xsd:include schemaLocation="HagueCorrectedElementBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectContent.xsd"/>
+<xsd:include schemaLocation="TransactionCancelledIndicator.xsd"/>
+<xsd:complexType name="HagueCorrectionType">
+		<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:InternationalRecordingDate"/>
+<xsd:element ref="com:IncorrectRecordIdentifier"/>
+<xsd:element ref="com:RecordInterestedOfficeCodeBag" minOccurs="0"/>
+<xsd:element ref="dgn:HagueCorrectedTransactionCategory"/>
+<xsd:element ref="dgn:HagueBulletinReference"/>
+<xsd:element ref="com:CorrectionDescriptionTextBag" minOccurs="0"/>
+<xsd:element ref="dgn:HagueIncorrectContent" minOccurs="0"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="dgn:HagueCorrectedElementBag"/>
+						<xsd:element ref="dgn:HagueCorrectContent"/>
+					</xsd:sequence>
+<xsd:element ref="dgn:TransactionCancelledIndicator"/>
+				</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumberBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRecordingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryBag.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:complexType name="HagueRenunciationType">
+		<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumberBag"/>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:InternationalRecordingDate"/>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="dgn:DesignatedCountryBag" minOccurs="0"/>
+<xsd:element ref="dgn:HolderBag" minOccurs="0"/>
+<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

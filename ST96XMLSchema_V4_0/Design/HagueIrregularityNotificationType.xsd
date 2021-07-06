@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:include schemaLocation="HagueOfficeTransactionCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="DecisionGroundsBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ResponseDueDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+	<xsd:complexType name="HagueIrregularityNotificationType">
+		<xsd:sequence>
+			<xsd:element ref="com:RecordIdentifier"/>
+			<xsd:element ref="dgn:HagueOfficeTransactionCategory"/>
+			<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element ref="com:OfficeReferenceIdentifier"/>
+					<xsd:element ref="com:InternationalRegistrationNumber" minOccurs="0"/>
+					<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element ref="com:InternationalRegistrationNumber"/>
+					<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+					<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element ref="com:ApplicationNumber"/>
+					<xsd:element ref="com:InternationalRegistrationNumber" minOccurs="0"/>
+					<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element ref="com:CorrespondenceAddress"/>
+					<xsd:element ref="dgn:DecisionGroundsBag"/>
+					<xsd:element ref="com:ResponseDueDate"/>
+					<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element ref="com:DocumentIncludedBag"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

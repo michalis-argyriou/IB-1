@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PublishFigureType.xsd"/>
+<xsd:element name="PublishFigure" type="pat:PublishFigureType">
+		<xsd:annotation>
+			<xsd:documentation>The drawing that best represent the invention and gets published on the front page of the patent grant and the official gazette</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

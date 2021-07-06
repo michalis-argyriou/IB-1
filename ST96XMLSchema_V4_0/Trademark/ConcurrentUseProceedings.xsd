@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ConcurrentUseProceedingsType.xsd"/>
+<xsd:element name="ConcurrentUseProceedings" type="tmk:ConcurrentUseProceedingsType">
+		<xsd:annotation>
+			<xsd:documentation>Information about concurrent use proceedings related to national marks</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

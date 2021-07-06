@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="IPRightKindCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Patent for invention">
+				<xsd:annotation>
+					<xsd:documentation>Patent for invention</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Plant patent">
+				<xsd:annotation>
+					<xsd:documentation>Plant patent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design patent">
+				<xsd:annotation>
+					<xsd:documentation>Design patent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inventor certificate">
+				<xsd:annotation>
+					<xsd:documentation>Inventor certificate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Utility certificate">
+				<xsd:annotation>
+					<xsd:documentation>Utility certificate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Utility model">
+				<xsd:annotation>
+					<xsd:documentation>Utility model</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patent of addition">
+				<xsd:annotation>
+					<xsd:documentation>Patent of addition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inventor certificate of addition">
+				<xsd:annotation>
+					<xsd:documentation>Inventor certificate of addition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Utility certificate of addition">
+				<xsd:annotation>
+					<xsd:documentation>Utility certificate of addition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SPC">
+				<xsd:annotation>
+					<xsd:documentation>Supplementary Protection Certificate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

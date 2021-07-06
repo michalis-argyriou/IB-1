@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="RelatedApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="PatentPublicationIdentification.xsd"/>
+<xsd:include schemaLocation="PatentGrantIdentification.xsd"/>
+<xsd:include schemaLocation="SPCIdentification.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IPRightKindCategory.xsd"/>
+<xsd:include schemaLocation="StatusEventDataBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="PatentLegalStatusType">
+		<xsd:sequence>
+<xsd:element ref="pat:ApplicationIdentification"/>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+<xsd:element ref="pat:RelatedApplicationIdentification"/>
+<xsd:element ref="pat:PatentPublicationIdentification"/>
+<xsd:element ref="pat:PatentGrantIdentification"/>
+<xsd:element ref="pat:SPCIdentification"/>
+			</xsd:choice>
+<xsd:element ref="com:IPRightKindCategory" minOccurs="0"/>
+<xsd:element ref="pat:StatusEventDataBag"/>
+		</xsd:sequence>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

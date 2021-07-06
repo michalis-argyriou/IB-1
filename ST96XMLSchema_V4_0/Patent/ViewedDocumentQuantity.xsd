@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="ViewedDocumentQuantity" type="xsd:nonNegativeInteger">
+		<xsd:annotation>
+			<xsd:documentation>The total Quantity of documents found by the expert during the search</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

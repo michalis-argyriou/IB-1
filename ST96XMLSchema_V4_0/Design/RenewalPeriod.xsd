@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:element name="RenewalPeriod" type="xsd:positiveInteger">
+		<xsd:annotation>
+			<xsd:documentation>A number representing a 5-year cycle of renewal for a design right. A 1 means years 5-10, a 2 means years 10 to 15, and so on</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

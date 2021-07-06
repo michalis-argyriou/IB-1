@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LORDate.xsd"/>
+<xsd:include schemaLocation="LORCancellationDate.xsd"/>
+<xsd:include schemaLocation="LORCancellationIndicator.xsd"/>
+<xsd:complexType name="LORDataType">
+		<xsd:sequence>
+<xsd:element ref="pat:LORDate"/>
+<xsd:element ref="pat:LORCancellationDate" minOccurs="0"/>
+<xsd:element ref="pat:LORCancellationIndicator" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

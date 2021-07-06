@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NoBasisIndicator.xsd"/>
+<xsd:include schemaLocation="BasisInternationalRegistrationIndicator.xsd"/>
+<xsd:include schemaLocation="AmendedBasisType.xsd"/>
+<xsd:complexType name="FilingBasisType">
+		<xsd:complexContent>
+			<xsd:extension base="tmk:AmendedBasisType">
+				<xsd:sequence>
+<xsd:element ref="tmk:NoBasisIndicator"/>
+<xsd:element ref="tmk:BasisInternationalRegistrationIndicator" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

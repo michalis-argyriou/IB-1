@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GazetteReferenceType.xsd"/>
+<xsd:element name="GazetteReference" type="pat:GazetteReferenceType">
+		<xsd:annotation>
+			<xsd:documentation>Information about an office's gazette or bulletin where the details of the patent publication are given</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

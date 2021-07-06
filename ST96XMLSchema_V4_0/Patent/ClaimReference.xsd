@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClaimReferenceType.xsd"/>
+	<xsd:element name="ClaimReference" type="pat:ClaimReferenceType">
+		<xsd:annotation>
+			<xsd:documentation>A claim sometimes refers to one or more claims, which it identifies as its parents. Claim Reference should be used when a claim refers to other claims.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

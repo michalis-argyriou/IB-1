@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AppellateBodyCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Office appeal board">
+				<xsd:annotation>
+					<xsd:documentation>Appeal board within the IP office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Court">
+				<xsd:annotation>
+					<xsd:documentation>Court</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal Court">
+				<xsd:annotation>
+					<xsd:documentation>Second instance court</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supreme Court">
+				<xsd:annotation>
+					<xsd:documentation>Highest appellate court</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

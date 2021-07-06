@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClassificationTermIdentifier.xsd"/>
+<xsd:include schemaLocation="ClassificationTermOfficeCode.xsd"/>
+<xsd:include schemaLocation="ClassificationTermOfficeIdentification.xsd"/>
+<xsd:include schemaLocation="ClassificationTermSourceCategory.xsd"/>
+<xsd:include schemaLocation="ClassificationTermEntryDate.xsd"/>
+<xsd:include schemaLocation="ClassNumber.xsd"/>
+<xsd:include schemaLocation="ClassificationTermText.xsd"/>
+<xsd:include schemaLocation="ClassificationTermEquivalentGroup.xsd"/>
+<xsd:include schemaLocation="ClassificationTermReferenceGroup.xsd"/>
+<xsd:include schemaLocation="ClassificationTermTranslationGroup.xsd"/>
+<xsd:include schemaLocation="ClassificationTermStatus.xsd"/>
+<xsd:include schemaLocation="WIPOBasicNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/operationCategory.xsd"/>
+<xsd:complexType name="ClassificationTermType">
+		<xsd:sequence>
+<xsd:element ref="tmk:ClassificationTermIdentifier" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermOfficeCode" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermOfficeIdentification" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermSourceCategory" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermEntryDate" minOccurs="0"/>
+<xsd:element ref="tmk:ClassNumber" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermText"/>
+<xsd:element ref="tmk:ClassificationTermEquivalentGroup" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermReferenceGroup" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermTranslationGroup" minOccurs="0"/>
+<xsd:element ref="tmk:ClassificationTermStatus" minOccurs="0"/>
+<xsd:element ref="tmk:WIPOBasicNumber" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:operationCategory"/>
+	</xsd:complexType>
+</xsd:schema>

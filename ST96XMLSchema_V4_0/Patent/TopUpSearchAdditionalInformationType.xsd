@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/TopUpSearchDate.xsd"/>
+<xsd:include schemaLocation="../Patent/AdditionalRelevantDocumentIndicator.xsd"/>
+	<xsd:complexType name="TopUpSearchAdditionalInformationType">
+		<xsd:sequence>
+			<xsd:element ref="pat:TopUpSearchDate"/>
+			<xsd:element ref="pat:AdditionalRelevantDocumentIndicator"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

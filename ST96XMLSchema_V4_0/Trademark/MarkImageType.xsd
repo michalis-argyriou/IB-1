@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ImageFormatCategory.xsd"/>
+<xsd:include schemaLocation="MarkImageColourClaimedText.xsd"/>
+<xsd:include schemaLocation="MarkImageColourPartClaimedText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/HeightMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WidthMeasure.xsd"/>
+<xsd:include schemaLocation="MarkImageClassification.xsd"/>
+<xsd:include schemaLocation="MarkImageQualityIndicator.xsd"/>
+<xsd:include schemaLocation="MarkImageRenditionBag.xsd"/>
+<xsd:include schemaLocation="NationalDesignSearchCodeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourModeCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+<xsd:complexType name="MarkImageType">
+				<xsd:sequence>
+<xsd:element ref="com:FileName"/>
+<xsd:element ref="com:ImageFormatCategory" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageColourClaimedText" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:MarkImageColourPartClaimedText" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="com:HeightMeasure" minOccurs="0"/>
+<xsd:element ref="com:WidthMeasure" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageClassification" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageQualityIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageRenditionBag" minOccurs="0"/>
+<xsd:element ref="tmk:NationalDesignSearchCodeBag" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+<xsd:element ref="com:ColourIndicator"/>
+<xsd:element ref="com:ColourModeCategory"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

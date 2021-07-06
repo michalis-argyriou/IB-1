@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CPCClassificationValueCodeType.xsd"/>
+<xsd:element name="CPCClassificationValueCode" type="pat:CPCClassificationValueCodeType">
+		<xsd:annotation>
+			<xsd:documentation>The code that describes the classification value which distinguishes between invention information and additional information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

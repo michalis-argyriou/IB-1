@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="HagueBulletinTransactionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Registration">
+				<xsd:annotation>
+					<xsd:documentation>Registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Expiration">
+				<xsd:annotation>
+					<xsd:documentation>Expiration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ownership change">
+				<xsd:annotation>
+					<xsd:documentation>Ownership change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ownership change refusal">
+				<xsd:annotation>
+					<xsd:documentation>Ownership change refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Merger">
+				<xsd:annotation>
+					<xsd:documentation>Merger</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Holder name address change">
+				<xsd:annotation>
+					<xsd:documentation>Holder name address change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Creator name address change">
+				<xsd:annotation>
+					<xsd:documentation>Creator name address change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renunciation">
+				<xsd:annotation>
+					<xsd:documentation>Renunciation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Grant protection">
+				<xsd:annotation>
+					<xsd:documentation>Grant protection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation non payment">
+				<xsd:annotation>
+					<xsd:documentation>Cancellation non payment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction">
+				<xsd:annotation>
+					<xsd:documentation>Correction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction refusal ">
+				<xsd:annotation>
+					<xsd:documentation>Correction refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Publication cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Publication cancellation. Applies to Office Copies only</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correction refusal withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Correction refusal withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ownership change refusal withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Ownership change refusal withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+						<xsd:enumeration value="Second part fee paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+						<xsd:enumeration value="Second part fee not paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee not paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

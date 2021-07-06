@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ReceivingOfficeDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExtensionGrantDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExtensionAuthorizationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExtensionTerminationDate.xsd"/>
+<xsd:include schemaLocation="ExtensionAuthorizationNumber.xsd"/>
+<xsd:include schemaLocation="ExtensionTerminationReasonCategory.xsd"/>
+	<xsd:complexType name="SPCTermExtensionType">
+		<xsd:sequence>
+			<xsd:element ref="com:ReceivingOfficeDate"/>
+			<xsd:element ref="com:ExtensionGrantDate" minOccurs="0"/>
+			<xsd:element ref="pat:ExtensionAuthorizationNumber" minOccurs="0"/>
+			<xsd:element ref="com:ExtensionAuthorizationDate" minOccurs="0"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="pat:ExtensionTerminationReasonCategory" minOccurs="0"/>
+			<xsd:element ref="com:ExtensionTerminationDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

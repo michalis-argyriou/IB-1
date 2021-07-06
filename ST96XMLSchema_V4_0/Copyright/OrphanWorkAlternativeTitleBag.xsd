@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_01">
+<xsd:include schemaLocation="OrphanWorkAlternativeTitleBagType.xsd"/>
+	<xsd:element name="OrphanWorkAlternativeTitleBag" type="cpy:OrphanWorkAlternativeTitleBagType">
+		<xsd:annotation>
+			<xsd:documentation>Collection of alternative titles for orphan works</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

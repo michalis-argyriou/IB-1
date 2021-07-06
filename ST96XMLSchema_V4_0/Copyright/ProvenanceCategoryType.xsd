@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ProvenanceCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Museum">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work was found in a museum</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Attic">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work was found in an attic</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Manuscript">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work was found in a manuscript</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National Archive">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work was found in the national archive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

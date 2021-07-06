@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="WIPOReferenceNumberType.xsd"/>
+	<xsd:element name="WIPOReferenceNumber" type="com:WIPOReferenceNumberType">
+		<xsd:annotation>
+			<xsd:documentation>10 digit number that appears in the notification that appear as part of the WIPO reference number. Add pattern: Pattern to allow for 9 digit or 10 digit numeric values. Blank for the 10th position if total length is 9.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridLicenceRecordalRequestType.xsd"/>
+<xsd:element name="MadridLicenceRecordalRequest" type="tmk:MadridLicenceRecordalRequestType">
+		<xsd:annotation>
+			<xsd:documentation>Request that a licence to use a trademark be recorded in the international register. Office of origin or Designated Office. Form MM13.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ElectronicAccessType.xsd"/>
+<xsd:element name="ElectronicAccess" type="com:ElectronicAccessType">
+		<xsd:annotation>
+			<xsd:documentation>Set of information about how to access electronic documents</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

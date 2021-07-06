@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SeniorityCountryCode.xsd"/>
+<xsd:include schemaLocation="SeniorityApplicationNumber.xsd"/>
+<xsd:include schemaLocation="SeniorityApplicationDate.xsd"/>
+<xsd:include schemaLocation="SeniorityFilingDate.xsd"/>
+<xsd:include schemaLocation="SeniorityRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="SeniorityRegistrationDate.xsd"/>
+<xsd:include schemaLocation="SeniorityPublicationDate.xsd"/>
+<xsd:include schemaLocation="InternationalTrademarkCategory.xsd"/>
+<xsd:include schemaLocation="SeniorityPartialIndicator.xsd"/>
+<xsd:include schemaLocation="SeniorityPartialGoodsServices.xsd"/>
+<xsd:include schemaLocation="SeniorityStatusCategory.xsd"/>
+<xsd:include schemaLocation="SeniorityStatusDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="SeniorityDocument.xsd"/>
+<xsd:complexType name="SeniorityType">
+		<xsd:sequence>
+<xsd:element ref="tmk:SeniorityCountryCode"/>
+<xsd:element ref="tmk:SeniorityApplicationNumber" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityApplicationDate" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityFilingDate" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityRegistrationNumber" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityRegistrationDate" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityPublicationDate" minOccurs="0"/>
+<xsd:element ref="tmk:InternationalTrademarkCategory" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityPartialIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityPartialGoodsServices" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityStatusCategory" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityStatusDate" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityDocument" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

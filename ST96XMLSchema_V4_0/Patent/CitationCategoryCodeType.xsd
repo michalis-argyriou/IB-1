@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="CitationCategoryCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="X">
+				<xsd:annotation>
+					<xsd:documentation>The claimed invention cannot be considered novel or cannot be considered to involve an inventive step when the document is taken alone.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Y">
+				<xsd:annotation>
+					<xsd:documentation>The claimed invention cannot be considered to involve an inventive step when the document is combined with one or more other such documents, such combination being obvious to a person skilled in the art.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A">
+				<xsd:annotation>
+					<xsd:documentation>Document defining the general state of the art which is not considered to be of particular relevance</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E">
+				<xsd:annotation>
+					<xsd:documentation>Earlier patent document as defined in Rule 33.1(c) of the Regulations under the PCT, but published on or after the international filing date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L">
+				<xsd:annotation>
+					<xsd:documentation>Document which may throw doubts on priority claim(s) or which is cited to establish the publication date of another citation or other special reason (the reason for citing the document shall be given)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="O">
+				<xsd:annotation>
+					<xsd:documentation>Document referring to an oral disclosure, use, exhibition or other means</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P">
+				<xsd:annotation>
+					<xsd:documentation>Document published prior to the filing date (in the case of the PCT, the international filing date) but later than the priority date claimed in the application. Code "P" should always be accompanied by one of the categories "X", "Y" or "A"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T">
+				<xsd:annotation>
+					<xsd:documentation>Later document published after the filing date (in the case of the PCT, the international filing date) or priority date and not in conflict with the application but cited to understand the principle or theory underlying the invention</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ampersand">
+				<xsd:annotation>
+					<xsd:documentation>The value Ampersand represents the symbol of &amp;. Document being a member of the same patent family or document whose contents have not been verified by the search examiner but are believed to be substantially identical to those of another document which the search examiner has inspected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D">
+				<xsd:annotation>
+					<xsd:documentation>Document cited by the applicant in the application and which document (reference) was referred to in the course of the search procedure. Code "D" should always be accompanied by one of the categories indicating the relevance of the cited document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

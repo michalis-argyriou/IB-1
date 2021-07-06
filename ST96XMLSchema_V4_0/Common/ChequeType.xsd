@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ChequeIdentifier.xsd"/>
+<xsd:include schemaLocation="ChequeKindText.xsd"/>
+<xsd:include schemaLocation="BankName.xsd"/>
+	<xsd:complexType name="ChequeType">
+		<xsd:sequence>
+			<xsd:element ref="com:ChequeIdentifier"/>
+			<xsd:element ref="com:ChequeKindText" minOccurs="0"/>
+			<xsd:element ref="com:BankName" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

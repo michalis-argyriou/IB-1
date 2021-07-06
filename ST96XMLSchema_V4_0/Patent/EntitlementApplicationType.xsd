@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ParentDocument.xsd"/>
+<xsd:include schemaLocation="ChildDocument.xsd"/>
+<xsd:include schemaLocation="LegislationReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="EntitlementApplicationType">
+		<xsd:sequence>
+			<xsd:element ref="pat:ParentDocument"/>
+			<xsd:element ref="pat:ChildDocument" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:LegislationReference" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

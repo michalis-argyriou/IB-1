@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PageElementBasisBagType.xsd"/>
+	<xsd:element name="DescriptionCancelledPageBag" type="pat:PageElementBasisBagType">
+		<xsd:annotation>
+			<xsd:documentation>Pages which were superseded and no longer form the description element of the application</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0"><xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="MadridRenewalCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:include schemaLocation="MadridSystemCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RenewalDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeeCalculationDate.xsd"/>
+<xsd:include schemaLocation="ActiveClassTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+		<xsd:complexType name="MadridRenewalType">
+			<xsd:sequence>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="tmk:MadridRenewalCategory"/>
+<xsd:element ref="com:RecordFilingDate"/>
+<xsd:element ref="tmk:MadridSystemCategory"/>
+<xsd:element ref="com:RenewalDate"/>
+<xsd:element ref="com:FeeCalculationDate"/>
+<xsd:element ref="tmk:ActiveClassTotalQuantity"/>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="com:ExpiryDate"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

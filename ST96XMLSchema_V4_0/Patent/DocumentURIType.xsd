@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/documentFileName.xsd"/>
+<xsd:include schemaLocation="firstPageNumber.xsd"/>
+<xsd:include schemaLocation="lastPageNumber.xsd"/>
+<xsd:include schemaLocation="pageDocumentFormatCategory.xsd"/>
+<xsd:include schemaLocation="ocrIndicator.xsd"/>
+<xsd:complexType name="DocumentURIType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:anyURI">
+				<xsd:attribute ref="com:id"/>
+				<xsd:attribute ref="com:documentFileName"/>
+				<xsd:attribute ref="pat:firstPageNumber"/>
+				<xsd:attribute ref="pat:lastPageNumber"/>
+				<xsd:attribute ref="pat:pageDocumentFormatCategory" use="required"/>
+				<xsd:attribute ref="pat:ocrIndicator"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

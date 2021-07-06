@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="EmailAddressPurposeCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Informal">
+				<xsd:annotation>
+					<xsd:documentation>For informal contact only</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="General">
+				<xsd:annotation>
+					<xsd:documentation>For any type of communication where the applicant leaves the choice of communication means to the office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Advance">
+				<xsd:annotation>
+					<xsd:documentation>Any type of communication, but used as an advanced notice for formal messages being sent by conventional mailing (to the extent offered)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Main">
+				<xsd:annotation>
+					<xsd:documentation>Where applicant desires this address to be used as primary means of contact as a replacement of the use of conventional post(to the extent that an Office offers this)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Alternate">
+				<xsd:annotation>
+					<xsd:documentation>An alternate email address for the party</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

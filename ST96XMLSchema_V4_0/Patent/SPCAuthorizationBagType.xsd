@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SPCAuthorization.xsd"/>
+<xsd:include schemaLocation="SPCFirstAuthorization.xsd"/>
+	<xsd:complexType name="SPCAuthorizationBagType">
+		<xsd:sequence>
+			<xsd:element ref="pat:SPCAuthorization" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:SPCFirstAuthorization" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

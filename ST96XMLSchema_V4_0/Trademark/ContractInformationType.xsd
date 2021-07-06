@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="BasicContractNumber.xsd"/>
+<xsd:include schemaLocation="BasicContractDate.xsd"/>
+<xsd:include schemaLocation="ContractNumber.xsd"/>
+<xsd:include schemaLocation="ContractDate.xsd"/>
+<xsd:complexType name="ContractInformationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:BasicContractNumber" minOccurs="0"/>
+<xsd:element ref="tmk:BasicContractDate" minOccurs="0"/>
+<xsd:element ref="tmk:ContractNumber"/>
+<xsd:element ref="tmk:ContractDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

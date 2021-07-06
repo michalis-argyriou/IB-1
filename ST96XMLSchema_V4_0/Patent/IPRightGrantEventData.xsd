@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPRightGrantEventDataType.xsd"/>
+<xsd:element name="IPRightGrantEventData" type="pat:IPRightGrantEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category F (IP right grant). This category is a group of events which relate to the effective grant date of an IP right and/or entry of an IP right into the IPO&apos;s register. It includes, for example, when an IP right was granted following an examination, an appeal, pre-grant review or inadmissibility, rejection or withdrawal of a pre-grant review request. Types of IP rights covered include patents of invention, utility models, supplementary protection certificates, and any other IP rights that result from the types of applications covered by Category A. The events in this category may move an application from the examination stage or the pre-grant challenge stage into the grant stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridDesignationType.xsd"/>
+<xsd:element name="MadridDesignation" type="tmk:MadridDesignationType">
+		<xsd:annotation>
+			<xsd:documentation>Designation, including subsequent designation, of international registration to contracting parties. Also known as request for extension of protection</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

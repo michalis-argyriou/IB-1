@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="SearchReportEstablishedCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Yes">
+				<xsd:annotation>
+					<xsd:documentation>A search report has been established</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No">
+				<xsd:annotation>
+					<xsd:documentation>A search report has not been established</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not determined">
+				<xsd:annotation>
+					<xsd:documentation>A search request has been made but the searching authority has not yet determined whether a search report will be established</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/CompliantClaimNumberRange.xsd"/>
+<xsd:include schemaLocation="../Patent/NotCompliantClaimNumberRange.xsd"/>
+	<xsd:complexType name="StatementClaimRangeType">
+		<xsd:choice maxOccurs="2">
+			<xsd:element ref="pat:CompliantClaimNumberRange"/>
+			<xsd:element ref="pat:NotCompliantClaimNumberRange"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OriginCertificateBagType.xsd"/>
+
+	<xsd:element name="OriginCertificateBag" type="gin:OriginCertificateBagType">
+		<xsd:annotation>
+			<xsd:documentation>Collection of information required to certify an appellation of origin by an authority, in the country of origin, as possessing specific properties</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

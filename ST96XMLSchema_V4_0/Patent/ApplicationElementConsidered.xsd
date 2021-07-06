@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/ApplicationElementConsideredType.xsd"/>
+	<xsd:element name="ApplicationElementConsidered" type="pat:ApplicationElementConsideredType">
+		<xsd:annotation>
+			<xsd:documentation>Identifies which description pages, claim numbers, figure pages and optionally a sequence listing comprise the application which has been considered during examination</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

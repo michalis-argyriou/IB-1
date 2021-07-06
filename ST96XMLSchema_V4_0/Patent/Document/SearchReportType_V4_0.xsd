@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../PageImage.xsd"/>
+<xsd:include schemaLocation="../DocumentURI.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/CorrespondenceAddressBag.xsd"/>
+<xsd:include schemaLocation="../ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="../EarliestPriorityDate.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:include schemaLocation="../SearchRequestDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ExaminationRequestDate.xsd"/>
+<xsd:include schemaLocation="../SearchRequestNumber.xsd"/>
+<xsd:include schemaLocation="../SearchRequestReceiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SignatureBag.xsd"/>
+<xsd:include schemaLocation="../AuthorityContact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SearchStartDate.xsd"/>
+<xsd:include schemaLocation="../SearchCompleteDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/MailDate.xsd"/>
+<xsd:include schemaLocation="../ReportBasis.xsd"/>
+<xsd:include schemaLocation="../UnsearchableClaimBag.xsd"/>
+<xsd:include schemaLocation="../LackingInventionUnity.xsd"/>
+<xsd:include schemaLocation="../EstablishedInventionTitle.xsd"/>
+<xsd:include schemaLocation="../EstablishedAbstract.xsd"/>
+<xsd:include schemaLocation="../EstablishedPublishFigure.xsd"/>
+<xsd:include schemaLocation="../SearchReportCommentText.xsd"/>
+<xsd:include schemaLocation="../SearchData.xsd"/>
+<xsd:include schemaLocation="../EarlierSearchConsideredIndicator.xsd"/>
+<xsd:include schemaLocation="../EarlierSearchBag.xsd"/>
+<xsd:include schemaLocation="../SearchReportReplacementIndicator.xsd"/>
+<xsd:include schemaLocation="../SearchReportRevisionIndicator.xsd"/>
+<xsd:include schemaLocation="../CitedDocumentCopyBag.xsd"/>
+<xsd:include schemaLocation="../SearchReportAppendixText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/formVersion.xsd"/>
+<xsd:include schemaLocation="../applicationStatusCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentFileName.xsd"/>
+<xsd:include schemaLocation="../searchDate.xsd"/>
+<xsd:include schemaLocation="../searchKindCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="SearchReportType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pat:PageImage" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:DocumentURI" maxOccurs="unbounded"/>
+			<xsd:sequence>
+				<xsd:element ref="com:CorrespondenceAddressBag" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicationIdentification" maxOccurs="unbounded"/>
+				<xsd:element ref="pat:EarliestPriorityDate" minOccurs="0"/>
+				<xsd:element ref="pat:ApplicantBag"/>
+				<xsd:element ref="pat:SearchRequestDate" minOccurs="0"/>
+				<xsd:element ref="com:ExaminationRequestDate" minOccurs="0"/>
+				<xsd:element ref="pat:SearchRequestNumber" minOccurs="0"/>
+				<xsd:element ref="pat:SearchRequestReceiveDate" minOccurs="0"/>
+				<xsd:element ref="com:SignatureBag"/>
+				<xsd:element ref="pat:AuthorityContact" minOccurs="0"/>
+				<xsd:element ref="com:SearchStartDate" minOccurs="0"/>
+				<xsd:element ref="pat:SearchCompleteDate"/>
+				<xsd:element ref="com:MailDate"/>
+				<xsd:element ref="pat:ReportBasis"/>
+				<xsd:element ref="pat:UnsearchableClaimBag" minOccurs="0"/>
+				<xsd:element ref="pat:LackingInventionUnity" minOccurs="0"/>
+				<xsd:element ref="pat:EstablishedInventionTitle"/>
+				<xsd:element ref="pat:EstablishedAbstract" minOccurs="0"/>
+				<xsd:element ref="pat:EstablishedPublishFigure" minOccurs="0"/>
+				<xsd:element ref="pat:SearchReportCommentText" minOccurs="0"/>
+				<xsd:element ref="pat:SearchData"/>
+				<xsd:element ref="pat:EarlierSearchConsideredIndicator" minOccurs="0"/>
+				<xsd:element ref="pat:EarlierSearchBag" minOccurs="0"/>
+				<xsd:element ref="pat:SearchReportReplacementIndicator" minOccurs="0"/>
+				<xsd:element ref="pat:SearchReportRevisionIndicator" minOccurs="0"/>
+				<xsd:element ref="pat:CitedDocumentCopyBag" minOccurs="0"/>
+				<xsd:element ref="pat:SearchReportAppendixText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:formVersion"/>
+		<xsd:attribute ref="pat:applicationStatusCategory"/>
+		<xsd:attribute ref="com:documentFileName"/>
+		<xsd:attribute ref="pat:searchDate"/>
+		<xsd:attribute ref="pat:searchKindCategory"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

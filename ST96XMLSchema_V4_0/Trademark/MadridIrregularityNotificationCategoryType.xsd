@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MadridIrregularityNotificationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Application">
+				<xsd:annotation>
+					<xsd:documentation>Application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal appeal details">
+				<xsd:annotation>
+					<xsd:documentation>Refusal appeal details</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ceasing of effect">
+				<xsd:annotation>
+					<xsd:documentation>Ceasing of effect</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Continuation of effects">
+				<xsd:annotation>
+					<xsd:documentation>Continuation of effects</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Disclaimer">
+				<xsd:annotation>
+					<xsd:documentation>Disclaimer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent designation">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent designation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision">
+				<xsd:annotation>
+					<xsd:documentation>Final decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Grant of protection">
+				<xsd:annotation>
+					<xsd:documentation>Grant of protection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appointment of representative">
+				<xsd:annotation>
+					<xsd:documentation>Appoint legal representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change name or address of representative">
+				<xsd:annotation>
+					<xsd:documentation>Change name or address of representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change of holder name or address">
+				<xsd:annotation>
+					<xsd:documentation>Change of holder name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notification of possible opposition">
+				<xsd:annotation>
+					<xsd:documentation>Notify a possible opposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Partial cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Total cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Complementary renewal">
+				<xsd:annotation>
+					<xsd:documentation>Complementary Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renunciation">
+				<xsd:annotation>
+					<xsd:documentation>Renunciation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal of holder change">
+				<xsd:annotation>
+					<xsd:documentation>Refusal of the change of holder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change of ownership">
+				<xsd:annotation>
+					<xsd:documentation>Change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent designation based on conversion">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent designation based on conversion</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

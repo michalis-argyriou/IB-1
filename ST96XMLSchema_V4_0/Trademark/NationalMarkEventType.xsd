@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkEventCode.xsd"/>
+<xsd:include schemaLocation="MarkEventDescriptionText.xsd"/>
+<xsd:include schemaLocation="MarkEventEntryNumber.xsd"/>
+<xsd:include schemaLocation="MarkEventAdditionalText.xsd"/>
+<xsd:include schemaLocation="MarkEventDocumentIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:complexType name="NationalMarkEventType">
+		<xsd:sequence>
+<xsd:element ref="tmk:MarkEventCode" minOccurs="0"/>
+<xsd:element ref="tmk:MarkEventDescriptionText" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:MarkEventEntryNumber" minOccurs="0"/>
+<xsd:element ref="tmk:MarkEventAdditionalText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkEventDocumentIdentifier" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="CitedPhaseCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="In application">
+				<xsd:annotation>
+					<xsd:documentation>In application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Search">
+				<xsd:annotation>
+					<xsd:documentation>Search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International search">
+				<xsd:annotation>
+					<xsd:documentation>International search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supplementary international search">
+				<xsd:annotation>
+					<xsd:documentation>Supplementary international search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International type search">
+				<xsd:annotation>
+					<xsd:documentation>International type search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National search">
+				<xsd:annotation>
+					<xsd:documentation>National search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supplementary national search">
+				<xsd:annotation>
+					<xsd:documentation>Supplementary national search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International examination">
+				<xsd:annotation>
+					<xsd:documentation>International examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Examination">
+				<xsd:annotation>
+					<xsd:documentation>Examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National examination">
+				<xsd:annotation>
+					<xsd:documentation>National examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition">
+				<xsd:annotation>
+					<xsd:documentation>Opposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

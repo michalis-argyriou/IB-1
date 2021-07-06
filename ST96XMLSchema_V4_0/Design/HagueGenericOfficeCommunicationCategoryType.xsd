@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="HagueGenericOfficeCommunicationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Application">
+				<xsd:annotation>
+					<xsd:documentation>International design application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Grant protection">
+				<xsd:annotation>
+					<xsd:documentation>Statement of grant of protection to indicate that the international registration produces legal effects</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal">
+				<xsd:annotation>
+					<xsd:documentation>Notification of refusal of the effects of an international registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Notification that the effects of an international registration are invalidated and that the invalidation is no longer subject to any review or appeal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Division">
+				<xsd:annotation>
+					<xsd:documentation>Notification that the international registration is divided before the Office in order to overcome a ground of refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part fee payable">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee payable</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part fee paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation non payment">
+				<xsd:annotation>
+					<xsd:documentation>Cancellation non payment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal owner change">
+				<xsd:annotation>
+					<xsd:documentation>Declaration that a change in ownership (transfer/assignment) recorded in the International Register has no effect with respect to the Contracting Party</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal withdrawal owner change">
+				<xsd:annotation>
+					<xsd:documentation>Withdrawal of a refusal of change in ownership (transfer/assignment)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal correction">
+				<xsd:annotation>
+					<xsd:documentation>Notification of refusal of the effects of a correction recorded in the International Register</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal correction withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Withdrawal of a refusal of correction to allow a correction previously refused to finally take effect</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Other</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

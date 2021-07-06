@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridOwnershipChangeNoEffectType.xsd"/>
+<xsd:element name="MadridOwnershipChangeNoEffect" type="tmk:MadridOwnershipChangeNoEffectType">
+			<xsd:annotation>
+			<xsd:documentation>Notification of a declaration that a change in ownership has no effect in a designated contracting party. Designated Office. Model form 11.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

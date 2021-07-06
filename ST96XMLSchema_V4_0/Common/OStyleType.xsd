@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="OStyleType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Single">
+				<xsd:annotation>
+					<xsd:documentation>Single</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Double">
+				<xsd:annotation>
+					<xsd:documentation>Double</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Dash">
+				<xsd:annotation>
+					<xsd:documentation>Dash</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Dots">
+				<xsd:annotation>
+					<xsd:documentation>Dots</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Left arrow">
+				<xsd:annotation>
+					<xsd:documentation>Left arrow</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Right arrow">
+				<xsd:annotation>
+					<xsd:documentation>Right arrow</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Left right arrow">
+				<xsd:annotation>
+					<xsd:documentation>Left right arrow</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

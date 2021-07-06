@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DocumentCreatedDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentReceivedDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentLoadedDateTime.xsd"/>
+<xsd:include schemaLocation="TrademarkDocumentCode.xsd"/>
+<xsd:include schemaLocation="TrademarkDocumentDescriptionText.xsd"/>
+<xsd:include schemaLocation="TrademarkDocumentCategory.xsd"/>
+<xsd:include schemaLocation="TrademarkDocumentCategoryDescriptionText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PageTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentType.xsd"/>
+<xsd:complexType name="TrademarkDocumentType">
+		<xsd:complexContent>
+			<xsd:extension base="com:DocumentType">
+				<xsd:sequence>
+<xsd:element ref="tmk:DocumentCreatedDate" minOccurs="0"/>
+<xsd:element ref="com:DocumentReceivedDate" minOccurs="0"/>
+<xsd:element ref="com:DocumentLoadedDateTime" minOccurs="0"/>
+<xsd:element ref="tmk:TrademarkDocumentCode" minOccurs="0"/>
+<xsd:element ref="tmk:TrademarkDocumentDescriptionText" minOccurs="0"/>
+<xsd:element ref="tmk:TrademarkDocumentCategory" minOccurs="0"/>
+<xsd:element ref="tmk:TrademarkDocumentCategoryDescriptionText" minOccurs="0"/>
+<xsd:element ref="com:PageTotalQuantity" minOccurs="0"/>
+<xsd:element ref="com:DocumentIdentifier" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

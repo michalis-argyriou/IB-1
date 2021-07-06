@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HaguePublicationCancellationType.xsd"/>
+<xsd:element name="HaguePublicationCancellation" type="dgn:HaguePublicationCancellationType">
+		<xsd:annotation>
+			<xsd:documentation>Cancellation of a registration for non-payment of the publication fee when the publication was deferred
+</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

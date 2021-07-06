@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEffectiveDate.xsd"/>
+<xsd:include schemaLocation="ClassTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeeCalculationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Representative.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+		<xsd:complexType name="MadridSecondPartPaymentType">
+			<xsd:sequence>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordFilingDate"/>
+<xsd:element ref="com:RecordEffectiveDate"/>
+<xsd:element ref="com:FeeCalculationDate"/>
+<xsd:element ref="tmk:ClassTotalQuantity"/>
+<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+<xsd:element ref="tmk:HolderBag"/>
+<xsd:element ref="com:Representative" minOccurs="0"/>
+<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

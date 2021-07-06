@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SEQLSearchBasisCategoryType.xsd"/>
+<xsd:element name="SEQLSearchBasisCategory" type="pat:SEQLSearchBasisCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>With regard to any nucleotide and/or amino acid sequence disclosed in the international application, the international search was carried out on the basis of a sequence listing</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

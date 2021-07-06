@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueRegistrationBag.xsd"/>
+<xsd:include schemaLocation="HagueOwnershipChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueMergerBag.xsd"/>
+<xsd:include schemaLocation="HagueHolderNameAddressChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueCreatorNameAddressChangeBag.xsd"/>
+<xsd:include schemaLocation="HagueRenunciationBag.xsd"/>
+<xsd:include schemaLocation="HagueLimitationBag.xsd"/>
+<xsd:include schemaLocation="HagueCorrectionBag.xsd"/>
+<xsd:include schemaLocation="HagueSecondPartFeePaidBag.xsd"/>
+<xsd:include schemaLocation="HagueSecondPartFeeNotPaidBag.xsd"/>
+<xsd:include schemaLocation="HaguePublicationCancellationBag.xsd"/>
+<xsd:complexType name="HagueOfficeCopyBagType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="dgn:HagueRegistrationBag"/>
+<xsd:element ref="dgn:HagueOwnershipChangeBag"/>
+<xsd:element ref="dgn:HagueMergerBag"/>
+<xsd:element ref="dgn:HagueHolderNameAddressChangeBag"/>
+<xsd:element ref="dgn:HagueCreatorNameAddressChangeBag"/>
+<xsd:element ref="dgn:HagueRenunciationBag"/>
+<xsd:element ref="dgn:HagueLimitationBag"/>
+<xsd:element ref="dgn:HagueCorrectionBag"/>
+<xsd:element ref="dgn:HagueSecondPartFeePaidBag"/>
+<xsd:element ref="dgn:HagueSecondPartFeeNotPaidBag"/>
+<xsd:element ref="dgn:HaguePublicationCancellationBag"/>
+
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

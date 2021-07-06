@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveCountryBag.xsd"/>
+<xsd:include schemaLocation="GazetteNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeeCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentDueDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeePaymentYearNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ReasonNotInForceCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NotInForceDate.xsd"/>
+<xsd:include schemaLocation="RenewalDueDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentPeriod.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SurchargePaymentPeriod.xsd"/>
+<xsd:include schemaLocation="LastRenewalYearNumber.xsd"/>
+<xsd:include schemaLocation="RenewalBlockedIndicator.xsd"/>
+<xsd:include schemaLocation="RenewalPaymentPeriodCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentStatusCategory.xsd"/>
+<xsd:complexType name="PaymentEventDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:EffectiveCountryBag"/>
+<xsd:element ref="pat:GazetteNumber"/>
+<xsd:element ref="com:CommentText"/>
+<xsd:element ref="com:FeeCategory"/>
+<xsd:element ref="com:PaymentDate"/>
+<xsd:element ref="com:PaymentDueDate"/>
+<xsd:element ref="com:FeePaymentYearNumber"/>
+<xsd:element ref="com:ReasonNotInForceCategory"/>
+<xsd:element ref="com:NotInForceDate"/>
+<xsd:element ref="pat:RenewalDueDate"/>
+<xsd:element ref="com:PaymentPeriod"/>
+<xsd:element ref="com:SurchargePaymentPeriod"/>
+<xsd:element ref="pat:LastRenewalYearNumber"/>
+<xsd:element ref="pat:RenewalBlockedIndicator"/>
+<xsd:element ref="pat:RenewalPaymentPeriodCategory"/>
+<xsd:element ref="com:PaymentStatusCategory"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OnlineAvailablePriorityDocumentIndicatorType.xsd"/>
+<xsd:element name="OnlineAvailablePriorityDocumentIndicator" type="pat:OnlineAvailablePriorityDocumentIndicatorType">
+		<xsd:annotation>
+			<xsd:documentation>Where the priority document is made available to the corresponding IPO (e.g., RO or the IB) from a digital library to obtain the priority document from such digital library</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

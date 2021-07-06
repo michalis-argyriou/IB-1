@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignatedCountry.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeeCalculationDate.xsd"/>
+<xsd:include schemaLocation="AffectedDesign.xsd"/>
+<xsd:include schemaLocation="HagueDesignBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeSpecificContent.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+		<xsd:complexType name="HagueSecondPartFeePaidType">
+			<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="dgn:DesignatedCountry"/>
+<xsd:element ref="com:PaymentDate"/>
+<xsd:element ref="com:FeeCalculationDate"/>
+<xsd:element ref="dgn:AffectedDesign" minOccurs="0"/>
+<xsd:element ref="dgn:HagueDesignBag" minOccurs="0"/>
+<xsd:element ref="com:OfficeSpecificContent" minOccurs="0"/>
+<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

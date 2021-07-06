@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Correspondent.xsd"/>
+<xsd:include schemaLocation="AssociatedMarkBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Contact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/operationCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+<xsd:complexType name="RegistrantType">
+		<xsd:sequence>
+<xsd:element ref="tmk:Correspondent" minOccurs="0"/>
+<xsd:element ref="tmk:AssociatedMarkBag" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+<xsd:element ref="com:Version" minOccurs="0"/>
+			<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:Contact"/>
+<xsd:element ref="com:PartyIdentifier"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:operationCategory"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

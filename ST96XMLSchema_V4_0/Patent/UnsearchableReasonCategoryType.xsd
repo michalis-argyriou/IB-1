@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="UnsearchableReasonCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Dependent claims">
+				<xsd:annotation>
+					<xsd:documentation>Claims Nos.: (insert value from claim-no) because they are dependent claims and are not drafted in accordance with the second and third sentences of PCT Rule 6.4(a)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not comply with requirements">
+				<xsd:annotation>
+					<xsd:documentation>Claims Nos.: (insert value from claim-no) because they relate to parts of the international application that do not comply with the prescribed requirements to such an extent that no meaningful international search can be carried out, specifically:</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not required to be searched">
+				<xsd:annotation>
+					<xsd:documentation>Claims Nos.: (insert value from claim-no) because they relate to subject matter not required to be searched by this Authority, namely:</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

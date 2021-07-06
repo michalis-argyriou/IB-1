@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationOfficeCode.xsd"/>
+<xsd:include schemaLocation="BasicApplicationBag.xsd"/>
+<xsd:include schemaLocation="BasicRegistrationBag.xsd"/>
+	<xsd:complexType name="BasicRegistrationApplicationType">
+			<xsd:sequence>
+			<xsd:element ref="com:RegistrationOfficeCode" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element ref="tmk:BasicApplicationBag"/>
+					<xsd:element ref="tmk:BasicRegistrationBag" minOccurs="0"/>
+				</xsd:sequence>
+					<xsd:element ref="tmk:BasicRegistrationBag"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

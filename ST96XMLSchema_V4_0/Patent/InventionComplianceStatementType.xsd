@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AdditionalRemark.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:include schemaLocation="../Patent/NoveltyClaimBag.xsd"/>
+<xsd:include schemaLocation="../Patent/InventiveStepClaimBag.xsd"/>
+<xsd:include schemaLocation="../Patent/IndustrialApplicabilityClaimBag.xsd"/>
+	<xsd:complexType name="InventionComplianceStatementType">
+		<xsd:sequence>
+			<xsd:element ref="pat:NoveltyClaimBag"/>
+			<xsd:element ref="pat:InventiveStepClaimBag"/>
+			<xsd:element ref="pat:IndustrialApplicabilityClaimBag"/>
+			<xsd:element ref="com:AdditionalRemark"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

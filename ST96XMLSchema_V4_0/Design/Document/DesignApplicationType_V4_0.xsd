@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RequestSoftware.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationFormName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RequestExamination.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RegistrationOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReceivingOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReceivingOfficeDate.xsd"/>
+<xsd:include schemaLocation="../ReceiptNumber.xsd"/>
+<xsd:include schemaLocation="../SealedDepositIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/FilingPlace.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicantFileReference.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SecondLanguageCode.xsd"/>
+<xsd:include schemaLocation="../DesignTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/CorrespondenceLanguageCode.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationCurrentStatusCategory.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="../DesignatedCountryBag.xsd"/>
+<xsd:include schemaLocation="../DesignBag.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/Authorization.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationEventBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/DocumentIncludedBag.xsd"/>
+<xsd:include schemaLocation="../DesignApplicationStatementBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PaymentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReimbursementBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicationDateTime.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/CorrespondenceAddress.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/BusinessEntityStatusCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/operationCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="DesignApplicationType">
+		<xsd:sequence>
+			<xsd:element ref="com:RequestSoftware" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationFormName" minOccurs="0"/>
+			<xsd:element ref="com:RequestExamination" minOccurs="0"/>
+			<xsd:element ref="com:RegistrationOfficeCode"/>
+			<xsd:element ref="com:ReceivingOfficeCode" minOccurs="0"/>
+			<xsd:element ref="com:ReceivingOfficeDate" minOccurs="0"/>
+			<xsd:element ref="dgn:ReceiptNumber" minOccurs="0"/>
+			<xsd:element ref="dgn:SealedDepositIndicator" minOccurs="0"/>
+			<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+			<xsd:element ref="com:InternationalRegistrationNumber" minOccurs="0"/>
+			<xsd:element ref="com:FilingPlace" minOccurs="0"/>
+			<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationLanguageCode" minOccurs="0"/>
+			<xsd:element ref="com:SecondLanguageCode" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="com:CorrespondenceLanguageCode" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationCurrentStatusCategory" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationCurrentStatusDate" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignatedCountryBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignBag"/>
+			<xsd:element ref="dgn:ApplicantBag"/>
+			<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+			<xsd:element ref="com:Authorization" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationEventBag" minOccurs="0"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignApplicationStatementBag" minOccurs="0"/>
+			<xsd:element ref="com:PaymentBag" minOccurs="0"/>
+			<xsd:element ref="com:ReimbursementBag" minOccurs="0"/>
+			<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:element ref="com:ApplicationDate" minOccurs="0"/>
+				<xsd:element ref="com:ApplicationDateTime"/>
+			</xsd:choice>
+			<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+			<xsd:element ref="com:BusinessEntityStatusCategory" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:operationCategory"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

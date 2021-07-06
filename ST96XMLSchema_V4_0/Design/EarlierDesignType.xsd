@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDate.xsd"/>
+<xsd:include schemaLocation="DesignRepresentationBag.xsd"/>
+<xsd:include schemaLocation="DesignApplicationIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignRegistrationIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignRegistrationDate.xsd"/>
+<xsd:include schemaLocation="EarlierDesignCountryCode.xsd"/>
+<xsd:include schemaLocation="EarlierDesignCategory.xsd"/>
+<xsd:complexType name="EarlierDesignType">
+		<xsd:sequence>
+<xsd:element ref="com:ApplicationDate" minOccurs="0"/>
+<xsd:element ref="dgn:DesignRepresentationBag" minOccurs="0"/>
+			<xsd:choice maxOccurs="5">
+<xsd:element ref="dgn:DesignApplicationIdentifier"/>
+<xsd:element ref="dgn:DesignRegistrationIdentifier"/>
+<xsd:element ref="dgn:DesignRegistrationDate"/>
+<xsd:element ref="dgn:EarlierDesignCountryCode"/>
+<xsd:element ref="dgn:EarlierDesignCategory"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

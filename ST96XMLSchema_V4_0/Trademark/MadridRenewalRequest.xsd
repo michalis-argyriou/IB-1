@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridRenewalRequestType.xsd"/>
+	<xsd:element name="MadridRenewalRequest" type="tmk:MadridRenewalRequestType">
+		<xsd:annotation>
+			<xsd:documentation>Request for renewal of the international registration. Office of origin or Designated Office. Form MM11.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

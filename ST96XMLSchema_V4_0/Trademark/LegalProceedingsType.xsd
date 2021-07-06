@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CancellationProceedings.xsd"/>
+<xsd:include schemaLocation="ConcurrentUseProceedings.xsd"/>
+<xsd:include schemaLocation="OppositionExtensionRequest.xsd"/>
+<xsd:include schemaLocation="ExparteAppeal.xsd"/>
+<xsd:include schemaLocation="MiscellaneousProceedings.xsd"/>
+<xsd:include schemaLocation="OppositionProceedingBag.xsd"/>
+	<xsd:complexType name="LegalProceedingsType">
+		<xsd:annotation>
+			<xsd:documentation>A container for various types of legal proceedings related to a trademark.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="tmk:CancellationProceedings"/>
+			<xsd:element ref="tmk:ConcurrentUseProceedings"/>
+			<xsd:element ref="tmk:OppositionExtensionRequest"/>
+			<xsd:element ref="tmk:ExparteAppeal"/>
+			<xsd:element ref="tmk:MiscellaneousProceedings"/>
+			<xsd:element ref="tmk:OppositionProceedingBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="PartyIdentifierCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Individual identifier">
+				<xsd:annotation>
+					<xsd:documentation>Identifier of individual person</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National identification number">
+				<xsd:annotation>
+					<xsd:documentation>The identification number issued by the national authority to the individual person such as social security number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Passport number">
+				<xsd:annotation>
+					<xsd:documentation>Passport number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Professional registration number ">
+				<xsd:annotation>
+					<xsd:documentation>Professional registration number such as representative number, practitioner registration number and agent number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>			
+			<xsd:enumeration value="Entity identifier">
+				<xsd:annotation>
+					<xsd:documentation>Entity identifier such as Enterprise identifier, Business Number, Company ID)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Tax identifier">
+				<xsd:annotation>
+					<xsd:documentation>Tax identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Customer number">
+				<xsd:annotation>
+					<xsd:documentation>Customer number such as Applicant number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Employee number">
+				<xsd:annotation>
+					<xsd:documentation>Identification number of employee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Contract worker number">
+				<xsd:annotation>
+					<xsd:documentation>Identification number of contract worker</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

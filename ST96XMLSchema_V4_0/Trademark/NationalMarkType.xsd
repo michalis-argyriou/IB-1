@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NationalMarkApplicationNumber.xsd"/>
+<xsd:include schemaLocation="NationalMarkRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="NationalMarkFilingDate.xsd"/>
+<xsd:include schemaLocation="NationalMarkRegistrationDate.xsd"/>
+<xsd:include schemaLocation="NationalMarkPriorityDate.xsd"/>
+<xsd:include schemaLocation="MarkFeatureCode.xsd"/>
+<xsd:include schemaLocation="LiningStipplingStatementText.xsd"/>
+<xsd:include schemaLocation="PseudoMarkText.xsd"/>
+<xsd:include schemaLocation="NamePortraitConsentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:complexType name="NationalMarkType">
+		<xsd:sequence>
+			<xsd:choice>
+<xsd:element ref="tmk:NationalMarkApplicationNumber"/>
+<xsd:element ref="tmk:NationalMarkRegistrationNumber"/>
+			</xsd:choice>
+<xsd:element ref="tmk:NationalMarkFilingDate" minOccurs="0"/>
+<xsd:element ref="tmk:NationalMarkRegistrationDate" minOccurs="0"/>
+<xsd:element ref="tmk:NationalMarkPriorityDate" minOccurs="0"/>
+<xsd:element ref="tmk:MarkFeatureCode" minOccurs="0"/>
+<xsd:element ref="tmk:LiningStipplingStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:PseudoMarkText" minOccurs="0"/>
+<xsd:element ref="tmk:NamePortraitConsentText" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

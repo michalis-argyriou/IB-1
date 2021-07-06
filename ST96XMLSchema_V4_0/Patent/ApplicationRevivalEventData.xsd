@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicationRevivalEventDataType.xsd"/>
+<xsd:element name="ApplicationRevivalEventData" type="pat:ApplicationRevivalEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category C (Application revival). This category is a group of events related to the revival, reinstatement or restoration of any application covered by Category A after it has been discontinued. It includes, for example, when an application was revived following a request for application revival after payment of an outstanding fee, responding to an outstanding action or decision which had resulted in the application being discontinued, or following an appeal. The events in this category may move an application from the termination likely/termination stage into the filing stage, examination stage or pre-grant challenge stage.
+</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

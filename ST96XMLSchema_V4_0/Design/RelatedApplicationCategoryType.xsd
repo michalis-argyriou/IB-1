@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="RelatedApplicationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Division">
+				<xsd:annotation>
+					<xsd:documentation>Division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Related design">
+				<xsd:annotation>
+					<xsd:documentation>Related design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design application based on patent or utility model">
+				<xsd:annotation>
+					<xsd:documentation>Design application based on patent or utility model</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="New application for amended design">
+				<xsd:annotation>
+					<xsd:documentation>New application for amended design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicationFilingEventDataType.xsd"/>
+<xsd:element name="ApplicationFilingEventData" type="pat:ApplicationFilingEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category A (Application filing). This category is a group of events related to the filing of various types of applications for an IP right. It includes, for example, when a national or regional IPO receives an application for the grant of an IP right, together with any additional documentation and fees necessary to obtain a filing date under national or regional law or convention or the Patent Cooperation Treaty (PCT) as applicable. Types of applications covered include patents for inventions, utility models, supplementary protection certificates, plant patents, design patents, inventors’ certificates, utility certificates, and patents of addition. This category also includes events related to the filing of a provisional application, divisional application, continuation, continuation in part, or an application for conversion. It also includes entry of an international application into the national or regional phase.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

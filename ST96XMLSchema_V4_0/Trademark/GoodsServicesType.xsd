@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GoodsServicesClassificationBag.xsd"/>
+<xsd:include schemaLocation="NationalGoodsServices.xsd"/>
+<xsd:include schemaLocation="NationalFilingBasis.xsd"/>
+<xsd:include schemaLocation="ClassificationKindCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ClassificationVersion.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentTextBag.xsd"/>
+<xsd:include schemaLocation="ProposedLeadingClassNumber.xsd"/>
+<xsd:include schemaLocation="ClassDescriptionBag.xsd"/>
+	<xsd:complexType name="GoodsServicesType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:GoodsServicesClassificationBag"/>
+			<xsd:element ref="tmk:NationalGoodsServices" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalFilingBasis" minOccurs="0"/>
+			<xsd:element ref="tmk:ClassificationKindCode" minOccurs="0"/>
+			<xsd:element ref="com:ClassificationVersion" minOccurs="0"/>
+			<xsd:element ref="com:CommentTextBag" minOccurs="0"/>
+			<xsd:element ref="tmk:ProposedLeadingClassNumber" minOccurs="0"/>
+			<xsd:element ref="tmk:ClassDescriptionBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

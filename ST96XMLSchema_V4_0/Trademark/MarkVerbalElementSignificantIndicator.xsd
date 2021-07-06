@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="MarkVerbalElementSignificantIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>Indicates if the words contained in the mark have meaning or not (and therefore can be translated or not).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

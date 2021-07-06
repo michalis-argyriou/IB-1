@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridCeasingEffectType.xsd"/>
+<xsd:element name="MadridCeasingEffect" type="tmk:MadridCeasingEffectType">
+		<xsd:annotation>
+			<xsd:documentation>Ceasing of effect of basic registration or basic application within 5 years of international registration. Office of Origin. Model form 9.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

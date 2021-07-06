@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="DecisionResponsibleCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Trademark examiner">
+				<xsd:annotation>
+					<xsd:documentation>Trademark examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design examiner">
+				<xsd:annotation>
+					<xsd:documentation>Design examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition division">
+				<xsd:annotation>
+					<xsd:documentation>Opposition division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Administration of trademark and design department">
+				<xsd:annotation>
+					<xsd:documentation>Administration of trademark and design department</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Community trademark cancellation division">
+				<xsd:annotation>
+					<xsd:documentation>Community trademark cancellation division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design invalidity division">
+				<xsd:annotation>
+					<xsd:documentation>Design invalidity division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Other</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="HolderDisposalRightRestrictionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Applied">
+				<xsd:annotation>
+					<xsd:documentation>The holder right of disposal of the trademark is restricted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Removed">
+				<xsd:annotation>
+					<xsd:documentation>The previous restriction of the holder right of disposal of the trademark is removed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

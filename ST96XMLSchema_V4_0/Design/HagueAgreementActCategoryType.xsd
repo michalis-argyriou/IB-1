@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="HagueAgreementActCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Act1999">
+				<xsd:annotation>
+					<xsd:documentation>Hague agreement 1999 Act</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Act1960">
+				<xsd:annotation>
+					<xsd:documentation>Hague agreement 1960 Act</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Act1934">
+				<xsd:annotation>
+					<xsd:documentation>Hague agreement 1934 Act</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

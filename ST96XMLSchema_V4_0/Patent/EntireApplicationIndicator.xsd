@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:element name="EntireApplicationIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>Indication that all of the elements within the application are effected</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

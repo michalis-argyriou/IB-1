@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/LanguageBasis.xsd"/>
+<xsd:include schemaLocation="../Patent/ApplicationModificationBasis.xsd"/>
+<xsd:include schemaLocation="../Patent/SEQLBasis.xsd"/>
+<xsd:include schemaLocation="../Patent/PriorityClaimBasis.xsd"/>
+<xsd:include schemaLocation="../Patent/ApplicationElementConsidered.xsd"/>
+<xsd:include schemaLocation="../Patent/TopUpSearchBasis.xsd"/>
+<xsd:include schemaLocation="../Patent/SupplementarySearchAuthorityBag.xsd"/>
+<xsd:include schemaLocation="../Patent/CancelledElementAmendment.xsd"/>
+<xsd:include schemaLocation="../Patent/ElementNotConsideredBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+	<xsd:complexType name="ExaminationReportBasisType">
+		<xsd:sequence>
+			<xsd:element ref="pat:LanguageBasis" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationModificationBasis" minOccurs="0"/>
+			<xsd:element ref="pat:SEQLBasis" minOccurs="0"/>
+			<xsd:element ref="pat:PriorityClaimBasis" minOccurs="0"/>
+			<xsd:element ref="pat:ApplicationElementConsidered"/>
+			<xsd:element ref="pat:TopUpSearchBasis" minOccurs="0"/>
+			<xsd:element ref="pat:SupplementarySearchAuthorityBag" minOccurs="0"/>
+			<xsd:element ref="pat:CancelledElementAmendment" minOccurs="0"/>
+			<xsd:element ref="pat:ElementNotConsideredBag" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

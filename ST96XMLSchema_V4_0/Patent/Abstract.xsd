@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="AbstractType.xsd"/>
+<xsd:element name="Abstract" type="pat:AbstractType">
+		<xsd:annotation>
+			<xsd:documentation>Part of the patent application that consists of a concise summary of the disclosure as contained in the description, the claims and any drawings. It provides technical information only and cannot be taken into account for determining the scope of protection sought. Refers to ST.9 INID Code 57.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

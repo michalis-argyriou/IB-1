@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="AddressLineText.xsd"/>
+<xsd:include schemaLocation="CityName.xsd"/>
+<xsd:include schemaLocation="GeographicRegionName.xsd"/>
+<xsd:include schemaLocation="CountryCode.xsd"/>
+<xsd:include schemaLocation="PostalCode.xsd"/>
+<xsd:include schemaLocation="languageCode.xsd"/>
+<xsd:include schemaLocation="postalAddressCategory.xsd"/>
+<xsd:complexType name="PostalStructuredAddressType">
+		<xsd:sequence>
+<xsd:element ref="com:AddressLineText" maxOccurs="unbounded"/>
+<xsd:element ref="com:CityName" minOccurs="0"/>
+<xsd:element ref="com:GeographicRegionName" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="com:CountryCode"/>
+<xsd:element ref="com:PostalCode" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:postalAddressCategory"/>
+	</xsd:complexType>
+</xsd:schema>

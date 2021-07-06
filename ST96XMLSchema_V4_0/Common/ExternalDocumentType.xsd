@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="FileName.xsd"/>
+<xsd:include schemaLocation="DocumentFormatCategory.xsd"/>
+<xsd:include schemaLocation="DocumentContentCategory.xsd"/>
+<xsd:include schemaLocation="DocumentLocationURI.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="sequenceNumber.xsd"/>
+	<xsd:complexType name="ExternalDocumentType">
+		<xsd:sequence>
+			<xsd:element ref="com:FileName"/>
+			<xsd:element ref="com:DocumentFormatCategory"/>
+			<xsd:element ref="com:DocumentContentCategory" minOccurs="0"/>
+			<xsd:element ref="com:DocumentLocationURI" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

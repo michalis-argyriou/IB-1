@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="TransliterationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Arabic to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Arabic to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Armenian to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Armenian to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chinese to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Chinese to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cyrillic to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Cyrillic to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Georgian to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Georgian to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Greek to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Greek to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Hebrew to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Hebrew to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Indic to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Indic to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Japanese to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Japanese to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Korean to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Korean to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Thai to Latin">
+				<xsd:annotation>
+					<xsd:documentation>Thai to Latin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

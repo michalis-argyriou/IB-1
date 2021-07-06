@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ModifiedPartInformationType.xsd"/>
+	<xsd:element name="ModifiedPartInformation" type="pat:ModifiedPartInformationType">
+		<xsd:annotation>
+			<xsd:documentation>Part of the document affected by the correction information except for bibliography</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

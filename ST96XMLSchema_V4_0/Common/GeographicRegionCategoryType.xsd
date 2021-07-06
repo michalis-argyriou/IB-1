@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="GeographicRegionCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Category of geographic region</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="County">
+				<xsd:annotation>
+					<xsd:documentation>County: Ex. GB</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="State">
+				<xsd:annotation>
+					<xsd:documentation>State: Ex. USA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Canton">
+				<xsd:annotation>
+					<xsd:documentation>Canton: Ex. Switzerland</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Province">
+				<xsd:annotation>
+					<xsd:documentation>Province</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Sector">
+				<xsd:annotation>
+					<xsd:documentation>Sector: Ex. Pakistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Suburb">
+				<xsd:annotation>
+					<xsd:documentation>Suburb: Ex. New Zealand</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Neighbourhood">
+				<xsd:annotation>
+					<xsd:documentation>Neighbourhood: Ex.Mexico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Provincial district">
+				<xsd:annotation>
+					<xsd:documentation>Provincial district</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="City district">
+				<xsd:annotation>
+					<xsd:documentation>City district</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Town">
+				<xsd:annotation>
+					<xsd:documentation>Town</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="District">
+				<xsd:annotation>
+					<xsd:documentation>District</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Village">
+				<xsd:annotation>
+					<xsd:documentation>Village</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Quartier">
+				<xsd:annotation>
+					<xsd:documentation>Quartier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Municipality">
+				<xsd:annotation>
+					<xsd:documentation>Municipality</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

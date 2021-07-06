@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="SEQLNotConsideredCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="paper">
+				<xsd:annotation>
+					<xsd:documentation>The late furnishing or the non compliance with Annex C of the Administrative Instruction of a paper sequence-listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="electronic">
+				<xsd:annotation>
+					<xsd:documentation>The late furnishing or the non compliance with Annex C of the Administrative Instruction of an electronic sequence-listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="late furnishing fee">
+				<xsd:annotation>
+					<xsd:documentation>The late payment of the furnishing fees</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="table">
+				<xsd:annotation>
+					<xsd:documentation>The late furnishing or the non compliance with Annex C-bis of the Administrative Instruction of tables related to a sequence-listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

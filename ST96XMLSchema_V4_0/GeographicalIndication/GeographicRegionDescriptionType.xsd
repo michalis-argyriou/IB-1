@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:include schemaLocation="GeographicRegionDescriptionText.xsd"/>
+<xsd:include schemaLocation="GeographicRegionExclusionDescriptionText.xsd"/>
+<xsd:include schemaLocation="GeographicRegionDescriptionTransliterationText.xsd"/>
+
+	<xsd:complexType name="GeographicRegionDescriptionType">
+		<xsd:sequence>
+			<xsd:sequence>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="gin:GeographicRegionDescriptionText"/>
+					<xsd:element ref="gin:GeographicRegionExclusionDescriptionText" minOccurs="0"/>
+				</xsd:choice>
+				<xsd:element ref="gin:GeographicRegionDescriptionTransliterationText" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

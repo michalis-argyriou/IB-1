@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkFeatureCategory.xsd"/>
+<xsd:include schemaLocation="MarkReproduction.xsd"/>
+<xsd:include schemaLocation="MarkDescriptionBag.xsd"/>
+<xsd:complexType name="MarkRepresentationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:MarkFeatureCategory" minOccurs="0"/>
+<xsd:element ref="tmk:MarkReproduction"/>
+<xsd:element ref="tmk:MarkDescriptionBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

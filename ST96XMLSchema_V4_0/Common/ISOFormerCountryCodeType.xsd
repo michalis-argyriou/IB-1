@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ISOFormerCountryCodeType">
+		<xsd:annotation>
+			<xsd:documentation>This component is composed of Other ISO code types, i.e. Exceptionally reserved, Transitionally reserved, Indeterminately reserved and Formerly used. There are many codes defined under the other types, but this component contains only the codes that IPOs requested to include. If there is any country name conflicted between groups, the name in "Formerly used" should prevail others because ST.96 defines the name which formerly used, e.g. different country names are defined for the code "CS" in Formerly used (Czechoslovakia) and Transitionally reserved (Serbia and Montenegro) types. In ST.96, the code CS is used for Czechoslovakia.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="AN">
+				<xsd:annotation>
+					<xsd:documentation>Netherlands Antilles</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BU">
+				<xsd:annotation>
+					<xsd:documentation>Burma</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CS">
+				<xsd:annotation>
+					<xsd:documentation>Czechoslovakia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DD">
+				<xsd:annotation>
+					<xsd:documentation>German Democratic Republic</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NT">
+				<xsd:annotation>
+					<xsd:documentation>Neutral Zone</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RH">
+				<xsd:annotation>
+					<xsd:documentation>Southern Rhodesia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SU">
+				<xsd:annotation>
+					<xsd:documentation>USSR - Soviet Union</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TP">
+				<xsd:annotation>
+					<xsd:documentation>East Timor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YD">
+				<xsd:annotation>
+					<xsd:documentation>Yemen, Democratic</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YU">
+				<xsd:annotation>
+					<xsd:documentation>Yugoslavia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ZR">
+				<xsd:annotation>
+					<xsd:documentation>Zaire</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

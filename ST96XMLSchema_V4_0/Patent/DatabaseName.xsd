@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="DatabaseName" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Name of database used to access the corresponding cited document</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

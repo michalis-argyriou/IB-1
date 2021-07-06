@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExaminationRequestDate.xsd"/>
+<xsd:include schemaLocation="FirstDespatchedExaminationReportDate.xsd"/>
+<xsd:include schemaLocation="PatentMaintainedAsAmendedDate.xsd"/>
+<xsd:include schemaLocation="NationalApplicationConversionRequest.xsd"/>
+<xsd:include schemaLocation="ProceedingsSuspensionDate.xsd"/>
+<xsd:include schemaLocation="ProceedingsInterruptionDate.xsd"/>
+<xsd:include schemaLocation="ProceedingsResumptionDate.xsd"/>
+<xsd:include schemaLocation="AfterAppealRightsNotificationDate.xsd"/>
+<xsd:include schemaLocation="EnteredIntoForceDate.xsd"/>
+<xsd:include schemaLocation="SearchRequestDate.xsd"/>
+<xsd:include schemaLocation="PatentRestorationDate.xsd"/>
+	<xsd:complexType name="RightsEffectiveDateBagType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="com:ExaminationRequestDate"/>
+			<xsd:element ref="pat:FirstDespatchedExaminationReportDate"/>
+			<xsd:element ref="pat:PatentMaintainedAsAmendedDate"/>
+			<xsd:element ref="pat:NationalApplicationConversionRequest"/>
+			<xsd:element ref="pat:ProceedingsSuspensionDate"/>
+			<xsd:element ref="pat:ProceedingsInterruptionDate"/>
+			<xsd:element ref="pat:ProceedingsResumptionDate"/>
+			<xsd:element ref="pat:AfterAppealRightsNotificationDate"/>
+			<xsd:element ref="pat:EnteredIntoForceDate"/>
+			<xsd:element ref="pat:SearchRequestDate"/>
+			<xsd:element ref="pat:PatentRestorationDate"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

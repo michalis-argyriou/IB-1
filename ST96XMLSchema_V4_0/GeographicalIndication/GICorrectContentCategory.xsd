@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GICorrectContentCategoryType.xsd"/>
+	<xsd:element name="GICorrectContentCategory" type="gin:GICorrectContentCategoryType">
+							<xsd:annotation>
+								<xsd:documentation>Geographical Indication transaction correct content category</xsd:documentation>
+							</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

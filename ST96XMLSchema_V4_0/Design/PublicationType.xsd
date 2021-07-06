@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignPublicationCategory.xsd"/>
+<xsd:include schemaLocation="PublicationSectionCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationSubsection.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationPage.xsd"/>
+<xsd:complexType name="PublicationType">
+		<xsd:sequence>
+<xsd:element ref="com:PublicationIdentifier"/>
+			<xsd:element ref="dgn:DesignPublicationCategory" minOccurs="0"/>
+<xsd:element ref="dgn:PublicationSectionCategory" minOccurs="0"/>
+<xsd:element ref="com:PublicationSubsection" minOccurs="0"/>
+<xsd:element ref="com:PublicationDate" minOccurs="0"/>
+<xsd:element ref="com:PublicationPage" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

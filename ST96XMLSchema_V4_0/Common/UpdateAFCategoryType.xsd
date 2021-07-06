@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="UpdateAFCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="full">
+				<xsd:annotation>
+					<xsd:documentation>A complete new authority file is provided at each update period.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="incremental">
+				<xsd:annotation>
+					<xsd:documentation>Only the new authority file entries published since the last update period are provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="differential">
+				<xsd:annotation>
+					<xsd:documentation>Only the records which have changed or are required to be updated since the last update period are provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

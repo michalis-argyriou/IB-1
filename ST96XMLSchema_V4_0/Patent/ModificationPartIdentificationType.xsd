@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ModifiedBibliography.xsd"/>
+<xsd:include schemaLocation="ModifiedPartInformation.xsd"/>
+	<xsd:complexType name="ModificationPartIdentificationType">
+		<xsd:sequence>
+			<xsd:element ref="pat:ModifiedBibliography" minOccurs="0"/>
+			<xsd:element ref="pat:ModifiedPartInformation" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

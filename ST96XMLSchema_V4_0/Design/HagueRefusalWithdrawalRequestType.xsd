@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:include schemaLocation="AffectedDesign.xsd"/>
+<xsd:include schemaLocation="HagueDesignBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DecisionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DecisionEffectiveDate.xsd"/>
+<xsd:include schemaLocation="Amendment.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeSpecificContent.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+		<xsd:complexType name="HagueRefusalWithdrawalRequestType">
+		<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumber"/>
+<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="dgn:AffectedDesign"/>
+<xsd:element ref="dgn:HagueDesignBag" minOccurs="0"/>
+<xsd:element ref="com:DecisionDate"/>
+<xsd:element ref="com:DecisionEffectiveDate"/>
+<xsd:element ref="dgn:Amendment" minOccurs="0"/>
+<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+<xsd:element ref="com:OfficeSpecificContent" minOccurs="0"/>
+<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

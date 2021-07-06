@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DateType.xsd"/>
+<xsd:element name="AllowanceNoticeDate" type="com:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the notice of allowance was issued by the national office. The notice of allowance in an intent-to-use application will issue within the same time frame that a registration would issue in a use application. The notice of allowance is a key document because its issue date establishes the due date for filing a statement of use.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

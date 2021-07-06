@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OppositionEventBagType.xsd"/>
+<xsd:element name="OppositionEventBag" type="tmk:OppositionEventBagType">
+		<xsd:annotation>
+			<xsd:documentation>Collection of events or actions on an opposition</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

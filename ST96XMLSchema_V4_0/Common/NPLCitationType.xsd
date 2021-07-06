@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NPLCitationText.xsd"/>
+<xsd:include schemaLocation="CitedBook.xsd"/>
+<xsd:include schemaLocation="CitedJournalArticle.xsd"/>
+<xsd:include schemaLocation="CitedConferenceProceedingsArticle.xsd"/>
+<xsd:include schemaLocation="CitedOtherKindNPL.xsd"/>
+<xsd:include schemaLocation="WebURI.xsd"/>
+<xsd:include schemaLocation="FileName.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="languageCode.xsd"/>
+<xsd:include schemaLocation="sequenceNumber.xsd"/>
+<xsd:complexType name="NPLCitationType">
+		<xsd:choice>
+<xsd:element ref="com:NPLCitationText"/>
+<xsd:element ref="com:CitedBook"/>
+<xsd:element ref="com:CitedJournalArticle"/>
+<xsd:element ref="com:CitedConferenceProceedingsArticle"/>
+<xsd:element ref="com:CitedOtherKindNPL"/>
+<xsd:element ref="com:WebURI"/>
+<xsd:element ref="com:FileName"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

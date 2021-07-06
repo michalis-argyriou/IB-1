@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="InventionTotalQuantity.xsd"/>
+<xsd:include schemaLocation="InventionClaimGroup.xsd"/>
+<xsd:include schemaLocation="IncomplianceReasonRemark.xsd"/>
+	<xsd:complexType name="InventionUnityIncomplianceReasonType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pat:InventionTotalQuantity"/>
+			<xsd:element ref="pat:InventionClaimGroup"/>
+			<xsd:element ref="pat:IncomplianceReasonRemark"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

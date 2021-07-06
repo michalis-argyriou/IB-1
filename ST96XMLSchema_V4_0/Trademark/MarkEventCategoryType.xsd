@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MarkEventCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Application filed">
+				<xsd:annotation>
+					<xsd:documentation>Application filed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Filing date accorded">
+				<xsd:annotation>
+					<xsd:documentation>Filing date accorded</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Classification checked">
+				<xsd:annotation>
+					<xsd:documentation>Classification checked</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application accepted">
+				<xsd:annotation>
+					<xsd:documentation>Application accepted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application published">
+				<xsd:annotation>
+					<xsd:documentation>Application published</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition pending">
+				<xsd:annotation>
+					<xsd:documentation>Opposition pending</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registration published">
+				<xsd:annotation>
+					<xsd:documentation>Registration published</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application refused">
+				<xsd:annotation>
+					<xsd:documentation>Application refused</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Application withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal pending">
+				<xsd:annotation>
+					<xsd:documentation>Appeal pending</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Interruption of proceeding">
+				<xsd:annotation>
+					<xsd:documentation>Interruption of proceedings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registration cancelled">
+				<xsd:annotation>
+					<xsd:documentation>Registration cancelled</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Conversion requested">
+				<xsd:annotation>
+					<xsd:documentation>Conversion requested</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registration surrendered">
+				<xsd:annotation>
+					<xsd:documentation>Registration surrendered</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Revocation proceeding pending">
+				<xsd:annotation>
+					<xsd:documentation>Revocation proceedings pending</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidity proceeding pending">
+				<xsd:annotation>
+					<xsd:documentation>Invalidity proceedings pending</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Action before court of justice pending">
+				<xsd:annotation>
+					<xsd:documentation>Action before court of justice pending</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National prosecution history entry">
+				<xsd:annotation>
+					<xsd:documentation>One event in a list of historical events related to the prosecution of a national trademark</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Domestic international application history entry">
+				<xsd:annotation>
+					<xsd:documentation>One event in a list of historical events related to an international application, kept by the national office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National board proceeding history entry">
+				<xsd:annotation>
+					<xsd:documentation>One event in a list of historical events related to single national trademark board proceedings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National assignment history entry">
+				<xsd:annotation>
+					<xsd:documentation>One event in a possible list of historical events related to a single national trademark assignment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Location history entry">
+				<xsd:annotation>
+					<xsd:documentation>One event in a possible list of location events related to a single national trademark</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

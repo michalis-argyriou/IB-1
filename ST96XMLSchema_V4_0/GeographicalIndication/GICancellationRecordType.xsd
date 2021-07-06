@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GIBasicRecordType.xsd"/>
+<xsd:include schemaLocation="CancellationDate.xsd"/>
+<xsd:include schemaLocation="CancellationCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" schemaLocation="../Trademark/FactDecisionText.xsd"/>
+	<xsd:complexType name="GICancellationRecordType">
+		<xsd:complexContent>
+			<xsd:extension base="gin:GIBasicRecordType">
+				<xsd:sequence>
+					<xsd:element ref="gin:CancellationDate"/>
+					<xsd:element ref="gin:CancellationCategory" minOccurs="0"/>
+					<xsd:element ref="tmk:FactDecisionText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

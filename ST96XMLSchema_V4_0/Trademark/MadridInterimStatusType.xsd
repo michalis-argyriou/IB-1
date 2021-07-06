@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NotificationLanguage.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:include schemaLocation="OppositionPeriodEndDate.xsd"/>
+<xsd:include schemaLocation="DesignationRecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeSpecificContent.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+	<xsd:complexType name="MadridInterimStatusType">
+		<xsd:sequence>
+			<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:NotificationLanguage"/>
+			<xsd:element ref="com:InternationalRegistrationNumber"/>
+			<xsd:element ref="tmk:HolderBag"/>
+			<xsd:element ref="tmk:OppositionPeriodEndDate" minOccurs="0"/>
+			<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+			<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:RecordNotificationDate" minOccurs="0"/>
+			<xsd:element ref="com:OfficeSpecificContent" minOccurs="0"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:element ref="tmk:DesignationRecordIdentifier" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

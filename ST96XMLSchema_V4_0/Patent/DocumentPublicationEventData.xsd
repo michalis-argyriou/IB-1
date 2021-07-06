@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DocumentPublicationEventDataType.xsd"/>
+<xsd:element name="DocumentPublicationEventData" type="pat:DocumentPublicationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category Q (Document publication). This category is a group of events related to document publication by the IPO. It includes, for example, publication of an application, IP right document or bibliographic information by the IPO. Documents may relate to any type of application in Category A or any type of IP right in Category F. The events in this category may occur during any stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

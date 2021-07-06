@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="OppositionEventCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Opposition filed">
+				<xsd:annotation>
+					<xsd:documentation>Opposition filed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Admissibility checked">
+				<xsd:annotation>
+					<xsd:documentation>Admissibility checked</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Agreement between parties">
+				<xsd:annotation>
+					<xsd:documentation>Agreement between parties</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision">
+				<xsd:annotation>
+					<xsd:documentation>Final decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Undefined">
+				<xsd:annotation>
+					<xsd:documentation>Undefined</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

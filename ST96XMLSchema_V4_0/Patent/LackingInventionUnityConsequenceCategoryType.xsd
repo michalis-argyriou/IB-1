@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="LackingInventionUnityConsequenceCategoryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="FeesFullyPaid_ProtestFee_AllInventions">
+				<xsd:annotation>
+					<xsd:documentation>All additional fees were paid and this report covers all inventions that can be searched or examined. A protest was made and the protest fee was timely paid.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesFullyPaid_NoProtestFee_AllInventions">
+				<xsd:annotation>
+					<xsd:documentation>All additional fees were paid and this report covers all inventions that can be searched or examined. A protest was made but the protest fee was not timely paid.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesFullyPaid_NoProtest_AllInventions">
+				<xsd:annotation>
+					<xsd:documentation>All additional fees were paid and this report covers all inventions that can be searched or examined. No protest was made.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NoFeesInvited_AllInventions">
+				<xsd:annotation>
+					<xsd:documentation>The applicant was not invited to pay additional fees despite the finding of lack of unity of invention. This report covers all inventions that can be searched or examined.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesPartiallyPaid_ProtestFee_RestrictedInvention">
+				<xsd:annotation>
+					<xsd:documentation>Some but not all additional fees were paid and this report covers a restricted set of inventions. A protest was made and the protest fee was timely paid.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesPartiallyPaid_NoProtestFee_RestrictedInvention">
+				<xsd:annotation>
+					<xsd:documentation>Some but not all additional fees were paid and this report covers a restricted set of inventions. A protest was made but the protest fee was not timely paid.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesPartiallyPaid_NoProtest_RestrictedInvention">
+				<xsd:annotation>
+					<xsd:documentation>Some but not all additional fees were paid and this report covers a restricted set of inventions. No protest was made.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FeesNotPaid_MainInvention">
+				<xsd:annotation>
+					<xsd:documentation>No additional fees were timely paid and this report covers only the main invention, namely, the invention first mentioned in the claims.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Response_RestrictedInvention">
+				<xsd:annotation>
+					<xsd:documentation>The applicant has restricted the claims following the invitation to restrict or pay additional fees. If the restriction resolves the issue of lack of unity of invention in the application, this report covers all parts of the (amended) application. If the restriction is not sufficient to resolve the issue of lack of unity of invention in the application, this report covers the invention first mentioned in the claims after restriction and any invention for which additional fees have been paid.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NoResponse_MainInvention">
+				<xsd:annotation>
+					<xsd:documentation>Neither additional fees were timely paid nor claims were restricted and this report covers only the main invention, namely, the invention first mentioned in the claims.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SupplementarySearch_MainInvention">
+				<xsd:annotation>
+					<xsd:documentation>Following the finding of lack of unity of invention, this supplementary search report covers only the main invention, namely, the invention first mentioned in the claims.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SupplementarySearch_RestrictedInvention">
+				<xsd:annotation>
+					<xsd:documentation>At the request of the applicant, this supplementary search report covers only the invention specified by the applicant.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SupplementarySearch_EarlierSearchReport">
+				<xsd:annotation>
+					<xsd:documentation>The Authority agrees with the conclusions of the earlier search report regarding unity of invention.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

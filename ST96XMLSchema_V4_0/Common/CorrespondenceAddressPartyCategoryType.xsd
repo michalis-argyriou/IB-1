@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="CorrespondenceAddressPartyCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Applicant">
+				<xsd:annotation>
+					<xsd:documentation>Applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative">
+				<xsd:annotation>
+					<xsd:documentation>Representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Breeder">
+				<xsd:annotation>
+					<xsd:documentation>Breeder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Examiner">
+				<xsd:annotation>
+					<xsd:documentation>Examiner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Third party">
+				<xsd:annotation>
+					<xsd:documentation>Third party</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IP Office">
+				<xsd:annotation>
+					<xsd:documentation>IP Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

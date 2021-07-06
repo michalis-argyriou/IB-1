@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StatusEventCodeType.xsd"/>
+<xsd:element name="StatusEventCode" type="pat:StatusEventCodeType">
+		<xsd:annotation>
+			<xsd:documentation>The status event code consists of three components: state information, stage information (previous to current stage) and event (key and detailed event), which determine the legal status of an application or IP right.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ClassificationKindCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Primary">
+				<xsd:annotation>
+					<xsd:documentation>The classification code that is primarily in the national office or the country of origin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Nice">
+				<xsd:annotation>
+					<xsd:documentation>Nice International classification of goods and services</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Domestic">
+				<xsd:annotation>
+					<xsd:documentation>Domestic classification system used</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Pseudo mark">
+				<xsd:annotation>
+					<xsd:documentation>Nice International Class number(s) that equate to the identified goods and/or services in class that is nationally classified.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Those not captured by the other permissible values.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

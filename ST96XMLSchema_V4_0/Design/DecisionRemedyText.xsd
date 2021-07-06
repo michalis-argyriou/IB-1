@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OrderedTextType.xsd"/>
+<xsd:element name="DecisionRemedyText" type="com:OrderedTextType">
+		<xsd:annotation>
+			<xsd:documentation>Text which provides instructions on how to follow up on applying this decision</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="DecisionGroundsCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Insufficient disclosure">
+				<xsd:annotation>
+					<xsd:documentation>The representation of the design does not disclose sufficiently or adequately the scope for which protection is sought</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Conflicting application or registration">
+				<xsd:annotation>
+					<xsd:documentation>A prior or concurrent application or a prior registration conflicts with the present application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Ambiguous product indication">
+				<xsd:annotation>
+					<xsd:documentation>The product indication is ambiguous</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Lack of novelty">
+				<xsd:annotation>
+					<xsd:documentation>The design does not meet the novelty criteria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Lack of creativity">
+				<xsd:annotation>
+					<xsd:documentation>The design does not meet the creativity criteria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Noncompliance with design definition">
+				<xsd:annotation>
+					<xsd:documentation>The represented subject does not meet the legal definition of a design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Public order">
+				<xsd:annotation>
+					<xsd:documentation>The design is contrary to public order or morality</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Lack of unity">
+				<xsd:annotation>
+					<xsd:documentation>The design does not meet the criteria of unity (of design, of production, of use, etc.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>The ground of refusal is not defined in the Decision Grounds Category</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

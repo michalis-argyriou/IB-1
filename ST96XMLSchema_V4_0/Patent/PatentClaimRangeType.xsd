@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentClaimStartNumber.xsd"/>
+<xsd:include schemaLocation="PatentClaimEndNumber.xsd"/>
+<xsd:complexType name="PatentClaimRangeType">
+		<xsd:sequence>
+<xsd:element ref="pat:PatentClaimStartNumber"/>
+<xsd:element ref="pat:PatentClaimEndNumber" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

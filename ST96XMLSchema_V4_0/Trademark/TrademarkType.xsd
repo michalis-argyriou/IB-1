@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ReceivingOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ReceivingOfficeDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDateTime.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationDate.xsd"/>
+<xsd:include schemaLocation="OtherDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FilingPlace.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:include schemaLocation="ApplicantSideCaseIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SecondLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceLanguageCode.xsd"/>
+<xsd:include schemaLocation="ExaminedApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+<xsd:include schemaLocation="TerminationDate.xsd"/>
+<xsd:include schemaLocation="MarkCurrentStatusCode.xsd"/>
+<xsd:include schemaLocation="MarkCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryBag.xsd"/>
+<xsd:include schemaLocation="PreviousRegistrationBag.xsd"/>
+<xsd:include schemaLocation="AssociatedMarkBag.xsd"/>
+<xsd:include schemaLocation="DivisionalApplicationBag.xsd"/>
+<xsd:include schemaLocation="ConversionApplicationBag.xsd"/>
+<xsd:include schemaLocation="BasicRegistrationApplicationBag.xsd"/>
+<xsd:include schemaLocation="InternationalMarkIdentifierBag.xsd"/>
+<xsd:include schemaLocation="MarkCategory.xsd"/>
+<xsd:include schemaLocation="MarkRepresentation.xsd"/>
+<xsd:include schemaLocation="MarkDisclaimerBag.xsd"/>
+<xsd:include schemaLocation="NonUseCancelledIndicator.xsd"/>
+<xsd:include schemaLocation="SpecialCircumstanceText.xsd"/>
+<xsd:include schemaLocation="MarkSeriesTotalQuantity.xsd"/>
+<xsd:include schemaLocation="TradeDistinctivenessIndicator.xsd"/>
+<xsd:include schemaLocation="TradeDistinctivenessText.xsd"/>
+<xsd:include schemaLocation="UseRight.xsd"/>
+<xsd:include schemaLocation="AsItIsProtectionIndicator.xsd"/>
+<xsd:include schemaLocation="UseRequirementText.xsd"/>
+<xsd:include schemaLocation="UseLimitationText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="OppositionPeriodStartDate.xsd"/>
+<xsd:include schemaLocation="OppositionPeriodEndDate.xsd"/>
+<xsd:include schemaLocation="GoodsServicesBag.xsd"/>
+<xsd:include schemaLocation="PriorityBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExhibitionPriorityBag.xsd"/>
+<xsd:include schemaLocation="SeniorityBag.xsd"/>
+<xsd:include schemaLocation="PublicationBag.xsd"/>
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:include schemaLocation="NationalRepresentative.xsd"/>
+<xsd:include schemaLocation="NationalCorrespondent.xsd"/>
+<xsd:include schemaLocation="RecordAttorney.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StaffBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Authorization.xsd"/>
+<xsd:include schemaLocation="OppositionBag.xsd"/>
+<xsd:include schemaLocation="MarkRecordBag.xsd"/>
+<xsd:include schemaLocation="MarkEventBag.xsd"/>
+<xsd:include schemaLocation="TrademarkDocumentBag.xsd"/>
+<xsd:include schemaLocation="MarkUserBag.xsd"/>
+<xsd:include schemaLocation="MarkFeatureDescription.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Version.xsd"/>
+<xsd:include schemaLocation="AssignmentBag.xsd"/>
+<xsd:include schemaLocation="LegalProceedingsBag.xsd"/>
+<xsd:include schemaLocation="NationalTrademarkInformation.xsd"/>
+<xsd:include schemaLocation="NationalGoodsServices.xsd"/>
+<xsd:include schemaLocation="NationalFilingBasis.xsd"/>
+<xsd:include schemaLocation="NationalCaseLocation.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/operationCategory.xsd"/>
+	<xsd:complexType name="TrademarkType">
+		<xsd:sequence>
+			<xsd:element ref="com:RegistrationOfficeCode" minOccurs="0"/>
+			<xsd:element ref="com:ReceivingOfficeCode" minOccurs="0"/>
+			<xsd:element ref="com:ReceivingOfficeDate" minOccurs="0"/>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="com:ApplicationNumber"/>
+				<xsd:element ref="com:RegistrationNumber"/>
+			</xsd:choice>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="com:ApplicationDate"/>
+				<xsd:element ref="com:ApplicationDateTime"/>
+			</xsd:choice>
+			<xsd:element ref="com:RegistrationDate" minOccurs="0"/>
+			<xsd:element ref="tmk:OtherDate" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="com:FilingPlace" minOccurs="0"/>
+			<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+			<xsd:element ref="tmk:ApplicantSideCaseIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:ApplicationLanguageCode" minOccurs="0"/>
+			<xsd:element ref="com:SecondLanguageCode" minOccurs="0"/>
+			<xsd:element ref="com:CorrespondenceLanguageCode" minOccurs="0"/>
+			<xsd:element ref="tmk:ExaminedApplicationNumber" minOccurs="0"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="tmk:TerminationDate" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkCurrentStatusCode" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkCurrentStatusDate" minOccurs="0"/>
+			<xsd:element ref="tmk:DesignatedCountryBag" minOccurs="0"/>
+			<xsd:element ref="tmk:PreviousRegistrationBag" minOccurs="0"/>
+			<xsd:element ref="tmk:AssociatedMarkBag" minOccurs="0"/>
+			<xsd:element ref="tmk:DivisionalApplicationBag" minOccurs="0"/>
+			<xsd:element ref="tmk:ConversionApplicationBag" minOccurs="0"/>
+			<xsd:element ref="tmk:BasicRegistrationApplicationBag" minOccurs="0"/>
+			<xsd:element ref="tmk:InternationalMarkIdentifierBag" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="tmk:MarkCategory" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="tmk:MarkRepresentation" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkDisclaimerBag" minOccurs="0"/>
+			<xsd:element ref="tmk:NonUseCancelledIndicator" minOccurs="0"/>
+			<xsd:element ref="tmk:SpecialCircumstanceText" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkSeriesTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="tmk:TradeDistinctivenessIndicator" minOccurs="0"/>
+			<xsd:element ref="tmk:TradeDistinctivenessText" minOccurs="0"/>
+			<xsd:element ref="tmk:UseRight" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="tmk:AsItIsProtectionIndicator" minOccurs="0"/>
+			<xsd:element ref="tmk:UseRequirementText" minOccurs="0"/>
+			<xsd:element ref="tmk:UseLimitationText" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:element ref="tmk:OppositionPeriodStartDate" minOccurs="0"/>
+			<xsd:element ref="tmk:OppositionPeriodEndDate" minOccurs="0"/>
+			<xsd:element ref="tmk:GoodsServicesBag" minOccurs="0"/>
+			<xsd:element ref="tmk:PriorityBag" minOccurs="0"/>
+			<xsd:element ref="com:ExhibitionPriorityBag" minOccurs="0"/>
+			<xsd:element ref="tmk:SeniorityBag" minOccurs="0"/>
+			<xsd:element ref="tmk:PublicationBag" minOccurs="0"/>
+			<xsd:element ref="tmk:ApplicantBag" minOccurs="0"/>
+			<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalRepresentative" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalCorrespondent" minOccurs="0"/>
+			<xsd:element ref="tmk:RecordAttorney" minOccurs="0"/>
+			<xsd:element ref="com:StaffBag" minOccurs="0"/>
+			<xsd:element ref="com:Authorization" minOccurs="0"/>
+			<xsd:element ref="tmk:OppositionBag" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkRecordBag" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkEventBag" minOccurs="0"/>
+			<xsd:element ref="tmk:TrademarkDocumentBag" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkUserBag" minOccurs="0"/>
+			<xsd:element ref="tmk:MarkFeatureDescription" minOccurs="0"/>
+			<xsd:element ref="com:Version" minOccurs="0"/>
+			<xsd:element ref="tmk:AssignmentBag" minOccurs="0"/>
+			<xsd:element ref="tmk:LegalProceedingsBag" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalTrademarkInformation" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalGoodsServices" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalFilingBasis" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalCaseLocation" minOccurs="0"/>
+			<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:operationCategory"/>
+	</xsd:complexType>
+</xsd:schema>

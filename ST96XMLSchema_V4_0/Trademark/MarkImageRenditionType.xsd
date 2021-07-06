@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkImageRenditionCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourModeCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/HeightMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WidthMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ImageFormatCategory.xsd"/>
+<xsd:complexType name="MarkImageRenditionType">
+		<xsd:sequence>
+<xsd:element ref="tmk:MarkImageRenditionCategory" minOccurs="0"/>
+<xsd:element ref="com:FileName" minOccurs="0"/>
+<xsd:element ref="com:ImageFormatCategory" minOccurs="0"/>
+<xsd:element ref="com:ColourModeCategory" minOccurs="0"/>
+<xsd:element ref="com:HeightMeasure"/>
+<xsd:element ref="com:WidthMeasure"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkDescriptionText.xsd"/>
+<xsd:include schemaLocation="MarkVoluntaryDescriptionText.xsd"/>
+<xsd:include schemaLocation="MarkDescriptionImage.xsd"/>
+<xsd:include schemaLocation="NationalMarkDescription.xsd"/>
+<xsd:complexType name="MarkDescriptionBagType">
+<xsd:sequence>
+<xsd:choice>
+<xsd:sequence>
+<xsd:element ref="tmk:MarkDescriptionText" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:MarkVoluntaryDescriptionText" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+<xsd:element ref="tmk:MarkVoluntaryDescriptionText" maxOccurs="unbounded"/>
+</xsd:choice>
+<xsd:element ref="tmk:MarkDescriptionImage" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:NationalMarkDescription" minOccurs="0"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

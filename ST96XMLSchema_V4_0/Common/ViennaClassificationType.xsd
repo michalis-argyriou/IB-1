@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ViennaCategory.xsd"/>
+<xsd:include schemaLocation="ViennaDivision.xsd"/>
+<xsd:include schemaLocation="ViennaSection.xsd"/>
+<xsd:complexType name="ViennaClassificationType">
+		<xsd:annotation>
+			<xsd:documentation>Vienna classification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+<xsd:element ref="com:ViennaCategory"/>
+<xsd:element ref="com:ViennaDivision" minOccurs="0"/>
+<xsd:element ref="com:ViennaSection" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

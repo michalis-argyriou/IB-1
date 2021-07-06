@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DatabaseName.xsd"/>
+<xsd:include schemaLocation="DatabaseQueryText.xsd"/>
+<xsd:include schemaLocation="FoundDocumentQuantity.xsd"/>
+<xsd:include schemaLocation="ViewedDocumentQuantity.xsd"/>
+<xsd:include schemaLocation="SearchSystemName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NPLCitationBag.xsd"/>
+<xsd:include schemaLocation="SequenceListText.xsd"/>
+<xsd:include schemaLocation="ReferenceCitationSequenceNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="SearchedDatabaseType">
+		<xsd:sequence>
+<xsd:element ref="pat:DatabaseName" maxOccurs="unbounded"/>
+<xsd:element ref="pat:DatabaseQueryText" minOccurs="0"/>
+<xsd:element ref="pat:FoundDocumentQuantity" minOccurs="0"/>
+<xsd:element ref="pat:ViewedDocumentQuantity" minOccurs="0"/>
+<xsd:element ref="pat:SearchSystemName" minOccurs="0"/>
+<xsd:element ref="com:NPLCitationBag" minOccurs="0"/>
+<xsd:element ref="pat:SequenceListText" minOccurs="0"/>
+<xsd:element ref="pat:ReferenceCitationSequenceNumber" minOccurs="0"/>
+		</xsd:sequence>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

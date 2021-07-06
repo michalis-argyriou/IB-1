@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CitedDocumentCopyBagType.xsd"/>
+	<xsd:element name="CitedDocumentCopyBag" type="pat:CitedDocumentCopyBagType">
+		<xsd:annotation>
+			<xsd:documentation>A collection of cited documents</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

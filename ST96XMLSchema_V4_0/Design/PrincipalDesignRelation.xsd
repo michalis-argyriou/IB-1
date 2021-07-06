@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PrincipalDesignRelationType.xsd"/>
+	<xsd:element name="PrincipalDesignRelation" type="dgn:PrincipalDesignRelationType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Type of relation to a principal design. When the principal design is set to "Current application" in a dgn:HagueApplication, the value of com:OfficeReferenceIdentifier should be used to as the value for com:DocumentIdentifier. When the principal design is set to "Current application" in a dgn:HagueRegistration, the value of com:InternationalRegistrationNumber should be used as the value for com:DocumentIdentifier
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

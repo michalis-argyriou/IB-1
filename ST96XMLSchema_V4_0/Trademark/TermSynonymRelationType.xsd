@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TermIdentifier.xsd"/>
+<xsd:include schemaLocation="TermSynonymIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/operationCategory.xsd"/>
+<xsd:complexType name="TermSynonymRelationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:TermIdentifier"/>
+<xsd:element ref="tmk:TermSynonymIdentifier"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:operationCategory"/>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueCorrectionBagType.xsd"/>
+<xsd:element name="HagueCorrectionBag" type="dgn:HagueCorrectionBagType">
+		<xsd:annotation>
+			<xsd:documentation>Correction to the international design register</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

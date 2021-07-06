@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IPOfficeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RequestDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RequestDateTime.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/TransactionTotalQuantity.xsd"/>
+<xsd:include schemaLocation="HagueOfficeTransactionCountBag.xsd"/>
+	<xsd:complexType name="HagueOfficeTransactionHeaderType">
+		<xsd:sequence>
+			<xsd:element ref="com:IPOfficeCode" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:element ref="com:RequestDate"/>
+				<xsd:element ref="com:RequestDateTime"/>
+			</xsd:choice>
+			<xsd:element ref="com:TransactionTotalQuantity"/>
+			<xsd:element ref="dgn:HagueOfficeTransactionCountBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

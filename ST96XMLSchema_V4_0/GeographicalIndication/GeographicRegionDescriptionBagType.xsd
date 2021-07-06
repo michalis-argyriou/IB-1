@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GeographicRegionDescription.xsd"/>
+<xsd:include schemaLocation="Map.xsd"/>
+<xsd:include schemaLocation="ReputationFactorText.xsd"/>
+<xsd:include schemaLocation="QualityFactorText.xsd"/>
+<xsd:include schemaLocation="CausalInteractionText.xsd"/>
+<xsd:include schemaLocation="CrossBorderIndicator.xsd"/>
+<xsd:include schemaLocation="DemarcatedAreaDescriptionText.xsd"/>
+<xsd:include schemaLocation="ReservationNameText.xsd"/>
+<xsd:include schemaLocation="NUTSDocument.xsd"/>
+
+	<xsd:complexType name="GeographicRegionDescriptionBagType">
+		<xsd:sequence>
+			<xsd:element ref="gin:GeographicRegionDescription" maxOccurs="unbounded"/>
+			<xsd:element ref="gin:Map" minOccurs="0"/>
+			<xsd:element ref="gin:CausalInteractionText" minOccurs="0"/>
+			<xsd:element ref="gin:ReputationFactorText" minOccurs="0"/>
+			<xsd:element ref="gin:QualityFactorText" minOccurs="0"/>
+			<xsd:element ref="gin:ReservationNameText" minOccurs="0"/>
+			<xsd:element ref="gin:DemarcatedAreaDescriptionText" minOccurs="0"/>
+			<xsd:element ref="gin:CrossBorderIndicator" minOccurs="0"/>
+			<xsd:element ref="gin:NUTSDocument" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

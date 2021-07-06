@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEventDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WebURI.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/languageCode.xsd"/>
+<xsd:include schemaLocation="GINameBag.xsd"/>
+<xsd:include schemaLocation="ProductIndicationBag.xsd"/>
+<xsd:include schemaLocation="FeatureDescriptionBag.xsd"/>
+<xsd:include schemaLocation="GeographicRegionDescriptionBag.xsd"/>
+<xsd:include schemaLocation="GICategory.xsd"/>
+<xsd:include schemaLocation="OriginCertificateBag.xsd"/>
+<xsd:include schemaLocation="GIPublicationBag.xsd"/>
+<xsd:include schemaLocation="GIStatusCategory.xsd"/>
+<xsd:include schemaLocation="WithdrawalDate.xsd"/>
+<xsd:include schemaLocation="AuthorizedUser.xsd"/>
+	<xsd:complexType name="GIDataType">
+		<xsd:sequence>
+			<xsd:sequence minOccurs="0">
+				<xsd:element ref="com:ApplicationNumber"/>
+				<xsd:element ref="com:ApplicationDate"/>
+			</xsd:sequence>
+			<xsd:sequence minOccurs="0">
+				<xsd:element ref="com:RegistrationNumber"/>
+				<xsd:element ref="com:RegistrationDate" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:element ref="gin:GINameBag"/>
+			<xsd:element ref="gin:ProductIndicationBag"/>
+			<xsd:element ref="gin:FeatureDescriptionBag"/>
+			<xsd:element ref="gin:GeographicRegionDescriptionBag"/>
+			<xsd:element ref="gin:GICategory"/>
+			<xsd:element ref="gin:OriginCertificateBag" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:element ref="gin:AuthorizedUser" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:RecordEventDate" minOccurs="0"/>
+			<xsd:element ref="gin:GIPublicationBag" minOccurs="0"/>
+			<xsd:element ref="gin:GIStatusCategory" minOccurs="0"/>
+			<xsd:element ref="gin:WithdrawalDate" minOccurs="0"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="com:WebURI" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode" use="required"/>
+		<xsd:attribute ref="com:languageCode" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

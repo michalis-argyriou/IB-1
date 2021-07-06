@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ExtensionTerminationReasonCategoryType.xsd"/>
+	<xsd:element name="ExtensionTerminationReasonCategory" type="pat:ExtensionTerminationReasonCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>The reason why an Extension to an SPC is not in force, for cases where it has terminated by means other than expiry</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

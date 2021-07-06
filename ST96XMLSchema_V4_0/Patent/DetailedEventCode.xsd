@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DetailedEventCodeType.xsd"/>
+<xsd:element name="DetailedEventCode" type="pat:DetailedEventCodeType">
+		<xsd:annotation>
+			<xsd:documentation>A code indicating a more specific event in a category than a key event.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

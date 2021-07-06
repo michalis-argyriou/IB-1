@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:include schemaLocation="MapIssueDate.xsd"/>
+<xsd:include schemaLocation="MapTitle.xsd"/>
+<xsd:include schemaLocation="MapPublisherData.xsd"/>
+<xsd:include schemaLocation="CertifiedCopyIndicator.xsd"/>
+
+	<xsd:complexType name="MapType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="gin:MapIssueDate"/>
+			<xsd:element ref="gin:MapTitle"/>
+			<xsd:element ref="gin:MapPublisherData"/>
+			<xsd:element ref="gin:CertifiedCopyIndicator"/>
+			<xsd:element ref="com:FileName"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="EarlierNoSearchDeclaration.xsd"/>
+<xsd:include schemaLocation="DeclarationSubjectMatterCategory.xsd"/>
+<xsd:include schemaLocation="IncompliantPartCategory.xsd"/>
+<xsd:include schemaLocation="SEQLNotConsideredCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AdditionalRemark.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Heading.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/P.xsd"/>
+<xsd:complexType name="NoSearchReportDeclarationType">
+		<xsd:choice>
+			<xsd:sequence>
+<xsd:element ref="pat:EarlierNoSearchDeclaration" maxOccurs="unbounded" minOccurs="0"/>
+				<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="pat:DeclarationSubjectMatterCategory"/>
+<xsd:element ref="pat:IncompliantPartCategory"/>
+<xsd:element ref="pat:SEQLNotConsideredCategory"/>
+				</xsd:choice>
+<xsd:element ref="com:AdditionalRemark" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:sequence>
+<xsd:element ref="com:Heading" maxOccurs="unbounded"/>
+<xsd:element ref="com:P" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

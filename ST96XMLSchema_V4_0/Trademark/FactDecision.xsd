@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="FactDecisionType.xsd"/>
+<xsd:element name="FactDecision" type="tmk:FactDecisionType">
+		<xsd:annotation>
+			<xsd:documentation>Facts and decisions affecting the basic application, the registration resulting therefrom, or the basic registration</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

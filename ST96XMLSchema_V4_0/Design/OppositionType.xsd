@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ProceedingLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EarlierRightDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EarlierRightCategory.xsd"/>
+<xsd:include schemaLocation="OppositionBasisCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionGroundsText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionExtentText.xsd"/>
+<xsd:include schemaLocation="OppositionCurrentStatusCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="EarlierDesignBag.xsd"/>
+<xsd:include schemaLocation="OpponentBag.xsd"/>
+<xsd:include schemaLocation="OppositionEventBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDocumentBag.xsd"/>
+<xsd:complexType name="OppositionType">
+		<xsd:sequence>
+<xsd:element ref="com:OppositionIdentifier" minOccurs="0"/>
+<xsd:element ref="com:OppositionDate" minOccurs="0"/>
+<xsd:element ref="com:OppositionReference" minOccurs="0"/>
+<xsd:element ref="com:OppositionLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:ProceedingLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:EarlierRightDate" minOccurs="0"/>
+<xsd:element ref="com:EarlierRightCategory" minOccurs="0"/>
+<xsd:element ref="dgn:OppositionBasisCategory" minOccurs="0"/>
+<xsd:element ref="com:OppositionGroundsText" minOccurs="0"/>
+<xsd:element ref="com:OppositionExtentText" minOccurs="0"/>
+<xsd:element ref="dgn:OppositionCurrentStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:OppositionCurrentStatusDate" minOccurs="0"/>
+<xsd:element ref="dgn:EarlierDesignBag"/>
+<xsd:element ref="dgn:OpponentBag" minOccurs="0"/>
+<xsd:element ref="dgn:OppositionEventBag" minOccurs="0"/>
+<xsd:element ref="com:OppositionDocumentBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

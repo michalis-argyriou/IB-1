@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/ClaimNumberRange.xsd"/>
+<xsd:include schemaLocation="../Patent/internationalSearchAmendmentIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentReceivedDate.xsd"/>
+	<xsd:complexType name="AmendedClaimNumberRangeType">
+		<xsd:sequence>
+			<xsd:element ref="pat:ClaimNumberRange"/>
+			<xsd:element ref="com:DocumentReceivedDate"/>
+		</xsd:sequence>
+		<xsd:attribute ref="pat:internationalSearchAmendmentIndicator" default="false"/>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PublicationContactType.xsd"/>
+	<xsd:element name="PublicationContact" type="com:PublicationContactType">
+		<xsd:annotation>
+			<xsd:documentation>Contact information for publication in which a limited contact information of the person is provided due to privacy reason</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

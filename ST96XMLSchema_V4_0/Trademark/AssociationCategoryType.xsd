@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AssociationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Transformed to">
+				<xsd:annotation>
+					<xsd:documentation>The existence of this enumeration indicates that a request for extension of protection has been transformed into a new national application and the new national application number is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transformed from">
+				<xsd:annotation>
+					<xsd:documentation>The existence of this enumeration indicates that a request for extension of protection has been transformed into a new national application and the original national application number assigned to the request for extension of protection is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial transfer to">
+				<xsd:annotation>
+					<xsd:documentation>Transfer of rights for part of goods and services in trademark to another legal entity.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial transfer from">
+				<xsd:annotation>
+					<xsd:documentation>Transfer of rights for part of goods and services in trademark from another legal entity.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Replaced by">
+				<xsd:annotation>
+					<xsd:documentation>The existence of this enumeration indicates that a national registration has been replaced by a request for extension of protection into that national office that has subsequently registered. The original national application number assigned to the request for extension of protection is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Replaces">
+				<xsd:annotation>
+					<xsd:documentation>The existence of this enumeration indicates that a request for extension of protection into a national office that has registered has replaced a national trademark registration in that national office. The replaced national application number being replaced is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Claimed prior registration">
+				<xsd:annotation>
+					<xsd:documentation>The existence of this enumeration indicates that an owner/holder of a trademark has claimed that they also are the holders of prior registrations in that national office. The claimed prior registration numbers are listed.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International application or registration">
+				<xsd:annotation>
+					<xsd:documentation>This existence of this enumeration indicates that the international application or registration has a relationship with the parent property. The related international application or registration is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Divisional parent">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the national trademark application or registration has a child national trademark application or registration. The national trademark application or registration number for the parent property is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Divisional child">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the national trademark application or registration has a parent national trademark application or registration. The national trademark application or registration number for the child property is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Related international registration">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the international registration is a child or a parent of a family of related international registrations. The parent or child international registration number is provided.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark related to legal proceeding">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the trademark is related to legal proceedings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Consolidated parent">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the associated proceedings are the parent proceedings for a group of consolidated proceedings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Consolidated child">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the associated proceedings are the children proceedings for a group of consolidated proceedings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Associated opposition">
+				<xsd:annotation>
+					<xsd:documentation>This enumeration indicates that the associated opposition that is related to other legal proceedings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

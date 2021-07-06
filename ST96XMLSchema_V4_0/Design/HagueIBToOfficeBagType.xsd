@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueIBTransactionHeader.xsd"/>
+<xsd:include schemaLocation="HagueOfficeCopyBag.xsd"/>
+<xsd:include schemaLocation="HagueAcknowledgementReceiptBag.xsd"/>
+<xsd:include schemaLocation="HagueIrregularityNotificationBag.xsd"/>
+<xsd:complexType name="HagueIBToOfficeBagType">
+		<xsd:sequence>
+<xsd:element ref="dgn:HagueIBTransactionHeader">
+				<xsd:annotation>
+					<xsd:documentation>Counts of the Hague IB To Office transactions</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:choice maxOccurs="3">
+<xsd:element ref="dgn:HagueOfficeCopyBag"/>
+<xsd:element ref="dgn:HagueAcknowledgementReceiptBag"/>
+<xsd:element ref="dgn:HagueIrregularityNotificationBag"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

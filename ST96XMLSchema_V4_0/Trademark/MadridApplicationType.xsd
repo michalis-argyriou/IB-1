@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SecondLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Representative.xsd"/>
+<xsd:include schemaLocation="BasicRegistrationApplicationBag.xsd"/>
+<xsd:include schemaLocation="PriorityBag.xsd"/>
+<xsd:include schemaLocation="SeniorityBag.xsd"/>
+<xsd:include schemaLocation="MarkVerbalElementText.xsd"/>
+<xsd:include schemaLocation="MarkSignificantVerbalElementText.xsd"/>
+<xsd:include schemaLocation="MarkStandardCharacterIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourIndicator.xsd"/>
+<xsd:include schemaLocation="MarkImageColourClaimedText.xsd"/>
+<xsd:include schemaLocation="MarkImageColourPartClaimedText.xsd"/>
+<xsd:include schemaLocation="MarkFeatureCategoryBag.xsd"/>
+<xsd:include schemaLocation="MarkTranslationTextBag.xsd"/>
+<xsd:include schemaLocation="MarkTransliteration.xsd"/>
+<xsd:include schemaLocation="MarkNotTranslatableIndicator.xsd"/>
+<xsd:include schemaLocation="MarkDisclaimerBag.xsd"/>
+<xsd:include schemaLocation="MarkCategory.xsd"/>
+<xsd:include schemaLocation="MarkImageBag.xsd"/>
+<xsd:include schemaLocation="MarkDescriptionBag.xsd"/>
+<xsd:include schemaLocation="GoodsServicesBag.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryBag.xsd"/>
+<xsd:include schemaLocation="GoodsServicesLimitationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ReceivingOfficeDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PaymentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+		<xsd:complexType name="MadridApplicationType">
+			<xsd:sequence>
+<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+<xsd:element ref="com:ApplicationLanguageCode"/>
+<xsd:element ref="com:SecondLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:CorrespondenceLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+<xsd:element ref="tmk:ApplicantBag"/>
+<xsd:element ref="com:Representative" minOccurs="0"/>
+<xsd:element ref="tmk:BasicRegistrationApplicationBag"/>
+<xsd:element ref="tmk:PriorityBag" minOccurs="0"/>
+<xsd:element ref="tmk:SeniorityBag" minOccurs="0"/>
+<xsd:element ref="tmk:MarkSignificantVerbalElementText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkVerbalElementText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkStandardCharacterIndicator" minOccurs="0"/>
+<xsd:element ref="com:ColourIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageColourClaimedText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageColourPartClaimedText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkFeatureCategoryBag" minOccurs="0"/>
+<xsd:element ref="tmk:MarkTranslationTextBag" minOccurs="0"/>
+<xsd:element ref="tmk:MarkTransliteration" maxOccurs="unbounded" minOccurs="0"/>
+<xsd:element ref="tmk:MarkNotTranslatableIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:MarkDisclaimerBag" minOccurs="0"/>
+<xsd:element ref="tmk:MarkCategory" minOccurs="0"/>
+<xsd:element ref="tmk:MarkImageBag" minOccurs="0"/>
+<xsd:element ref="tmk:MarkDescriptionBag" minOccurs="0"/>
+<xsd:element ref="tmk:GoodsServicesBag"/>
+<xsd:element ref="tmk:DesignatedCountryBag"/>
+<xsd:element ref="tmk:GoodsServicesLimitationBag" minOccurs="0"/>
+<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+<xsd:element ref="com:RecordNotificationDate" minOccurs="0"/>
+<xsd:element ref="com:ReceivingOfficeDate"/>
+<xsd:element ref="com:PaymentBag"/>
+<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

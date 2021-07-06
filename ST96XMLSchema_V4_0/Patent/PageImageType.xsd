@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/HeightMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WidthMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Alt.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourModeCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ImageFormatCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/fileLocationURI.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/orientationCategory.xsd"/>
+<xsd:include schemaLocation="firstPageNumber.xsd"/>
+<xsd:include schemaLocation="lastPageNumber.xsd"/>
+<xsd:complexType name="PageImageType">
+		<xsd:sequence>
+<xsd:element ref="com:ImageFormatCategory"/>
+<xsd:element ref="com:FileName"/>
+<xsd:element ref="com:HeightMeasure"/>
+<xsd:element ref="com:WidthMeasure"/>
+<xsd:element ref="com:Alt" minOccurs="0"/>
+<xsd:element ref="com:ColourModeCategory" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="pat:firstPageNumber"/>
+		<xsd:attribute ref="pat:lastPageNumber"/>
+		<xsd:attribute ref="com:fileLocationURI"/>
+		<xsd:attribute ref="com:orientationCategory" default="Portrait"/>
+	</xsd:complexType>
+</xsd:schema>

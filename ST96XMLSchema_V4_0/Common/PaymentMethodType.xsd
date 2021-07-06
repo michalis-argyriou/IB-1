@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CurrentAccount.xsd"/>
+<xsd:include schemaLocation="Card.xsd"/>
+<xsd:include schemaLocation="BankTransfer.xsd"/>
+<xsd:include schemaLocation="Cheque.xsd"/>
+<xsd:include schemaLocation="OtherPaymentMethod.xsd"/>
+	<xsd:complexType name="PaymentMethodType">
+		<xsd:choice>
+			<xsd:element ref="com:CurrentAccount"/>
+			<xsd:element ref="com:Card"/>
+			<xsd:element ref="com:BankTransfer"/>
+			<xsd:element ref="com:Cheque"/>
+			<xsd:element ref="com:OtherPaymentMethod"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

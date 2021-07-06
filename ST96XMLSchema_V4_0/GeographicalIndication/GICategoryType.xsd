@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+
+	<xsd:simpleType name="GICategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Geographical Indication">
+				<xsd:annotation>
+					<xsd:documentation>Geographical indications are indications which identify a good as originating in the territory of a country, or region or locality in that territory, where a given quality, reputation or other characteristic of the good is essentially attributable to its geographical origin. [Note: This definition is equivalent to the definition of a geographical indication given by Article 22.1 of the TRIPS Agreement and Article 2(1)(ii) of the Geneva Act of the Lisbon Agreement on Appellations of Origin and Geographical Indications. In order to work as a geographical indication, a sign must identify a product as originating in a given place. In addition, the quality, reputation or other characteristic of the product should be essentially due to the place of origin. Since the quality, reputation or other characteristic of the product depend on the geographical place of production, there is a link between the product and its original place of production.]</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protected Geographical Indication">
+				<xsd:annotation>
+					<xsd:documentation>A Protected Geographical Indication in EU is a GI where the product must be produced OR processed in the geographical area, or both.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protected Designation of Origin">
+				<xsd:annotation>
+					<xsd:documentation>A Protected Designation of Origin in EU is a designation where the product must be produced AND processed within the defined geographical area, exhibiting qualities or characteristics essentially due to that area.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Traditional Specialty Guaranteed">
+				<xsd:annotation>
+					<xsd:documentation>A Traditional Specialty Guaranteed in EU means that a product must be traditional, or established by custom for at least one generation or 25 years and have characteristics that distinguish it clearly from other similar agri-food products. It may have geographic affiliations but their production can take place anywhere in the world, subject to appropriate controls. Examples: Haggis, Mozzarella, Lambic, Eiswein, Icewine, ...</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appellation of Origin">
+				<xsd:annotation>
+					<xsd:documentation>Appellations of origin are the geographical denomination of a country, region or locality, which serves to designate a product originating therein, the quality or characteristics of which are due exclusively or essentially to the geographical environment, including natural and human factors. [Note: This definition is equivalent to the definition of an appellation of origin given by Article 2 of the Lisbon Agreement and Article 2(1)(i) of the Geneva Act of the Lisbon Agreement on Appellations of Origin and Geographical Indications. Appellations of Origin and Geographical Indications both require a qualitative link between the product to which they refer and its place of origin. The basic difference between the two terms is that the link with the place of origin must be stronger in the case of an appellation of origin. The quality or characteristics of a product protected as an appellation of origin must result exclusively or essentially from its geographical origin. This generally means that the raw materials should be sourced in the place of origin and that the processing of the product should also happen there.”]					
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

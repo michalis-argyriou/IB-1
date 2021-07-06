@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="LicenceCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Exclusive">
+				<xsd:annotation>
+					<xsd:documentation>Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonExclusive">
+				<xsd:annotation>
+					<xsd:documentation>NonExclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Security interest">
+				<xsd:annotation>
+					<xsd:documentation>Security interest</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Compulsory">
+				<xsd:annotation>
+					<xsd:documentation>Compulsory</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LOR">
+				<xsd:annotation>
+					<xsd:documentation>Licence of right</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Availability or Offer">
+				<xsd:annotation>
+					<xsd:documentation>Availability or Offer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Royalty agreement">
+				<xsd:annotation>
+					<xsd:documentation>Royalty agreement</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Sublicence">
+				<xsd:annotation>
+					<xsd:documentation>Sublicence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Concession">
+				<xsd:annotation>
+					<xsd:documentation>Concession</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subconcession">
+				<xsd:annotation>
+					<xsd:documentation>Subconcession</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Unknown">
+				<xsd:annotation>
+					<xsd:documentation>Unknown</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

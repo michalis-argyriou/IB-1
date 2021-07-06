@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SubordinateType.xsd"/>
+<xsd:element name="Subordinate" type="com:SubordinateType">
+		<xsd:annotation>
+			<xsd:documentation>Information on subordinate such as name, address of person who has subordinate responsibility</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

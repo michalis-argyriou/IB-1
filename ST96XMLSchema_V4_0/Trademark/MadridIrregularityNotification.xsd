@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridIrregularityNotificationType.xsd"/>
+<xsd:element name="MadridIrregularityNotification" type="tmk:MadridIrregularityNotificationType">
+		<xsd:annotation>
+			<xsd:documentation>Notification of irregularity to Offices from WIPO</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

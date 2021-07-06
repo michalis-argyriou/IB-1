@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AdditionalRemark.xsd"/>
+<xsd:include schemaLocation="AdaptedUseIndicator.xsd"/>
+<xsd:include schemaLocation="AdaptedUseDescriptionText.xsd"/>
+<xsd:include schemaLocation="OrphanWorkUsageCategory.xsd"/>
+<xsd:include schemaLocation="OrphanWorkUsageLocationText.xsd"/>
+<xsd:include schemaLocation="OrphanWorkCommercialUsageCategory.xsd"/>
+	<xsd:complexType name="OrphanWorkUsageType">
+		<xsd:sequence>
+			<xsd:element ref="cpy:AdaptedUseIndicator"/>
+			<xsd:element ref="cpy:AdaptedUseDescriptionText" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cpy:OrphanWorkUsageCategory"/>
+			<xsd:element ref="cpy:OrphanWorkCommercialUsageCategory" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkUsageLocationText" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="com:AdditionalRemark" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

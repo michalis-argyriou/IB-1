@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="MarkStandardCharacterIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>Indication that the word mark is considered to be in standard characters by the applicant</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

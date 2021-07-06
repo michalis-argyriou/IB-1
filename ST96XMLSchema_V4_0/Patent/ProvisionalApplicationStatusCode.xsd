@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="ProvisionalApplicationStatusCode" type="xsd:token">
+		<xsd:annotation>
+			<xsd:documentation>Status of the provisional application that is the basis of the document in hand.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

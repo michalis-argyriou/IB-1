@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TrademarkDocumentBagType.xsd"/>
+<xsd:element name="ProceedingDocumentBag" type="tmk:TrademarkDocumentBagType">
+		<xsd:annotation>
+			<xsd:documentation>The collection of the documents related to the opposition or extension of time to oppose</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RelatedLicenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/TerritoryLimitationIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/TerritoryLimitationText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveCountryBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationStartDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PeriodLimitationEndDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceStatusCategory.xsd"/>
+<xsd:include schemaLocation="LicenseeBag.xsd"/>
+<xsd:include schemaLocation="RegisteredPractitionerBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LicenceAmendmentText.xsd"/>
+
+<xsd:complexType name="LicenceType">
+		<xsd:sequence>
+			<xsd:element ref="com:LicenceIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:LicenceDate" minOccurs="0"/>
+			<xsd:element ref="com:LicenceNumber" minOccurs="0"/>
+			<xsd:element ref="com:LicenceReference" minOccurs="0"/>
+			<xsd:element ref="com:LicenceCategory" minOccurs="0"/>
+			<xsd:element ref="com:RelatedLicenceIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:TerritoryLimitationIndicator" minOccurs="0"/>
+			<xsd:element ref="com:TerritoryLimitationText" minOccurs="0"/>
+			<xsd:element ref="com:EffectiveCountryBag" minOccurs="0"/>
+			<xsd:element ref="com:PeriodLimitationText" minOccurs="0"/>
+			<xsd:element ref="com:PeriodLimitationStartDate" minOccurs="0"/>
+			<xsd:element ref="com:PeriodLimitationEndDate" minOccurs="0"/>
+			<xsd:element ref="com:LicenceStatusCategory" minOccurs="0"/>
+			<xsd:element ref="pat:LicenseeBag"/>
+			<xsd:element ref="pat:RegisteredPractitionerBag" minOccurs="0"/>
+			<xsd:element ref="com:LicenceDocumentBag" minOccurs="0"/>
+			<xsd:element ref="com:LicenceAmendmentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

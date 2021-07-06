@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="PhysicalLocation" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The physical location of the trademark file if one actually exists in physical form. The code and description of the internal national office that has the physical file.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

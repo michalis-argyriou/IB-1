@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OtherEventDataType.xsd"/>
+<xsd:element name="OtherEventData" type="pat:OtherEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category W (Other). This category covers events which cannot be categorized under any other Category. It is recommended to use this category as a last resort for unusual cases, where a liberal interpretation of the description of all other Categories would fail to adequately describe the national/regional event (e.g. legacy events or interim/internal events).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

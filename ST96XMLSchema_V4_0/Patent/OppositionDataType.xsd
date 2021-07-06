@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Opponent.xsd"/>
+<xsd:include schemaLocation="RegisteredPractitioner.xsd"/>
+<xsd:include schemaLocation="OppositionFilingDate.xsd"/>
+<xsd:include schemaLocation="DeemedNotToHaveBeenFiledDate.xsd"/>
+<xsd:include schemaLocation="OppositionInadmissibleDate.xsd"/>
+<xsd:include schemaLocation="OppositionRejectionDate.xsd"/>
+<xsd:include schemaLocation="OppositionTerminationDate.xsd"/>
+<xsd:include schemaLocation="OppositionFilingIndicator.xsd"/>
+<xsd:complexType name="OppositionDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="pat:Opponent"/>
+<xsd:element ref="pat:RegisteredPractitioner"/>
+<xsd:element ref="pat:OppositionFilingDate"/>
+<xsd:element ref="pat:DeemedNotToHaveBeenFiledDate"/>
+<xsd:element ref="pat:OppositionInadmissibleDate"/>
+<xsd:element ref="pat:OppositionRejectionDate"/>
+<xsd:element ref="pat:OppositionTerminationDate"/>
+<xsd:element ref="pat:OppositionFilingIndicator"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

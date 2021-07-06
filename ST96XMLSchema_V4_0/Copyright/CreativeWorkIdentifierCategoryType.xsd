@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="CreativeWorkIdentifierCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="EIDR">
+				<xsd:annotation>
+					<xsd:documentation>Identifier system for movie and television assets (Entertainment ID Registry). It is an implementation of a Digital Object Identifier (DOI)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISAN">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Audiovisual Number is numbering system for audiovisual works and versions thereof including films, shorts, documentaries, television programs, sports events, advertising, etc. Through the ISAN Version, it is possible to identify all related versions of a work such as variants (expressions, manifestations), language, editions, clips, media embodiments, digital encodings, etc</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISBN">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Book Number, 13 digits (Nation based) to identify book</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISMN">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Music Number, 13 digits (Nation based) to identify printed music</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISRC">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Recording Code, 12 digits for the identification of sound recordings and music video recordings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISSN">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Serial Number, 8-digit number to identify a periodical publication at a specific media type </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISTC">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Text Code for the identification of text-based works</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISWC">
+				<xsd:annotation>
+					<xsd:documentation>International Standard Musical Work Code for the identification of musical works. Format begins with the letter "T" followed by nine-digit unique number (from 00000001 to 999999999), and additional check digit at the end - format: T-345246800-1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IPIB">
+				<xsd:annotation>
+					<xsd:documentation>Interested Party Base Number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IPIN">
+				<xsd:annotation>
+					<xsd:documentation>Interested Party Name Number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ISNI">
+				<xsd:annotation>
+					<xsd:documentation>Used to assign unique identifiers to names</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SOC">
+				<xsd:annotation>
+					<xsd:documentation>Society code uniquely identifies Collective Management Organisations</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TISA">
+				<xsd:annotation>
+					<xsd:documentation>Identifier for country names, based on ISO 3166-1 alpha codes and extended for groups of countries</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TISN">
+				<xsd:annotation>
+					<xsd:documentation>Identifier for country names, based on ISO 3166-1 numeric codes and extended for groups of countries</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

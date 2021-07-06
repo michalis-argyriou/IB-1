@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentCitationText.xsd"/>
+<xsd:include schemaLocation="CitedPatentDocumentIdentification.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="sequenceNumber.xsd"/>
+<xsd:complexType name="PatentCitationType">
+		<xsd:choice>
+<xsd:element ref="com:PatentCitationText"/>
+<xsd:element ref="com:CitedPatentDocumentIdentification"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

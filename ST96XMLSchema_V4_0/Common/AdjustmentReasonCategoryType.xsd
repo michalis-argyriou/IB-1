@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AdjustmentReasonCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Natural disaster">
+				<xsd:annotation>
+					<xsd:documentation>Natural disaster</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IPO delay">
+				<xsd:annotation>
+					<xsd:documentation>IPO delay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Court delay">
+				<xsd:annotation>
+					<xsd:documentation>Court delay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Applicant or owner delay">
+				<xsd:annotation>
+					<xsd:documentation>Applicant or owner delay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

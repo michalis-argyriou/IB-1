@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ReasonDocumentCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Decision of registration">
+				<xsd:annotation>
+					<xsd:documentation>Decision of registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request of the holder">
+				<xsd:annotation>
+					<xsd:documentation>Request of the holder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonRenewal">
+				<xsd:annotation>
+					<xsd:documentation>The cancellation at nonrenewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of correction">
+				<xsd:annotation>
+					<xsd:documentation>Decision of correction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of registration licensee">
+				<xsd:annotation>
+					<xsd:documentation>Decision of registration licensee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of non contracted transfer">
+				<xsd:annotation>
+					<xsd:documentation>Decision of non contracted transfer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of transfer">
+				<xsd:annotation>
+					<xsd:documentation>Decision of transfer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of partial transfer">
+				<xsd:annotation>
+					<xsd:documentation>Decision of partial transfer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of pledge">
+				<xsd:annotation>
+					<xsd:documentation>Decision of pledge</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of subsequent pledge">
+				<xsd:annotation>
+					<xsd:documentation>Decision of subsequent pledge</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Decision of change in contract">
+				<xsd:annotation>
+					<xsd:documentation>Decision of change in contract</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Judicial action">
+				<xsd:annotation>
+					<xsd:documentation>Judicial action</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

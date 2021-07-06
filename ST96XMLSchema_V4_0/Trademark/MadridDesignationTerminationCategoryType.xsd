@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MadridDesignationTerminationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Non renewal of trademark">
+				<xsd:annotation>
+					<xsd:documentation>Non renewal of trademark</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Non renewal of contracting party">
+				<xsd:annotation>
+					<xsd:documentation>Non renewal of contracting party</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total ceasing of effect">
+				<xsd:annotation>
+					<xsd:documentation>Total ceasing of effect of basic registration or application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renunciation">
+				<xsd:annotation>
+					<xsd:documentation>Renunciation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial change of ownership">
+				<xsd:annotation>
+					<xsd:documentation>Partial change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration merger following partial transfer">
+				<xsd:annotation>
+					<xsd:documentation>International registration merger following partial transfer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration merger following division">
+				<xsd:annotation>
+					<xsd:documentation>Merger of international registration at the request of an office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second payment not paid">
+				<xsd:annotation>
+					<xsd:documentation>Second payment not paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Total cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LawOfficeAssignedText.xsd"/>
+<xsd:include schemaLocation="LawOfficeAssignedDescriptionCode.xsd"/>
+<xsd:include schemaLocation="CurrentLocationText.xsd"/>
+<xsd:include schemaLocation="CurrentLocationCode.xsd"/>
+<xsd:include schemaLocation="CurrentLocationDate.xsd"/>
+<xsd:include schemaLocation="ChargeToLocation.xsd"/>
+<xsd:include schemaLocation="ChargeTo.xsd"/>
+<xsd:include schemaLocation="PhysicalLocation.xsd"/>
+<xsd:include schemaLocation="PhysicalLocationDate.xsd"/>
+<xsd:complexType name="NationalCaseLocationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:LawOfficeAssignedText"/>
+<xsd:element ref="tmk:LawOfficeAssignedDescriptionCode" minOccurs="0"/>
+<xsd:element ref="tmk:CurrentLocationText" minOccurs="0"/>
+<xsd:element ref="tmk:CurrentLocationCode" minOccurs="0"/>
+<xsd:element ref="tmk:CurrentLocationDate" minOccurs="0"/>
+<xsd:element ref="tmk:ChargeToLocation" minOccurs="0"/>
+<xsd:element ref="tmk:ChargeTo" minOccurs="0"/>
+<xsd:element ref="tmk:PhysicalLocation" minOccurs="0"/>
+<xsd:element ref="tmk:PhysicalLocationDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

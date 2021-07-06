@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tbl="http://www.oasis-open.org/tables/exchange/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TableTitle.xsd"/>
+<xsd:include schemaLocation="TableGroup.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="orientationCategory.xsd"/>
+<xsd:include schemaLocation="tableNumber.xsd"/>
+<xsd:include schemaLocation="tableStyle.xsd"/>
+<xsd:include schemaLocation="pageWide.xsd"/>
+<xsd:import namespace="http://www.oasis-open.org/tables/exchange/1.0" schemaLocation="../ExternalStandards/OASISTable_V1_0.xsd"/>
+<xsd:complexType name="IPOASISTableType">
+		<xsd:complexContent>
+			<xsd:extension base="tbl:OASISTableType">
+				<xsd:sequence>
+<xsd:element ref="com:TableTitle" minOccurs="0"/>
+<xsd:element ref="com:TableGroup" maxOccurs="unbounded"/>
+				</xsd:sequence>
+				<xsd:attribute ref="com:id"/>
+				<xsd:attribute ref="com:tableNumber" use="required"/>
+				<xsd:attribute ref="com:tableStyle"/>
+				<xsd:attribute ref="com:pageWide"/>
+				<xsd:attribute ref="com:orientationCategory"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

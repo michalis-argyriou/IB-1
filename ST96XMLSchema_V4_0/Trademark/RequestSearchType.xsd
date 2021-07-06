@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RequestSearchAuthority.xsd"/>
+<xsd:include schemaLocation="RequestSearchCategory.xsd"/>
+<xsd:include schemaLocation="EarlierSearchIdentifier.xsd"/>
+<xsd:include schemaLocation="EarlierSearchDate.xsd"/>
+<xsd:complexType name="RequestSearchType">
+		<xsd:sequence>
+<xsd:element ref="tmk:RequestSearchAuthority" minOccurs="0"/>
+<xsd:element ref="tmk:RequestSearchCategory"/>
+<xsd:element ref="tmk:EarlierSearchIdentifier" minOccurs="0"/>
+<xsd:element ref="tmk:EarlierSearchDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

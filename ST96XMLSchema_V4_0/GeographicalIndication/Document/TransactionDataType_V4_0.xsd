@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RepresentativeBag.xsd"/>
+<xsd:include schemaLocation="GIApplication_V4_0.xsd"/>
+<xsd:include schemaLocation="../GIData.xsd"/>
+<xsd:include schemaLocation="../GIUserCertificateApplication.xsd"/>
+<xsd:include schemaLocation="../GIUserCertificate.xsd"/>
+<xsd:include schemaLocation="../GIRecordBag.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="TransactionDataType">
+		<xsd:choice>
+			<xsd:element ref="gin:GIApplication"/>
+			<xsd:element ref="gin:GIUserCertificateApplication"/>
+			<xsd:element ref="gin:GIData"/>
+			<xsd:element ref="gin:GIUserCertificate"/>
+			<xsd:element ref="gin:GIRecordBag"/>
+			<xsd:element ref="gin:ApplicantBag"/>
+			<xsd:element ref="com:RepresentativeBag"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

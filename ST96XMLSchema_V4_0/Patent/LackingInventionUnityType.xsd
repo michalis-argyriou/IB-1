@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LackingInventionUnityConsequenceCategory.xsd"/>
+<xsd:include schemaLocation="InventionUnityComplianceIndicator.xsd"/>
+<xsd:include schemaLocation="InventionUnityIncomplianceReason.xsd"/>
+<xsd:include schemaLocation="ReportCoveredClaimBag.xsd"/>
+<xsd:include schemaLocation="OpinionReviewRequest.xsd"/>
+<xsd:include schemaLocation="EarlierSearchReportMailDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+
+	<xsd:complexType name="LackingInventionUnityType">
+		<xsd:sequence>
+			<xsd:element ref="pat:LackingInventionUnityConsequenceCategory" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:element ref="pat:InventionUnityComplianceIndicator"/>
+				<xsd:element ref="pat:InventionUnityIncomplianceReason" />
+			</xsd:choice>
+			<xsd:element ref="pat:ReportCoveredClaimBag"/>
+			<xsd:element ref="pat:OpinionReviewRequest" minOccurs="0"/>
+			<xsd:element ref="pat:EarlierSearchReportMailDate" minOccurs="0"/>
+		</xsd:sequence>
+
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+
+</xsd:schema>

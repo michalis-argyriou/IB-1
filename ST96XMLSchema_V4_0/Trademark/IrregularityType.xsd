@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IrregularityIdentifier.xsd"/>
+<xsd:include schemaLocation="ResponsiblePartyCategory.xsd"/>
+<xsd:include schemaLocation="IrregularityConsequenceCategory.xsd"/>
+<xsd:include schemaLocation="IrregularityDescriptionText.xsd"/>
+	<xsd:complexType name="IrregularityType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:IrregularityIdentifier"/>
+			<xsd:element ref="tmk:ResponsiblePartyCategory"/>
+			<xsd:element ref="tmk:IrregularityConsequenceCategory"/>
+			<xsd:element ref="tmk:IrregularityDescriptionText" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

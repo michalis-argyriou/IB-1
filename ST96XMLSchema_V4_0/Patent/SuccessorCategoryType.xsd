@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="SuccessorCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Administrator">
+				<xsd:annotation>
+					<xsd:documentation>Administrator</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Administratrix">
+				<xsd:annotation>
+					<xsd:documentation>Administratrix</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Estate">
+				<xsd:annotation>
+					<xsd:documentation>Estate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Executor">
+				<xsd:annotation>
+					<xsd:documentation>Executor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Executors">
+				<xsd:annotation>
+					<xsd:documentation>Executors</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Executrix">
+				<xsd:annotation>
+					<xsd:documentation>Executrix</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Heir">
+				<xsd:annotation>
+					<xsd:documentation>Heir</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Heiress">
+				<xsd:annotation>
+					<xsd:documentation>Heiress</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Heirs">
+				<xsd:annotation>
+					<xsd:documentation>Heirs</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Legal heirs">
+				<xsd:annotation>
+					<xsd:documentation>Legal heirs</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Legal representative">
+				<xsd:annotation>
+					<xsd:documentation>Legal representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Legal representatives">
+				<xsd:annotation>
+					<xsd:documentation>Legal representatives</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

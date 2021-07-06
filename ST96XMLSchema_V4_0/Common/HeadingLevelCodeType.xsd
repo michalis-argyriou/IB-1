@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="HeadingLevelCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="H1">
+				<xsd:annotation>
+					<xsd:documentation>First level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H2">
+				<xsd:annotation>
+					<xsd:documentation>Second level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H3">
+				<xsd:annotation>
+					<xsd:documentation>Third level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H4">
+				<xsd:annotation>
+					<xsd:documentation>Fourth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H5">
+				<xsd:annotation>
+					<xsd:documentation>Fifth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H6">
+				<xsd:annotation>
+					<xsd:documentation>Sixth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H7">
+				<xsd:annotation>
+					<xsd:documentation>Seventh level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H8">
+				<xsd:annotation>
+					<xsd:documentation>Eighth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H9">
+				<xsd:annotation>
+					<xsd:documentation>Ninth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H10">
+				<xsd:annotation>
+					<xsd:documentation>Tenth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H11">
+				<xsd:annotation>
+					<xsd:documentation>Eleventh level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H12">
+				<xsd:annotation>
+					<xsd:documentation>Twelfth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H13">
+				<xsd:annotation>
+					<xsd:documentation>Thirteenth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H14">
+				<xsd:annotation>
+					<xsd:documentation>Fourteenth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H15">
+				<xsd:annotation>
+					<xsd:documentation>Fifteenth level</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

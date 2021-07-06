@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SPCAuthorizationBagType.xsd"/>
+	<xsd:element name="SPCAuthorizationBag" type="pat:SPCAuthorizationBagType">
+		<xsd:annotation>
+			<xsd:documentation>Collection of Authorizations granted. The collection may include authorizations from other EEA or EU states prior to the current SPC application. The collection will include an authorization applicable to the state in which the SPC is being applied for</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

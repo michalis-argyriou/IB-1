@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ElectronicAccess.xsd"/>
+<xsd:include schemaLocation="CitedDocumentDate.xsd"/>
+<xsd:include schemaLocation="AbstractNumber.xsd"/>
+<xsd:include schemaLocation="AuthorName.xsd"/>
+<xsd:include schemaLocation="Subordinate.xsd"/>
+<xsd:include schemaLocation="CitedContributionTitleText.xsd"/>
+<xsd:include schemaLocation="NPLCopyrightText.xsd"/>
+<xsd:include schemaLocation="NPLIssueDesignationText.xsd"/>
+<xsd:include schemaLocation="NPLReferenceNumber.xsd"/>
+<xsd:include schemaLocation="NPLStandardNumber.xsd"/>
+<xsd:include schemaLocation="NPLClass.xsd"/>
+<xsd:include schemaLocation="Notes.xsd"/>
+<xsd:include schemaLocation="PublicationText.xsd"/>
+<xsd:include schemaLocation="PublisherName.xsd"/>
+<xsd:include schemaLocation="PublicationPlace.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:complexType name="CitedNPLType">
+		<xsd:sequence>
+<xsd:element ref="com:ElectronicAccess" minOccurs="0"/>
+<xsd:element ref="com:CitedDocumentDate" minOccurs="0"/>
+<xsd:element ref="com:AbstractNumber" minOccurs="0"/>
+<xsd:element ref="com:AuthorName" maxOccurs="unbounded"/>
+<xsd:element ref="com:Subordinate" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="com:CitedContributionTitleText"/>
+<xsd:element ref="com:NPLCopyrightText" minOccurs="0"/>
+<xsd:element ref="com:NPLIssueDesignationText" minOccurs="0"/>
+<xsd:element ref="com:NPLReferenceNumber" minOccurs="0"/>
+<xsd:element ref="com:NPLStandardNumber" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="com:NPLClass" minOccurs="0"/>
+<xsd:element ref="com:Notes" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+<xsd:element ref="com:PublicationText"/>
+				<xsd:sequence>
+<xsd:element ref="com:PublisherName" minOccurs="0"/>
+<xsd:element ref="com:PublicationPlace" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

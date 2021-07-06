@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Assignor.xsd"/>
+<xsd:include schemaLocation="Assignee.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OwnershipTransferDate.xsd"/>
+<xsd:include schemaLocation="TransferCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:include schemaLocation="ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="PatentGrantIdentification.xsd"/>
+<xsd:complexType name="OwnershipTransferDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="pat:Assignor"/>
+<xsd:element ref="pat:Assignee"/>
+<xsd:element ref="com:OwnershipTransferDate"/>
+<xsd:element ref="pat:TransferCategory"/>
+<xsd:element ref="com:RepresentativeBag"/>
+<xsd:element ref="pat:ApplicationIdentification"/>
+<xsd:element ref="pat:PatentGrantIdentification"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

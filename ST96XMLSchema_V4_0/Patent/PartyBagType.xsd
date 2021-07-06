@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:include schemaLocation="InventorBag.xsd"/>
+<xsd:include schemaLocation="OwnerBag.xsd"/>
+<xsd:include schemaLocation="AssigneeBag.xsd"/>
+<xsd:include schemaLocation="RegisteredPractitionerBag.xsd"/>
+<xsd:include schemaLocation="ExaminerBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="PartyBagType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="pat:ApplicantBag"/>
+			<xsd:element ref="pat:InventorBag"/>
+			<xsd:element ref="pat:OwnerBag"/>
+			<xsd:element ref="pat:AssigneeBag"/>
+			<xsd:element ref="pat:RegisteredPractitionerBag"/>
+			<xsd:element ref="pat:ExaminerBag"/>
+			<xsd:element ref="com:CorrespondenceAddress"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

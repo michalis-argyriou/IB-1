@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ApplicantBagType.xsd"/>
+
+		<xsd:element name="ApplicantBag" type="gin:ApplicantBagType">
+		<xsd:annotation>
+			<xsd:documentation>A collection of Applicants</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

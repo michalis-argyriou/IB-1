@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StatusEventIdentifier.xsd"/>
+<xsd:include schemaLocation="StatusEventCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EventDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+<xsd:include schemaLocation="ApplicationFilingEventData.xsd"/>
+<xsd:include schemaLocation="ApplicationDiscontinuationEventData.xsd"/>
+<xsd:include schemaLocation="ApplicationRevivalEventData.xsd"/>
+<xsd:include schemaLocation="SearchExaminationEventData.xsd"/>
+<xsd:include schemaLocation="PreGrantReviewRequestEventData.xsd"/>
+<xsd:include schemaLocation="IPRightGrantEventData.xsd"/>
+<xsd:include schemaLocation="ProtectionBeyondIPRightTermEventData.xsd"/>
+<xsd:include schemaLocation="IPRightCessationEventData.xsd"/>
+<xsd:include schemaLocation="IPRightRevivalEventData.xsd"/>
+<xsd:include schemaLocation="IPRightReviewRequestEventData.xsd"/>
+<xsd:include schemaLocation="IPRightMaintenanceEventData.xsd"/>
+<xsd:include schemaLocation="PermanentTerminationEventData.xsd"/>
+<xsd:include schemaLocation="DocumentModificationEventData.xsd"/>
+<xsd:include schemaLocation="DocumentPublicationEventData.xsd"/>
+<xsd:include schemaLocation="PartyChangeEventData.xsd"/>
+<xsd:include schemaLocation="LicensingInformationEventData.xsd"/>
+<xsd:include schemaLocation="AdministrativeProcedureAdjustmentEventData.xsd"/>
+<xsd:include schemaLocation="PaymentEventData.xsd"/>
+<xsd:include schemaLocation="AppealEventData.xsd"/>
+<xsd:include schemaLocation="OtherEventData.xsd"/>
+<xsd:include schemaLocation="CorrectionEventData.xsd"/>
+<xsd:complexType name="StatusEventDataType">
+		<xsd:sequence>
+<xsd:element ref="com:StatusEventIdentifier" minOccurs="0"/>
+<xsd:element ref="pat:StatusEventCode"/>
+			<xsd:choice maxOccurs="3">
+<xsd:element ref="com:EventDate"/>
+<xsd:element ref="com:EffectiveDate"/>
+<xsd:element ref="com:PublicationDate"/>
+			</xsd:choice>
+			<xsd:choice minOccurs="0">
+<xsd:element ref="pat:ApplicationFilingEventData"/>
+<xsd:element ref="pat:ApplicationDiscontinuationEventData"/>
+<xsd:element ref="pat:ApplicationRevivalEventData"/>
+<xsd:element ref="pat:SearchExaminationEventData"/>
+<xsd:element ref="pat:PreGrantReviewRequestEventData"/>
+<xsd:element ref="pat:IPRightGrantEventData"/>
+<xsd:element ref="pat:ProtectionBeyondIPRightTermEventData"/>
+<xsd:element ref="pat:IPRightCessationEventData"/>
+<xsd:element ref="pat:IPRightRevivalEventData"/>
+<xsd:element ref="pat:IPRightReviewRequestEventData"/>
+<xsd:element ref="pat:IPRightMaintenanceEventData"/>
+<xsd:element ref="pat:PermanentTerminationEventData"/>
+<xsd:element ref="pat:DocumentModificationEventData"/>
+<xsd:element ref="pat:DocumentPublicationEventData"/>
+<xsd:element ref="pat:PartyChangeEventData"/>
+<xsd:element ref="pat:LicensingInformationEventData"/>
+<xsd:element ref="pat:AdministrativeProcedureAdjustmentEventData"/>
+<xsd:element ref="pat:PaymentEventData"/>
+<xsd:element ref="pat:AppealEventData"/>
+<xsd:element ref="pat:OtherEventData"/>
+<xsd:element ref="pat:CorrectionEventData"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

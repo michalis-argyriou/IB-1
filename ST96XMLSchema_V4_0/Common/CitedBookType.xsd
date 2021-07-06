@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CitedBookAuthorName.xsd"/>
+<xsd:include schemaLocation="CitedBookTitleText.xsd"/>
+<xsd:include schemaLocation="CitedBookSubtitleText.xsd"/>
+<xsd:include schemaLocation="CitedBookNumber.xsd"/>
+<xsd:include schemaLocation="IssueNumber.xsd"/>
+<xsd:include schemaLocation="CitedBookEditionStatementText.xsd"/>
+<xsd:include schemaLocation="VolumeNumber.xsd"/>
+<xsd:include schemaLocation="SeriesText.xsd"/>
+<xsd:include schemaLocation="CitedNPLType.xsd"/>
+<xsd:complexType name="CitedBookType">
+		<xsd:complexContent>
+			<xsd:extension base="com:CitedNPLType">
+				<xsd:sequence>
+<xsd:element ref="com:CitedBookAuthorName" minOccurs="0"/>
+<xsd:element ref="com:CitedBookTitleText" minOccurs="0"/>
+<xsd:element ref="com:CitedBookSubtitleText" minOccurs="0"/>
+<xsd:element ref="com:CitedBookNumber" minOccurs="0"/>
+<xsd:element ref="com:IssueNumber" minOccurs="0"/>
+<xsd:element ref="com:CitedBookEditionStatementText" minOccurs="0"/>
+<xsd:element ref="com:VolumeNumber" minOccurs="0"/>
+<xsd:element ref="com:SeriesText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

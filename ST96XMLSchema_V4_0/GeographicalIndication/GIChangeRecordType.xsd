@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="GIBasicRecordType.xsd"/>
+<xsd:include schemaLocation="PreviousAuthorizedUser.xsd"/>
+<xsd:include schemaLocation="NewAuthorizedUser.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" schemaLocation="../Trademark/FactDecisionText.xsd"/>
+<xsd:include schemaLocation="GIUserCertificate.xsd"/>
+<xsd:include schemaLocation="GIData.xsd"/>
+<xsd:include schemaLocation="TemporaryAmendmentIndicator.xsd"/>
+<xsd:include schemaLocation="AffectedProductText.xsd"/>
+<xsd:include schemaLocation="ChangeSourceCategory.xsd"/>
+<xsd:include schemaLocation="ChangeRecordCategory.xsd"/>
+	<xsd:complexType name="GIChangeRecordType">
+		<xsd:complexContent>
+			<xsd:extension base="gin:GIBasicRecordType">
+				<xsd:sequence>
+					<xsd:element ref="gin:ChangeRecordCategory"/>
+					<xsd:choice>
+						<xsd:sequence>
+							<xsd:element ref="gin:ChangeSourceCategory"/>
+							<xsd:element ref="tmk:FactDecisionText"/>
+							<xsd:element ref="gin:AffectedProductText" minOccurs="0"/>
+							<xsd:element ref="gin:TemporaryAmendmentIndicator" minOccurs="0"/>
+							<xsd:choice minOccurs="0">
+								<xsd:element ref="gin:GIData"/>
+								<xsd:element ref="gin:GIUserCertificate"/>
+							</xsd:choice>
+						</xsd:sequence>
+						<xsd:choice maxOccurs="2">
+							<xsd:element ref="com:CorrespondenceAddress"/>
+							<xsd:sequence>
+								<xsd:element ref="gin:PreviousAuthorizedUser" minOccurs="0" maxOccurs="unbounded"/>
+								<xsd:element ref="gin:NewAuthorizedUser" maxOccurs="unbounded"/>
+							</xsd:sequence>
+						</xsd:choice>
+					</xsd:choice>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

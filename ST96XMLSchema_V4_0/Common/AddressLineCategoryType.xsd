@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AddressLineCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Street">
+				<xsd:annotation>
+					<xsd:documentation>It is composed of street name and house/block/building number. It may also include floor or office number.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Building">
+				<xsd:annotation>
+					<xsd:documentation>The building name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Floor">
+				<xsd:annotation>
+					<xsd:documentation>The floor number can be in one line</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Room">
+				<xsd:annotation>
+					<xsd:documentation>The room inside which the place is located</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Post office box">
+				<xsd:annotation>
+					<xsd:documentation>It is a uniquely-addressable lockable box located on the premises of a post office station.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/CitationCategoryCode.xsd"/>
+<xsd:include schemaLocation="../Patent/ApplicationIdentification.xsd"/>
+<xsd:include schemaLocation="../Patent/PriorityDate.xsd"/>
+<xsd:include schemaLocation="../Patent/PatentGrantIdentification.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AdditionalRemark.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+	<xsd:complexType name="CertainCitedDocumentType">
+		<xsd:sequence>
+			<xsd:element ref="pat:CitationCategoryCode" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:ApplicationIdentification"/>
+			<xsd:element ref="pat:PatentGrantIdentification" minOccurs="0"/>
+			<xsd:element ref="com:PublicationDate"/>
+			<xsd:element ref="pat:PriorityDate" minOccurs="0"/>
+			<xsd:element ref="com:AdditionalRemark" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

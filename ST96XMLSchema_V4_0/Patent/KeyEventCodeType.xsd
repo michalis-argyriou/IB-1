@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="KeyEventCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="A00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category A key event: the national/regional event cannot be mapped to the key event in the category A.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category B key event: the national/regional event cannot be mapped to the key event in the category B.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category C key event: the national/regional event cannot be mapped to the key event in the category C.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category D key event: the national/regional event cannot be mapped to the key event in the category D.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category E key event: the national/regional event cannot be mapped to the key event in the category E.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category F key event: the national/regional event cannot be mapped to the key event in the category F.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category G key event: the national/regional event cannot be mapped to the key event in the category G.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category H key event: the national/regional event cannot be mapped to the key event in the category H.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category K key event: the national/regional event cannot be mapped to the key event in the category K.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category L key event: the national/regional event cannot be mapped to the key event in the category L.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category M key event: the national/regional event cannot be mapped to the key event in the category M.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category N key event: the national/regional event cannot be mapped to the key event in the category N.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category P key event: the national/regional event cannot be mapped to the key event in the category P.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category Q key event: the national/regional event cannot be mapped to the key event in the category Q.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category R key event: the national/regional event cannot be mapped to the key event in the category R.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category S key event: the national/regional event cannot be mapped to the key event in the category S.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category T key event: the national/regional event cannot be mapped to the key event in the category T.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category U key event: the national/regional event cannot be mapped to the key event in the category U.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category V key event: the national/regional event cannot be mapped to the key event in the category V.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="W00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category W key event: the national/regional event cannot be mapped to the key event in the category W.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Y00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category Y key event: the national/regional event cannot be mapped to the key event in the category Y.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A10">
+				<xsd:annotation>
+					<xsd:documentation>Application filed: An application for an IP right was filed. This includes, but is not limited to, the types of applications listed in Category A. Usually a filing date and application number are recorded by the IPO.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B10">
+				<xsd:annotation>
+					<xsd:documentation>Application discontinued: An application was discontinued. This includes, but is not limited to when an application was discontinued due to a withdrawal by the applicant, refusal by the IPO or because there was a failure to prosecute. For example, a failure to prosecute may occur due to a non-payment of fees or failure to respond to an office action within the required time period.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C10">
+				<xsd:annotation>
+					<xsd:documentation>Application revived: An application was revived after it had been discontinued. This includes, but is not limited to when an application was revived following an application revival request or an appeal.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D10">
+				<xsd:annotation>
+					<xsd:documentation>Search and/or examination requested or commenced: The search and/or examination of an application was requested, initiated or continued. This includes, but is not limited to when a formality or substantive examination was requested, initiated or continued or when a search was requested or initiated.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E10">
+				<xsd:annotation>
+					<xsd:documentation>Pre-grant review requested: A pre-grant review was requested. This includes, but is not limited to a request for a pre-grant opposition, pre-grant re-examination, or pre-grant limitation.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F10">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted: An IP right was granted in full or amended form after an examination, a pre-grant review or an appeal. This includes, but is not limited to when an IP right was granted after a formality or substantive examination, or subsequent to a pre-grant review.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G10">
+				<xsd:annotation>
+					<xsd:documentation>Protection beyond IP right term granted: Protection beyond the IP right term was granted. This includes, but is not limited to the granting of a patent term adjustment (PTA), patent term extension (PTE) or a supplementary protection certificate (SPC) extension.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H10">
+				<xsd:annotation>
+					<xsd:documentation>IP right ceased: An IP right has ceased. This includes, but is not limited to when an IP right has ceased following an IP right review or an appeal, due to a refusal to revive, or because of a lapse or expiry.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K10">
+				<xsd:annotation>
+					<xsd:documentation>IP right revived: An IP right was revived, reinstated or restored in full or amended form after its cessation. This includes, but is not limited to when an IP right is revived following payment of an outstanding maintenance or renewal fee or following an appeal.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L10">
+				<xsd:annotation>
+					<xsd:documentation>IP right review requested: An IP right review was requested. This includes, but is not limited to a request for a post-grant opposition, re-examination, limitation, reissue, surrender, or invalidation.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M10">
+				<xsd:annotation>
+					<xsd:documentation>IP right maintained: An IP right was maintained in full or amended form. This includes, but is not limited to when an IP right was maintained following an appeal, an IP right review or when a request for an IP right review was inadmissible, rejected or withdrawn.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N10">
+				<xsd:annotation>
+					<xsd:documentation>Application or IP right terminated: An application or IP right was terminated.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P10">
+				<xsd:annotation>
+					<xsd:documentation>Document modified: An amendment or correction was made to an application, IP right document or other document, excluding modifications which occur in the context of a pre-grant review or IP right review. This includes, but is not limited to corrections of errors in IP documents, amendments to applications or amendments to translations of applications.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q10">
+				<xsd:annotation>
+					<xsd:documentation>Document published: A document was published by the IPO. This includes, but is not limited to publication of an application, IP right document or bibliographic information.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R10">
+				<xsd:annotation>
+					<xsd:documentation>Party data change recorded: A change in the data identifying the parties concerned with an application or IP right was recorded by the IPO. This includes, but is not limited to when a change to the name(s), composition or contact information of a party, e.g. the applicant(s), owner(s), inventor(s) or representative(s), was recorded by the IPO. This also includes when an IPO records a change in ownership due to a transfer of rights, an assignment or a legal proceeding.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S10">
+				<xsd:annotation>
+					<xsd:documentation>Licensing information recorded: Licensing information has been recorded by the IPO. This includes, but is not limited to when an agreement for a license between an IP right owner and another party was recorded or its amendment, cancellation or transfer was recorded by the IPO.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T10">
+				<xsd:annotation>
+					<xsd:documentation>Administrative procedure adjusted: An adjustment has been made to an administrative procedure. This includes, but is not limited to a time limit extension, a suspension, stay or interruption of an administrative procedure, or resumption of a suspended, stayed or interrupted procedure.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U10">
+				<xsd:annotation>
+					<xsd:documentation>Fee paid: A fee payment was made. This includes, but is not limited to full or partial payment of a renewal, maintenance or designation fee.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V10">
+				<xsd:annotation>
+					<xsd:documentation>Appeal requested: An appeal of a decision made during the prosecution of an application or IP right was requested to an administrative body, tribunal, board or court. This includes, but is not limited to when an applicant or IP right owner requests an appeal against a decision made by the examiner during the prosecution of the IP right.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="W10">
+				<xsd:annotation>
+					<xsd:documentation>Other event occurred: An event which cannot be categorized under any other category occurred (e.g. a legacy event or an interim/internal event.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Y10">
+				<xsd:annotation>
+					<xsd:documentation>Event information corrected or deleted: Errors in the legal status data have been corrected or deleted. This includes, but is not limited to corrections of legal status data provided under this Standard or the correction or deletion of an event that was announced erroneously in a gazette, IP register or other published documentation.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

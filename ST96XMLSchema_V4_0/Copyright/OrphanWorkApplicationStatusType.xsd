@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="OrphanWorkApplicationStatusType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Application Received">
+				<xsd:annotation>
+					<xsd:documentation>An orphan work application has been received</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licence Granted">
+				<xsd:annotation>
+					<xsd:documentation>A licence has been granted for an orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application Refused">
+				<xsd:annotation>
+					<xsd:documentation>An orphan work application has been refused</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application Withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>An orphan work application has been withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licence Renewed">
+				<xsd:annotation>
+					<xsd:documentation>An orphan work licence has been renewed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licence Expired">
+				<xsd:annotation>
+					<xsd:documentation>An orphan work licence has expired</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Awaiting Further Information">
+				<xsd:annotation>
+					<xsd:documentation>Further information is awaited regarding the licence application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No Longer Orphan">
+				<xsd:annotation>
+					<xsd:documentation>Orphan work is no longer considered an orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Copyright Expired">
+				<xsd:annotation>
+					<xsd:documentation>Copyright has expired for the work and therefore it is no longer an orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

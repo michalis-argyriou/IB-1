@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LocalizedTextType.xsd"/>
+<xsd:element name="DecisionCitationText" type="com:LocalizedTextType">
+		<xsd:annotation>
+			<xsd:documentation>Reference to a decision made during prosecution or appeal</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

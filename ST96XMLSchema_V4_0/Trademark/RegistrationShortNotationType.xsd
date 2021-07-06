@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RegistrationIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationDate.xsd"/>
+<xsd:include schemaLocation="MarkVerbalElementText.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryCodeBag.xsd"/>
+<xsd:include schemaLocation="GoodsServicesLimitation.xsd"/>
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:complexType name="RegistrationShortNotationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:RegistrationIdentifier"/>
+<xsd:element ref="com:RegistrationDate" minOccurs="0"/>
+<xsd:element ref="tmk:MarkVerbalElementText" minOccurs="0"/>
+<xsd:element ref="tmk:DesignatedCountryCodeBag" minOccurs="0"/>
+<xsd:element ref="tmk:GoodsServicesLimitation" minOccurs="0"/>
+<xsd:element ref="tmk:ApplicantBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

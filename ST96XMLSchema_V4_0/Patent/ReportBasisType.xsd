@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LanguageBasis.xsd"/>
+<xsd:include schemaLocation="ApplicationModificationBasisBag.xsd"/>
+<xsd:include schemaLocation="SEQLBasis.xsd"/>
+<xsd:include schemaLocation="PriorityBasis.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="ReportBasisType">
+		<xsd:sequence>
+<xsd:element ref="pat:LanguageBasis"/>
+<xsd:element ref="pat:ApplicationModificationBasisBag" minOccurs="0"/>
+<xsd:element ref="pat:SEQLBasis" minOccurs="0"/>
+<xsd:element ref="pat:PriorityBasis" minOccurs="0"/>
+		</xsd:sequence>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

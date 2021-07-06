@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="CrossReferenceCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Category of cross reference</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Paragraph">
+				<xsd:annotation>
+					<xsd:documentation>Paragraph</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Table">
+				<xsd:annotation>
+					<xsd:documentation>Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Equation">
+				<xsd:annotation>
+					<xsd:documentation>Equation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chemical Structure">
+				<xsd:annotation>
+					<xsd:documentation>Chemical structure</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Program listing">
+				<xsd:annotation>
+					<xsd:documentation>Computer program listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Sequence listing">
+				<xsd:annotation>
+					<xsd:documentation>Sequence listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Heading">
+				<xsd:annotation>
+					<xsd:documentation>Heading</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Title">
+				<xsd:annotation>
+					<xsd:documentation>Title</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="List item">
+				<xsd:annotation>
+					<xsd:documentation>List item</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patent citation">
+				<xsd:annotation>
+					<xsd:documentation>Patent citation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NPL citation">
+				<xsd:annotation>
+					<xsd:documentation>NPL citation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Claim">
+				<xsd:annotation>
+					<xsd:documentation>Claim</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Image">
+				<xsd:annotation>
+					<xsd:documentation>Image</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Figure">
+				<xsd:annotation>
+					<xsd:documentation>Figure</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Endnote">
+				<xsd:annotation>
+					<xsd:documentation>End note</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Footnote">
+				<xsd:annotation>
+					<xsd:documentation>Foot note</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Reference link">
+				<xsd:annotation>
+					<xsd:documentation>Reference link</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+						<xsd:enumeration value="Unknown">
+				<xsd:annotation>
+					<xsd:documentation>Unknown source entity</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

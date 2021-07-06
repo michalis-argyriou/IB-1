@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ElectronicBasicSignatureImageURI.xsd"/>
+<xsd:include schemaLocation="ElectronicBasicSignatureText.xsd"/>
+<xsd:include schemaLocation="ElectronicBasicSignatureClickWrap.xsd"/>
+<xsd:complexType name="ElectronicBasicSignatureType">
+			<xsd:choice>
+<xsd:element ref="com:ElectronicBasicSignatureImageURI"/>
+<xsd:element ref="com:ElectronicBasicSignatureText"/>
+<xsd:element ref="com:ElectronicBasicSignatureClickWrap"/>
+			</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

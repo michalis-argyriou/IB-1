@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ResponsiblePartyCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Applicant">
+				<xsd:annotation>
+					<xsd:documentation>Applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Office">
+				<xsd:annotation>
+					<xsd:documentation>Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Applicant or office">
+				<xsd:annotation>
+					<xsd:documentation>Either applicant or office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Applicant via office">
+				<xsd:annotation>
+					<xsd:documentation>Applicant via office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="None">
+				<xsd:annotation>
+					<xsd:documentation>Irregularity is an observation or uncorrectable</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

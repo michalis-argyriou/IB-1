@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DiligenceSearchDocumentContactType.xsd"/>
+	<xsd:element name="DiligenceSearchDocumentContact" type="cpy:DiligenceSearchDocumentContactType">
+		<xsd:annotation>
+			<xsd:documentation>Details of societies, publishers, websites, individuals, organizations, companies and other sources contacted or consulted as part of a diligence search to locate the copyright owner for an orphan work, as captured by the referenced document</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

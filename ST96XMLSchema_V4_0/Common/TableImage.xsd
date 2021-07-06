@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TableImageType.xsd"/>
+<xsd:element name="TableImage" type="com:TableImageType">
+		<xsd:annotation>
+			<xsd:documentation>Table inserted in an image format</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

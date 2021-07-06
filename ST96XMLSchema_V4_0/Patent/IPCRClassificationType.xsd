@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentClassificationText.xsd"/>
+<xsd:include schemaLocation="ClassificationVersionDate.xsd"/>
+<xsd:include schemaLocation="PatentClassificationLevelCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SymbolPositionCode.xsd"/>
+<xsd:include schemaLocation="IPCClassificationValueCode.xsd"/>
+<xsd:include schemaLocation="ActionDate.xsd"/>
+<xsd:include schemaLocation="IPCClassificationStatusCode.xsd"/>
+<xsd:include schemaLocation="PatentClassificationDataSourceCode.xsd"/>
+<xsd:include schemaLocation="GeneratingOfficeCode.xsd"/>
+<xsd:include schemaLocation="PatentClassificationSymbolText.xsd"/>
+<xsd:include schemaLocation="Section.xsd"/>
+<xsd:include schemaLocation="Class.xsd"/>
+<xsd:include schemaLocation="Subclass.xsd"/>
+<xsd:include schemaLocation="MainGroup.xsd"/>
+<xsd:include schemaLocation="Subgroup.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+	<xsd:complexType name="IPCRClassificationType">
+		<xsd:choice>
+			<xsd:element ref="pat:PatentClassificationText"/>
+			<xsd:sequence>
+				<xsd:element ref="pat:ClassificationVersionDate"/>
+				<xsd:element ref="pat:PatentClassificationLevelCode" minOccurs="0"/>
+				<xsd:element ref="com:SymbolPositionCode" minOccurs="0"/>
+				<xsd:element ref="pat:IPCClassificationValueCode" minOccurs="0"/>
+				<xsd:element ref="pat:ActionDate" minOccurs="0"/>
+				<xsd:element ref="pat:IPCClassificationStatusCode" minOccurs="0"/>
+				<xsd:element ref="pat:PatentClassificationDataSourceCode" minOccurs="0"/>
+				<xsd:element ref="pat:GeneratingOfficeCode" minOccurs="0"/>
+				<xsd:choice>
+					<xsd:element ref="pat:PatentClassificationSymbolText"/>
+					<xsd:sequence>
+						<xsd:element ref="pat:Section"/>
+						<xsd:element ref="pat:Class"/>
+						<xsd:element ref="pat:Subclass"/>
+						<xsd:element ref="pat:MainGroup" minOccurs="0"/>
+						<xsd:element ref="pat:Subgroup" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

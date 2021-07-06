@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RequestSearchType.xsd"/>
+<xsd:element name="RequestSearch" type="tmk:RequestSearchType">
+		<xsd:annotation>
+			<xsd:documentation>Details on a search request as part of the application</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

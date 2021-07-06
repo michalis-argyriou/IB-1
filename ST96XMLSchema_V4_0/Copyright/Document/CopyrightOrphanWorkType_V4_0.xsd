@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicationNumberText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/DecisionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkIdentifier.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkApplicationStatus.xsd"/>
+<xsd:include schemaLocation="../CreativeWorkIdentificationBag.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkTitleBag.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkAlternativeTitleBag.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkDescriptionBag.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkPartyBag.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkKindCode.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkLicence.xsd"/>
+<xsd:include schemaLocation="../DiligenceSearch.xsd"/>
+<xsd:include schemaLocation="../CopyrightExpiry.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkUsageBag.xsd"/>
+<xsd:include schemaLocation="../PublishIndicator.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkPublicationCategory.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkPublicationData.xsd"/>
+<xsd:include schemaLocation="../OrphanWorkLicenceRequest.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="CopyrightOrphanWorkType">
+		<xsd:sequence>
+			<xsd:element ref="com:ApplicationNumberText" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkApplicationStatus" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkIdentifier"/>
+			<xsd:element ref="cpy:CreativeWorkIdentificationBag" minOccurs="0"/>
+			<xsd:element ref="com:ApplicationDate" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkTitleBag"/>
+			<xsd:element ref="cpy:OrphanWorkAlternativeTitleBag" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkDescriptionBag"/>
+			<xsd:element ref="cpy:OrphanWorkPartyBag"/>
+			<xsd:element ref="cpy:OrphanWorkKindCode"/>
+			<xsd:element ref="cpy:OrphanWorkLicence" minOccurs="0"/>
+			<xsd:element ref="cpy:DiligenceSearch"/>
+			<xsd:element ref="cpy:CopyrightExpiry" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkUsageBag"/>
+			<xsd:element ref="cpy:PublishIndicator"/>
+			<xsd:element ref="cpy:OrphanWorkPublicationCategory" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkPublicationData" minOccurs="0"/>
+			<xsd:element ref="cpy:OrphanWorkLicenceRequest" minOccurs="0"/>
+			<xsd:element ref="com:DecisionDate" minOccurs="0"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

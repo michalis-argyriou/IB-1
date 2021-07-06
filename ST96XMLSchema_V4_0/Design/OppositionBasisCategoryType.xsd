@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="OppositionBasisCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Design application">
+				<xsd:annotation>
+					<xsd:documentation>Design application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registered design">
+				<xsd:annotation>
+					<xsd:documentation>Registered design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonRegistered design">
+				<xsd:annotation>
+					<xsd:documentation>Nonregistered design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark">
+				<xsd:annotation>
+					<xsd:documentation>Trademark</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patent">
+				<xsd:annotation>
+					<xsd:documentation>Patent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Utility model">
+				<xsd:annotation>
+					<xsd:documentation>Utility model</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Undefined">
+				<xsd:annotation>
+					<xsd:documentation>Undefined</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

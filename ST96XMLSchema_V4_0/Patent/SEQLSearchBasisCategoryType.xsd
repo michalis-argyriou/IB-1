@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="SEQLSearchBasisCategoryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Forming part of application as text file">
+				<xsd:annotation>
+					<xsd:documentation>Forming part of the international application as filed in the form of a text file
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Forming part of application as paper or image file">
+				<xsd:annotation>
+					<xsd:documentation>Forming part of the international application as filed on paper or in the form of an image file</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Together with application as text file">
+				<xsd:annotation>
+					<xsd:documentation>Furnished together with the application for the purposes of search only in the form of a text file</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent to application as text file">
+				<xsd:annotation>
+					<xsd:documentation>Furnished subsequent to the filing date for the purposes of search only in the form of a text file
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent to application as paper or image file">
+				<xsd:annotation>
+					<xsd:documentation>Furnished subsequent to the filing date for the purposes of search only on paper or in the form of an image file
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Amendment as paper or image file">
+				<xsd:annotation>
+					<xsd:documentation>Forming part of the international application as filed on pager or in the form of an image file
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Amendment as text file">
+				<xsd:annotation>
+					<xsd:documentation>Furnished together with the application for the purposes of search only in the form of a text file
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

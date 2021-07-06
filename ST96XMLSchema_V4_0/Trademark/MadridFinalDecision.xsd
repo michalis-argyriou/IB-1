@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridFinalDecisionType.xsd"/>
+<xsd:element name="MadridFinalDecision" type="tmk:MadridFinalDecisionType">
+		<xsd:annotation>
+			<xsd:documentation>Final Decision, can be final total granted protection, final partial protection and final total refusal. Designated Office. Model forms 5 and 6.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

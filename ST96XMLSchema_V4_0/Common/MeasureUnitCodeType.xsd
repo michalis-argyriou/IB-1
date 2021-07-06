@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MeasureUnitCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Cm">
+				<xsd:annotation>
+					<xsd:documentation>Centimeter</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mm">
+				<xsd:annotation>
+					<xsd:documentation>Millimeter</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="In">
+				<xsd:annotation>
+					<xsd:documentation>Inch</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Px">
+				<xsd:annotation>
+					<xsd:documentation>Pixel</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Pt">
+				<xsd:annotation>
+					<xsd:documentation>Point</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Tp">
+				<xsd:annotation>
+					<xsd:documentation>Twentieth of a point</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Deg">
+				<xsd:annotation>
+					<xsd:documentation>Degree</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

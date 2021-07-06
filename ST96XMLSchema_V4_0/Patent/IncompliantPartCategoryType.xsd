@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="IncompliantPartCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="description">
+				<xsd:annotation>
+					<xsd:documentation>Description is subject to the issuance of the declaration under Article 17(2)(a).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="claims">
+				<xsd:annotation>
+					<xsd:documentation>Claims are subject to the issuance of the declaration under Article 17(2)(a).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="drawings">
+				<xsd:annotation>
+					<xsd:documentation>Drawings are subject to the issuance of the declaration under Article 17(2)(a).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="SearchReportReplacementIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>Indicates that this search report replaces the previous search report that was considered unsatisfactory</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

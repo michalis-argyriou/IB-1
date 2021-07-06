@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="WIPOFormerST3CodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="AN">
+				<xsd:annotation>
+					<xsd:documentation>Netherlands Antilles</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CS">
+				<xsd:annotation>
+					<xsd:documentation>Czechoslovakia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DL">
+				<xsd:annotation>
+					<xsd:documentation>German Democratic Republic</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DD">
+				<xsd:annotation>
+					<xsd:documentation>German Democratic Republic</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DT">
+				<xsd:annotation>
+					<xsd:documentation>Federal Republic of Germany</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RH">
+				<xsd:annotation>
+					<xsd:documentation>Southern Rhodesia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SU">
+				<xsd:annotation>
+					<xsd:documentation>Soviet Union</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YD">
+				<xsd:annotation>
+					<xsd:documentation>Democratic Yemen</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YU">
+				<xsd:annotation>
+					<xsd:documentation>Yugoslavia/ Serbia and Montenegro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

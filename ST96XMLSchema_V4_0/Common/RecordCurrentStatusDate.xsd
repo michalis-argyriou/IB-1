@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DateType.xsd"/>
+<xsd:element name="RecordCurrentStatusDate" type="com:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date of current legal status of the record</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

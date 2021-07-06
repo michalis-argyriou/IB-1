@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GoodsServicesLimitationCategoryType.xsd"/>
+	<xsd:element name="GoodsServicesLimitationCategory" type="tmk:GoodsServicesLimitationCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Indication whether the trademark protection is limited to or removed from the provided list of goods and services. The 'List limited to' value is the preferred option in order to facilitate automation of data processing</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

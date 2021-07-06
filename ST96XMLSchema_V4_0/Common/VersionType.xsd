@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:include schemaLocation="VersionNumber.xsd"/>
+<xsd:include schemaLocation="VersionDate.xsd"/>
+<xsd:include schemaLocation="VersionDateTime.xsd"/>
+<xsd:complexType name="VersionType">
+		<xsd:sequence>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:choice maxOccurs="3">
+<xsd:element ref="com:VersionNumber"/>
+<xsd:element ref="com:VersionDate"/>
+<xsd:element ref="com:VersionDateTime"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

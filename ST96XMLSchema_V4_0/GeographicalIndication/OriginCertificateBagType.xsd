@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CertificateBag.xsd"/>
+<xsd:include schemaLocation="ProductTerritoryLinkDescriptionText.xsd"/>
+<xsd:include schemaLocation="CompetentAuthorityText.xsd"/>
+<xsd:include schemaLocation="InspectionBodyText.xsd"/>
+<xsd:include schemaLocation="PresentMarketText.xsd"/>
+	<xsd:complexType name="OriginCertificateBagType">
+		<xsd:sequence>
+			<xsd:element ref="gin:CertificateBag"/>
+			<xsd:element ref="gin:ProductTerritoryLinkDescriptionText" minOccurs="0"/>
+			<xsd:element ref="gin:CompetentAuthorityText" minOccurs="0"/>
+			<xsd:element ref="gin:InspectionBodyText" minOccurs="0"/>
+			<xsd:element ref="gin:PresentMarketText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

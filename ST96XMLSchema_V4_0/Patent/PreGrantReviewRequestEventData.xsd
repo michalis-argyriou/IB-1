@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PreGrantReviewRequestEventDataType.xsd"/>
+<xsd:element name="PreGrantReviewRequestEventData" type="pat:PreGrantReviewRequestEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category E (Pre-grant review request). This category is a group of events related to the request for a pre-grant review for any application covered by Category A. It includes, for example, a request for a pre-grant opposition, pre-grant re-examination, or pre-grant limitation. It also includes when such a request was inadmissible, rejected or withdrawn. The events in this category may move an application from the examination stage or the termination likely/termination stage into the pre-grant challenge stage.
+</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

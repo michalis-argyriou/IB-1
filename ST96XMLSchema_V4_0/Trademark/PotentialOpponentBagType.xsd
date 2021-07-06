@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifierBag.xsd"/>
+<xsd:include schemaLocation="PotentialOpponent.xsd"/>
+<xsd:complexType name="PotentialOpponentBagType">
+			<xsd:choice>
+<xsd:element ref="com:PartyIdentifierBag" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:PotentialOpponent" maxOccurs="unbounded"/>
+			</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

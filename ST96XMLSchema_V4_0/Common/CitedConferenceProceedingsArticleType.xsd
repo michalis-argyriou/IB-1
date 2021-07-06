@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ConferenceText.xsd"/>
+<xsd:include schemaLocation="ConferenceTitleText.xsd"/>
+<xsd:include schemaLocation="ConferenceNumber.xsd"/>
+<xsd:include schemaLocation="ConferencePlace.xsd"/>
+<xsd:include schemaLocation="EditorshipDesignationText.xsd"/>
+<xsd:include schemaLocation="ConferenceDate.xsd"/>
+<xsd:include schemaLocation="ConferenceStartDate.xsd"/>
+<xsd:include schemaLocation="ConferenceEndDate.xsd"/>
+<xsd:include schemaLocation="CitedNPLType.xsd"/>
+<xsd:complexType name="CitedConferenceProceedingsArticleType">
+		<xsd:complexContent>
+			<xsd:extension base="com:CitedNPLType">
+				<xsd:choice>
+<xsd:element ref="com:ConferenceText"/>
+					<xsd:sequence>
+<xsd:element ref="com:ConferenceTitleText"/>
+<xsd:element ref="com:ConferenceNumber"/>
+<xsd:element ref="com:ConferencePlace" minOccurs="0"/>
+<xsd:element ref="com:EditorshipDesignationText" minOccurs="0"/>
+						<xsd:choice>
+<xsd:element ref="com:ConferenceDate"/>
+							<xsd:sequence>
+<xsd:element ref="com:ConferenceStartDate"/>
+<xsd:element ref="com:ConferenceEndDate"/>
+							</xsd:sequence>
+						</xsd:choice>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

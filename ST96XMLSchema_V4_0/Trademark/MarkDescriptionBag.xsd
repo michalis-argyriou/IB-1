@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkDescriptionBagType.xsd"/>
+<xsd:element name="MarkDescriptionBag" type="tmk:MarkDescriptionBagType">
+		<xsd:annotation>
+			<xsd:documentation>Collection of mark descriptions. Either mark description or mark voluntary description must be present.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

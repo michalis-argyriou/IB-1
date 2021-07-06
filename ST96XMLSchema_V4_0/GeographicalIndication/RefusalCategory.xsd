@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RefusalCategoryType.xsd"/>
+
+	<xsd:element name="RefusalCategory" type="gin:RefusalCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Scope of the (Partial or Total) Refusal</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

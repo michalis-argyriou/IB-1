@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DesignIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RightEffectiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RegistrationDate.xsd"/>
+<xsd:include schemaLocation="DesignTitleText.xsd"/>
+<xsd:include schemaLocation="DesignDescriptionText.xsd"/>
+<xsd:include schemaLocation="DesignClaim.xsd"/>
+<xsd:include schemaLocation="PublicationKindDescription.xsd"/>
+<xsd:include schemaLocation="NoveltyStatementText.xsd"/>
+<xsd:include schemaLocation="PartialDesignIndicator.xsd"/>
+<xsd:include schemaLocation="PartialDisclaimerText.xsd"/>
+<xsd:include schemaLocation="PublicationDefermentIndicator.xsd"/>
+<xsd:include schemaLocation="DefermentPeriod.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourIndicator.xsd"/>
+<xsd:include schemaLocation="DesignerWaiverIndicator.xsd"/>
+<xsd:include schemaLocation="PublicationInColourIndicator.xsd"/>
+<xsd:include schemaLocation="ImmediatePublicationIndicator.xsd"/>
+<xsd:include schemaLocation="DescriptionPublicationIndicator.xsd"/>
+<xsd:include schemaLocation="DesignOpenToLicensingIndicator.xsd"/>
+<xsd:include schemaLocation="SpecimenTotalQuantity.xsd"/>
+<xsd:include schemaLocation="RepresentationSheetTotalQuantity.xsd"/>
+<xsd:include schemaLocation="ColourViewTotalQuantity.xsd"/>
+<xsd:include schemaLocation="BlackWhiteViewTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+<xsd:include schemaLocation="DesignCurrentStatusCategory.xsd"/>
+<xsd:include schemaLocation="DesignCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="DesignSpecimenBag.xsd"/>
+<xsd:include schemaLocation="DesignRepresentationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DesignClassificationBag.xsd"/>
+<xsd:include schemaLocation="PriorityBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExhibitionPriorityBag.xsd"/>
+<xsd:include schemaLocation="RelatedApplicationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StaffBag.xsd"/>
+<xsd:include schemaLocation="PublicationBag.xsd"/>
+<xsd:include schemaLocation="PatentIdentificationBag.xsd"/>
+<xsd:include schemaLocation="ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:include schemaLocation="DesignerBag.xsd"/>
+<xsd:include schemaLocation="DesignEventBag.xsd"/>
+<xsd:include schemaLocation="OppositionBag.xsd"/>
+<xsd:include schemaLocation="ExceptionLackNoveltyDeclarationBag.xsd"/>
+<xsd:include schemaLocation="PrincipalDesignRelationBag.xsd"/>
+	<xsd:complexType name="DesignType">
+		<xsd:sequence>
+			<xsd:element ref="dgn:DesignIdentifier" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignReference" minOccurs="0"/>
+			<xsd:element ref="com:RightEffectiveDate" minOccurs="0"/>
+			<xsd:element ref="com:RegistrationNumber" minOccurs="0"/>
+			<xsd:element ref="com:RegistrationDate" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignTitleText" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignDescriptionText" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="dgn:DesignClaim" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="dgn:PublicationKindDescription" minOccurs="0"/>
+			<xsd:element ref="dgn:NoveltyStatementText" minOccurs="0"/>
+			<xsd:element ref="dgn:PartialDesignIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:PartialDisclaimerText" minOccurs="0"/>
+			<xsd:element ref="dgn:PublicationDefermentIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:DefermentPeriod" minOccurs="0"/>
+			<xsd:element ref="com:ColourIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignerWaiverIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:PublicationInColourIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:ImmediatePublicationIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:DescriptionPublicationIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignOpenToLicensingIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:SpecimenTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="dgn:RepresentationSheetTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="dgn:ColourViewTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="dgn:BlackWhiteViewTotalQuantity" minOccurs="0"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignCurrentStatusCategory" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignCurrentStatusDate" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignSpecimenBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignRepresentationBag" minOccurs="0"/>
+			<xsd:element ref="com:DesignClassificationBag"/>
+			<xsd:element ref="dgn:PriorityBag" minOccurs="0"/>
+			<xsd:element ref="com:ExhibitionPriorityBag" minOccurs="0"/>
+			<xsd:element ref="dgn:RelatedApplicationBag" minOccurs="0"/>
+			<xsd:element ref="com:StaffBag" minOccurs="0"/>
+			<xsd:element ref="dgn:PublicationBag" minOccurs="0"/>
+			<xsd:element ref="dgn:PatentIdentificationBag" minOccurs="0"/>
+			<xsd:element ref="dgn:ApplicantBag"/>
+			<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignerBag" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignEventBag" minOccurs="0"/>
+			<xsd:element ref="dgn:OppositionBag" minOccurs="0"/>
+			<xsd:element ref="dgn:ExceptionLackNoveltyDeclarationBag" minOccurs="0"/>
+			<xsd:element ref="dgn:PrincipalDesignRelationBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

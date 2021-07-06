@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="productionAmountUnit.xsd"/>
+
+	<xsd:complexType name="ProductionMaximumAmountType">
+	<xsd:simpleContent>
+			<xsd:extension base="xsd:token">
+				<xsd:attribute ref="gin:productionAmountUnit"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+</xsd:complexType>
+</xsd:schema>

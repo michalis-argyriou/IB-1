@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordNotificationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEffectiveDate.xsd"/>
+<xsd:include schemaLocation="RecordShortNotationCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordLanguageCode.xsd"/>
+<xsd:include schemaLocation="RecordPublicationBag.xsd"/>
+<xsd:include schemaLocation="ClaimantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEventBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordInterestedOfficeCode.xsd"/>
+<xsd:include schemaLocation="RecordToRegistration.xsd"/>
+<xsd:include schemaLocation="RecordFromRegistrationBag.xsd"/>
+<xsd:complexType name="RecordShortNotationType">
+		<xsd:sequence>
+<xsd:element ref="com:RecordIdentifier" minOccurs="0"/>
+<xsd:element ref="com:RecordFilingDate" minOccurs="0"/>
+<xsd:element ref="com:RecordNotificationDate" minOccurs="0"/>
+<xsd:element ref="com:RecordEffectiveDate" minOccurs="0"/>
+<xsd:element ref="tmk:RecordShortNotationCategory"/>
+<xsd:element ref="com:RecordReference" minOccurs="0"/>
+<xsd:element ref="com:RecordLanguageCode" minOccurs="0"/>
+<xsd:element ref="tmk:RecordPublicationBag" minOccurs="0"/>
+<xsd:element ref="tmk:ClaimantBag" minOccurs="0"/>
+<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+<xsd:element ref="com:RecordEventBag" minOccurs="0"/>
+<xsd:element ref="com:RecordDocumentBag" minOccurs="0"/>
+<xsd:element ref="com:RecordInterestedOfficeCode" minOccurs="0"/>
+<xsd:element ref="tmk:RecordToRegistration" minOccurs="0"/>
+<xsd:element ref="tmk:RecordFromRegistrationBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="OrphanWorkKindCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="AC">
+				<xsd:annotation>
+					<xsd:documentation>Architectural Works - A work such as a building, including its related concepts, plans and models</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AV">
+				<xsd:annotation>
+					<xsd:documentation>Audiovisual Works - A work that consists of a series of related images which are intrinsically intended to be shown by the use of machines or devices such as projectors, viewers or electronic equipment, together with accompanying music, dialogue and/or sound effects, if any, regardless of the nature of the material objects, such as films or tapes, in which the work is embodied</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DW">
+				<xsd:annotation>
+					<xsd:documentation>Dramatic Works - A written or spoken work composed of a combination of words, containing connected actions and discourses of one or usually more persons, in a dramatic context</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LW">
+				<xsd:annotation>
+					<xsd:documentation>Literary Works - A written or spoken work composed of a combination of words, not intended for a dramatic context, e.g. a novel, non-fiction book, manuscript, journal article and poem</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MM">
+				<xsd:annotation>
+					<xsd:documentation>Multimedia Works - The combined use of digitalised information representing text, sound and still or video images or the media so used. The term can refer to any interactive system and any data storage medium</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MW">
+				<xsd:annotation>
+					<xsd:documentation>Musical Works - A work composed of a combination of sounds with or without lyrics to be performed by instruments and/or the human voice, not intended for a dramatic context, e.g. sheet music, song or nursery rhyme</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PH">
+				<xsd:annotation>
+					<xsd:documentation>Photographic Works - A still image produced on surfaces sensitive to light or other radiation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SR">
+				<xsd:annotation>
+					<xsd:documentation>Sound Recordings - A sound recording is an electrical, mechanical, electronic or digital inscription and re-creation of sound waves, such as spoken voice, singing, instrumental music, or sound effects</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="WA">
+				<xsd:annotation>
+					<xsd:documentation>Work of Art - A graphic or visual art work, including painting, sculpture etc</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<com:SchemaCreatedDate>2016-19-12</com:SchemaCreatedDate>
+			<com:SchemaLastModifiedDate>2020-06-01</com:SchemaLastModifiedDate>
+			<com:SchemaContactPoint>xml.standards@wipo.int</com:SchemaContactPoint>
+			<com:SchemaReleaseNoteURL>http://www.wipo.int/standards/XMLSchema/ST96/V4_0/ReleaseNotes.pdf</com:SchemaReleaseNoteURL>
+		</xsd:appinfo>
+	</xsd:annotation>
+<xsd:include schemaLocation="SPCBibliographicDataType_V4_0.xsd"/>
+	<xsd:element name="SPCBibliographicData" type="pat:SPCBibliographicDataType">
+		<xsd:annotation>
+			<xsd:documentation>An SPC is a Supplementary Protection Certificate. It must be based on a granted patent and a Marketing Authorisation must have been issued for it to be considered. If approved it provides an additional period of protection (for up to five years) of a medicinal or plant protection product containing an active ingredient covered by the patent on which it was based. This entity represents the application for and basic details of a supplementary protection certificate</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CreativeWorkIdentifier.xsd"/>
+<xsd:include schemaLocation="CreativeWorkIdentifierCategory.xsd"/>
+	<xsd:complexType name="CreativeWorkIdentificationType">
+		<xsd:sequence>
+			<xsd:element ref="cpy:CreativeWorkIdentifier"/>
+			<xsd:element ref="cpy:CreativeWorkIdentifierCategory"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

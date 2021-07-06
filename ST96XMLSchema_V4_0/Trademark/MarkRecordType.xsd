@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="BasicRecord.xsd"/>
+<xsd:include schemaLocation="RecordOppositionPeriod.xsd"/>
+<xsd:include schemaLocation="RecordTransfer.xsd"/>
+<xsd:include schemaLocation="RecordChangeNameAddress.xsd"/>
+<xsd:include schemaLocation="RecordLicence.xsd"/>
+<xsd:include schemaLocation="RecordNationalInternationalReplacement.xsd"/>
+<xsd:include schemaLocation="RecordShortNotation.xsd"/>
+<xsd:complexType name="MarkRecordType">
+		<xsd:choice minOccurs="0">
+<xsd:element ref="tmk:BasicRecord"/>
+<xsd:element ref="tmk:RecordOppositionPeriod"/>
+<xsd:element ref="tmk:RecordTransfer"/>
+<xsd:element ref="tmk:RecordChangeNameAddress"/>
+<xsd:element ref="tmk:RecordLicence"/>
+<xsd:element ref="tmk:RecordNationalInternationalReplacement"/>
+<xsd:element ref="tmk:RecordShortNotation"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

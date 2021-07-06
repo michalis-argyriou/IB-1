@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="GeographicRegionDescriptionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Coordinates">
+				<xsd:annotation>
+					<xsd:documentation>Geographic region is described by a list of geographic coordinates</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Natural boundaries">
+				<xsd:annotation>
+					<xsd:documentation>Geographic region is described by a set of natural boundaries, e.g. rivers, mountains, etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Administrative boundaries">
+				<xsd:annotation>
+					<xsd:documentation>Geographic region is described by a set of administrative boundaries, e.g. countries, states, cantons, etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mixed">
+				<xsd:annotation>
+					<xsd:documentation>Geographic region is described by a combination of different means (coordinates, natural and administrative boundaries) or in other form.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

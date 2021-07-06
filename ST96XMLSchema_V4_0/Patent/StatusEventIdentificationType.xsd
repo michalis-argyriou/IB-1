@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EventDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+<xsd:include schemaLocation="StatusEventCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StatusEventIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EventDescriptionText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="StatusEventIdentificationType">
+		<xsd:sequence>
+			<xsd:choice maxOccurs="3">
+<xsd:element ref="com:EventDate"/>
+<xsd:element ref="com:EffectiveDate"/>
+<xsd:element ref="com:PublicationDate"/>
+			</xsd:choice>
+			<xsd:choice maxOccurs="2">
+<xsd:element ref="pat:StatusEventCode"/>
+<xsd:element ref="com:StatusEventIdentifier"/>
+<xsd:element ref="com:EventDescriptionText"/>
+			</xsd:choice>
+		</xsd:sequence>
+<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

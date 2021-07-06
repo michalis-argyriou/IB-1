@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="WordMarkSpecification.xsd"/>
+<xsd:include schemaLocation="MarkImageBag.xsd"/>
+<xsd:include schemaLocation="MarkSoundBag.xsd"/>
+<xsd:include schemaLocation="MarkMultimediaBag.xsd"/>
+<xsd:complexType name="MarkReproductionType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="tmk:WordMarkSpecification"/>
+<xsd:element ref="tmk:MarkImageBag"/>
+<xsd:element ref="tmk:MarkSoundBag"/>
+<xsd:element ref="tmk:MarkMultimediaBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

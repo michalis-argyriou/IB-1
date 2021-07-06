@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ProceedingLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EarlierRightDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EarlierRightCategory.xsd"/>
+<xsd:include schemaLocation="OppositionBasisCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionGroundsText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionExtentText.xsd"/>
+<xsd:include schemaLocation="OppositionCurrentStatusCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="ProceedingStatus.xsd"/>
+<xsd:include schemaLocation="EarlierMarkBag.xsd"/>
+<xsd:include schemaLocation="PlaintiffBag.xsd"/>
+<xsd:include schemaLocation="DefendantBag.xsd"/>
+<xsd:include schemaLocation="ProceedingEventBag.xsd"/>
+<xsd:include schemaLocation="ProceedingDocumentBag.xsd"/>
+<xsd:include schemaLocation="OppositionEventBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/StaffBag.xsd"/>
+<xsd:include schemaLocation="AssociatedProceedingBag.xsd"/>
+<xsd:complexType name="OppositionType">
+		<xsd:sequence>
+<xsd:element ref="com:OppositionIdentifier" minOccurs="0"/>
+<xsd:element ref="com:OppositionDate"/>
+<xsd:element ref="com:OppositionReference" minOccurs="0"/>
+<xsd:element ref="com:OppositionLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:ProceedingLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:EarlierRightDate" minOccurs="0"/>
+<xsd:element ref="com:EarlierRightCategory" minOccurs="0"/>
+<xsd:element ref="tmk:OppositionBasisCategory" minOccurs="0"/>
+<xsd:element ref="com:OppositionGroundsText" minOccurs="0"/>
+<xsd:element ref="com:OppositionExtentText" minOccurs="0"/>
+<xsd:element ref="tmk:OppositionCurrentStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:OppositionCurrentStatusDate" minOccurs="0"/>
+<xsd:element ref="tmk:ProceedingStatus" minOccurs="0"/>
+<xsd:element ref="tmk:EarlierMarkBag" minOccurs="0"/>
+<xsd:element ref="tmk:PlaintiffBag" minOccurs="0"/>
+<xsd:element ref="tmk:DefendantBag" minOccurs="0"/>
+<xsd:element ref="tmk:ProceedingEventBag" minOccurs="0"/>
+<xsd:element ref="tmk:ProceedingDocumentBag" minOccurs="0"/>
+<xsd:element ref="tmk:OppositionEventBag" minOccurs="0"/>
+<xsd:element ref="com:OppositionDocumentBag" minOccurs="0"/>
+<xsd:element ref="com:StaffBag" minOccurs="0"/>
+<xsd:element ref="tmk:AssociatedProceedingBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

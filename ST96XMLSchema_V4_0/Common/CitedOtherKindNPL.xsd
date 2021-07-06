@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CitedNPLType.xsd"/>
+<xsd:element name="CitedOtherKindNPL" type="com:CitedNPLType">
+		<xsd:annotation>
+			<xsd:documentation>Reference to a product manual/catalogue, a web page or any other non-patent literature(other than cited book, cited journal article or cited conference proceedings article)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

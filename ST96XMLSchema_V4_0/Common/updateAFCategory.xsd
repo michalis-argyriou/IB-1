@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="UpdateAFCategoryType.xsd"/>
+	<xsd:attribute name="updateAFCategory" type="com:UpdateAFCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Determines how updates to the authority file will be performed e.g., incremental versus full.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:attribute>
+</xsd:schema>

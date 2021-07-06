@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HolderChangeBagType.xsd"/>
+<xsd:element name="HolderChangeBag" type="dgn:HolderChangeBagType">
+		<xsd:annotation>
+			<xsd:documentation>Details of the previous and new holder of the design or of the previous name/address and the new name/address, in case of change in the name/address of the holder</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OtherDateType.xsd"/>
+<xsd:element name="OtherDate" type="tmk:OtherDateType">
+		<xsd:annotation>
+			<xsd:documentation>Any country specific date. An attribute defines the kind of event represented by that date</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

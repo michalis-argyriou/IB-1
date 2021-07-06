@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="HagueIBToOfficeTransactionType_V4_0.xsd"/>
+	<xsd:annotation>
+		<xsd:appinfo>
+			<com:SchemaCreatedDate>2016-08-12</com:SchemaCreatedDate>
+			<com:SchemaLastModifiedDate>2020-06-01</com:SchemaLastModifiedDate>
+			<com:SchemaContactPoint>xml.standards@wipo.int</com:SchemaContactPoint>
+			<com:SchemaReleaseNoteURL>http://www.wipo.int/standards/XMLSchema/ST96/V4_0/ReleaseNotes.pdf</com:SchemaReleaseNoteURL>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:element name="HagueIBToOfficeTransaction" type="dgn:HagueIBToOfficeTransactionType">
+		<xsd:annotation>
+			<xsd:documentation>Hague IB to Office Transaction (Hague System related transaction from the International Bureau of WIPO to IP Offices)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

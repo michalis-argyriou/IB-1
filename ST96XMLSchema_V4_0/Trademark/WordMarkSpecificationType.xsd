@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MarkVerbalElementText.xsd"/>
+<xsd:include schemaLocation="MarkSignificantVerbalElementText.xsd"/>
+<xsd:include schemaLocation="MarkVerbalElementSignificantIndicator.xsd"/>
+<xsd:include schemaLocation="MarkTranslationText.xsd"/>
+<xsd:include schemaLocation="MarkTransliteration.xsd"/>
+<xsd:include schemaLocation="MarkTranscription.xsd"/>
+<xsd:include schemaLocation="MarkStandardCharacterIndicator.xsd"/>
+<xsd:complexType name="WordMarkSpecificationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:MarkVerbalElementText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkSignificantVerbalElementText"/>
+<xsd:element ref="tmk:MarkVerbalElementSignificantIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:MarkTranslationText" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:MarkTransliteration" minOccurs="0"/>
+<xsd:element ref="tmk:MarkTranscription" minOccurs="0" maxOccurs="unbounded"/>
+<xsd:element ref="tmk:MarkStandardCharacterIndicator" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="PassageLocationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Line">
+				<xsd:annotation>
+					<xsd:documentation>Line</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Column">
+				<xsd:annotation>
+					<xsd:documentation>Column</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Page">
+				<xsd:annotation>
+					<xsd:documentation>Page</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Paragraph">
+				<xsd:annotation>
+					<xsd:documentation>Paragraph</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Computer listing">
+				<xsd:annotation>
+					<xsd:documentation>Computer listing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Gene sequence">
+				<xsd:annotation>
+					<xsd:documentation>Gene sequence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mathematical formula">
+				<xsd:annotation>
+					<xsd:documentation>Mathematical formula</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chemical formula">
+				<xsd:annotation>
+					<xsd:documentation>Chemical formula</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Table">
+				<xsd:annotation>
+					<xsd:documentation>Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Figure">
+				<xsd:annotation>
+					<xsd:documentation>Figure</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Table heading">
+				<xsd:annotation>
+					<xsd:documentation>Table heading</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Special heading">
+				<xsd:annotation>
+					<xsd:documentation>Special heading</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Serial part">
+				<xsd:annotation>
+					<xsd:documentation>Serial part</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Serial section">
+				<xsd:annotation>
+					<xsd:documentation>Serial section</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Claim">
+				<xsd:annotation>
+					<xsd:documentation>Claim</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalFilingDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FeeCalculationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FilingLanguageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicationNumber.xsd"/>
+<xsd:include schemaLocation="DesignatedCountryBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ExpiryDate.xsd"/>
+<xsd:include schemaLocation="DesignTotalQuantity.xsd"/>
+<xsd:include schemaLocation="DefermentExpiryDate.xsd"/>
+<xsd:include schemaLocation="HolderBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RepresentativeBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CorrespondenceAddress.xsd"/>
+<xsd:include schemaLocation="HagueDesignBag.xsd"/>
+<xsd:include schemaLocation="DesignClaimBag.xsd"/>
+<xsd:include schemaLocation="BusinessEntityStatusClaimBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeSpecificContent.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+	<xsd:complexType name="HagueRegistrationType">
+		<xsd:sequence>
+			<xsd:element ref="com:InternationalRegistrationNumber"/>
+			<xsd:element ref="com:RecordIdentifier"/>
+			<xsd:element ref="com:InternationalRegistrationDate"/>
+			<xsd:element ref="com:InternationalFilingDate"/>
+			<xsd:element ref="com:FeeCalculationDate"/>
+			<xsd:element ref="com:FilingLanguageCode"/>
+			<xsd:element ref="com:OfficeReferenceIdentifier" minOccurs="0"/>
+			<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+			<xsd:element ref="com:ApplicationNumber" minOccurs="0"/>
+			<xsd:element ref="dgn:DesignatedCountryBag"/>
+			<xsd:element ref="com:ExpiryDate"/>
+			<xsd:element ref="dgn:DesignTotalQuantity"/>
+			<xsd:element ref="dgn:DefermentExpiryDate" minOccurs="0"/>
+			<xsd:element ref="dgn:HolderBag"/>
+			<xsd:element ref="dgn:BusinessEntityStatusClaimBag" minOccurs="0"/>
+			<xsd:element ref="com:RepresentativeBag" minOccurs="0"/>
+			<xsd:element ref="com:CorrespondenceAddress" minOccurs="0"/>
+			<xsd:element ref="dgn:HagueDesignBag"/>
+			<xsd:element ref="dgn:DesignClaimBag" minOccurs="0"/>
+			<xsd:element ref="com:OfficeSpecificContent" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

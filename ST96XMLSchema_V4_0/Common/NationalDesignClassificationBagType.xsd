@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPOfficeCode.xsd"/>
+<xsd:include schemaLocation="NationalClassificationEdition.xsd"/>
+<xsd:include schemaLocation="NationalClassificationDate.xsd"/>
+<xsd:include schemaLocation="NationalDesignClassification.xsd"/>
+<xsd:include schemaLocation="NationalDesignProductIndicationText.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+	<xsd:complexType name="NationalDesignClassificationBagType">
+		<xsd:sequence>
+			<xsd:element ref="com:IPOfficeCode"/>
+			<xsd:element ref="com:NationalClassificationEdition" minOccurs="0"/>
+			<xsd:element ref="com:NationalClassificationDate" minOccurs="0"/>
+			<xsd:sequence maxOccurs="unbounded">
+				<xsd:element ref="com:NationalDesignClassification"/>
+				<xsd:element ref="com:NationalDesignProductIndicationText" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>
+ 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AuthorizationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="General authorization">
+				<xsd:annotation>
+					<xsd:documentation>General authorization authorizes the representative to act on behalf of the client (grantor) in all proceedings before the Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Specific authorization">
+				<xsd:annotation>
+					<xsd:documentation>Specific or Individual authorizations may be given for individual proceedings or may also be used for a plurality of proceedings. The proceedings to which the authorization relates must be indicated in sufficient detail to allow the Office to determine to which proceedings the authorization actually relates.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

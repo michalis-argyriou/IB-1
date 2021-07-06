@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ReasonDocumentNumber.xsd"/>
+<xsd:include schemaLocation="ReasonDocumentDate.xsd"/>
+<xsd:include schemaLocation="ReasonDocumentSource.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Signature.xsd"/>
+<xsd:include schemaLocation="ReasonDocumentCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordDocumentBag.xsd"/>
+<xsd:include schemaLocation="FactDecisionText.xsd"/>
+<xsd:complexType name="ReasonDocumentType">
+		<xsd:sequence>
+<xsd:element ref="tmk:ReasonDocumentNumber" minOccurs="0"/>
+<xsd:element ref="tmk:ReasonDocumentDate" minOccurs="0"/>
+<xsd:element ref="tmk:ReasonDocumentSource" minOccurs="0"/>
+<xsd:element ref="com:Signature" minOccurs="0"/>
+<xsd:element ref="tmk:ReasonDocumentCategory" minOccurs="0"/>
+<xsd:element ref="com:RecordDocumentBag"/>
+<xsd:element ref="tmk:FactDecisionText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="PersonOtherNameCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="DBA TA AKA or FKA">
+				<xsd:annotation>
+					<xsd:documentation>Other names that an entity has been doing business as DBA or trading as TA is also known as AKA or pseudonym or formerly known as FKA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Legal name">
+				<xsd:annotation>
+					<xsd:documentation>Legal name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Official name">
+				<xsd:annotation>
+					<xsd:documentation>An official name of the person, e.g. as in the passport. incorporation certificate, etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Preferred name">
+				<xsd:annotation>
+					<xsd:documentation>Indicates that the party prefers to be called by this name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Maiden name">
+				<xsd:annotation>
+					<xsd:documentation>Name of an individual before marriage</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Former name">
+				<xsd:annotation>
+					<xsd:documentation>A former name is a name someone used to use, like a married name or a birth name if someone was adopted or later changed their name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Matronym">
+				<xsd:annotation>
+					<xsd:documentation>A matronymic surname is a personal name based on the given name of one's mother, grandmother or other female ancestor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Patronym">
+				<xsd:annotation>
+					<xsd:documentation>A patronymic surname is a surname originated from the given name of the father or a patrilineal ancestor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

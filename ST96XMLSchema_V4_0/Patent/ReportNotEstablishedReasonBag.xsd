@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/ReportNotEstablishedReasonBagType.xsd"/>
+	<xsd:element name="ReportNotEstablishedReasonBag" type="pat:ReportNotEstablishedReasonBagType">
+		<xsd:annotation>
+			<xsd:documentation>Summary of reasons why no meaningful opinion could be provided in light of current elements within the application</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

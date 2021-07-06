@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ReimbursementIdentifier.xsd"/>
+<xsd:include schemaLocation="ReimbursementReference.xsd"/>
+<xsd:include schemaLocation="PayeeName.xsd"/>
+<xsd:include schemaLocation="ReimbursementStatusCategory.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:include schemaLocation="ReimbursementDate.xsd"/>
+<xsd:include schemaLocation="ReimbursementModeCategory.xsd"/>
+<xsd:include schemaLocation="ReimbursementFeeBag.xsd"/>
+<xsd:complexType name="ReimbursementType">
+		<xsd:sequence>
+<xsd:element ref="com:ReimbursementIdentifier" minOccurs="0"/>
+<xsd:element ref="com:ReimbursementReference" minOccurs="0"/>
+<xsd:element ref="com:PayeeName"/>
+<xsd:element ref="com:ReimbursementStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+<xsd:element ref="com:ReimbursementDate" minOccurs="0"/>
+<xsd:element ref="com:ReimbursementModeCategory" minOccurs="0"/>
+<xsd:element ref="com:ReimbursementFeeBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TranslationLanguageCodeType.xsd"/>
+<xsd:element name="TranslationLanguageCode" type="pat:TranslationLanguageCodeType">
+		<xsd:annotation>
+			<xsd:documentation>With regard to the language, the international search was carried out on the basis of a translation of the international application into another language which is the language of a translation furnished for the purposes of international search (Rules 12.3(a) and 23.1(b)).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

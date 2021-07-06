@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="OtherPriorRegistrationIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>If present it indicates that the words "and others." should appear appended to the list of prior registrations.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

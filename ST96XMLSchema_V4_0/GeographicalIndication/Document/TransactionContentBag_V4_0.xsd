@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<com:SchemaCreatedDate>2017-08-17</com:SchemaCreatedDate>
+			<com:SchemaLastModifiedDate>2020-06-01</com:SchemaLastModifiedDate>
+			<com:SchemaContactPoint>xml.standards@wipo.int</com:SchemaContactPoint>
+			<com:SchemaReleaseNoteURL>http://www.wipo.int/standards/XMLSchema/ST96/V4_0/ReleaseNotes.pdf</com:SchemaReleaseNoteURL>
+		</xsd:appinfo>
+	</xsd:annotation>
+<xsd:include schemaLocation="TransactionContentBagType_V4_0.xsd"/>
+	<xsd:element name="TransactionContentBag" type="gin:TransactionContentBagType">
+		<xsd:annotation>
+			<xsd:documentation>Details of the contents of a geographical indication transaction</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

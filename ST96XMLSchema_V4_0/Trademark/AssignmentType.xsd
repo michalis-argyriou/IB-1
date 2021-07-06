@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="AssignmentIdentifier.xsd"/>
+<xsd:include schemaLocation="AssignmentConveyanceCategory.xsd"/>
+<xsd:include schemaLocation="PropertyTotalQuantity.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PageTotalQuantity.xsd"/>
+<xsd:include schemaLocation="AssignmentReceivedDate.xsd"/>
+<xsd:include schemaLocation="AssignmentMailedDate.xsd"/>
+<xsd:include schemaLocation="AssignmentRecordedDate.xsd"/>
+<xsd:include schemaLocation="AssignmentExecutedDate.xsd"/>
+<xsd:include schemaLocation="AssignorBag.xsd"/>
+<xsd:include schemaLocation="AssigneeBag.xsd"/>
+<xsd:include schemaLocation="Registrant.xsd"/>
+<xsd:include schemaLocation="NationalRepresentative.xsd"/>
+<xsd:include schemaLocation="NationalCorrespondent.xsd"/>
+<xsd:include schemaLocation="AssignmentGroupCategory.xsd"/>
+<xsd:include schemaLocation="AssociatedMarkBag.xsd"/>
+<xsd:include schemaLocation="AssignmentDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:complexType name="AssignmentType">
+		<xsd:sequence>
+<xsd:element ref="tmk:AssignmentIdentifier"/>
+<xsd:element ref="tmk:AssignmentConveyanceCategory"/>
+<xsd:element ref="tmk:PropertyTotalQuantity"/>
+<xsd:element ref="com:PageTotalQuantity" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentReceivedDate" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentMailedDate" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentRecordedDate" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentExecutedDate" minOccurs="0"/>
+<xsd:element ref="tmk:AssignorBag"/>
+<xsd:element ref="tmk:AssigneeBag"/>
+<xsd:element ref="tmk:Registrant" minOccurs="0"/>
+<xsd:element ref="tmk:NationalRepresentative" minOccurs="0"/>
+<xsd:element ref="tmk:NationalCorrespondent" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentGroupCategory" minOccurs="0"/>
+<xsd:element ref="tmk:AssociatedMarkBag" minOccurs="0"/>
+<xsd:element ref="tmk:AssignmentDocumentBag" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

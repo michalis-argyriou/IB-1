@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="HagueOfficeTransactionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Application">
+				<xsd:annotation>
+					<xsd:documentation>Application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Grant protection">
+				<xsd:annotation>
+					<xsd:documentation>Grant protection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+				<xsd:enumeration value="Refusal withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Refusal withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Division">
+				<xsd:annotation>
+					<xsd:documentation>Division</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part fee payable">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee payable</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part fee paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation non payment">
+				<xsd:annotation>
+					<xsd:documentation>Cancellation non payment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Generic office communication">
+				<xsd:annotation>
+					<xsd:documentation>Generic office communication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

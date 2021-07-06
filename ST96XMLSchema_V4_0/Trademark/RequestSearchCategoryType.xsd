@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="RequestSearchCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="No search">
+				<xsd:annotation>
+					<xsd:documentation>No search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Normal">
+				<xsd:annotation>
+					<xsd:documentation>Normal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accelerated">
+				<xsd:annotation>
+					<xsd:documentation>Accelerated</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Earlier search">
+				<xsd:annotation>
+					<xsd:documentation>Earlier search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Undefined">
+				<xsd:annotation>
+					<xsd:documentation>Undefined</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

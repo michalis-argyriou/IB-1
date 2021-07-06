@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ExhibitionCountryCode.xsd"/>
+<xsd:include schemaLocation="ExhibitionCityName.xsd"/>
+<xsd:include schemaLocation="ExhibitionName.xsd"/>
+<xsd:include schemaLocation="ExhibitionDate.xsd"/>
+<xsd:include schemaLocation="ExhibitionFirstDisplayDate.xsd"/>
+<xsd:include schemaLocation="ExhibitionStatusCategory.xsd"/>
+<xsd:include schemaLocation="ExhibitionStatusDate.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:include schemaLocation="ExhibitionDocument.xsd"/>
+<xsd:complexType name="ExhibitionPriorityType">
+		<xsd:sequence>
+<xsd:element ref="com:ExhibitionCountryCode" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionCityName" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionName" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionDate"/>
+<xsd:element ref="com:ExhibitionFirstDisplayDate" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionStatusDate" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+<xsd:element ref="com:ExhibitionDocument" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

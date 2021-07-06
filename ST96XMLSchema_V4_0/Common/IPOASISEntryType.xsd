@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tbl="http://www.oasis-open.org/tables/exchange/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="B.xsd"/>
+<xsd:include schemaLocation="I.xsd"/>
+<xsd:include schemaLocation="O.xsd"/>
+<xsd:include schemaLocation="S.xsd"/>
+<xsd:include schemaLocation="U.xsd"/>
+<xsd:include schemaLocation="Sup.xsd"/>
+<xsd:include schemaLocation="Sub.xsd"/>
+<xsd:include schemaLocation="Image.xsd"/>
+<xsd:include schemaLocation="SmallCapital.xsd"/>
+<xsd:include schemaLocation="Ins.xsd"/>
+<xsd:include schemaLocation="Del.xsd"/>
+<xsd:include schemaLocation="OCRConfidenceData.xsd"/>
+<xsd:include schemaLocation="Br.xsd"/>
+<xsd:include schemaLocation="UL.xsd"/>
+<xsd:include schemaLocation="OL.xsd"/>
+<xsd:include schemaLocation="DL.xsd"/>
+<xsd:include schemaLocation="Math.xsd"/>
+<xsd:include schemaLocation="ChemicalFormulae.xsd"/>
+<xsd:include schemaLocation="PatentCitation.xsd"/>
+<xsd:include schemaLocation="NPLCitation.xsd"/>
+<xsd:include schemaLocation="CrossReference.xsd"/>
+<xsd:include schemaLocation="BioDeposit.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:import namespace="http://www.oasis-open.org/tables/exchange/1.0" schemaLocation="../ExternalStandards/OASISTable_V1_0.xsd"/>
+<xsd:complexType name="IPOASISEntryType" mixed="true">
+		<xsd:complexContent>
+			<xsd:extension base="tbl:OASISEntryType">
+				<xsd:choice minOccurs="0" maxOccurs="unbounded">
+<xsd:element ref="com:B"/>
+<xsd:element ref="com:I"/>
+<xsd:element ref="com:O"/>
+<xsd:element ref="com:S"/>
+<xsd:element ref="com:U"/>
+<xsd:element ref="com:Sup"/>
+<xsd:element ref="com:Sub"/>
+<xsd:element ref="com:Image"/>
+<xsd:element ref="com:SmallCapital"/>
+<xsd:element ref="com:Ins"/>
+<xsd:element ref="com:Del"/>
+<xsd:element ref="com:OCRConfidenceData"/>
+<xsd:element ref="com:Br"/>
+<xsd:element ref="com:UL"/>
+<xsd:element ref="com:OL"/>
+<xsd:element ref="com:DL"/>
+<xsd:element ref="com:Math"/>
+<xsd:element ref="com:ChemicalFormulae"/>
+<xsd:element ref="com:PatentCitation"/>
+<xsd:element ref="com:NPLCitation"/>
+<xsd:element ref="com:CrossReference"/>
+<xsd:element ref="com:BioDeposit"/>
+				</xsd:choice>
+				<xsd:attribute ref="com:id"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

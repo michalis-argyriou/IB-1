@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StartDate.xsd"/>
+<xsd:include schemaLocation="EndDate.xsd"/>
+<xsd:complexType name="PaymentPeriodType">
+		<xsd:choice maxOccurs="2">
+<xsd:element ref="com:StartDate"/>
+<xsd:element ref="com:EndDate"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

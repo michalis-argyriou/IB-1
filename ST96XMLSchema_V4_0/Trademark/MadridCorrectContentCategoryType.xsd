@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MadridCorrectContentCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Transaction category corrected">
+				<xsd:annotation>
+					<xsd:documentation>The type of transaction has been corrected, typically from a MadridHolderRepresentativeChange to MadridDesignation, MadridDesignationTermination, MadridProtectionRestriction or vice versa.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Correspondence address corrected">
+				<xsd:annotation>
+					<xsd:documentation>The correspondence address details have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative corrected">
+				<xsd:annotation>
+					<xsd:documentation>The representative details have been corrected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Override goods and services corrected">
+				<xsd:annotation>
+					<xsd:documentation>The goods and services in an override, e.g. limitation, refusal and partial cancellation, have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Override corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details in an override, e.g. limitation, refusal and partial cancellation, have been corrected. Typically this is a change of contracting party concerned.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Basic registration or application detailed corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the basic application or basic registration on which an international registration is based have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Designation corrected">
+				<xsd:annotation>
+					<xsd:documentation>The designated contracting parties have been corrected, i.e. added or removed.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Goods and services corrected">
+				<xsd:annotation>
+					<xsd:documentation>The goods and services in the basic list have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Holder corrected">
+				<xsd:annotation>
+					<xsd:documentation>The holder of the international registration has been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration number corrected">
+				<xsd:annotation>
+					<xsd:documentation>The international registration number has been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Priority corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the priority claim, e.g. numbers, dates, or goods and services, have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Image corrected">
+				<xsd:annotation>
+					<xsd:documentation>The image of the registration has been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mark text corrected">
+				<xsd:annotation>
+					<xsd:documentation>Other textual details of the international registration, e.g. colours or disclaimers, have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transaction cancelled">
+				<xsd:annotation>
+					<xsd:documentation>The transaction has been cancelled.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Licensee record corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the licensee record have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Record licence corrected">
+				<xsd:annotation>
+					<xsd:documentation>The details of the licence, e.g. licensee, duration or geographic scope, have been corrected.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

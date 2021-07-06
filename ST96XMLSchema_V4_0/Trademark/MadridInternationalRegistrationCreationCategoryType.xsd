@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MadridInternationalRegistrationCreationCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Registration">
+				<xsd:annotation>
+					<xsd:documentation>Registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial change of ownership">
+				<xsd:annotation>
+					<xsd:documentation>Partial change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration division">
+				<xsd:annotation>
+					<xsd:documentation>Division of international registration at the request of an office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

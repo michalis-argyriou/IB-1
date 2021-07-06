@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Image.xsd"/>
+<xsd:include schemaLocation="InlineFormula.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="chemicalFormulaeNumber.xsd"/>
+<xsd:include schemaLocation="ExternalDocumentBag.xsd"/>
+	<xsd:complexType name="ChemicalFormulaeType">
+		<xsd:choice>
+			<xsd:element ref="com:Image"/>
+			<xsd:element ref="com:InlineFormula"/>
+			<xsd:element ref="com:ExternalDocumentBag"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:chemicalFormulaeNumber"/>
+	</xsd:complexType>
+</xsd:schema>

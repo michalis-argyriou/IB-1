@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPRightMaintenanceEventDataType.xsd"/>
+<xsd:element name="IPRightMaintenanceEventData" type="pat:IPRightMaintenanceEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category M (IP right maintenance). This category is a group of events related to the maintenance of a granted IP right in full or amended form as the outcome of a post-grant challenge for any type of IP right covered by Category F. It includes, for example, an IP right being maintained in full or amended form following an appeal, an IP right review or the inadmissibility, rejection or withdrawal of a request for an IP right review. The events in this category may move an IP right from the post-grant challenge stage into the grant stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="AssociationCategory.xsd"/>
+<xsd:include schemaLocation="InternationalApplicationNumber.xsd"/>
+<xsd:include schemaLocation="NationalApplicationNumber.xsd"/>
+<xsd:include schemaLocation="NationalRegistrationNumber.xsd"/>
+<xsd:include schemaLocation="AssociatedApplicationNumber.xsd"/>
+<xsd:include schemaLocation="InternationalApplicationFilingDate.xsd"/>
+<xsd:include schemaLocation="NationalApplicationFilingDate.xsd"/>
+<xsd:include schemaLocation="NationalRegistrationDate.xsd"/>
+<xsd:include schemaLocation="WordMarkSpecification.xsd"/>
+<xsd:include schemaLocation="AssociatedMarkStatusBag.xsd"/>
+<xsd:include schemaLocation="OtherPriorRegistrationIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationDate.xsd"/>
+<xsd:complexType name="AssociatedMarkType">
+		<xsd:sequence>
+<xsd:element ref="tmk:AssociationCategory"/>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="tmk:InternationalApplicationNumber"/>
+				<xsd:element ref="com:InternationalRegistrationNumber"/>
+				<xsd:element ref="tmk:NationalApplicationNumber"/>
+				<xsd:element ref="tmk:NationalRegistrationNumber"/>
+				<xsd:element ref="tmk:AssociatedApplicationNumber"/>
+				<xsd:element ref="tmk:InternationalApplicationFilingDate"/>
+				<xsd:element ref="tmk:NationalApplicationFilingDate"/>
+				<xsd:element ref="com:InternationalRegistrationDate"/>
+				<xsd:element ref="tmk:NationalRegistrationDate"/>
+				<xsd:element ref="tmk:WordMarkSpecification"/>
+				<xsd:element ref="tmk:AssociatedMarkStatusBag"/>
+				<xsd:element ref="tmk:OtherPriorRegistrationIndicator"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

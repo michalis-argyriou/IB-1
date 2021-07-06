@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SuccessorRightsType.xsd"/>
+<xsd:element name="SuccessorRights" type="pat:SuccessorRightsType">
+		<xsd:annotation>
+			<xsd:documentation>This person is successor to the rights of an inventor who is deceased, insane, or legally incapacitated</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

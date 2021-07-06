@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="TraditionalCharacterKeyElementText.xsd"/>
+<xsd:include schemaLocation="TSGReservedIndicator.xsd"/>
+<xsd:include schemaLocation="TSGDescriptionText.xsd"/>
+<xsd:include schemaLocation="TSGMethodText.xsd"/>
+<xsd:include schemaLocation="SpecificCharacterKeyElementText.xsd"/>
+	<xsd:complexType name="TSGClaimType">
+		<xsd:sequence>
+			<xsd:element ref="gin:TSGReservedIndicator"/>
+			<xsd:element ref="gin:TSGDescriptionText"/>
+			<xsd:element ref="gin:TSGMethodText"/>
+			<xsd:element ref="gin:TraditionalCharacterKeyElementText"/>
+			<xsd:element ref="gin:SpecificCharacterKeyElementText"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

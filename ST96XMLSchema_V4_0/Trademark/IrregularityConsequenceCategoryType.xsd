@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="IrregularityConsequenceCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Observation without consequence">
+				<xsd:annotation>
+					<xsd:documentation>Observation without consequence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Will proceed without reply">
+				<xsd:annotation>
+					<xsd:documentation>If not reply is received, the request will proceed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Will abandon without reply">
+				<xsd:annotation>
+					<xsd:documentation>If not reply is received, the request will be abandoned</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Will abandon without reply and delay affects date">
+				<xsd:annotation>
+					<xsd:documentation>If no reply is received, the request will be abandoned. If a reply is received, the request will bear the date the reply is received</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not correctable and abandoned">
+				<xsd:annotation>
+					<xsd:documentation>Irregularity is uncorrectable and the request will be abandoned</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

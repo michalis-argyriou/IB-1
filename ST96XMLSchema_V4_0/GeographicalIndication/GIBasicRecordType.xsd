@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DocumentIncludedBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordEventDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/officeCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" schemaLocation="../Trademark/ReasonDocument.xsd"/>
+<xsd:include schemaLocation="GIPublicationBag.xsd"/>
+<xsd:include schemaLocation="GIData.xsd"/>
+<xsd:include schemaLocation="GIUserCertificate.xsd"/>
+<xsd:include schemaLocation="GIReference.xsd"/>
+<xsd:include schemaLocation="GIUserCertificateReference.xsd"/>
+<xsd:include schemaLocation="GIRecordReasonText.xsd"/>
+	<xsd:complexType name="GIBasicRecordType">
+		<xsd:sequence>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="gin:GIPublicationBag" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:choice>
+					<xsd:element ref="gin:GIReference"/>
+					<xsd:element ref="gin:GIData"/>
+				</xsd:choice>
+				<xsd:choice>
+					<xsd:element ref="gin:GIUserCertificateReference"/>
+					<xsd:element ref="gin:GIUserCertificate"/>
+				</xsd:choice>
+			</xsd:choice>
+			<xsd:element ref="com:RecordEventDate"/>
+			<xsd:element ref="com:RecordIdentifier"/>
+			<xsd:choice>
+				<xsd:element ref="gin:GIRecordReasonText"/>
+				<xsd:element ref="tmk:ReasonDocument"/>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:officeCode"/>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

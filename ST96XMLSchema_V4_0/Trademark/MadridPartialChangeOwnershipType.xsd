@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridDesignation.xsd"/>
+<xsd:include schemaLocation="MadridDesignationTermination.xsd"/>
+<xsd:include schemaLocation="MadridProtectionRestriction.xsd"/>
+	<xsd:complexType name="MadridPartialChangeOwnershipType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:MadridDesignation"/>
+			<xsd:choice>
+				<xsd:element ref="tmk:MadridDesignationTermination"/>
+				<xsd:element ref="tmk:MadridProtectionRestriction"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

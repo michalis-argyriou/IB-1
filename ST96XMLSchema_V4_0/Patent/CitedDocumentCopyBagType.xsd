@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CitedPriorArtCopyIndicator.xsd"/>
+<xsd:include schemaLocation="CitedDocumentCopy.xsd"/>
+<xsd:complexType name="CitedDocumentCopyBagType">
+		<xsd:sequence>
+<xsd:element ref="pat:CitedPriorArtCopyIndicator"/>
+<xsd:element ref="pat:CitedDocumentCopy" maxOccurs="unbounded" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

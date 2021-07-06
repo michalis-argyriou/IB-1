@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="PaymentModeCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Charge">
+				<xsd:annotation>
+					<xsd:documentation>Charge</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Postal order">
+				<xsd:annotation>
+					<xsd:documentation>Postal order</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Current account">
+				<xsd:annotation>
+					<xsd:documentation>Payment by debit from a current or deposit account established with WIPO or national/regional Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Credit card">
+				<xsd:annotation>
+					<xsd:documentation>Credit card</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Debit card">
+				<xsd:annotation>
+					<xsd:documentation>Debit card</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Card">
+				<xsd:annotation>
+					<xsd:documentation>Payment by a credit or debit card when it is unknown which one which could be due to the processing taking place in an external processing system</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cash">
+				<xsd:annotation>
+					<xsd:documentation>Cash</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Coupons">
+				<xsd:annotation>
+					<xsd:documentation>Coupons</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cheque">
+				<xsd:annotation>
+					<xsd:documentation>Cheque</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Bank draft">
+				<xsd:annotation>
+					<xsd:documentation>Bank draft</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stamps">
+				<xsd:annotation>
+					<xsd:documentation>Stamps</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Later payment">
+				<xsd:annotation>
+					<xsd:documentation>Later payment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

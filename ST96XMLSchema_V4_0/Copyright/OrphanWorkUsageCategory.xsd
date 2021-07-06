@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OrphanWorkUsageCategoryType.xsd"/>
+	<xsd:element name="OrphanWorkUsageCategory" type="cpy:OrphanWorkUsageCategoryType">
+		<xsd:annotation>
+			<xsd:documentation>Category which identifies the usage category of an orphan work</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

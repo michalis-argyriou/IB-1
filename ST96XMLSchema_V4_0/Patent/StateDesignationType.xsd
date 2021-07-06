@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NewDesignationCountryCode.xsd"/>
+<xsd:include schemaLocation="NationalDesignation.xsd"/>
+<xsd:include schemaLocation="RegionalDesignation.xsd"/>
+<xsd:include schemaLocation="NationalDesignation.xsd"/>
+<xsd:complexType name="StateDesignationType">
+		<xsd:sequence>
+<xsd:element ref="pat:NewDesignationCountryCode" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:choice>
+<xsd:element ref="pat:NationalDesignation"/>
+				<xsd:sequence>
+<xsd:element ref="pat:RegionalDesignation" maxOccurs="unbounded"/>
+<xsd:element ref="pat:NationalDesignation" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

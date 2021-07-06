@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RegisterCategory.xsd"/>
+<xsd:include schemaLocation="ApplicationAbandonedDate.xsd"/>
+<xsd:include schemaLocation="RegistrationCancelledDate.xsd"/>
+<xsd:include schemaLocation="AmendedPrincipalRegisterIndicator.xsd"/>
+<xsd:include schemaLocation="AmendedSupplementalRegisterIndicator.xsd"/>
+<xsd:include schemaLocation="RegisterAmendedDate.xsd"/>
+<xsd:include schemaLocation="MarkCurrentStatusExternalDescriptionText.xsd"/>
+<xsd:include schemaLocation="MarkCurrentStatusInternalDescriptionText.xsd"/>
+<xsd:include schemaLocation="PreviouslyRegisteredMarkPublicationIndicator.xsd"/>
+<xsd:include schemaLocation="PreviouslyRegisteredMarkPublishedDate.xsd"/>
+<xsd:include schemaLocation="InterferenceStatementText.xsd"/>
+<xsd:include schemaLocation="TradeDistinctivenessScopeText.xsd"/>
+<xsd:include schemaLocation="OrderRestrictingScopeStatementText.xsd"/>
+<xsd:include schemaLocation="RestrictionStatementText.xsd"/>
+<xsd:include schemaLocation="CertificationStatementText.xsd"/>
+<xsd:include schemaLocation="ConcurrentUseStatementText.xsd"/>
+<xsd:include schemaLocation="FiledAsPlusApplicationIndicator.xsd"/>
+<xsd:include schemaLocation="CurrentlyPlusApplicationIndicator.xsd"/>
+<xsd:include schemaLocation="RegistrationChangeIndicator.xsd"/>
+<xsd:include schemaLocation="AllowanceNoticeDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RenewalDate.xsd"/>
+<xsd:include schemaLocation="RegistrationCertificateAmendmentText.xsd"/>
+<xsd:include schemaLocation="CertificateCorrectingRegistrationText.xsd"/>
+<xsd:include schemaLocation="MaintenanceFilingBag.xsd"/>
+<xsd:include schemaLocation="NationalCaseLocation.xsd"/>
+<xsd:complexType name="NationalTrademarkInformationType">
+		<xsd:sequence>
+<xsd:element ref="tmk:RegisterCategory"/>
+<xsd:element ref="tmk:ApplicationAbandonedDate" minOccurs="0"/>
+<xsd:element ref="tmk:RegistrationCancelledDate" minOccurs="0"/>
+<xsd:element ref="tmk:AmendedPrincipalRegisterIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:AmendedSupplementalRegisterIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:RegisterAmendedDate" minOccurs="0"/>
+<xsd:element ref="tmk:MarkCurrentStatusExternalDescriptionText" minOccurs="0"/>
+<xsd:element ref="tmk:MarkCurrentStatusInternalDescriptionText" minOccurs="0"/>
+<xsd:element ref="tmk:PreviouslyRegisteredMarkPublicationIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:PreviouslyRegisteredMarkPublishedDate" minOccurs="0"/>
+<xsd:element ref="tmk:InterferenceStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:TradeDistinctivenessScopeText" minOccurs="0"/>
+<xsd:element ref="tmk:OrderRestrictingScopeStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:RestrictionStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:CertificationStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:ConcurrentUseStatementText" minOccurs="0"/>
+<xsd:element ref="tmk:FiledAsPlusApplicationIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:CurrentlyPlusApplicationIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:RegistrationChangeIndicator" minOccurs="0"/>
+<xsd:element ref="tmk:AllowanceNoticeDate" minOccurs="0"/>
+<xsd:element ref="com:RenewalDate" minOccurs="0"/>
+<xsd:element ref="tmk:RegistrationCertificateAmendmentText" minOccurs="0"/>
+<xsd:element ref="tmk:CertificateCorrectingRegistrationText" minOccurs="0"/>
+<xsd:element ref="tmk:MaintenanceFilingBag" minOccurs="0"/>
+<xsd:element ref="tmk:NationalCaseLocation" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ImageFormatCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="JPEG">
+				<xsd:annotation>
+					<xsd:documentation>JPEG</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TIFF">
+				<xsd:annotation>
+					<xsd:documentation>TIFF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PNG">
+				<xsd:annotation>
+					<xsd:documentation>PNG</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GIF">
+				<xsd:annotation>
+					<xsd:documentation>GIF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SVG">
+				<xsd:annotation>
+					<xsd:documentation>Scalable vector graphics image</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

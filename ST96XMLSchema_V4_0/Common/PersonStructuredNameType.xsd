@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="NamePrefix.xsd"/>
+<xsd:include schemaLocation="FirstName.xsd"/>
+<xsd:include schemaLocation="MiddleName.xsd"/>
+<xsd:include schemaLocation="LastName.xsd"/>
+<xsd:include schemaLocation="FirstLastName.xsd"/>
+<xsd:include schemaLocation="SecondLastName.xsd"/>
+<xsd:include schemaLocation="NameSuffix.xsd"/>
+<xsd:include schemaLocation="PreferredName.xsd"/>
+<xsd:include schemaLocation="PersonOtherName.xsd"/>
+	<xsd:complexType name="PersonStructuredNameType">
+		<xsd:sequence>
+			<xsd:element ref="com:NamePrefix" minOccurs="0"/>
+			<xsd:element ref="com:FirstName" minOccurs="0"/>
+			<xsd:element ref="com:MiddleName" minOccurs="0"/>
+			<xsd:element ref="com:LastName"/>
+			<xsd:element ref="com:FirstLastName" minOccurs="0"/>
+			<xsd:element ref="com:SecondLastName" minOccurs="0"/>
+			<xsd:element ref="com:NameSuffix" minOccurs="0"/>
+			<xsd:element ref="com:PreferredName" minOccurs="0"/>
+			<xsd:element ref="com:PersonOtherName" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

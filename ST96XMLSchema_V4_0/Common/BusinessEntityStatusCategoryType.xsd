@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="BusinessEntityStatusCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Undiscounted">
+				<xsd:annotation>
+					<xsd:documentation>Undiscounted entity</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Small">
+				<xsd:annotation>
+					<xsd:documentation>Small entity discount</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Micro">
+				<xsd:annotation>
+					<xsd:documentation>Micro entity discount</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

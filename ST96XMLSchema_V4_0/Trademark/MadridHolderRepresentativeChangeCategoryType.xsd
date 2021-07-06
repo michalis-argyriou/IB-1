@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0"><xsd:simpleType name="MadridHolderRepresentativeChangeCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Change of holder name address">
+				<xsd:annotation>
+					<xsd:documentation>Change of holder name address</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+				<xsd:enumeration value="Change of ownership">
+				<xsd:annotation>
+					<xsd:documentation>Change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+				<xsd:enumeration value="Change of representative">
+				<xsd:annotation>
+					<xsd:documentation>Change of representative</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Change of representative at time of limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Change of representative at time of partial cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

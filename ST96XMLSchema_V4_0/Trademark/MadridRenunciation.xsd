@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridRenunciationType.xsd"/>
+<xsd:element name="MadridRenunciation" type="tmk:MadridRenunciationType">
+			<xsd:annotation>
+			<xsd:documentation>Renunciation of the designated contracting parties. Office of Origin or Designated Office. Form MM7.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

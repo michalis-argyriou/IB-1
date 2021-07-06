@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MadridSystemCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Agreement">
+				<xsd:annotation>
+					<xsd:documentation>Agreement</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protocol">
+				<xsd:annotation>
+					<xsd:documentation>Protocol</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protocol article 9 sexies">
+				<xsd:annotation>
+					<xsd:documentation>Designation under the protocol by virtue of Article 9 sexies</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

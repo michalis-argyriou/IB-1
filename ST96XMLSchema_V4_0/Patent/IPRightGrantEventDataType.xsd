@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EffectiveCountryBag.xsd"/>
+<xsd:include schemaLocation="GazetteNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="OwnerBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/AppellateDecision.xsd"/>
+<xsd:include schemaLocation="InventionTitle.xsd"/>
+<xsd:include schemaLocation="PriorityApplicationIdentificationBag.xsd"/>
+<xsd:include schemaLocation="InternationalFilingData.xsd"/>
+<xsd:include schemaLocation="InternationalPublishingData.xsd"/>
+<xsd:include schemaLocation="InventorBag.xsd"/>
+<xsd:include schemaLocation="CPCClassificationBag.xsd"/>
+<xsd:complexType name="IPRightGrantEventDataType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:EffectiveCountryBag"/>
+<xsd:element ref="pat:GazetteNumber"/>
+<xsd:element ref="com:CommentText"/>
+<xsd:element ref="pat:OwnerBag"/>
+<xsd:element ref="com:AppellateDecision"/>
+<xsd:element ref="pat:InventionTitle"/>
+<xsd:element ref="pat:PriorityApplicationIdentificationBag"/>
+<xsd:element ref="pat:InternationalFilingData"/>
+<xsd:element ref="pat:InternationalPublishingData"/>
+<xsd:element ref="pat:InventorBag"/>
+<xsd:element ref="pat:CPCClassificationBag"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

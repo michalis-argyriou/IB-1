@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:include schemaLocation="GICorrectContentCategory.xsd"/>	
+	<xsd:include schemaLocation="GIRegistrationRecord.xsd"/>
+	<xsd:include schemaLocation="GITransferRecord.xsd"/>
+	<xsd:include schemaLocation="GICancellationRecord.xsd"/>
+	<xsd:include schemaLocation="GIInvalidationRecord.xsd"/>
+	<xsd:include schemaLocation="GIRefusalRecord.xsd"/>
+	<xsd:include schemaLocation="GIChangeRecord.xsd"/>
+	<xsd:include schemaLocation="GIOppositionRecord.xsd"/>
+	<xsd:include schemaLocation="GIRenewalRecord.xsd"/>
+	<xsd:include schemaLocation="GIUserCertificateApplication.xsd"/>
+	<xsd:include schemaLocation="GIData.xsd"/>
+	<xsd:complexType name="GICorrectContentType">
+		<xsd:sequence>		
+			<xsd:element ref="gin:GICorrectContentCategory" maxOccurs="unbounded"/>
+			<xsd:choice minOccurs="0">
+			<xsd:element ref="gin:GIData"/>
+			<xsd:element ref="gin:GIUserCertificateApplication"/>
+			<xsd:element ref="gin:GIRegistrationRecord"/>
+			<xsd:element ref="gin:GITransferRecord"/>
+			<xsd:element ref="gin:GICancellationRecord"/>
+			<xsd:element ref="gin:GIInvalidationRecord"/>
+			<xsd:element ref="gin:GIRefusalRecord"/>
+			<xsd:element ref="gin:GIChangeRecord"/>
+			<xsd:element ref="gin:GIOppositionRecord"/>
+			<xsd:element ref="gin:GIRenewalRecord"/>
+			</xsd:choice>
+	</xsd:sequence>	
+	</xsd:complexType>
+</xsd:schema>

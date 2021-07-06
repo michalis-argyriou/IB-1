@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ClaimStatusCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Original">
+				<xsd:annotation>
+					<xsd:documentation>A claim that is the same as originally submitted with the initial filing.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Currently amended">
+				<xsd:annotation>
+					<xsd:documentation>A modification to the claim text in the current amendment document.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancelled by applicant">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been cancelled and is no longer under prosecution.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>A claim that is no longer being considered, but can be revived.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Previously presented">
+				<xsd:annotation>
+					<xsd:documentation>An unchanged copy of a previously amended claim.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="New">
+				<xsd:annotation>
+					<xsd:documentation>A new claim that has been added in the current amendment.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not entered">
+				<xsd:annotation>
+					<xsd:documentation>A claim that is not under prosecution, however, may or may not be revived by the petition office or the examiner.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Unknown">
+				<xsd:annotation>
+					<xsd:documentation>When an applicant provides a claim status that does not map to the standard set.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Allowed">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as in condition for allowance by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Objected to">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as objected to by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Rejected">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as rejected by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Restricted">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as subject to a restriction requirement by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Non elected or withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>A claim that is not being examined after restriction. It is withdrawn from further consideration until allowance of the application. A claim that has been indicated as withdrawn by examiner of record.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancelled by examiner">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated no longer available for examination by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appealed">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as appealed to the Board by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Interference">
+				<xsd:annotation>
+					<xsd:documentation>A claim that has been indicated as subject to interference proceedings by examiner of record</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="None">
+				<xsd:annotation>
+					<xsd:documentation>The examiner has not yet taken action on the claim</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

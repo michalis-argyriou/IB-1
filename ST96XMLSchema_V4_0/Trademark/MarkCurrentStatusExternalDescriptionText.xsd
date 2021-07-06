@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="MarkCurrentStatusExternalDescriptionText" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Very long status descriptions. Some contain information about what the filer should do next and when. Some contain business rules. These descriptions are viewed by external shareholders.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

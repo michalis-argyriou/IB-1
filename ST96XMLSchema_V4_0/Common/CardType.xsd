@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CardProviderCategory.xsd"/>
+<xsd:include schemaLocation="MaskedPAN.xsd"/>
+<xsd:include schemaLocation="ExpiryDate.xsd"/>
+<xsd:include schemaLocation="AccountNumber.xsd"/>
+<xsd:include schemaLocation="ElectronicPaymentReferenceText.xsd"/>
+	<xsd:complexType name="CardType">
+		<xsd:sequence>
+			<xsd:element ref="com:CardProviderCategory"/>
+			<xsd:element ref="com:MaskedPAN"/>
+			<xsd:element ref="com:ExpiryDate" minOccurs="0"/>
+			<xsd:element ref="com:AccountNumber" minOccurs="0"/>
+			<xsd:element ref="com:ElectronicPaymentReferenceText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

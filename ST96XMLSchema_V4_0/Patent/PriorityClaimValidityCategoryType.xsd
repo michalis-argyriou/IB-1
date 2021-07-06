@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="PriorityClaimValidityCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="No valid priority claim considered">
+				<xsd:annotation>
+					<xsd:documentation>The validity of the priority claim has not been considered because the International Searching Authority does not have in its possession a copy of the earlier application whose priority has been claimed or, where required, a translation of that earlier application. This opinion has nevertheless been established on the assumption that the relevant date is the claimed priority date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No priority claim valid">
+				<xsd:annotation>
+					<xsd:documentation>This opinion has been established as if no priority had been claimed due to the fact that the priority claim has been found invalid. For the purposes of this opinion, the international filing date indicated above is considered to be the relevant date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Copy earlier application not provided">
+				<xsd:annotation>
+					<xsd:documentation>The applicant has failed to provide a copy of the earlier application whose priority is the basis of this claim</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Translation earlier application not provided">
+				<xsd:annotation>
+					<xsd:documentation>There has been a failure to provide the translation of the earlier application whose priority is the basis of this claim</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

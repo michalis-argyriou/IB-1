@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ProtectionBeyondIPRightTermEventDataType.xsd"/>
+<xsd:element name="ProtectionBeyondIPRightTermEventData" type="pat:ProtectionBeyondIPRightTermEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category G (Protection beyond IP right term). This category is a group of events related to the protection of an IP right beyond its term for any type of IP right covered by Category F. It includes, for example, a request for a patent term adjustment (PTA), patent term extension (PTE) or a supplementary protection certificate (SPC) extension and also includes related events that occur subsequent to such a request. The events in this category occur during the grant stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

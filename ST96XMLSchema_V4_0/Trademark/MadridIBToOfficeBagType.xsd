@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridDesignation.xsd"/>
+<xsd:include schemaLocation="MadridDesignationTermination.xsd"/>
+<xsd:include schemaLocation="MadridRenewal.xsd"/>
+<xsd:include schemaLocation="MadridProtectionRestriction.xsd"/>
+<xsd:include schemaLocation="MadridHolderRepresentativeChange.xsd"/>
+<xsd:include schemaLocation="MadridPartialChangeOwnership.xsd"/>
+<xsd:include schemaLocation="MadridInternationalRegistrationDivision.xsd"/>
+<xsd:include schemaLocation="MadridInternationalRegistrationMerger.xsd"/>
+<xsd:include schemaLocation="MadridBasicRegistrationApplicationChange.xsd"/>
+<xsd:include schemaLocation="MadridInternationalRegistrationCreation.xsd"/>
+<xsd:include schemaLocation="MadridCompletedProcessing.xsd"/>
+<xsd:include schemaLocation="MadridCorrection.xsd"/>
+<xsd:include schemaLocation="RecordLicence.xsd"/>
+<xsd:include schemaLocation="MadridLicenseeRecordChange.xsd"/>
+<xsd:include schemaLocation="MadridSecondPartPayment.xsd"/>
+<xsd:include schemaLocation="MadridIrregularityNotification.xsd"/>
+<xsd:include schemaLocation="MadridAbandonmentNotification.xsd"/>
+<xsd:include schemaLocation="MadridAcknowledgementReceipt.xsd"/>
+	<xsd:complexType name="MadridIBToOfficeBagType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="tmk:MadridDesignation"/>
+			<xsd:element ref="tmk:MadridDesignationTermination"/>
+			<xsd:element ref="tmk:MadridRenewal"/>
+			<xsd:element ref="tmk:MadridProtectionRestriction"/>
+			<xsd:element ref="tmk:MadridHolderRepresentativeChange"/>
+			<xsd:element ref="tmk:MadridPartialChangeOwnership"/>
+			<xsd:element ref="tmk:MadridInternationalRegistrationDivision"/>
+			<xsd:element ref="tmk:MadridInternationalRegistrationMerger"/>
+			<xsd:element ref="tmk:MadridBasicRegistrationApplicationChange"/>
+			<xsd:element ref="tmk:MadridInternationalRegistrationCreation"/>
+			<xsd:element ref="tmk:MadridCompletedProcessing"/>
+			<xsd:element ref="tmk:MadridCorrection"/>
+			<xsd:element ref="tmk:RecordLicence"/>
+			<xsd:element ref="tmk:MadridLicenseeRecordChange"/>
+			<xsd:element ref="tmk:MadridSecondPartPayment"/>
+			<xsd:element ref="tmk:MadridIrregularityNotification"/>
+			<xsd:element ref="tmk:MadridAbandonmentNotification"/>
+			<xsd:element ref="tmk:MadridAcknowledgementReceipt"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

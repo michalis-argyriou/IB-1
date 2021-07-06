@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LocarnoClassificationEdition.xsd"/>
+<xsd:include schemaLocation="LocarnoClassificationDate.xsd"/>
+<xsd:include schemaLocation="LocarnoClassification.xsd"/>
+<xsd:include schemaLocation="SymbolPositionCode.xsd"/>
+<xsd:include schemaLocation="LocarnoClassificationText.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:complexType name="LocarnoClassificationBagType">
+		<xsd:sequence>
+	<xsd:element ref="com:LocarnoClassificationEdition"/>
+	<xsd:element ref="com:LocarnoClassificationDate" minOccurs="0"/>
+			<xsd:choice maxOccurs="unbounded">
+			<xsd:element ref="com:LocarnoClassification"/>
+				<xsd:sequence>
+				<xsd:element ref="com:SymbolPositionCode" minOccurs="0"/>
+				<xsd:element ref="com:LocarnoClassificationText"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

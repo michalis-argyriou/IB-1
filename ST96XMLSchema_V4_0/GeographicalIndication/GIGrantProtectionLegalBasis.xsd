@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GIGrantProtectionLegalBasisType.xsd"/>
+
+	<xsd:element name="GIGrantProtectionLegalBasis" type="gin:GIGrantProtectionLegalBasisType">
+		<xsd:annotation>
+			<xsd:documentation>Legal basis for the grant of protection of the Geographic Indication</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ClassType">
+		<xsd:restriction base="xsd:token">
+			<xsd:length value="2"/>
+			<xsd:pattern value="[0-9][1-9]|[1-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

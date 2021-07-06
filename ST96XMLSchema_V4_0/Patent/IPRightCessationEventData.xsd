@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPRightCessationEventDataType.xsd"/>
+<xsd:element name="IPRightCessationEventData" type="pat:IPRightCessationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category H (IP right cessation). This category is a group of events related to the cessation of an IP right for any type of IP right covered by Category F. It includes, for example, the cessation of an IP right following an IP right review, an appeal, a refusal to reinstate, or a lapse or expiry. The events in this category may move an IP right from the grant stage or the post-grant challenge stage into the termination likely/termination stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

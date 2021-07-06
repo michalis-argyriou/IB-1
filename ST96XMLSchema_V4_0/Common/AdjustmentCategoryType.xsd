@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="AdjustmentCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Time extension">
+				<xsd:annotation>
+					<xsd:documentation>Time extension</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Suspension">
+				<xsd:annotation>
+					<xsd:documentation>Suspension</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stay">
+				<xsd:annotation>
+					<xsd:documentation>Stay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Resumption">
+				<xsd:annotation>
+					<xsd:documentation>Resumption</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Interruption">
+				<xsd:annotation>
+					<xsd:documentation>Interruption</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Delay in communication services">
+				<xsd:annotation>
+					<xsd:documentation>Delay in communication services</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="As_of_right extension granted">
+				<xsd:annotation>
+					<xsd:documentation>As-of-right extension granted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IPO disruption">
+				<xsd:annotation>
+					<xsd:documentation>IPO disruption</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IPO irregularity">
+				<xsd:annotation>
+					<xsd:documentation>IPO irregularity</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative contact information change">
+				<xsd:annotation>
+					<xsd:documentation>Representative contact information change</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

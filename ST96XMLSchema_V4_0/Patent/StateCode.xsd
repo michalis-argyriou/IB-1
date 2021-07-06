@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StateCodeType.xsd"/>
+<xsd:element name="StateCode" default="U" type="pat:StateCodeType">
+		<xsd:annotation>
+			<xsd:documentation>A code indicating the legal state of an application or IP right, such as active, not active, or terminated, according to the applicable law.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RecordAttorneyType.xsd"/>
+<xsd:element name="RecordAttorney" type="tmk:RecordAttorneyType">
+		<xsd:annotation>
+			<xsd:documentation>An attorney selected by the applicant or owner of an intellectual property to represent them before the national office.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

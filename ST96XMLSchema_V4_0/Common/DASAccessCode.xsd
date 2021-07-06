@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DASAccessCodeType.xsd"/>
+	<xsd:element name="DASAccessCode" type="com:DASAccessCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Access code provided by WIPO or Depositing Office to obtain the priority documents for an IP application through the WIPO Digital Access Service</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

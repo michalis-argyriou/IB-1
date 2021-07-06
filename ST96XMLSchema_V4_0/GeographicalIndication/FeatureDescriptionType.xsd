@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Image.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/languageCode.xsd"/>
+<xsd:include schemaLocation="MainFeatureDescriptionText.xsd"/>
+<xsd:include schemaLocation="ProductionDescriptionText.xsd"/>
+<xsd:include schemaLocation="FeatureDescriptionText.xsd"/>
+<xsd:include schemaLocation="UniquenessText.xsd"/>
+<xsd:include schemaLocation="OrignProofText.xsd"/>
+<xsd:include schemaLocation="ProductPhysicalCharacteristicText.xsd"/>
+<xsd:include schemaLocation="ProductOrganolepticCharacteristicText.xsd"/>
+<xsd:include schemaLocation="ProductChemicalCharacteristicText.xsd"/>
+<xsd:include schemaLocation="ProductMaterialText.xsd"/>
+<xsd:include schemaLocation="ProductProcessingRuleText.xsd"/>
+<xsd:include schemaLocation="ProductLabelingRuleText.xsd"/>
+<xsd:include schemaLocation="MountainProductIndicator.xsd"/>
+<xsd:include schemaLocation="AnimalOriginDescriptionText.xsd"/>
+<xsd:include schemaLocation="AnimalOriginOnlyIndicator.xsd"/>
+<xsd:include schemaLocation="FeedDescriptionText.xsd"/>
+<xsd:include schemaLocation="FoodFeedSourceIndicator.xsd"/>
+<xsd:include schemaLocation="ProductAnalyticCharacteristicText.xsd"/>
+<xsd:include schemaLocation="ProductionMaximumAmount.xsd"/>
+<xsd:include schemaLocation="ProductMaximumAcidity.xsd"/>
+<xsd:include schemaLocation="ProductMinimumAcidity.xsd"/>
+<xsd:include schemaLocation="ProductMaximumAlcoholStrength.xsd"/>
+<xsd:include schemaLocation="ProductMinimumAlcoholStrength.xsd"/>
+<xsd:include schemaLocation="ProductOenologicalPracticeText.xsd"/>
+<xsd:include schemaLocation="ProductSpecificationPublication.xsd"/>
+<xsd:include schemaLocation="ProductSpiritRequirementText.xsd"/>
+<xsd:include schemaLocation="RawMaterialDescriptionText.xsd"/>
+<xsd:include schemaLocation="RawMaterialOnlySourceIndicator.xsd"/>
+<xsd:include schemaLocation="RawMaterialOriginRestrictionIndicator.xsd"/>
+<xsd:include schemaLocation="RawMaterialQualityRequirementIndicator.xsd"/>
+<xsd:include schemaLocation="SameCategoryProductSpecificCharacteristicText.xsd"/>
+<xsd:include schemaLocation="SpecificLabelingRuleIndicator.xsd"/>
+<xsd:include schemaLocation="SpecificProcessingRuleIndicator.xsd"/>
+<xsd:include schemaLocation="DelimitedGeographicAreaSpecificProcessingRuleIndicator.xsd"/>
+<xsd:include schemaLocation="QualityProduct.xsd"/>
+
+	<xsd:complexType name="FeatureDescriptionType">
+		<xsd:sequence>
+			<xsd:sequence>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="gin:MainFeatureDescriptionText"/>
+						<xsd:element ref="gin:ProductionDescriptionText"/>
+					</xsd:sequence>
+					<xsd:element ref="gin:FeatureDescriptionText"/>
+				</xsd:choice>
+				<xsd:element ref="gin:UniquenessText" minOccurs="0"/>
+				<xsd:element ref="gin:OrignProofText" minOccurs="0"/>
+				<xsd:element ref="gin:ProductPhysicalCharacteristicText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:ProductOrganolepticCharacteristicText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:ProductChemicalCharacteristicText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:ProductMaterialText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:ProductProcessingRuleText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:ProductLabelingRuleText" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="gin:SpecificProcessingRuleIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:SpecificLabelingRuleIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:DelimitedGeographicAreaSpecificProcessingRuleIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:MountainProductIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:AnimalOriginOnlyIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:AnimalOriginDescriptionText" minOccurs="0"/>
+				<xsd:element ref="gin:FoodFeedSourceIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:FeedDescriptionText" minOccurs="0"/>
+				<xsd:element ref="gin:ProductAnalyticCharacteristicText" minOccurs="0"/>
+				<xsd:element ref="gin:ProductOenologicalPracticeText" minOccurs="0"/>
+				<xsd:element ref="gin:ProductMaximumAcidity" minOccurs="0"/>
+				<xsd:element ref="gin:ProductMinimumAcidity" minOccurs="0"/>
+				<xsd:element ref="gin:ProductMaximumAlcoholStrength" minOccurs="0"/>
+				<xsd:element ref="gin:ProductMinimumAlcoholStrength" minOccurs="0"/>
+				<xsd:element ref="gin:ProductionMaximumAmount" minOccurs="0"/>
+				<xsd:element ref="gin:ProductSpecificationPublication" minOccurs="0"/>
+				<xsd:element ref="gin:ProductSpiritRequirementText" minOccurs="0"/>
+				<xsd:element ref="gin:RawMaterialDescriptionText" minOccurs="0"/>
+				<xsd:element ref="gin:RawMaterialOnlySourceIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:RawMaterialOriginRestrictionIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:RawMaterialQualityRequirementIndicator" minOccurs="0"/>
+				<xsd:element ref="gin:SameCategoryProductSpecificCharacteristicText" minOccurs="0"/>
+				<xsd:element ref="gin:QualityProduct" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:element ref="com:Image" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Collection of the images describing the geographical indication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

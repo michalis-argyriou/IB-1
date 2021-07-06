@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:element name="FilingLanguageIndicator" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>With regard to the language, the international search was carried out on the basis of the international application in the language in which it was filed.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

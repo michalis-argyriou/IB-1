@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GILegalBasisRegistrationOfficeType.xsd"/>
+
+	<xsd:element name="GILegalBasisRegistrationOffice" type="gin:GILegalBasisRegistrationOfficeType">
+	<xsd:annotation>
+		<xsd:documentation>National or Registration office which form the legal basis for the grant of protection in the country of origin. The name of the office which the registration was made as well as the date and registration number must be provided.</xsd:documentation>
+	</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

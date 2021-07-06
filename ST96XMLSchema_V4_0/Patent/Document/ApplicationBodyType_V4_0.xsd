@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../PageImage.xsd"/>
+<xsd:include schemaLocation="../DocumentURI.xsd"/>
+<xsd:include schemaLocation="../Description.xsd"/>
+<xsd:include schemaLocation="../ClaimStatement.xsd"/>
+<xsd:include schemaLocation="../Claims.xsd"/>
+<xsd:include schemaLocation="../Abstract.xsd"/>
+<xsd:include schemaLocation="../Drawings.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/EndnoteBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/FootnoteBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/fileReferenceIdentifier.xsd"/>
+<xsd:include schemaLocation="../originalLanguageCode.xsd"/>
+<xsd:include schemaLocation="../translatorCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/receivingOffice.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentFileName.xsd"/>
+<xsd:include schemaLocation="../softwareVersionNumber.xsd"/>
+<xsd:include schemaLocation="../applicationBodyStatus.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="ApplicationBodyType">
+		<xsd:choice>
+			<xsd:element ref="pat:PageImage" maxOccurs="unbounded"/>
+			<xsd:element ref="pat:DocumentURI" maxOccurs="unbounded"/>
+			<xsd:sequence>
+				<xsd:element ref="pat:Description"/>
+				<xsd:element ref="pat:ClaimStatement" minOccurs="0"/>
+				<xsd:element ref="pat:Claims"/>
+				<xsd:element ref="pat:Abstract" minOccurs="0"/>
+				<xsd:element ref="pat:Drawings" minOccurs="0"/>
+				<xsd:element ref="com:EndnoteBag" minOccurs="0"/>
+				<xsd:element ref="com:FootnoteBag" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:fileReferenceIdentifier"/>
+		<xsd:attribute ref="pat:originalLanguageCode"/>
+		<xsd:attribute ref="pat:translatorCategory"/>
+		<xsd:attribute ref="com:languageCode" use="required"/>
+		<xsd:attribute ref="com:receivingOffice" use="required"/>
+		<xsd:attribute ref="com:documentFileName"/>
+		<xsd:attribute ref="pat:softwareVersionNumber"/>
+		<xsd:attribute ref="pat:applicationBodyStatus"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

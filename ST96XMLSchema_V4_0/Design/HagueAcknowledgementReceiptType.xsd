@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/InternationalRegistrationNumber.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/RecordFilingDate.xsd"/>
+<xsd:include schemaLocation="HagueOfficeTransactionCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ApplicantFileReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OfficeReferenceIdentifier.xsd"/>
+<xsd:complexType name="HagueAcknowledgementReceiptType">
+		<xsd:sequence>
+<xsd:element ref="com:InternationalRegistrationNumber" minOccurs="0"/>
+<xsd:element ref="com:RecordIdentifier"/>
+<xsd:element ref="com:RecordFilingDate" minOccurs="0"/>
+<xsd:element ref="dgn:HagueOfficeTransactionCategory"/>
+<xsd:element ref="com:ApplicantFileReference" minOccurs="0"/>
+<xsd:element ref="com:OfficeReferenceIdentifier"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

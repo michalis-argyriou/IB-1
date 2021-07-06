@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifierBag.xsd"/>
+<xsd:include schemaLocation="Designer.xsd"/>
+<xsd:complexType name="DesignerBagType">
+			<xsd:choice>
+<xsd:element ref="com:PartyIdentifierBag" maxOccurs="unbounded"/>
+<xsd:element ref="dgn:Designer" maxOccurs="unbounded"/>
+			</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

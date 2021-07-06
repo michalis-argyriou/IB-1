@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="IPRightReviewRequestEventDataType.xsd"/>
+<xsd:element name="IPRightReviewRequestEventData" type="pat:IPRightReviewRequestEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category L (IP right review request). This category is a group of events related to a request for a review of an IP right after its grant for any type of IP right covered by Category F. It includes, for example, a request for a post-grant opposition, re-examination, limitation, reissue, surrender, or invalidation. It also includes when such a request was inadmissible, rejected or withdrawn. The events in this category may move an IP right from the grant stage or the termination likely/termination stage into the post-grant challenge stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

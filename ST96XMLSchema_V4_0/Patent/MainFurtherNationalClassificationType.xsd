@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentClassificationText.xsd"/>
+<xsd:include schemaLocation="NationalClass.xsd"/>
+<xsd:include schemaLocation="NationalSubclass.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+	<xsd:complexType name="MainFurtherNationalClassificationType">
+		<xsd:choice>
+			<xsd:element ref="pat:PatentClassificationText"/>
+			<xsd:sequence>
+				<xsd:element ref="pat:NationalClass"/>
+				<xsd:element ref="pat:NationalSubclass"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

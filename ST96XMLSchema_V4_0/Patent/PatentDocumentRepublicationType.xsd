@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RepublicationCategory.xsd"/>
+<xsd:include schemaLocation="RepublishedPatentDocumentKindCode.xsd"/>
+<xsd:include schemaLocation="RepublicationCancellationDate.xsd"/>
+<xsd:include schemaLocation="SupplementaryCorrectionCodeBag.xsd"/>
+<xsd:include schemaLocation="ModificationPartIdentification.xsd"/>
+<xsd:include schemaLocation="RepublicationNoteTextBag.xsd"/>
+<xsd:include schemaLocation="GazetteReference.xsd"/>
+<xsd:include schemaLocation="OriginalPatentDocumentIdentification.xsd"/>
+<xsd:include schemaLocation="PreviousCorrectionBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationDate.xsd"/>
+	<xsd:complexType name="PatentDocumentRepublicationType">
+		<xsd:sequence>
+			<xsd:element ref="pat:RepublicationCategory" minOccurs="0"/>
+			<xsd:element ref="com:Version" minOccurs="0"/>
+			<xsd:element ref="com:PublicationDate"/>
+			<xsd:element ref="pat:RepublishedPatentDocumentKindCode" minOccurs="0"/>
+			<xsd:element ref="pat:RepublicationCancellationDate" minOccurs="0"/>
+			<xsd:element ref="pat:SupplementaryCorrectionCodeBag" minOccurs="0"/>
+			<xsd:element ref="pat:ModificationPartIdentification" minOccurs="0"/>
+			<xsd:element ref="pat:RepublicationNoteTextBag" minOccurs="0"/>
+			<xsd:element ref="pat:GazetteReference"/>
+			<xsd:element ref="pat:OriginalPatentDocumentIdentification" minOccurs="0"/>
+			<xsd:element ref="pat:PreviousCorrectionBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

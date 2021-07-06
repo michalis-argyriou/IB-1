@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LicensingInformationEventDataType.xsd"/>
+<xsd:element name="LicensingInformationEventData" type="pat:LicensingInformationEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category S (Licensing and related matters). This category is a group of events related to the IPO recording licensing information and amendments to such records. It includes, for example, when an IPO records that a license, pledge or security interest has been agreed to, amended, cancelled or transferred. The licensing information may relate to any type of application in Category A or any type of IP right in Category F. The events in this category may occur during any stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

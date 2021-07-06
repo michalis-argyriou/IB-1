@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GeographicRegionDescriptionTextType.xsd"/>
+
+	<xsd:element name="GeographicRegionExclusionDescriptionText" type="gin:GeographicRegionDescriptionTextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the excluded part of a geographic region</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+</xsd:schema>

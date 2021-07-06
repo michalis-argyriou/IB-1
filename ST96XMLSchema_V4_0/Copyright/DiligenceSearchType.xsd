@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DiligenceSearchIdentifier.xsd"/>
+<xsd:include schemaLocation="DiligenceSearchDocument.xsd"/>
+<xsd:include schemaLocation="DiligenceSearchDocumentContact.xsd"/>
+<xsd:include schemaLocation="DiligenceSearchWorkStatus.xsd"/>
+<xsd:include schemaLocation="ProvenanceCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SearchStartDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SearchEndDate.xsd"/>
+	<xsd:complexType name="DiligenceSearchType">
+		<xsd:sequence>
+			<xsd:element ref="cpy:DiligenceSearchIdentifier" minOccurs="0"/>
+			<xsd:element ref="cpy:DiligenceSearchWorkStatus" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:element ref="cpy:DiligenceSearchDocument"/>
+				<xsd:element ref="cpy:DiligenceSearchDocumentContact"/>
+			</xsd:choice>
+			<xsd:element ref="cpy:ProvenanceCategory" minOccurs="0"/>
+			<xsd:element ref="com:SearchStartDate" minOccurs="0"/>
+			<xsd:element ref="com:SearchEndDate" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

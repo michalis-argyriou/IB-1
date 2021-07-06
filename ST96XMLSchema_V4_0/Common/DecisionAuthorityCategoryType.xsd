@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="DecisionAuthorityCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="National or regional patent office">
+				<xsd:annotation>
+					<xsd:documentation>National or Regional Patent Office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National patent court">
+				<xsd:annotation>
+					<xsd:documentation>National Patent Court</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Court of appeal">
+				<xsd:annotation>
+					<xsd:documentation>Court of Appeal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Supreme court">
+				<xsd:annotation>
+					<xsd:documentation>Supreme Court</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

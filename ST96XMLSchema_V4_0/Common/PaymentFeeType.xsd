@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="FeeIdentifier.xsd"/>
+<xsd:include schemaLocation="FeeReference.xsd"/>
+<xsd:include schemaLocation="BasicFeeAmount.xsd"/>
+<xsd:include schemaLocation="FeeUnitQuantity.xsd"/>
+<xsd:include schemaLocation="FeeUnitAmount.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:complexType name="PaymentFeeType">
+		<xsd:sequence>
+<xsd:element ref="com:FeeIdentifier" minOccurs="0"/>
+<xsd:element ref="com:FeeReference" minOccurs="0"/>
+<xsd:element ref="com:BasicFeeAmount"/>
+<xsd:element ref="com:FeeUnitQuantity" minOccurs="0"/>
+<xsd:element ref="com:FeeUnitAmount" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

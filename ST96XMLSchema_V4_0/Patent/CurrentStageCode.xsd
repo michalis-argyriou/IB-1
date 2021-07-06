@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StageCodeType.xsd"/>
+<xsd:element name="CurrentStageCode" default="0" type="pat:StageCodeType">
+		<xsd:annotation>
+			<xsd:documentation>A code indicating the stage after the present event occurred for an application or IP right, in the ST.27 overall prosecution model, such as filing, examination, pre-grant challenge, grant, post-grant challenge, or termination stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

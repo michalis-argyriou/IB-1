@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MadridProtectionRestrictionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Partial Cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial ceasing of effect">
+				<xsd:annotation>
+					<xsd:documentation>Partial ceasing of effect of basic registration or application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial change of ownership">
+				<xsd:annotation>
+					<xsd:documentation>Partial change of ownership</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="International registration division">
+				<xsd:annotation>
+					<xsd:documentation>Division of international registration at the request of an office</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision">
+				<xsd:annotation>
+					<xsd:documentation>Final decision used for EM only</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Restriction of a holders right of disposal">
+				<xsd:annotation>
+					<xsd:documentation>Restriction of a holders right of disposal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Restriction removal of a holders right of disposal">
+				<xsd:annotation>
+					<xsd:documentation>Removal of the restriction of a holders right of disposal during processing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

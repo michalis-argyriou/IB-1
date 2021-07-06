@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClassificationVersionDate.xsd"/>
+<xsd:include schemaLocation="CPCSection.xsd"/>
+<xsd:include schemaLocation="Class.xsd"/>
+<xsd:include schemaLocation="Subclass.xsd"/>
+<xsd:include schemaLocation="MainGroup.xsd"/>
+<xsd:include schemaLocation="Subgroup.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/SymbolPositionCode.xsd"/>
+<xsd:include schemaLocation="CPCClassificationValueCode.xsd"/>
+<xsd:include schemaLocation="ActionDate.xsd"/>
+<xsd:include schemaLocation="GeneratingOfficeCode.xsd"/>
+<xsd:include schemaLocation="CPCClassificationStatusCode.xsd"/>
+<xsd:include schemaLocation="PatentClassificationDataSourceCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="CPCClassificationType">
+		<xsd:sequence>
+<xsd:element ref="pat:ClassificationVersionDate"/>
+<xsd:element ref="pat:CPCSection"/>
+<xsd:element ref="pat:Class"/>
+<xsd:element ref="pat:Subclass"/>
+<xsd:element ref="pat:MainGroup"/>
+<xsd:element ref="pat:Subgroup"/>
+<xsd:element ref="com:SymbolPositionCode"/>
+<xsd:element ref="pat:CPCClassificationValueCode"/>
+<xsd:element ref="pat:ActionDate"/>
+<xsd:element ref="pat:GeneratingOfficeCode"/>
+<xsd:element ref="pat:CPCClassificationStatusCode" minOccurs="0"/>
+<xsd:element ref="pat:PatentClassificationDataSourceCode" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

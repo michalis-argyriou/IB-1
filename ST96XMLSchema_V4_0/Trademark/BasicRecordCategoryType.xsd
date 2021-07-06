@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="BasicRecordCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Second part fee paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Second part fee not paid">
+				<xsd:annotation>
+					<xsd:documentation>Second part fee not paid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protection granted">
+				<xsd:annotation>
+					<xsd:documentation>Protection granted</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Judicial action">
+				<xsd:annotation>
+					<xsd:documentation>Judicial action</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Effect continuation">
+				<xsd:annotation>
+					<xsd:documentation>Effect continuation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renunciation">
+				<xsd:annotation>
+					<xsd:documentation>Renunciation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transfer refusal">
+				<xsd:annotation>
+					<xsd:documentation>Transfer refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative appointed">
+				<xsd:annotation>
+					<xsd:documentation>Representative appointed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal expired">
+				<xsd:annotation>
+					<xsd:documentation>Appeal expired</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal lapsed">
+				<xsd:annotation>
+					<xsd:documentation>Appeal lapsed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Appeal withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Appeal withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total refusal">
+				<xsd:annotation>
+					<xsd:documentation>Total refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Total invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Total cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Total ceasing effect">
+				<xsd:annotation>
+					<xsd:documentation>Total ceasing effect</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final confirmation refusal">
+				<xsd:annotation>
+					<xsd:documentation>Final confirmation refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final reversing refusal">
+				<xsd:annotation>
+					<xsd:documentation>Final reversing refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final total refusal">
+				<xsd:annotation>
+					<xsd:documentation>Final total refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal under rule 40_3">
+				<xsd:annotation>
+					<xsd:documentation>Renewal under rule 40_3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonRenewal">
+				<xsd:annotation>
+					<xsd:documentation>NonRenewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonRenewal certain parties">
+				<xsd:annotation>
+					<xsd:documentation>NonRenewal certain parties</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NonRenewal under rule 40_3">
+				<xsd:annotation>
+					<xsd:documentation>NonRenewal under rule 40_3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Registration">
+				<xsd:annotation>
+					<xsd:documentation>Registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent designation">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent designation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Limitation">
+				<xsd:annotation>
+					<xsd:documentation>Limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No effect limitation">
+				<xsd:annotation>
+					<xsd:documentation>No effect limitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial refusal">
+				<xsd:annotation>
+					<xsd:documentation>Partial refusal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial ceasing effect">
+				<xsd:annotation>
+					<xsd:documentation>Partial ceasing effect</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Partial invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Partial cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial transfer">
+				<xsd:annotation>
+					<xsd:documentation>Partial transfer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Renewal">
+				<xsd:annotation>
+					<xsd:documentation>Renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Complementary renewal">
+				<xsd:annotation>
+					<xsd:documentation>Complementary renewal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final other decision">
+				<xsd:annotation>
+					<xsd:documentation>Final other decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="ThirdPartyActionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Opposition">
+				<xsd:annotation>
+					<xsd:documentation>Opposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Revocation">
+				<xsd:annotation>
+					<xsd:documentation>Revocation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation">
+				<xsd:annotation>
+					<xsd:documentation>Cancellation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			</xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>

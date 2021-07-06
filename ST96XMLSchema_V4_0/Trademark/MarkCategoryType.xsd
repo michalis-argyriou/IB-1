@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="MarkCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Mark">
+				<xsd:annotation>
+					<xsd:documentation>Any sign or combination of signs, capable of distinguishing the goods or services of one undertaking from those of other undertakings. This can include a trademark, service mark, collective trademark, collective service mark, or certification mark.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark">
+				<xsd:annotation>
+					<xsd:documentation>Any sign or combination of signs, capable of distinguishing the goods of one undertaking from those of other undertakings. Sometimes the term “trademark” is also used as a synonym of the term “mark” and thus referring to both goods and/or services.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Service mark">
+				<xsd:annotation>
+					<xsd:documentation>Any sign or combination of signs, capable of distinguishing the services of one undertaking from those of other undertakings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Defensive mark">
+				<xsd:annotation>
+					<xsd:documentation>A mark may be registered as a defensive mark, in some jurisdictions, typically for protection of well-known registered marks. Where a registered mark has become well-known among the consumers for the goods and/or services covered, its holder may obtain registration of the same mark for other goods and/or services even where, in respect of those latter goods and/or services, the mark is not used or is not intended to be used.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Individual mark">
+				<xsd:annotation>
+					<xsd:documentation>The individual mark is the opposite of the collective mark. An individual mark may sometimes be wrongly called an ordinary mark or a standard mark.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Collective mark">
+				<xsd:annotation>
+					<xsd:documentation>Any trademark or service mark that is used by members of a collective organization (such as a cooperative, an association or a federation of industries, producers or traders) and that distinguishes the goods and/or services of the members of that collective organization from those of non-members.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Collective trademark">
+				<xsd:annotation>
+					<xsd:documentation>A sub-type of collective mark that is used by members of a collective organization (such as a cooperative, an association or a federation of industries, producers or traders) and that distinguishes the goods of the members of that collective organization from those of non-members.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Collective service mark">
+				<xsd:annotation>
+					<xsd:documentation>A sub-type of collective mark that is used by members of a collective organization (such as a cooperative, an association or a federation of industries, producers or traders) and that distinguishes the services of the members of that collective organization from those of non-members.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Collective membership mark">
+				<xsd:annotation>
+					<xsd:documentation>A sub-type of collective mark that is used only to indicate membership in the collective organization. It is not used to identify and distinguish any goods or services of one undertaking from those of other undertakings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certification mark">
+				<xsd:annotation>
+					<xsd:documentation>Any mark used by a person other than its owner to certify regional or other origin, material, mode of manufacture, quality, accuracy, or other characteristics of such person’s goods or services or that the work or labor on the goods or services was performed by members of a union or other organization. It distinguishes goods or services certified by the proprietor of the certification mark, guarantee mark or standardization mark from the goods and services of other undertakings.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Well known mark under TRIPS Article 16_2">
+				<xsd:annotation>
+					<xsd:documentation>Any mark that is well known to the relevant sector of the public on identical or similar goods and services for which registration or use is sought pursuant to the TRIPS Agreement and the Paris Convention.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Well known mark under TRIPS Article 16_3">
+				<xsd:annotation>
+					<xsd:documentation>Any mark that is well known to the relevant sector of the public on dissimilar goods and services for which registration or use is sought pursuant to the TRIPS Agreement and the Paris Convention.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Well known collective mark">
+				<xsd:annotation>
+					<xsd:documentation>Well known collective mark</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

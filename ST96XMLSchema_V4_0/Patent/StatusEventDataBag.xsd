@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="StatusEventDataBagType.xsd"/>
+<xsd:element name="StatusEventDataBag" type="pat:StatusEventDataBagType">
+		<xsd:annotation>
+			<xsd:documentation>A collection of data associated with a legal status event in relation to a specific patent application occurred in various steps of the application lifecycle</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

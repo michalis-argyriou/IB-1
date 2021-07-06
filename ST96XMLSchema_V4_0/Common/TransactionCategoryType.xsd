@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="TransactionCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Design eFiling">
+				<xsd:annotation>
+					<xsd:documentation>Design eFiling</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design B2B filing">
+				<xsd:annotation>
+					<xsd:documentation>Design B2B filing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design information">
+				<xsd:annotation>
+					<xsd:documentation>Design information</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design identifier list">
+				<xsd:annotation>
+					<xsd:documentation>Design identifier list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design list">
+				<xsd:annotation>
+					<xsd:documentation>Design list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design opposition eFiling">
+				<xsd:annotation>
+					<xsd:documentation>Design opposition eFiling</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design opposition information">
+				<xsd:annotation>
+					<xsd:documentation>Design opposition information</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Design opposition identifier list">
+				<xsd:annotation>
+					<xsd:documentation>Design opposition identifier list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Representative appointment">
+				<xsd:annotation>
+					<xsd:documentation>Representative appointment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Amendment registered design">
+				<xsd:annotation>
+					<xsd:documentation>Amendment registered design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Amendment application">
+				<xsd:annotation>
+					<xsd:documentation>Amendment application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Convention application">
+				<xsd:annotation>
+					<xsd:documentation>Convention application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Additional application">
+				<xsd:annotation>
+					<xsd:documentation>Additional application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Subsequent application">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Divisional application">
+				<xsd:annotation>
+					<xsd:documentation>Divisional application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Assignment application">
+				<xsd:annotation>
+					<xsd:documentation>Assignment application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Assignment registered design">
+				<xsd:annotation>
+					<xsd:documentation>Assignment registered design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request certified copies">
+				<xsd:annotation>
+					<xsd:documentation>Request certified copies</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request extension time">
+				<xsd:annotation>
+					<xsd:documentation>Request extension time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request hearing">
+				<xsd:annotation>
+					<xsd:documentation>Request hearing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition first extension">
+				<xsd:annotation>
+					<xsd:documentation>Opposition first extension</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition various renewal or extension of registration restoration">
+				<xsd:annotation>
+					<xsd:documentation>Opposition various renewal or extension of registration restoration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdrawal">
+				<xsd:annotation>
+					<xsd:documentation>Withdrawal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdraw application">
+				<xsd:annotation>
+					<xsd:documentation>Withdraw application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdraw design">
+				<xsd:annotation>
+					<xsd:documentation>Withdraw design</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Response examination report">
+				<xsd:annotation>
+					<xsd:documentation>Response examination report</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Statement support">
+				<xsd:annotation>
+					<xsd:documentation>Statement support</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdraw service request">
+				<xsd:annotation>
+					<xsd:documentation>Withdraw service request</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request publication">
+				<xsd:annotation>
+					<xsd:documentation>Request publication</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request registration">
+				<xsd:annotation>
+					<xsd:documentation>Request registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Offer surrender">
+				<xsd:annotation>
+					<xsd:documentation>Offer surrender</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request exclusion">
+				<xsd:annotation>
+					<xsd:documentation>Request exclusion</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request conversion">
+				<xsd:annotation>
+					<xsd:documentation>Request conversion</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Duplicate certificate">
+				<xsd:annotation>
+					<xsd:documentation>Duplicate certificate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request supply documents">
+				<xsd:annotation>
+					<xsd:documentation>Request supply documents</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request delayed registration">
+				<xsd:annotation>
+					<xsd:documentation>Request delayed registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Request accelerated examination">
+				<xsd:annotation>
+					<xsd:documentation>Request accelerated examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Expiry notice">
+				<xsd:annotation>
+					<xsd:documentation>Expiry notice</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal withdrawal notification">
+				<xsd:annotation>
+					<xsd:documentation>Refusal withdrawal notification</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Division international registration notification">
+				<xsd:annotation>
+					<xsd:documentation>Division international registration notification</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refusal notification">
+				<xsd:annotation>
+					<xsd:documentation>Refusal notification</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Providing certificate to holder">
+				<xsd:annotation>
+					<xsd:documentation>Providing certificate to holder</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Transmittal application to IB">
+				<xsd:annotation>
+					<xsd:documentation>Transmittal application to IB</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Irregularities">
+				<xsd:annotation>
+					<xsd:documentation>Irregularities</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Invalidation notification">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation notification</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Cancellation representative appointment">
+				<xsd:annotation>
+					<xsd:documentation>Cancellation representative appointment</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application receipt">
+				<xsd:annotation>
+					<xsd:documentation>Application receipt</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by design formality examination">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by design formality examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by design substantial examination">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by design substantial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by design registration">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by design registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by trial examination_invitation">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by trial examination_invitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by trial examination">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by trial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document by trial examination_decision">
+				<xsd:annotation>
+					<xsd:documentation>Notice document by trial examination_decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Memo by design formality examination">
+				<xsd:annotation>
+					<xsd:documentation>Memo by design formality examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Memo by design substantial examination">
+				<xsd:annotation>
+					<xsd:documentation>Memo by design substantial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Memo by trial examination">
+				<xsd:annotation>
+					<xsd:documentation>Memo by trial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Memo by trial notice">
+				<xsd:annotation>
+					<xsd:documentation>Memo by trial notice</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Memo by trial examination_correction">
+				<xsd:annotation>
+					<xsd:documentation>Memo by trial examination_correction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design application document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design application document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design applicant document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design applicant document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design attorney document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design attorney document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design withdrawal and abandonment document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design withdrawal and abandonment document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design response document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design response document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design submission document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design submission document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design amendment document">
+				<xsd:annotation>
+					<xsd:documentation>Accept design amendment document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept design request for inspection">
+				<xsd:annotation>
+					<xsd:documentation>Accept design request for inspection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept demand for a trial">
+				<xsd:annotation>
+					<xsd:documentation>Accept demand for a trial</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept trial intermediate document">
+				<xsd:annotation>
+					<xsd:documentation>Accept trial intermediate document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design application document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design application document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design applicant document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design applicant document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design attorney document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design attorney document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design withdrawal and abandonment document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design withdrawal and abandonment document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design response document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design response document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design submission document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design submission document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design amendment document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design amendment document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept design request for inspection">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept design request for inspection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept demand for a trial">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept demand for a trial</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection accept trial intermediate document">
+				<xsd:annotation>
+					<xsd:documentation>Inspection accept trial intermediate document</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection notice document by design formality examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection notice document by design formality examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection notice document by design substantial examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection notice document by design substantial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection notice document by design registration">
+				<xsd:annotation>
+					<xsd:documentation>Inspection notice document by design registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection Notice document by trial examination_invitation">
+				<xsd:annotation>
+					<xsd:documentation>Inspection Notice document by trial examination_invitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection notice document by trial examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection notice document by trial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection Notice document by trial examination_decision">
+				<xsd:annotation>
+					<xsd:documentation>Inspection Notice document by trial examination_decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection memo by design formality examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection memo by design formality examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection memo by design substantial examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection memo by design substantial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection memo by trial examination">
+				<xsd:annotation>
+					<xsd:documentation>Inspection memo by trial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inspection memo by trial notice">
+				<xsd:annotation>
+					<xsd:documentation>Inspection memo by trial notice</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by design formality examination">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by design formality examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by design substantial examination">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by design substantial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by design registration">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by design registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by trial examination_invitation">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by trial examination_invitation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by trial examination">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by trial examination</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Certified copy notice document by trial examination_decision">
+				<xsd:annotation>
+					<xsd:documentation>Certified copy notice document by trial examination_decision</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Accept document list">
+				<xsd:annotation>
+					<xsd:documentation>Accept document list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Notice document list">
+				<xsd:annotation>
+					<xsd:documentation>Notice document list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Application information">
+				<xsd:annotation>
+					<xsd:documentation>Application information</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Balance sheet reference">
+				<xsd:annotation>
+					<xsd:documentation>Balance sheet reference</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Division number list">
+				<xsd:annotation>
+					<xsd:documentation>Division number list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Record licence">
+				<xsd:annotation>
+					<xsd:documentation>Record licence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Record mortgagee">
+				<xsd:annotation>
+					<xsd:documentation>Record mortgagee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Terminate licence">
+				<xsd:annotation>
+					<xsd:documentation>Terminate licence</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Discharge mortgagee">
+				<xsd:annotation>
+					<xsd:documentation>Discharge mortgagee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Change of name">
+				<xsd:annotation>
+					<xsd:documentation>Change of name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark B2B Filing">
+				<xsd:annotation>
+					<xsd:documentation>Trademark B2B Filing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark Information">
+				<xsd:annotation>
+					<xsd:documentation>Trademark Information</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark identifier list">
+				<xsd:annotation>
+					<xsd:documentation>Trademark identifier list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition eFiling">
+				<xsd:annotation>
+					<xsd:documentation>Opposition eFiling</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition information">
+				<xsd:annotation>
+					<xsd:documentation>Opposition information</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition identifier list">
+				<xsd:annotation>
+					<xsd:documentation>Opposition identifier list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Trademark list">
+				<xsd:annotation>
+					<xsd:documentation>Trademark list</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National trademark application">
+				<xsd:annotation>
+					<xsd:documentation>A snapshot of the current data related to a national Trademark Application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National trademark registration">
+				<xsd:annotation>
+					<xsd:documentation>A snapshot of the current data related to a national Trademark Registration</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National view of international trademark application or registration">
+				<xsd:annotation>
+					<xsd:documentation>A snapshot of the national view of an International trademark application or registration where that national office was the office of origin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National trademark assignment">
+				<xsd:annotation>
+					<xsd:documentation>Information relating to a single assignment of interest in a national trademark or trademarks</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="National legal proceeding">
+				<xsd:annotation>
+					<xsd:documentation>Information related to national legal proceedings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

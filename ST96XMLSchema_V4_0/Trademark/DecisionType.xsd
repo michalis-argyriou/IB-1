@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DecisionIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DecisionDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/DecisionText.xsd"/>
+<xsd:include schemaLocation="DecisionResponsibleCategory.xsd"/>
+<xsd:include schemaLocation="CaseReferenceBag.xsd"/>
+<xsd:include schemaLocation="DecisionCurrentStatusCategory.xsd"/>
+<xsd:include schemaLocation="DecisionCurrentStatusDate.xsd"/>
+<xsd:include schemaLocation="DecisionEventBag.xsd"/>
+<xsd:complexType name="DecisionType">
+		<xsd:sequence>
+<xsd:element ref="com:DecisionIdentifier"/>
+<xsd:element ref="com:DecisionDate" minOccurs="0"/>
+<xsd:element ref="com:DecisionText" minOccurs="0"/>
+<xsd:element ref="tmk:DecisionResponsibleCategory" minOccurs="0"/>
+<xsd:element ref="tmk:CaseReferenceBag" minOccurs="0"/>
+<xsd:element ref="tmk:DecisionCurrentStatusCategory" minOccurs="0"/>
+<xsd:element ref="tmk:DecisionCurrentStatusDate" minOccurs="0"/>
+<xsd:element ref="tmk:DecisionEventBag" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

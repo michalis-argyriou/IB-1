@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="OrphanWorkKindCodeType.xsd"/>
+	<xsd:element name="OrphanWorkKindCode" type="cpy:OrphanWorkKindCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Code list which identifies a kind of orphan works</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

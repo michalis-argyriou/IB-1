@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:element name="BitDepthQuantity" type="xsd:nonNegativeInteger">
+		<xsd:annotation>
+			<xsd:documentation>Bit depth or the colour depth is the number of bits used to represent the colour of a single pixel in a bitmapped image or video frame buffer. This concept is also known as bits per pixel (bpp), particularly when specified along with the number of bits used. Higher colour depth gives a broader range of distinct colours, e.g., 32 bit</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

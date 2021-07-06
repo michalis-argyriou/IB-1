@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Name.xsd"/>
+<xsd:include schemaLocation="CityName.xsd"/>
+<xsd:include schemaLocation="GeographicRegionName.xsd"/>
+<xsd:include schemaLocation="CountryCode.xsd"/>
+<xsd:include schemaLocation="PostalCode.xsd"/>
+<xsd:include schemaLocation="languageCode.xsd"/>
+	<xsd:complexType name="PublicationContactType">
+		<xsd:sequence>
+			<xsd:element ref="com:Name"/>
+			<xsd:element ref="com:CityName" minOccurs="0"/>
+			<xsd:element ref="com:GeographicRegionName" minOccurs="0"/>
+			<xsd:element ref="com:CountryCode" minOccurs="0"/>
+			<xsd:element ref="com:PostalCode" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

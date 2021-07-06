@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="RequestIdentifier.xsd"/>
+<xsd:include schemaLocation="RequestLanguageCode.xsd"/>
+<xsd:include schemaLocation="RequestXSDVersion.xsd"/>
+<xsd:include schemaLocation="FileName.xsd"/>
+<xsd:include schemaLocation="RequestStatusCategory.xsd"/>
+<xsd:include schemaLocation="RequestProducer.xsd"/>
+<xsd:include schemaLocation="RequestReceivingOfficeCode.xsd"/>
+<xsd:include schemaLocation="LoginInformation.xsd"/>
+<xsd:include schemaLocation="RequestDate.xsd"/>
+<xsd:include schemaLocation="RequestDateTime.xsd"/>
+<xsd:complexType name="SenderBagType">
+		<xsd:sequence>
+<xsd:element ref="com:RequestIdentifier" minOccurs="0"/>
+<xsd:element ref="com:RequestLanguageCode" minOccurs="0"/>
+<xsd:element ref="com:RequestXSDVersion" minOccurs="0"/>
+<xsd:element ref="com:FileName" minOccurs="0"/>
+<xsd:element ref="com:RequestStatusCategory" minOccurs="0"/>
+<xsd:element ref="com:RequestProducer" minOccurs="0"/>
+<xsd:element ref="com:RequestReceivingOfficeCode" minOccurs="0"/>
+<xsd:element ref="com:LoginInformation" minOccurs="0"/>
+			<xsd:choice>
+<xsd:element ref="com:RequestDate"/>
+<xsd:element ref="com:RequestDateTime"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

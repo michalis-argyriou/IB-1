@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="Name.xsd"/>
+<xsd:include schemaLocation="PostalAddressBag.xsd"/>
+<xsd:include schemaLocation="FaxNumberBag.xsd"/>
+<xsd:include schemaLocation="EmailAddressBag.xsd"/>
+<xsd:include schemaLocation="WebAddressBag.xsd"/>
+<xsd:include schemaLocation="PhoneNumberBag.xsd"/>
+<xsd:include schemaLocation="OtherElectronicAddressBag.xsd"/>
+<xsd:include schemaLocation="ContactText.xsd"/>
+<xsd:include schemaLocation="languageCode.xsd"/>
+<xsd:complexType name="ContactType">
+<xsd:choice>
+		<xsd:sequence>
+<xsd:element ref="com:Name"/>
+<xsd:element ref="com:PostalAddressBag" minOccurs="0"/>
+<xsd:element ref="com:FaxNumberBag" minOccurs="0"/>
+<xsd:element ref="com:EmailAddressBag" minOccurs="0"/>
+<xsd:element ref="com:WebAddressBag" minOccurs="0"/>
+<xsd:element ref="com:PhoneNumberBag" minOccurs="0"/>
+<xsd:element ref="com:OtherElectronicAddressBag" minOccurs="0"/>
+		</xsd:sequence>
+<xsd:element ref="com:ContactText"/>
+</xsd:choice>
+		<xsd:attribute ref="com:languageCode"/>
+	</xsd:complexType>
+</xsd:schema>

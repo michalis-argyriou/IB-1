@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/IPOfficeCode.xsd"/>
+<xsd:include schemaLocation="BibliographicData_V4_0.xsd"/>
+<xsd:include schemaLocation="../PageImage.xsd"/>
+<xsd:include schemaLocation="../DocumentURI.xsd"/>
+<xsd:include schemaLocation="../Description.xsd"/>
+<xsd:include schemaLocation="../ClaimStatement.xsd"/>
+<xsd:include schemaLocation="../Claims.xsd"/>
+<xsd:include schemaLocation="../Abstract.xsd"/>
+<xsd:include schemaLocation="../Drawings.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ApplicantKeywordText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ExternalDocumentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/languageCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentFileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/creationDate.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentStatusText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/documentPublicationDate.xsd"/>
+	<xsd:complexType name="PatentPublicationType">
+		<xsd:sequence>
+			<xsd:element ref="com:IPOfficeCode"/>
+			<xsd:element ref="pat:BibliographicData"/>
+			<xsd:choice>
+				<xsd:element ref="pat:PageImage" maxOccurs="unbounded"/>
+				<xsd:element ref="pat:DocumentURI"/>
+				<xsd:sequence>
+					<xsd:element ref="pat:Description" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="pat:ClaimStatement" minOccurs="0"/>
+					<xsd:element ref="pat:Claims"/>
+					<xsd:element ref="pat:Abstract" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="pat:Drawings" minOccurs="0"/>
+					<xsd:element ref="com:ApplicantKeywordText" minOccurs="0"/>
+					<xsd:element ref="com:ExternalDocumentBag" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:languageCode" use="required"/>
+		<xsd:attribute ref="com:documentFileName"/>
+		<xsd:attribute ref="com:creationDate"/>
+		<xsd:attribute ref="com:documentStatusText"/>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+		<xsd:attribute ref="com:documentPublicationDate"/>
+	</xsd:complexType>
+</xsd:schema>

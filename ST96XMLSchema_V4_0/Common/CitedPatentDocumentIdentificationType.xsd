@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PatentDocumentKindCode.xsd"/>
+<xsd:include schemaLocation="DocumentNumber.xsd"/>
+<xsd:include schemaLocation="EntityName.xsd"/>
+<xsd:include schemaLocation="IPOfficeCode.xsd"/>
+<xsd:include schemaLocation="PatentDocumentDate.xsd"/>
+<xsd:include schemaLocation="id.xsd"/>
+<xsd:include schemaLocation="languageCode.xsd"/>
+<xsd:include schemaLocation="sourceURI.xsd"/>
+<xsd:include schemaLocation="patentDocumentIdentificationFormatCategory.xsd"/>
+	<xsd:complexType name="CitedPatentDocumentIdentificationType">
+		<xsd:sequence>
+			<xsd:element ref="com:IPOfficeCode"/>
+			<xsd:element ref="com:DocumentNumber"/>
+			<xsd:element ref="com:EntityName" minOccurs="0"/>
+			<xsd:element ref="com:PatentDocumentKindCode" minOccurs="0"/>
+			<xsd:element ref="com:PatentDocumentDate" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:languageCode"/>
+		<xsd:attribute ref="com:sourceURI"/>
+		<xsd:attribute ref="com:patentDocumentIdentificationFormatCategory"/>
+	</xsd:complexType>
+</xsd:schema>

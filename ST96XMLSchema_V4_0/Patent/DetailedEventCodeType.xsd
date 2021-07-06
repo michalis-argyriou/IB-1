@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="DetailedEventCodeType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="A00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category A detailed event: the national/regional event cannot be mapped to a detailed event in the category A.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category B detailed event: the national/regional event cannot be mapped to a detailed event in the category B.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category C detailed event: the national/regional event cannot be mapped to a detailed event in the category C.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category D detailed event: the national/regional event cannot be mapped to a detailed event in the category D.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category E detailed event: the national/regional event cannot be mapped to a detailed event in the category E.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category F detailed event: the national/regional event cannot be mapped to a detailed event in the category F.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category G detailed event: the national/regional event cannot be mapped to a detailed event in the category G.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category H detailed event: the national/regional event cannot be mapped to a detailed event in the category H.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category K detailed event: the national/regional event cannot be mapped to a detailed event in the category K.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category L detailed event: the national/regional event cannot be mapped to a detailed event in the category L.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category M detailed event: the national/regional event cannot be mapped to a detailed event in the category M.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category N detailed event: the national/regional event cannot be mapped to a detailed event in the category N.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category P detailed event: the national/regional event cannot be mapped to a detailed event in the category P.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category Q detailed event: the national/regional event cannot be mapped to a detailed event in the category Q.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category R detailed event: the national/regional event cannot be mapped to a detailed event in the category R.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category S detailed event: the national/regional event cannot be mapped to a detailed event in the category S.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category T detailed event: the national/regional event cannot be mapped to a detailed event in the category T.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category U detailed event: the national/regional event cannot be mapped to a detailed event in the category U.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category V detailed event: the national/regional event cannot be mapped to a detailed event in the category V.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="W00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category W detailed event: the national/regional event cannot be mapped to a detailed event in the category W.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Y00">
+				<xsd:annotation>
+					<xsd:documentation>No mapped category Y detailed event: the national/regional event cannot be mapped to a detailed event in the category Y.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A11">
+				<xsd:annotation>
+					<xsd:documentation>Provisional application filed (A provisional application was filed with an IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A12">
+				<xsd:annotation>
+					<xsd:documentation>National or regional application filed (A national or regional application was submitted to an IPO and a filing date and application number are recorded. This may include any application type covered by Category A.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A13">
+				<xsd:annotation>
+					<xsd:documentation>PCT application filed (An international application under the PCT was filed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A14">
+				<xsd:annotation>
+					<xsd:documentation>Regional application entered into the national phase (A regional application entered into the national phase.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A15">
+				<xsd:annotation>
+					<xsd:documentation>PCT application entered into the national or regional phase (An international application under the PCT entered into the national or regional phase.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A16">
+				<xsd:annotation>
+					<xsd:documentation>Divisional, continuation or continuation in part application filed (A divisional, continuation or continuation in part application was filed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A17">
+				<xsd:annotation>
+					<xsd:documentation>Divisional, continuation or continuation in part application rejected (A divisional, continuation or continuation in part application was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A18">
+				<xsd:annotation>
+					<xsd:documentation>Application divided or continuation or continuation in part accepted (A divisional application was accepted and the original application was divided into two or more applications for one or more types of IP right, or a continuation or continuation in part was accepted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A19">
+				<xsd:annotation>
+					<xsd:documentation>Conversion application filed (A conversion application was filed, for example, an application was filed to convert one type of IP right application, such as an application for a patent for invention into another type of IP right application, such as a utility model application, or to convert a regional or PCT application into a national application.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A20">
+				<xsd:annotation>
+					<xsd:documentation>Conversion application rejected (A conversion application was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A21">
+				<xsd:annotation>
+					<xsd:documentation>Application converted from another type of IP right (A request for conversion was accepted and the application was converted, for example, an application for one type of IP right, such as an application for a patent for invention was converted into another type of IP right application, such as a utility model application. Unlike the case of divisions, an entire IP right application was converted to another type of application.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A22">
+				<xsd:annotation>
+					<xsd:documentation>Application converted from a regional or PCT application (A request for conversion was accepted and the application was converted from a regional or PCT application into a national application.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B11">
+				<xsd:annotation>
+					<xsd:documentation>Application withdrawn (An applicant voluntarily withdrew the application.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B12">
+				<xsd:annotation>
+					<xsd:documentation>Application deemed to be withdrawn, abandoned or lapsed (An application was discontinued due to a failure to prosecute, for example, an application was discontinued due to non-payment of fees or not responding to an office action within the relevant period.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B13">
+				<xsd:annotation>
+					<xsd:documentation>Regional filing not entered into the national phase (A regional application did not enter the national phase within the time period prescribed in the applicable law.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B14">
+				<xsd:annotation>
+					<xsd:documentation>PCT filing not entered into the national or regional phase (An international application under the PCT did not enter the national or regional phase within the time period prescribed in the applicable law.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B15">
+				<xsd:annotation>
+					<xsd:documentation>Application refused following examination (An application was refused by an IPO following a formality or substantive examination.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B16">
+				<xsd:annotation>
+					<xsd:documentation>Application discontinued following rejected revival request (A request for revival of a discontinued application was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B17">
+				<xsd:annotation>
+					<xsd:documentation>Application discontinued following pre-grant review (Following a pre-grant review, an application was discontinued.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C11">
+				<xsd:annotation>
+					<xsd:documentation>Application revival requested (A revival, reinstatement or restoration of a discontinued application was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C12">
+				<xsd:annotation>
+					<xsd:documentation>Request for application revival rejected (A request for an application revival was inadmissible, rejected or withdrawn).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C13">
+				<xsd:annotation>
+					<xsd:documentation>Application revived following an application revival request (An application was revived, reinstated or restored following an application revival request.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C14">
+				<xsd:annotation>
+					<xsd:documentation>Rights of priority restored (The right of priority was restored where a subsequent application was filed after the expiration of the priority period but within the time limit prescribed in the applicable law, provided that the conditions specified in the applicable law were met.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D11">
+				<xsd:annotation>
+					<xsd:documentation>Substantive examination requested (A substantive examination of an application was requested by an applicant or a third party, or an IPO initiated the examination independently, in accordance with the applicable law.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D12">
+				<xsd:annotation>
+					<xsd:documentation>Request for substantive examination rejected (A request for a substantive examination was inadmissible, rejected or withdrawn.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D13">
+				<xsd:annotation>
+					<xsd:documentation>Search requested (A prior art search for an application was requested by the applicant or the examiner.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D14">
+				<xsd:annotation>
+					<xsd:documentation>Search report completed (A prior art search report for an application was completed by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D15">
+				<xsd:annotation>
+					<xsd:documentation>Examination report completed (A substantive examination report was completed by the IPO or a notification of the reason for refusal of the application was issued.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D16">
+				<xsd:annotation>
+					<xsd:documentation>Fast track examination requested (An expedited or accelerated examination of the application was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D17">
+				<xsd:annotation>
+					<xsd:documentation>Fast track examination accepted (A request for an expedited or accelerated examination was accepted by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D18">
+				<xsd:annotation>
+					<xsd:documentation>Deferred examination requested (A request was made to defer or postpone the examination of an application until a later time.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D19">
+				<xsd:annotation>
+					<xsd:documentation>Deferred examination accepted (A request to defer or postpone the examination of an application was accepted by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D20">
+				<xsd:annotation>
+					<xsd:documentation>Deferred examination resumed (A deferred examination was resumed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D21">
+				<xsd:annotation>
+					<xsd:documentation>Rejection of application intended (An IPO announced its intention to reject an application and not grant an IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D22">
+				<xsd:annotation>
+					<xsd:documentation>Grant of IP right intended (An IPO announced its intention to grant an IP right, provided that certain conditions are met within a time period prescribed in the applicable law. For example, in one jurisdiction, an IP right will be granted if an applicant pays a fee and submits a translation (if necessary) within a certain period. In another jurisdiction, an IP right will be granted provided that no pre-grant opposition is filed within a certain period or such an opposition is inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D23">
+				<xsd:annotation>
+					<xsd:documentation>Examination continued following pre-grant review (An examination of an application was continued following a pre-grant review.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D24">
+				<xsd:annotation>
+					<xsd:documentation>Re-examination commenced (A re-examination of the application was commenced.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E11">
+				<xsd:annotation>
+					<xsd:documentation>Pre-grant opposition filed (A pre-grant opposition was filed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E12">
+				<xsd:annotation>
+					<xsd:documentation>Pre-grant re-examination requested (A pre-grant re-examination was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E13">
+				<xsd:annotation>
+					<xsd:documentation>Pre-grant limitation requested (A pre-grant limitation of the application was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E14">
+				<xsd:annotation>
+					<xsd:documentation>Pre-grant third party observation filed (A third party filed prior art documents or other related information with the IPO before the grant of an IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E15">
+				<xsd:annotation>
+					<xsd:documentation>Request for pre-grant review rejected (A request for a pre-grant review was inadmissible, rejected or withdrawn).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F11">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted following substantive examination (Following a substantive examination, an IP right was granted by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F12">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted following formality examination (Following a formality examination, an IP right was granted by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F13">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted in full following pre-grant review (Following a pre-grant review, an IP right was granted in full.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F14">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted in amended form following pre-grant review (Following a pre-grant review, an IP right was granted in amended form.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F15">
+				<xsd:annotation>
+					<xsd:documentation>IP right granted following rejected pre-grant review request (Following an inadmissible, rejected or withdrawn request for a pre-grant review, the IP right was granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F16">
+				<xsd:annotation>
+					<xsd:documentation>IP right converted from another IP right (An IP right was converted from one type of IP right into another.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F17">
+				<xsd:annotation>
+					<xsd:documentation>IP right entered into force. (This event is for IP rights which enter into force at a later time after the grant, such as SPCs.  Offices do not need to use this event when the grant and entry into force occur at the same time, such as a patent grant.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G11">
+				<xsd:annotation>
+					<xsd:documentation>Extension of SPC term requested (An extension of a Supplementary Protection Certificate (SPC) term was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G12">
+				<xsd:annotation>
+					<xsd:documentation>Extension of SPC term not granted (An extension of a Supplementary Protection Certificate (SPC) term was not granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G13">
+				<xsd:annotation>
+					<xsd:documentation>Extension of SPC term granted (An extension of a Supplementary Protection Certificate (SPC) term was granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G14">
+				<xsd:annotation>
+					<xsd:documentation>Extension of SPC term revoked (An extension of a Supplementary Protection Certificate (SPC) term was revoked by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G15">
+				<xsd:annotation>
+					<xsd:documentation>PTA requested (A Patent Term Adjustment (PTA) was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G16">
+				<xsd:annotation>
+					<xsd:documentation>PTA not granted (A Patent Term Adjustment (PTA) was not granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G17">
+				<xsd:annotation>
+					<xsd:documentation>PTA granted (A Patent Term Adjustment (PTA) was granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G18">
+				<xsd:annotation>
+					<xsd:documentation>PTE requested (A Patent Term Extension (PTE) was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G19">
+				<xsd:annotation>
+					<xsd:documentation>PTE not granted (A Patent Term Extension (PTE) was not granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G20">
+				<xsd:annotation>
+					<xsd:documentation>PTE granted (A Patent Term Extension (PTE) was granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H11">
+				<xsd:annotation>
+					<xsd:documentation>IP right ceased following rejected request for revival (A request for revival of a ceased IP right was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H12">
+				<xsd:annotation>
+					<xsd:documentation>IP right ceased following an IP right review (The IP right was ceased following an IP right review.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H13">
+				<xsd:annotation>
+					<xsd:documentation>IP right lapsed (The IP right was ceased through neglect to maintain it, for example, non-payment of fees or not responding to an office action.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H14">
+				<xsd:annotation>
+					<xsd:documentation>IP right expired (A statutory IP right term, for example 20 years from the filing date, has expired.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H15">
+				<xsd:annotation>
+					<xsd:documentation>IP right surrendered (An IP right was surrendered or abandoned by the IP right owner.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K11">
+				<xsd:annotation>
+					<xsd:documentation>IP right revival requested (A revival, reinstatement or restoration of a ceased IP right was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K12">
+				<xsd:annotation>
+					<xsd:documentation>Request for IP right revival rejected (A request for revival, reinstatement or restoration of a ceased IP right was inadmissible, rejected or withdrawn).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K13">
+				<xsd:annotation>
+					<xsd:documentation>IP right revived in full (A ceased IP right was revived, reinstated or restored in full.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="K14">
+				<xsd:annotation>
+					<xsd:documentation>IP right revived in amended form (A ceased IP right was revived, reinstated or restored in amended form.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L11">
+				<xsd:annotation>
+					<xsd:documentation>Post-grant opposition filed (A post-grant opposition was filed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L12">
+				<xsd:annotation>
+					<xsd:documentation>Post-grant re-examination requested (A post-grant re-examination was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L13">
+				<xsd:annotation>
+					<xsd:documentation>Limitation or reissue of IP right requested (A limitation or reissue of an IP right was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L14">
+				<xsd:annotation>
+					<xsd:documentation>Surrender of IP right requested (A request to surrender an IP right was made by the IP right owner.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L15">
+				<xsd:annotation>
+					<xsd:documentation>Invalidation requested (An administrative revocation, cancellation, nullity, annulment or invalidation proceeding was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L16">
+				<xsd:annotation>
+					<xsd:documentation>Post-grant third party observation filed (A third party filed prior art documents or other related information with the IPO after the grant of an IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L17">
+				<xsd:annotation>
+					<xsd:documentation>Declaration of non-infringement requested (A third party requested a declaration of non-infringement of the IP right.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L18">
+				<xsd:annotation>
+					<xsd:documentation>Request for IP right review rejected (A request for an IP right review was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="L19">
+				<xsd:annotation>
+					<xsd:documentation>Post-termination review requested (A post-termination review was requested to invalidate an IP right ex tunc.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M11">
+				<xsd:annotation>
+					<xsd:documentation>IP right maintained in full following an IP right review or an appeal (The IP right was maintained in full following an appeal or an IP right review, for example, following a post-grant opposition, post-grant re-examination, limitation or reissue, surrender, or invalidation proceeding.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M12">
+				<xsd:annotation>
+					<xsd:documentation>IP right maintained in amended form following an IP right review or an appeal (The IP right was maintained in amended form following an appeal or an IP right review, for example, following a post-grant opposition, post-grant re-examination, limitation or reissue, surrender, or invalidation proceeding.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M13">
+				<xsd:annotation>
+					<xsd:documentation>IP right maintained following rejected IP right review request (The IP right was maintained following an inadmissible, rejected or withdrawn request for an IP right review.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M14">
+				<xsd:annotation>
+					<xsd:documentation>Re-examination certificate issued (A re-examination certificate was issued following a re-examination procedure confirming which claims were confirmed, cancelled or amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N11">
+				<xsd:annotation>
+					<xsd:documentation>Application terminated (An application was terminated.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N12">
+				<xsd:annotation>
+					<xsd:documentation>IP right terminated (A granted IP right was terminated.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P11">
+				<xsd:annotation>
+					<xsd:documentation>Amendment of application requested (An amendment of the application has been requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P12">
+				<xsd:annotation>
+					<xsd:documentation>Request for amendment of application rejected (A request to amend the application was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P13">
+				<xsd:annotation>
+					<xsd:documentation>Application amended (The application has been amended in response to a request by the applicant.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P14">
+				<xsd:annotation>
+					<xsd:documentation>Amendment of IP right document requested (An amendment of the IP right document has been requested outside the scope of an IP right review.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P15">
+				<xsd:annotation>
+					<xsd:documentation>Request for amendment of IP right document rejected (A request for an amendment of the IP right document outside the scope of an IP right review was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P16">
+				<xsd:annotation>
+					<xsd:documentation>IP right document amended (The IP right document has been amended outside the scope of an IP right review in response to a request by the IP right owner.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P17">
+				<xsd:annotation>
+					<xsd:documentation>Translation of an application amended (A translation of the application has been amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P18">
+				<xsd:annotation>
+					<xsd:documentation>Priority claim added or amended (A priority claim has been added or amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P19">
+				<xsd:annotation>
+					<xsd:documentation>Errors in documents containing IPO’s decisions corrected (Errors, such as a linguistic error, transcription error or obvious mistakes have been corrected in documents containing decisions of the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P20">
+				<xsd:annotation>
+					<xsd:documentation>Errors in documents filed by the applicant or IP right owner corrected (Errors in documents filed by the applicant or IP right owner have been corrected.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P21">
+				<xsd:annotation>
+					<xsd:documentation>Errors in published documents corrected (Errors in a document published by the IPO, including an application or an IP right document have been corrected.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P22">
+				<xsd:annotation>
+					<xsd:documentation>Classification modified (The assigned classification of an application or IP right document was changed, corrected or reclassified according to IPC, CPC or national/regional classifications.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P23">
+				<xsd:annotation>
+					<xsd:documentation>Related IP right document modified (A related IP right document, such as a linked basic patent was modified.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="P24">
+				<xsd:annotation>
+					<xsd:documentation>Related application modified (A related application, such as a regional application was modified).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q11">
+				<xsd:annotation>
+					<xsd:documentation>Certain bibliographic information on the application published (Certain bibliographic information on the application and the applicant, for example, the application number, title of the invention and the applicant’s name, were published before the publication of the application as filed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q12">
+				<xsd:annotation>
+					<xsd:documentation>Application published (An application was published by the IPO with or without a search report; an IPO may accept an application in a foreign language for the purpose of according a filing date; however, in general, the IPO requires that an applicant submit a translation of the application in a language the IPO publishes in, before it will be published.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q13">
+				<xsd:annotation>
+					<xsd:documentation>IP right document published (The document related to a granted and/or registered IP right or an IP right which the IPO intends to grant was published.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q14">
+				<xsd:annotation>
+					<xsd:documentation>Secret application or IP right declassified and published (A secret application or IP right was declassified and published.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q15">
+				<xsd:annotation>
+					<xsd:documentation>Earlier publication cancelled (A publication, including an application, IP right document or bibliographic information, was cancelled or withdrawn by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q16">
+				<xsd:annotation>
+					<xsd:documentation>A copy of IP right certificate issued (An official copy of an IP right certificate was issued.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Q17">
+				<xsd:annotation>
+					<xsd:documentation>Modified document published (An amended or corrected document was published.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R11">
+				<xsd:annotation>
+					<xsd:documentation>Change to the name of applicant or owner or transfer of ownership requested (A change to the name(s) of the applicant(s) or owner(s), a transfer of ownership or an assignment was requested, or a legal proceeding was commenced to change the applicant(s) or owner(s) of the application or IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R12">
+				<xsd:annotation>
+					<xsd:documentation>Change to the name of applicant or owner or transfer of ownership recorded (A change to the applicant(s) or owner(s) of the application or IP right, or a transfer of ownership or an assignment, was recorded by the IPO. This may be due to a name correction, a legal name change, a transfer of ownership, or an assignment.) This detailed event is intended for use by IPOs which cannot distinguish between R13 and R14. If the distinction is possible, the use of R13 and R14 is highly recommended.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R13">
+				<xsd:annotation>
+					<xsd:documentation>Change to the name of applicant or owner recorded (A change to the name(s) of the applicant(s) or owner(s) of the application or IP right that does not indicate a transfer was recorded by the IPO. The most common reasons for this type of change are name corrections, spelling mistakes, or legal name changes such as a corporate merger.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R14">
+				<xsd:annotation>
+					<xsd:documentation>Transfer of ownership recorded (A transfer of ownership or an assignment of the application or IP right was recorded by the IPO. This event indicates that the interest is given by one party to another, such as by a voluntary exchange, an assignment, or a contractual obligation.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R15">
+				<xsd:annotation>
+					<xsd:documentation>Change to inventor requested (A change in the name(s) or composition of the inventor(s) was requested or a legal proceeding was commenced to change the inventor(s) of the application or IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R16">
+				<xsd:annotation>
+					<xsd:documentation>Change to inventor recorded (A change to the inventor(s), including a change in name(s) or in composition, was recorded by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R17">
+				<xsd:annotation>
+					<xsd:documentation>Change to representative recorded (A change to the representative(s) of the applicant(s) or owner(s), including a change in name(s) or in composition, was recorded by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R18">
+				<xsd:annotation>
+					<xsd:documentation>Changes to party contact information recorded (A change to the contact information, such as the email address, postal address or phone number of a party was recorded by the IPO.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R19">
+				<xsd:annotation>
+					<xsd:documentation>Request for party data change rejected (A request for a party data change was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S11">
+				<xsd:annotation>
+					<xsd:documentation>Voluntary license recorded (A voluntary licensing arrangement, on an exclusive or non-exclusive basis, between an applicant or IP right owner and another party was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S12">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of voluntary license amended (Recordation of a voluntary license was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S13">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of voluntary license cancelled (Recordation of a voluntary license was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S14">
+				<xsd:annotation>
+					<xsd:documentation>Exclusive voluntary license recorded (A voluntary licensing arrangement, on an exclusive basis, between an applicant or IP right owner and another party was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S15">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of exclusive voluntary license amended (Recordation of an exclusive voluntary license was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S16">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of exclusive voluntary license cancelled (Recordation of an exclusive voluntary license was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S17">
+				<xsd:annotation>
+					<xsd:documentation>Non-exclusive voluntary license recorded (A voluntary licensing arrangement, on a non-exclusive basis, between an applicant or IP right owner and another party was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S18">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of non-exclusive voluntary license amended (Recordation of a non-exclusive voluntary license was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S19">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of non-exclusive voluntary license cancelled (Recordation of a non-exclusive voluntary license was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S20">
+				<xsd:annotation>
+					<xsd:documentation>Security interest recorded (A security interest, pledge or mortgage between an applicant or IP right owner and another party was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S21">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of security interest amended (Recordation of a security interest, pledge or mortgage was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S22">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of security interest cancelled (Recordation of a security interest, pledge or mortgage was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S23">
+				<xsd:annotation>
+					<xsd:documentation>Compulsory license recorded (A compulsory license was recorded following the grant of a license by the IPO to allow another party to produce, use or import the protected product or process without the consent of the applicant or IP right owner.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S24">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of compulsory license amended (Recordation of a compulsory license was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S25">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of compulsory license cancelled (Recordation of a compulsory license was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S26">
+				<xsd:annotation>
+					<xsd:documentation>Availability or offer of license by an applicant or IP right owner recorded (Availability or an offer by an applicant or IP right owner to license his or her rights to third parties by way of a binding or non-binding commitment, for example a non-binding interest to grant a license or willingness to grant a license, was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S27">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of availability or offer of license by applicant or IP right owner cancelled (Recordation of availability or an offer of a license by an applicant or IP right owner was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S28">
+				<xsd:annotation>
+					<xsd:documentation>Royalty agreement recorded (A royalty agreement between an applicant or IP right owner and another party was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S29">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of royalty agreement amended (Recordation of a royalty agreement was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S30">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of royalty agreement cancelled (Recordation of a royalty agreement was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S31">
+				<xsd:annotation>
+					<xsd:documentation>Sublicense recorded (A sublicense was recorded between a licensee and a sublicensee.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S32">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of sublicense amended (Recordation of a sublicense was amended.) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S33">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of sublicense cancelled (Recordation of a sublicense was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S34">
+				<xsd:annotation>
+					<xsd:documentation>Concession recorded (A concession was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S35">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of concession amended (Recordation of a concession was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S36">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of concession cancelled (Recordation of a concession was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S37">
+				<xsd:annotation>
+					<xsd:documentation>Subconcession recorded (A subconcession was recorded.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S38">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of subconcession amended (Recordation of a subconcession was amended.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="S39">
+				<xsd:annotation>
+					<xsd:documentation>Recordation of subconcession cancelled (Recordation of a subconcession was cancelled.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T11">
+				<xsd:annotation>
+					<xsd:documentation>Administrative time limit extension requested (An extension of a time limit or continued processing was requested.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T12">
+				<xsd:annotation>
+					<xsd:documentation>Administrative time limit extension not granted (A request for an extension of a time limit or continued processing was inadmissible, rejected or withdrawn.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T13">
+				<xsd:annotation>
+					<xsd:documentation>Administrative time limit extension granted (A request for an extension of a time limit or continued processing was granted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T14">
+				<xsd:annotation>
+					<xsd:documentation>Administrative procedure suspended or stayed (An administrative procedure was suspended, stayed or discontinued.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T15">
+				<xsd:annotation>
+					<xsd:documentation>Administrative procedure interrupted (An administrative procedure was interrupted.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="T16">
+				<xsd:annotation>
+					<xsd:documentation>Administrative procedure resumed (An administrative procedure which had previously been suspended, stayed, discontinued or interrupted was resumed.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U11">
+				<xsd:annotation>
+					<xsd:documentation>Full renewal or maintenance fee paid (A full renewal or maintenance fee was paid.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U12">
+				<xsd:annotation>
+					<xsd:documentation>Designation fee paid (A designation fee was paid.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U13">
+				<xsd:annotation>
+					<xsd:documentation>Renewal or maintenance fee not paid (A renewal or maintenance fee was not paid by the due date.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U14">
+				<xsd:annotation>
+					<xsd:documentation>Designation fee not paid (A designation fee was not paid.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="U15">
+				<xsd:annotation>
+					<xsd:documentation>Partial renewal or maintenance fee paid modifying the IP right scope (A partial renewal or maintenance fee was paid which modified the scope of the IP right.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V11">
+				<xsd:annotation>
+					<xsd:documentation>Administrative appeal requested (An appeal of a decision was requested to an administrative body, board, or tribunal.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V12">
+				<xsd:annotation>
+					<xsd:documentation>Court appeal requested (An appeal of a decision was requested to a court or judicial body.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V13">
+				<xsd:annotation>
+					<xsd:documentation>Appeal inadmissible, rejected or withdrawn (The appeal was inadmissible, rejected or withdrawn).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V14">
+				<xsd:annotation>
+					<xsd:documentation>Decision remanded (The appeal was allowed and the appellate body remanded the decision back to the original decision-maker for reconsideration.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V15">
+				<xsd:annotation>
+					<xsd:documentation>Decision substituted (The appeal was allowed and the appellate body substituted its own decision for the original decision.)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

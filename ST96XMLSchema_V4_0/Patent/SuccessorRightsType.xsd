@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SuccessorRightsText.xsd"/>
+<xsd:include schemaLocation="SuccessorCategory.xsd"/>
+<xsd:include schemaLocation="applicantSequenceNumberReference.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/idref.xsd"/>
+<xsd:complexType name="SuccessorRightsType">
+		<xsd:sequence>
+<xsd:element ref="pat:SuccessorRightsText" minOccurs="0"/>
+<xsd:element ref="pat:SuccessorCategory"/>
+		</xsd:sequence>
+		<xsd:attribute ref="pat:applicantSequenceNumberReference"/>
+		<xsd:attribute ref="com:id"/>
+		<xsd:attribute ref="com:idref"/>
+	</xsd:complexType>
+</xsd:schema>

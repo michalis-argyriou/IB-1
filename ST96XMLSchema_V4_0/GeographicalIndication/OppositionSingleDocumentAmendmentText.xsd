@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LocalizedTextType.xsd"/>
+
+	<xsd:element name="OppositionSingleDocumentAmendmentText" type="com:LocalizedTextType">
+		<xsd:annotation>
+			<xsd:documentation>Amendment of the single document and indicator</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

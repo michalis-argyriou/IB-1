@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="LicenceEventCategory.xsd"/>
+<xsd:include schemaLocation="LicenceEventResponseDate.xsd"/>
+<xsd:include schemaLocation="CommentText.xsd"/>
+<xsd:include schemaLocation="LicenceEventDate.xsd"/>
+<xsd:include schemaLocation="LicenceEventDateTime.xsd"/>
+<xsd:complexType name="LicenceEventType">
+		<xsd:sequence>
+<xsd:element ref="com:LicenceEventCategory"/>
+<xsd:element ref="com:LicenceEventResponseDate" minOccurs="0"/>
+<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+<xsd:element ref="com:LicenceEventDate"/>
+<xsd:element ref="com:LicenceEventDateTime"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

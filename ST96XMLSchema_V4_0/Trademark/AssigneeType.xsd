@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/LegalEntityName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PartyIdentifier.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Contact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/PublicationContact.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NationalLegalEntityCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/NationalityCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IncorporationCountryCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/IncorporationState.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="OwnershipComposition.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/operationCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/sequenceNumber.xsd"/>
+	<xsd:complexType name="AssigneeType">
+		<xsd:sequence>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element ref="com:LegalEntityName"/>
+				<xsd:element ref="com:PartyIdentifier"/>
+				<xsd:element ref="com:Contact"/>
+				<xsd:element ref="com:PublicationContact"/>
+			</xsd:choice>
+			<xsd:element ref="com:NationalLegalEntityCode" minOccurs="0"/>
+			<xsd:element ref="com:NationalityCode" minOccurs="0"/>
+			<xsd:element ref="com:IncorporationCountryCode" minOccurs="0"/>
+			<xsd:element ref="com:IncorporationState" minOccurs="0"/>
+					<xsd:element ref="com:CommentText" minOccurs="0"/>
+					<xsd:element ref="tmk:OwnershipComposition" minOccurs="0"/>
+					<xsd:element ref="com:Version" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:attribute ref="com:operationCategory"/>
+				<xsd:attribute ref="com:sequenceNumber"/>
+	</xsd:complexType>
+</xsd:schema>

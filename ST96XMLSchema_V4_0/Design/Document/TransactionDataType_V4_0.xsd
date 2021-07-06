@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="DesignApplicationBag_V4_0.xsd"/>
+<xsd:include schemaLocation="../DesignBag.xsd"/>
+<xsd:include schemaLocation="../ApplicantBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RepresentativeBag.xsd"/>
+<xsd:include schemaLocation="../DesignRecordBag.xsd"/>
+<xsd:include schemaLocation="../DesignRecordRelationBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="TransactionDataType">
+		<xsd:choice>
+			<xsd:element ref="dgn:DesignApplicationBag"/>
+			<xsd:element ref="dgn:DesignBag"/>
+			<xsd:element ref="dgn:ApplicantBag"/>
+			<xsd:element ref="com:RepresentativeBag"/>
+			<xsd:element ref="dgn:DesignRecordBag"/>
+			<xsd:element ref="dgn:DesignRecordRelationBag"/>
+		</xsd:choice>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

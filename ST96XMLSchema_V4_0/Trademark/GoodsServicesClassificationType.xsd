@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="ClassificationKindCode.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ClassificationVersion.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+<xsd:include schemaLocation="ClassNumber.xsd"/>
+<xsd:include schemaLocation="NationalClassNumber.xsd"/>
+<xsd:include schemaLocation="ClassTitleText.xsd"/>
+	<xsd:complexType name="GoodsServicesClassificationType">
+		<xsd:sequence>
+			<xsd:element ref="tmk:ClassificationKindCode"/>
+			<xsd:element ref="com:ClassificationVersion" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+			<xsd:element ref="tmk:ClassNumber" minOccurs="0"/>
+			<xsd:element ref="tmk:NationalClassNumber" minOccurs="0"/>
+			<xsd:element ref="tmk:ClassTitleText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

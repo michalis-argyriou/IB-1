@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0"> 
+<xsd:include schemaLocation="MadridHolderDisposalRightRestrictionType.xsd"/>
+<xsd:element name="MadridHolderDisposalRightRestriction" type="tmk:MadridHolderDisposalRightRestrictionType">
+			<xsd:annotation>
+			<xsd:documentation>Notification of the restriction of a holder right of disposal. Office of Origin or Designated Office. The information given was that a person cannot sell their trademark until the procedure is finished, then the Trademark can be sold again if necessary.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PreType.xsd"/>
+<xsd:element name="Pre" type="com:PreType">
+		<xsd:annotation>
+			<xsd:documentation>Tag used to identify content consisting of text objects that require preservation (pre) of their whitespace in order to preserve internal logical relationships. (e.g., sequence listing fragments, computer program listings)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

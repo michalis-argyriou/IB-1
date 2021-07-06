@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridGenericOfficeCommunicationType.xsd"/>
+<xsd:element name="MadridGenericOfficeCommunication" type="tmk:MadridGenericOfficeCommunicationType">
+			<xsd:annotation>
+			<xsd:documentation>Generic communication to allow IP Offices to send to IB when dedicated transactions cannot be used or are not defined. Office of Origin or Designated Office.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

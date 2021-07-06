@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SpecimenIdentifier.xsd"/>
+<xsd:include schemaLocation="DesignSpecimenCategory.xsd"/>
+<xsd:include schemaLocation="SpecimenDescriptionText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ImageFormatCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourIndicator.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/CommentText.xsd"/>
+	<xsd:complexType name="DesignSpecimenType">
+		<xsd:sequence>
+			<xsd:element ref="dgn:SpecimenIdentifier"/>
+			<xsd:element ref="dgn:DesignSpecimenCategory" minOccurs="0"/>
+			<xsd:element ref="dgn:SpecimenDescriptionText" minOccurs="0"/>
+			<xsd:element ref="com:FileName" minOccurs="0"/>
+			<xsd:element ref="com:ImageFormatCategory" minOccurs="0"/>
+			<xsd:element ref="com:ColourIndicator" minOccurs="0"/>
+			<xsd:element ref="com:CommentText" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

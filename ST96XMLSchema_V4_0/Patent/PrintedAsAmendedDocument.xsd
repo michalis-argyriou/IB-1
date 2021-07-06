@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="PrintedAsAmendedDocumentType.xsd"/>
+<xsd:element name="PrintedAsAmendedDocument" type="pat:PrintedAsAmendedDocumentType">
+		<xsd:annotation>
+			<xsd:documentation>Document printed as amended, (e.g. EPO B2). Refers to ST.9 INID Code 48.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

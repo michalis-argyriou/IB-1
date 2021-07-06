@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:cpy="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Copyright" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="DiligenceSearchWorkStatusType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Orphan Work">
+				<xsd:annotation>
+					<xsd:documentation>A work has been accepted as an orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Partial Orphan Work">
+				<xsd:annotation>
+					<xsd:documentation>A work has been accepted as a partial orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Not Orphan Work">
+				<xsd:annotation>
+					<xsd:documentation>A work has been declared not an orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Status Change Claimed ">
+				<xsd:annotation>
+					<xsd:documentation>A claim has been made to challenge the status of the orphan work</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="OppositionEventCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Opposition filed">
+				<xsd:annotation>
+					<xsd:documentation>Opposition filed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Admissibility checked">
+				<xsd:annotation>
+					<xsd:documentation>Admissibility checked</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Coolingoff period">
+				<xsd:annotation>
+					<xsd:documentation>Coolingoff period</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Commencement of proceeding">
+				<xsd:annotation>
+					<xsd:documentation>Commencement of proceedings</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Agreement between parties">
+				<xsd:annotation>
+					<xsd:documentation>Agreement between parties</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_CTM withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_CTM withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_CTM limited">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_CTM limited</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_Opposition withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_Opposition withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_CTM rejected by ED">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_CTM rejected by ED</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_CTM rejected in part">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_CTM rejected in part</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_CTM rejected">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_CTM rejected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_Opposition rejected">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_Opposition rejected</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Final decision_Opposition not duly entered">
+				<xsd:annotation>
+					<xsd:documentation>Final decision_Opposition not duly entered</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No decision_Opposition not duly entered">
+				<xsd:annotation>
+					<xsd:documentation>No decision_Opposition not duly entered</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Opposition closed">
+				<xsd:annotation>
+					<xsd:documentation>Opposition closed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

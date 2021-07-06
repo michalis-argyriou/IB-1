@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="SectionText.xsd"/>
+<xsd:include schemaLocation="SectionDescriptionText.xsd"/>
+<xsd:include schemaLocation="DecisionStatusCategory.xsd"/>
+<xsd:complexType name="MaintenanceFilingType">
+		<xsd:sequence>
+<xsd:element ref="tmk:SectionText"/>
+<xsd:element ref="tmk:SectionDescriptionText"/>
+<xsd:element ref="tmk:DecisionStatusCategory" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

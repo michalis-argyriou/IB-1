@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:simpleType name="MarkMultimediaFileFormatCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="MPG">
+				<xsd:annotation>
+					<xsd:documentation>Moving Picture Experts Group format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GIF">
+				<xsd:annotation>
+					<xsd:documentation>Animated Graphics Interchange format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MPEG">
+				<xsd:annotation>
+					<xsd:documentation>Moving Picture Experts Group format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AVI">
+				<xsd:annotation>
+					<xsd:documentation>Audio Video Interleaved format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="WMV">
+				<xsd:annotation>
+					<xsd:documentation>Windows Media Video format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="WAV">
+				<xsd:annotation>
+					<xsd:documentation>Waveform audio file format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

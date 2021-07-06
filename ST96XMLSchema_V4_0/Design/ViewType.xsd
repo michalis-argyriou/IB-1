@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/FileName.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ThumbnailFileName.xsd"/>
+<xsd:include schemaLocation="ViewIdentifier.xsd"/>
+<xsd:include schemaLocation="ViewFileFormatCategory.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/Caption.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/ColourIndicator.xsd"/>
+<xsd:include schemaLocation="RepresentationFormCategory.xsd"/>
+<xsd:include schemaLocation="ViewClassification.xsd"/>
+<xsd:include schemaLocation="ViewTypeCategory.xsd"/>
+<xsd:include schemaLocation="ViewTypeTextBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/HeightMeasure.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/WidthMeasure.xsd"/>
+	<xsd:complexType name="ViewType">
+		<xsd:sequence>
+			<xsd:element ref="com:FileName"/>
+			<xsd:element ref="com:ThumbnailFileName" minOccurs="0"/>
+			<xsd:element ref="dgn:ViewIdentifier"/>
+			<xsd:element ref="dgn:ViewFileFormatCategory" minOccurs="0"/>
+			<xsd:element ref="com:Caption" minOccurs="0"/>
+			<xsd:element ref="com:ColourIndicator" minOccurs="0"/>
+			<xsd:element ref="dgn:RepresentationFormCategory" minOccurs="0"/>
+			<xsd:element ref="dgn:ViewClassification" minOccurs="0"/>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="dgn:ViewTypeCategory"/>
+				<xsd:element ref="dgn:ViewTypeTextBag"/>
+			</xsd:choice>
+			<xsd:element ref="com:HeightMeasure" minOccurs="0"/>
+			<xsd:element ref="com:WidthMeasure" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

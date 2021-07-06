@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+		<xsd:simpleType name="ReasonNotInForceCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Abandoned">
+				<xsd:annotation>
+					<xsd:documentation>Application was abandoned by applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="No national phase entry">
+				<xsd:annotation>
+					<xsd:documentation>An international or regional application did not enter the national phase within the time prescribed by law</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>			
+			<xsd:enumeration value="Invalid">
+				<xsd:annotation>
+					<xsd:documentation>Application or IP right was invalidated by a pre-grant or post-grant review procedure</xsd:documentation>
+				</xsd:annotation>			
+			</xsd:enumeration>
+			<xsd:enumeration value="Withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Application was withdrawn by applicant</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Lapsed">
+				<xsd:annotation>
+					<xsd:documentation>Application or IP right lapsed for failure to maintain it, for example neglecting to pay a fee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Refused">
+				<xsd:annotation>
+					<xsd:documentation>Application was refused by the IPO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Discontinued">
+				<xsd:annotation>
+					<xsd:documentation>Application or IP right was discontinued for an unspecified reason</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Expired">
+				<xsd:annotation>
+					<xsd:documentation>The allowed term of the IP right expired</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Surrendered">
+				<xsd:annotation>
+					<xsd:documentation>Application or IP right was actively discontinued by the owner</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Terminated">
+				<xsd:annotation>
+					<xsd:documentation>IP right was discontinued with no possibility of further revival</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Marketing authority withdrawn">
+				<xsd:annotation>
+					<xsd:documentation>Marketing authorization for products which are the subject of Supplementary Protection Certificate (SPC) or patent term extension applications which were withdrawn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

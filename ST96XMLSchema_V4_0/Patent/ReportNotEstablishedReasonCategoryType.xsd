@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:simpleType name="ReportNotEstablishedReasonCategoryType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="No examination report required">
+				<xsd:annotation>
+					<xsd:documentation>Indicates whether the international application, or the specific claims numbers relate to subject matter which does not require an international search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Unclear">
+				<xsd:annotation>
+					<xsd:documentation>Indicates whether the description, claims or drawings or said claims numbers are so unclear that no meaningful opinion could be formed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Inadequately supported">
+				<xsd:annotation>
+					<xsd:documentation>Indicates whether the claims, or said claims numbers are so inadequately supported by the description that no meaningful opinion could be formed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Search report not established">
+				<xsd:annotation>
+					<xsd:documentation>Indicates that no international search report has been established for claim numbers specified</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

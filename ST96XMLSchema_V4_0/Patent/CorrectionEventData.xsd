@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CorrectionEventDataType.xsd"/>
+<xsd:element name="CorrectionEventData" type="pat:CorrectionEventDataType">
+		<xsd:annotation>
+			<xsd:documentation>This is supplementary data of the ST.27 Category Y (Correction and deletion of event information). This category is a group of events related to the correction or deletion of erroneous event information that the IPO previously provided. It includes, for example, correction in the status event code of an application or IP right provided under this Standard or the correction or deletion of an event that was announced erroneously in a gazette, IP register or other published documentation. The event information may relate to any type of application in Category A or any type of IP right in Category F. The events in this category may occur during any stage.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

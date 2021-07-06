@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="GIBasicRecordType.xsd"/>
+<xsd:include schemaLocation="OppositionConsultationResultText.xsd"/>
+<xsd:include schemaLocation="OppositionJustificationText.xsd"/>
+<xsd:include schemaLocation="OppositionLegitimateInterestText.xsd"/>
+<xsd:include schemaLocation="OppositionProductSpecificationAmendmentText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/OppositionReference.xsd"/>
+<xsd:include schemaLocation="OppositionSingleDocumentAmendmentText.xsd"/>
+<xsd:include schemaLocation="ThirdPartyBag.xsd"/>
+
+	<xsd:complexType name="GIOppositionRecordType">
+		<xsd:complexContent>
+			<xsd:extension base="gin:GIBasicRecordType">
+				<xsd:sequence>
+					<xsd:element ref="com:OppositionReference" minOccurs="0"/>
+					<xsd:element ref="gin:OppositionJustificationText" minOccurs="0"/>
+					<xsd:element ref="gin:OppositionLegitimateInterestText" minOccurs="0"/>
+					<xsd:element ref="gin:OppositionConsultationResultText" minOccurs="0"/>
+					<xsd:element ref="gin:OppositionProductSpecificationAmendmentText" minOccurs="0"/>
+					<xsd:element ref="gin:OppositionSingleDocumentAmendmentText" minOccurs="0"/>
+					<xsd:element ref="gin:ThirdPartyBag" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

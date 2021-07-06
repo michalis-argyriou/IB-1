@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="CorrectedDocument.xsd"/>
+<xsd:include schemaLocation="CorrectionTypeText.xsd"/>
+<xsd:include schemaLocation="GazetteReference.xsd"/>
+<xsd:include schemaLocation="CorrectionText.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/id.xsd"/>
+<xsd:complexType name="CorrectionType">
+		<xsd:sequence>
+<xsd:element ref="pat:CorrectedDocument"/>
+<xsd:element ref="pat:CorrectionTypeText" minOccurs="0"/>
+<xsd:element ref="pat:GazetteReference" minOccurs="0"/>
+<xsd:element ref="pat:CorrectionText" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:id"/>
+	</xsd:complexType>
+</xsd:schema>

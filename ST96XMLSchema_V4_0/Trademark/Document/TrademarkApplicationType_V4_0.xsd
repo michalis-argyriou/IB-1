@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RequestSoftware.xsd"/>
+<xsd:include schemaLocation="../ApplicationFormName.xsd"/>
+<xsd:include schemaLocation="../RequestSearch.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/RequestExamination.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/DocumentIncludedBag.xsd"/>
+<xsd:include schemaLocation="../TrademarkBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/PaymentBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ReimbursementBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/SignatureBag.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/st96Version.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../../Common/ipoVersion.xsd"/>
+	<xsd:complexType name="TrademarkApplicationType">
+		<xsd:sequence>
+			<xsd:element ref="com:RequestSoftware" minOccurs="0"/>
+			<xsd:element ref="tmk:ApplicationFormName" minOccurs="0"/>
+			<xsd:element ref="tmk:RequestSearch" minOccurs="0"/>
+			<xsd:element ref="com:RequestExamination" minOccurs="0"/>
+			<xsd:element ref="com:DocumentIncludedBag" minOccurs="0"/>
+			<xsd:element ref="tmk:TrademarkBag"/>
+			<xsd:element ref="com:PaymentBag" minOccurs="0"/>
+			<xsd:element ref="com:ReimbursementBag" minOccurs="0"/>
+			<xsd:element ref="com:SignatureBag" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute ref="com:st96Version" use="required"/>
+		<xsd:attribute ref="com:ipoVersion"/>
+	</xsd:complexType>
+</xsd:schema>

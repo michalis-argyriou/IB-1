@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<com:SchemaCreatedDate>2012-09-12</com:SchemaCreatedDate>
+			<com:SchemaLastModifiedDate>2020-06-01</com:SchemaLastModifiedDate>
+			<com:SchemaContactPoint>xml.standards@wipo.int</com:SchemaContactPoint>
+			<com:SchemaReleaseNoteURL>http://www.wipo.int/standards/XMLSchema/ST96/V4_0/ReleaseNotes.pdf</com:SchemaReleaseNoteURL>
+		</xsd:appinfo>
+	</xsd:annotation>
+<xsd:include schemaLocation="BibliographicDataType_V4_0.xsd"/>
+	<xsd:element name="BibliographicData" type="pat:BibliographicDataType">
+		<xsd:annotation>
+			<xsd:documentation>Bibliographic information included on the first page of a patent document. Contains document identification, domestic filing data, foreign priority data, public availability dates or term of protection, technical information, related patent or application information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:unique name="BibComponentKey">
+			<xsd:selector xpath=".//*"/>
+			<xsd:field xpath="@com:id"/>
+		</xsd:unique>
+	</xsd:element>
+</xsd:schema>

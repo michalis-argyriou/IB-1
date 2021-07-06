@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Design" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EntitlementNationalityCode.xsd"/>
+<xsd:include schemaLocation="HabitualResidence.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EntitlementEstablishment.xsd"/>
+<xsd:import namespace="http://www.wipo.int/standards/XMLSchema/ST96/Common" schemaLocation="../Common/EntitlementDomiciled.xsd"/>
+<xsd:complexType name="EntitlementType">
+		<xsd:choice maxOccurs="unbounded">
+<xsd:element ref="com:EntitlementNationalityCode"/>
+<xsd:element ref="dgn:HabitualResidence"/>
+<xsd:element ref="com:EntitlementEstablishment"/>
+<xsd:element ref="com:EntitlementDomiciled"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

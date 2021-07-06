@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="MadridOfficeToIBBagType.xsd"/>
+<xsd:element name="MadridOfficeToIBBag" type="tmk:MadridOfficeToIBBagType">
+		<xsd:annotation>
+			<xsd:documentation>Electronic communication under Madrid system from Office to IB</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" targetNamespace="http://www.wipo.int/standards/XMLSchema/ST96/Patent" elementFormDefault="qualified" attributeFormDefault="qualified" version="V4_0">
+<xsd:include schemaLocation="../Patent/ClaimNumberRangeNotConsideredType.xsd"/>
+	<xsd:element name="ClaimNumberRangeNotConsidered" type="pat:ClaimNumberRangeNotConsideredType">
+		<xsd:annotation>
+			<xsd:documentation>Identifies claims which have not been considered for the purposes of novelty, inventive step and industrial applicability and the reason why</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>
